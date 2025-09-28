@@ -1,12 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Admin\Http\Controllers\AdminController;
 use Modules\Admin\Http\Controllers\User\StoreUserController;
 
-
 Route::prefix('/users')
-->name('users.')
+    ->name('users.')
     ->group(function () {
-       Route::post('/', StoreUserController::class)->name('store');
+        Route::post('/', StoreUserController::class)->name('store');
     });
