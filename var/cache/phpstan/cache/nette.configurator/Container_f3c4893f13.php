@@ -9,7 +9,7 @@
 
 declare(strict_types=1);
 
-class Container_b1b79f2180 extends _PHPStan_1611a8848\Nette\DI\Container
+class Container_f3c4893f13 extends _PHPStan_1611a8848\Nette\DI\Container
 {
     protected $tags = [
         'phpstan.broker.dynamicMethodReturnTypeExtension' => [
@@ -4501,7 +4501,7 @@ class Container_b1b79f2180 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_b1b79f2180 $container)
+            public function __construct(Container_f3c4893f13 $container)
             {
                 $this->container = $container;
             }
@@ -4519,7 +4519,7 @@ class Container_b1b79f2180 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_b1b79f2180 $container)
+            public function __construct(Container_f3c4893f13 $container)
             {
                 $this->container = $container;
             }
@@ -4540,7 +4540,7 @@ class Container_b1b79f2180 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_b1b79f2180 $container)
+            public function __construct(Container_f3c4893f13 $container)
             {
                 $this->container = $container;
             }
@@ -4558,7 +4558,7 @@ class Container_b1b79f2180 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_b1b79f2180 $container)
+            public function __construct(Container_f3c4893f13 $container)
             {
                 $this->container = $container;
             }
@@ -4621,7 +4621,7 @@ class Container_b1b79f2180 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_b1b79f2180 $container)
+            public function __construct(Container_f3c4893f13 $container)
             {
                 $this->container = $container;
             }
@@ -4677,7 +4677,7 @@ class Container_b1b79f2180 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_b1b79f2180 $container)
+            public function __construct(Container_f3c4893f13 $container)
             {
                 $this->container = $container;
             }
@@ -7966,148 +7966,99 @@ class Container_b1b79f2180 extends _PHPStan_1611a8848\Nette\DI\Container
             'usedLevel' => '6',
             'cliAutoloadFile' => null,
             'env' => [
-                'TERM_SESSION_ID' => 'bb5e5a5f-6320-434a-bc1c-ba3d97526ed0',
-                'GJS_DEBUG_TOPICS' => 'JS ERROR;JS LOG',
-                'XDG_ACTIVATION_TOKEN' => 'gnome-shell/PhpStorm/4069-3-user-IdeaPad-Slim-5-15IRH9_TIME16546112',
-                'LESSOPEN' => '| /bin/lesspipe %s',
-                'LOG_STACK' => 'single',
-                'REDIS_PORT' => '6379',
-                'LANGUAGE' => 'en_US:en',
-                'SNAP_INSTANCE_KEY' => '',
-                'USER' => 'user',
-                'SNAP_COMMON' => '/var/snap/phpstorm/common',
-                'LC_TIME' => 'en_US.UTF-8',
-                'PHP_INI_SCAN_DIR' => '/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:',
-                'LOG_LEVEL' => 'debug',
-                'DB_CONNECTION' => 'mysql',
-                'APP_DEBUG' => 'true',
-                'MAIL_USERNAME' => 'null',
-                'XDG_SESSION_TYPE' => 'x11',
-                'APP_URL' => 'http://localhost',
-                'DB_PORT' => '3306',
-                'MAIL_FROM_ADDRESS' => 'hello@example.com',
-                'SNAP_UID' => '1000',
-                'CLUTTER_DISABLE_MIPMAPPED_TEXT' => '1',
-                'SHLVL' => '1',
-                'AWS_USE_PATH_STYLE_ENDPOINT' => 'false',
-                'HOME' => '/home/user',
-                'SNAP_LIBRARY_PATH' => '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void',
-                'REDIS_CLIENT' => 'phpredis',
-                'DESKTOP_SESSION' => 'ubuntu-xorg',
-                'SNAP_USER_DATA' => '/home/user/snap/phpstorm/557',
-                'TERMINAL_EMULATOR' => 'JetBrains-JediTerm',
-                'GIO_LAUNCHED_DESKTOP_FILE' => '/var/lib/snapd/desktop/applications/phpstorm_phpstorm.desktop',
-                'GNOME_SHELL_SESSION_MODE' => 'ubuntu',
-                'GTK_MODULES' => 'gail:atk-bridge',
-                'MAIL_FROM_NAME' => 'Laravel',
-                'LC_MONETARY' => 'en_US.UTF-8',
-                'MANAGERPID' => '3689',
-                'DB_DATABASE' => 'expense_management',
-                'SESSION_PATH' => '/',
-                'SYSTEMD_EXEC_PID' => '4069',
-                'GSM_SKIP_SSH_AGENT_WORKAROUND' => 'true',
-                'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus',
-                'APP_NAME' => 'Laravel',
-                'SNAP_REVISION' => '557',
-                'GIO_LAUNCHED_DESKTOP_FILE_PID' => '13647',
-                'DEBUGINFOD_URLS' => 'https://debuginfod.ubuntu.com ',
-                'SESSION_DRIVER' => 'database',
-                'VITE_APP_NAME' => 'Laravel',
-                'SHELL_VERBOSITY' => '0',
-                'LOG_CHANNEL' => 'stack',
-                'DB_USERNAME' => 'root',
-                'MEMCACHED_HOST' => '127.0.0.1',
-                'LOGNAME' => 'user',
-                'SNAP_CONTEXT' => 'wOv8SswA7ZpABPMapyo3FMKx4TpC_nmCLVo3IQSiULjEwcCFhZod',
-                'JOURNAL_STREAM' => '9:16173',
-                '_' => 'vendor/bin/phpstan',
-                'AWS_DEFAULT_REGION' => 'us-east-1',
-                'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure',
-                'XDG_SESSION_CLASS' => 'user',
-                'SNAP_VERSION' => '2025.2.3',
-                'USERNAME' => 'user',
-                'TERM' => 'xterm-256color',
-                'COLUMNS' => '228',
-                'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated',
-                'SNAP_INSTANCE_NAME' => 'phpstorm',
-                'WINDOWPATH' => '2',
-                'PATH' => '/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/bin:/home/user/.config/herd-lite/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/user/.local/share/JetBrains/Toolbox/scripts:/home/user/PhpstormProjects/expense-management/expense_management/node_modules/.bin',
+                'SHELL' => '/bin/bash',
                 'SESSION_MANAGER' => 'local/user-IdeaPad-Slim-5-15IRH9:@/tmp/.ICE-unix/4037,unix/user-IdeaPad-Slim-5-15IRH9:/tmp/.ICE-unix/4037',
-                'INVOCATION_ID' => '1e771981707741e0b1fd6d6c6bf4450a',
-                'PAPERSIZE' => 'letter',
+                'QT_ACCESSIBILITY' => '1',
+                'SNAP_REVISION' => '557',
+                'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg',
                 'XDG_MENU_PREFIX' => 'gnome-',
+                'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated',
+                'SNAP_REAL_HOME' => '/home/user',
+                'TERMINAL_EMULATOR' => 'JetBrains-JediTerm',
+                'SNAP_USER_COMMON' => '/home/user/snap/phpstorm/common',
+                'LANGUAGE' => 'en_US:en',
+                'PROCESS_LAUNCHED_BY_Q' => '1',
                 'LC_ADDRESS' => 'en_US.UTF-8',
+                'GNOME_SHELL_SESSION_MODE' => 'ubuntu',
+                'LC_NAME' => 'en_US.UTF-8',
+                'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh',
+                'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA=',
+                'TERM_SESSION_ID' => 'bb5e5a5f-6320-434a-bc1c-ba3d97526ed0',
+                'SNAP_INSTANCE_KEY' => '',
+                'XMODIFIERS' => '@@im=ibus',
+                'DESKTOP_SESSION' => 'ubuntu-xorg',
+                'LC_MONETARY' => 'en_US.UTF-8',
                 'BAMF_DESKTOP_FILE_HINT' => '/var/lib/snapd/desktop/applications/phpstorm_phpstorm.desktop',
+                'GTK_MODULES' => 'gail:atk-bridge',
+                'SNAP_EUID' => '1000',
+                'PWD' => '/home/user/PhpstormProjects/expense-management/expense_management',
+                'XDG_SESSION_DESKTOP' => 'ubuntu-xorg',
+                'LOGNAME' => 'user',
+                'XDG_SESSION_TYPE' => 'x11',
+                'PROCESS_LAUNCHED_BY_CW' => '1',
+                'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1',
+                'SYSTEMD_EXEC_PID' => '4069',
+                'XAUTHORITY' => '/run/user/1000/gdm/Xauthority',
+                'DESKTOP_STARTUP_ID' => 'gnome-shell/PhpStorm/4069-3-user-IdeaPad-Slim-5-15IRH9_TIME16546112',
+                'SNAP_CONTEXT' => 'wOv8SswA7ZpABPMapyo3FMKx4TpC_nmCLVo3IQSiULjEwcCFhZod',
+                'GJS_DEBUG_TOPICS' => 'JS ERROR;JS LOG',
+                'WINDOWPATH' => '2',
+                'HOME' => '/home/user',
+                'USERNAME' => 'user',
+                'LANG' => 'en_US.UTF-8',
+                'LC_PAPER' => 'en_US.UTF-8',
+                'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:',
+                'XDG_CURRENT_DESKTOP' => 'ubuntu:GNOME',
+                'MEMORY_PRESSURE_WATCH' => '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure',
+                'SNAP_ARCH' => 'amd64',
+                'SNAP_INSTANCE_NAME' => 'phpstorm',
+                'SNAP_USER_DATA' => '/home/user/snap/phpstorm/557',
+                '_INTELLIJ_FORCE_PREPEND_PATH' => '/bin:',
+                'INVOCATION_ID' => '1e771981707741e0b1fd6d6c6bf4450a',
+                'FIG_TERM' => '1',
+                'MANAGERPID' => '3689',
+                'SNAP_REEXEC' => '',
+                'SNAP_UID' => '1000',
+                'GJS_DEBUG_OUTPUT' => 'stderr',
+                'XDG_ACTIVATION_TOKEN' => 'gnome-shell/PhpStorm/4069-3-user-IdeaPad-Slim-5-15IRH9_TIME16546112',
+                'LESSCLOSE' => '/bin/lesspipe %s %s',
+                'XDG_SESSION_CLASS' => 'user',
+                'TERM' => 'xterm-256color',
+                'LC_IDENTIFICATION' => 'en_US.UTF-8',
+                'LESSOPEN' => '| /bin/lesspipe %s',
+                'USER' => 'user',
+                'SNAP' => '/snap/phpstorm/557',
+                'CLUTTER_DISABLE_MIPMAPPED_TEXT' => '1',
+                'SNAP_COMMON' => '/var/snap/phpstorm/common',
+                'SNAP_VERSION' => '2025.2.3',
+                'DISPLAY' => ':0',
+                'SHLVL' => '1',
+                'SNAP_LIBRARY_PATH' => '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void',
+                'GSM_SKIP_SSH_AGENT_WORKAROUND' => 'true',
+                'SNAP_COOKIE' => 'wOv8SswA7ZpABPMapyo3FMKx4TpC_nmCLVo3IQSiULjEwcCFhZod',
+                'LC_TELEPHONE' => 'en_US.UTF-8',
+                'QT_IM_MODULE' => 'ibus',
+                'LC_MEASUREMENT' => 'en_US.UTF-8',
+                'PAPERSIZE' => 'letter',
+                'INTELLIJ_TERMINAL_COMMAND_BLOCKS_REWORKED' => '1',
                 'SNAP_DATA' => '/var/snap/phpstorm/557',
                 'XDG_RUNTIME_DIR' => '/run/user/1000',
-                'MAIL_PASSWORD' => 'null',
-                'AWS_BUCKET' => '',
-                'DISPLAY' => ':0',
-                'DESKTOP_STARTUP_ID' => 'gnome-shell/PhpStorm/4069-3-user-IdeaPad-Slim-5-15IRH9_TIME16546112',
-                'LANG' => 'en_US.UTF-8',
-                'XDG_CURRENT_DESKTOP' => 'ubuntu:GNOME',
-                'LC_TELEPHONE' => 'en_US.UTF-8',
-                'SESSION_ENCRYPT' => 'false',
-                'XMODIFIERS' => '@@im=ibus',
-                'XDG_SESSION_DESKTOP' => 'ubuntu-xorg',
-                'XAUTHORITY' => '/run/user/1000/gdm/Xauthority',
-                'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:',
-                'FIG_TERM' => '1',
-                'APP_FAKER_LOCALE' => 'en_US',
-                'FILESYSTEM_DISK' => 'local',
-                'MAIL_HOST' => '127.0.0.1',
-                'SNAP_USER_COMMON' => '/home/user/snap/phpstorm/common',
-                'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh',
-                'SNAP_ARCH' => 'amd64',
-                'SNAP_COOKIE' => 'wOv8SswA7ZpABPMapyo3FMKx4TpC_nmCLVo3IQSiULjEwcCFhZod',
-                'SHELL' => '/bin/bash',
-                'LC_NAME' => 'en_US.UTF-8',
-                'APP_MAINTENANCE_DRIVER' => 'file',
-                'BCRYPT_ROUNDS' => '12',
-                'SESSION_LIFETIME' => '120',
-                'BROADCAST_CONNECTION' => 'log',
-                'MAIL_SCHEME' => 'null',
-                'QT_ACCESSIBILITY' => '1',
-                'SNAP_REEXEC' => '',
-                'GDMSESSION' => 'ubuntu-xorg',
-                'AWS_ACCESS_KEY_ID' => '',
-                'LESSCLOSE' => '/bin/lesspipe %s %s',
+                'DEBUGINFOD_URLS' => 'https://debuginfod.ubuntu.com ',
+                'LC_TIME' => 'en_US.UTF-8',
                 'SNAP_NAME' => 'phpstorm',
-                'APP_FALLBACK_LOCALE' => 'en',
-                'AWS_SECRET_ACCESS_KEY' => '',
-                'LC_MEASUREMENT' => 'en_US.UTF-8',
-                'REDIS_PASSWORD' => 'null',
-                'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1',
-                '_INTELLIJ_FORCE_PREPEND_PATH' => '/bin:',
-                'GJS_DEBUG_OUTPUT' => 'stderr',
-                'LC_IDENTIFICATION' => 'en_US.UTF-8',
-                'LOG_DEPRECATIONS_CHANNEL' => 'null',
-                'QT_IM_MODULE' => 'ibus',
-                'SESSION_DOMAIN' => 'null',
-                'CACHE_STORE' => 'database',
-                'MAIL_MAILER' => 'log',
-                'MAIL_PORT' => '2525',
-                'PWD' => '/home/user/PhpstormProjects/expense-management/expense_management',
-                'PROCESS_LAUNCHED_BY_CW' => '1',
-                'INTELLIJ_TERMINAL_COMMAND_BLOCKS_REWORKED' => '1',
-                'APP_ENV' => 'local',
-                'APP_KEY' => 'base64:rfZoNmoMFkFxExdx7Xjyv8596lvWVgNhzrg/vMfbUqs=',
-                'DB_PASSWORD' => '',
-                'REDIS_HOST' => '127.0.0.1',
-                'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg',
-                'SNAP_REAL_HOME' => '/home/user',
+                'JOURNAL_STREAM' => '9:16173',
                 'XDG_DATA_DIRS' => '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop',
-                'SNAP_EUID' => '1000',
-                'SNAP' => '/snap/phpstorm/557',
+                'PATH' => '/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/bin:/home/user/.config/herd-lite/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/user/.local/share/JetBrains/Toolbox/scripts:/home/user/PhpstormProjects/expense-management/expense_management/node_modules/.bin',
+                'GDMSESSION' => 'ubuntu-xorg',
+                'PHP_INI_SCAN_DIR' => '/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:',
+                'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus',
+                'GIO_LAUNCHED_DESKTOP_FILE_PID' => '13647',
+                'GIO_LAUNCHED_DESKTOP_FILE' => '/var/lib/snapd/desktop/applications/phpstorm_phpstorm.desktop',
                 'LC_NUMERIC' => 'en_US.UTF-8',
+                '_' => 'vendor/bin/phpstan',
                 'LINES' => '17',
-                'LC_PAPER' => 'en_US.UTF-8',
-                'DB_HOST' => 'mysql-db',
-                'QUEUE_CONNECTION' => 'database',
-                'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA=',
-                'APP_LOCALE' => 'en',
-                'PROCESS_LAUNCHED_BY_Q' => '1',
-                'PHP_CLI_SERVER_WORKERS' => '4',
+                'COLUMNS' => '228',
+                'SHELL_VERBOSITY' => '0',
             ],
         ];
     }

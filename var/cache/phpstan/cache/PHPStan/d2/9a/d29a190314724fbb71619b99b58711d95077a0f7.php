@@ -7,7 +7,7 @@ return PHPStan\Cache\CacheItem::__set_state([
     'variableKey' => 'v1',
     'data' => [
         '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/AdminServiceProvider.php' => [
-            0 => 'bfa000a3b3fd675b5bec47fc7b0dcec0804e5f04',
+            0 => '1acdfd5d3a010901af44b2f5a564b94fb363814f',
             1 => [
                 0 => 'modules\\admin\\providers\\adminserviceprovider',
             ],
@@ -15,12 +15,10 @@ return PHPStan\Cache\CacheItem::__set_state([
                 0 => 'modules\\admin\\providers\\boot',
                 1 => 'modules\\admin\\providers\\register',
                 2 => 'modules\\admin\\providers\\registertranslations',
-                3 => 'modules\\admin\\providers\\registerviews',
-                4 => 'modules\\admin\\providers\\registercommands',
-                5 => 'modules\\admin\\providers\\registercommandschedules',
-                6 => 'modules\\admin\\providers\\registerconfig',
-                7 => 'modules\\admin\\providers\\merge_config_from',
-                8 => 'modules\\admin\\providers\\getpublishableviewpaths',
+                3 => 'modules\\admin\\providers\\registercommands',
+                4 => 'modules\\admin\\providers\\registercommandschedules',
+                5 => 'modules\\admin\\providers\\registerconfig',
+                6 => 'modules\\admin\\providers\\merge_config_from',
             ],
             3 => [
             ],
@@ -50,11 +48,22 @@ return PHPStan\Cache\CacheItem::__set_state([
             ],
         ],
         '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/User/User.php' => [
-            0 => '010fceef527ba96f98c05e0fc1b7b14272398b09',
+            0 => 'db0af743364bf98b128294cc4a8a803bb076fd7e',
             1 => [
                 0 => 'modules\\admin\\models\\user\\user',
             ],
             2 => [
+            ],
+            3 => [
+            ],
+        ],
+        '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Role/Role.php' => [
+            0 => 'f7b9c2dec8c465e72565e91689ff7e5595206e4d',
+            1 => [
+                0 => 'modules\\admin\\models\\role\\role',
+            ],
+            2 => [
+                0 => 'modules\\admin\\models\\role\\getrolepermissions',
             ],
             3 => [
             ],
