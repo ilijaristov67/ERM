@@ -69,13 +69,10 @@ class AdminServiceProvider extends ServiceProvider
         Blade::componentNamespace(config('modules.namespace').'\\'.$this->name.'\\View\\Components', $this->nameLower);
     }
 
-    /**
-     * Get the services provided by the provider.
-     */
-    public function provides(): array
-    {
-        return [];
-    }
+    //    public function provides(): array
+    //    {
+    //        return [];
+    //    }
 
     /**
      * Register commands in the format of Command::class
@@ -140,6 +137,9 @@ class AdminServiceProvider extends ServiceProvider
         config([$key => array_replace_recursive($existing, $module_config)]);
     }
 
+    /**
+     * @return string[]
+     */
     private function getPublishableViewPaths(): array
     {
         $paths = [];
