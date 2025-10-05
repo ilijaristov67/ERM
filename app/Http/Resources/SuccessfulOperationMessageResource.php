@@ -10,6 +10,7 @@ class SuccessfulOperationMessageResource extends JsonResource
     public string $message;
 
     public int $code;
+
     public function __construct($resource)
     {
         $this->message = $resource['message'];
@@ -17,7 +18,6 @@ class SuccessfulOperationMessageResource extends JsonResource
 
         parent::__construct($resource);
     }
-
 
     /** @return array<string, string> */
     public function toArray(Request $request): array
@@ -27,5 +27,4 @@ class SuccessfulOperationMessageResource extends JsonResource
             'code' => $this->code,
         ];
     }
-
 }
