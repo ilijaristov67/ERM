@@ -1646,7 +1646,7 @@ return [
                 'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => [
                     0 => [
                         0 => 'config',
-                        1 => 137,
+                        1 => 91,
                     ],
                 ],
                 'PHPStan\\Rules\\Traits\\TraitUseCollector' => [
@@ -1658,13 +1658,18 @@ return [
         ];
     },
     'dependencies' => [
+        '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Role/Role.php' => [
+            'fileHash' => 'f7b9c2dec8c465e72565e91689ff7e5595206e4d',
+            'dependentFiles' => [
+            ],
+        ],
         '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/User/User.php' => [
-            'fileHash' => '010fceef527ba96f98c05e0fc1b7b14272398b09',
+            'fileHash' => 'db0af743364bf98b128294cc4a8a803bb076fd7e',
             'dependentFiles' => [
             ],
         ],
         '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/AdminServiceProvider.php' => [
-            'fileHash' => 'bfa000a3b3fd675b5bec47fc7b0dcec0804e5f04',
+            'fileHash' => '1acdfd5d3a010901af44b2f5a564b94fb363814f',
             'dependentFiles' => [
             ],
         ],
@@ -1683,13 +1688,68 @@ return [
     ],
     'exportedNodesCallback' => static function (): array {
         return [
+            '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Role/Role.php' => [
+                0 => PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state([
+                    'name' => 'Modules\\Admin\\Models\\Role\\Role',
+                    'phpDoc' => PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state([
+                        'phpDocString' => '/**
+ * @property int $id
+ * @property string $name
+ */',
+                        'namespace' => 'Modules\\Admin\\Models\\Role',
+                        'uses' => [
+                            'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
+                            'permission' => 'Spatie\\Permission\\Models\\Permission',
+                        ],
+                        'constUses' => [
+                        ],
+                    ]),
+                    'abstract' => false,
+                    'final' => false,
+                    'extends' => 'Spatie\\Permission\\Models\\Role',
+                    'implements' => [
+                    ],
+                    'usedTraits' => [
+                    ],
+                    'traitUseAdaptations' => [
+                    ],
+                    'statements' => [
+                        0 => PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state([
+                            'name' => 'getRolePermissions',
+                            'phpDoc' => PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state([
+                                'phpDocString' => '/** @return Collection<int, Permission> */',
+                                'namespace' => 'Modules\\Admin\\Models\\Role',
+                                'uses' => [
+                                    'collection' => 'Illuminate\\Database\\Eloquent\\Collection',
+                                    'permission' => 'Spatie\\Permission\\Models\\Permission',
+                                ],
+                                'constUses' => [
+                                ],
+                            ]),
+                            'byRef' => false,
+                            'public' => true,
+                            'private' => false,
+                            'abstract' => false,
+                            'final' => false,
+                            'static' => false,
+                            'returnType' => 'Illuminate\\Database\\Eloquent\\Collection',
+                            'parameters' => [
+                            ],
+                            'attributes' => [
+                            ],
+                        ]),
+                    ],
+                    'attributes' => [
+                    ],
+                ]),
+            ],
             '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/User/User.php' => [
                 0 => PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state([
                     'name' => 'Modules\\Admin\\Models\\User\\User',
                     'phpDoc' => null,
                     'abstract' => false,
                     'final' => false,
-                    'extends' => 'Illuminate\\Foundation\\Auth\\User',
+                    'extends' => 'Illuminate\\Database\\Eloquent\\Model',
                     'implements' => [
                     ],
                     'usedTraits' => [
@@ -1698,6 +1758,27 @@ return [
                     'traitUseAdaptations' => [
                     ],
                     'statements' => [
+                        0 => PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state([
+                            'names' => [
+                                0 => 'guard_name',
+                            ],
+                            'phpDoc' => null,
+                            'type' => 'string',
+                            'public' => false,
+                            'private' => false,
+                            'static' => false,
+                            'readonly' => false,
+                            'abstract' => false,
+                            'final' => false,
+                            'publicSet' => false,
+                            'protectedSet' => false,
+                            'privateSet' => false,
+                            'virtual' => false,
+                            'attributes' => [
+                            ],
+                            'hooks' => [
+                            ],
+                        ]),
                     ],
                     'attributes' => [
                     ],
@@ -1720,7 +1801,7 @@ return [
                     'statements' => [
                         0 => PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state([
                             'names' => [
-                                0 => 'name',
+                                0 => 'moduleName',
                             ],
                             'phpDoc' => null,
                             'type' => 'string',
@@ -1741,7 +1822,7 @@ return [
                         ]),
                         1 => PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state([
                             'names' => [
-                                0 => 'nameLower',
+                                0 => 'moduleNameLower',
                             ],
                             'phpDoc' => null,
                             'type' => 'string',
@@ -1762,21 +1843,7 @@ return [
                         ]),
                         2 => PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state([
                             'name' => 'boot',
-                            'phpDoc' => PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state([
-                                'phpDocString' => '/**
-     * Boot the application events.
-     */',
-                                'namespace' => 'Modules\\Admin\\Providers',
-                                'uses' => [
-                                    'blade' => 'Illuminate\\Support\\Facades\\Blade',
-                                    'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
-                                    'pathnamespace' => 'Nwidart\\Modules\\Traits\\PathNamespace',
-                                    'recursivedirectoryiterator' => 'RecursiveDirectoryIterator',
-                                    'recursiveiteratoriterator' => 'RecursiveIteratorIterator',
-                                ],
-                                'constUses' => [
-                                ],
-                            ]),
+                            'phpDoc' => null,
                             'byRef' => false,
                             'public' => true,
                             'private' => false,
@@ -1797,11 +1864,8 @@ return [
      */',
                                 'namespace' => 'Modules\\Admin\\Providers',
                                 'uses' => [
-                                    'blade' => 'Illuminate\\Support\\Facades\\Blade',
                                     'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
                                     'pathnamespace' => 'Nwidart\\Modules\\Traits\\PathNamespace',
-                                    'recursivedirectoryiterator' => 'RecursiveDirectoryIterator',
-                                    'recursiveiteratoriterator' => 'RecursiveIteratorIterator',
                                 ],
                                 'constUses' => [
                                 ],
@@ -1826,11 +1890,8 @@ return [
      */',
                                 'namespace' => 'Modules\\Admin\\Providers',
                                 'uses' => [
-                                    'blade' => 'Illuminate\\Support\\Facades\\Blade',
                                     'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
                                     'pathnamespace' => 'Nwidart\\Modules\\Traits\\PathNamespace',
-                                    'recursivedirectoryiterator' => 'RecursiveDirectoryIterator',
-                                    'recursiveiteratoriterator' => 'RecursiveIteratorIterator',
                                 ],
                                 'constUses' => [
                                 ],
@@ -1848,24 +1909,21 @@ return [
                             ],
                         ]),
                         5 => PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state([
-                            'name' => 'registerViews',
+                            'name' => 'registerCommands',
                             'phpDoc' => PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state([
                                 'phpDocString' => '/**
-     * Register views.
+     * Register commands in the format of Command::class
      */',
                                 'namespace' => 'Modules\\Admin\\Providers',
                                 'uses' => [
-                                    'blade' => 'Illuminate\\Support\\Facades\\Blade',
                                     'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
                                     'pathnamespace' => 'Nwidart\\Modules\\Traits\\PathNamespace',
-                                    'recursivedirectoryiterator' => 'RecursiveDirectoryIterator',
-                                    'recursiveiteratoriterator' => 'RecursiveIteratorIterator',
                                 ],
                                 'constUses' => [
                                 ],
                             ]),
                             'byRef' => false,
-                            'public' => true,
+                            'public' => false,
                             'private' => false,
                             'abstract' => false,
                             'final' => false,
@@ -1877,18 +1935,15 @@ return [
                             ],
                         ]),
                         6 => PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state([
-                            'name' => 'registerCommands',
+                            'name' => 'registerCommandSchedules',
                             'phpDoc' => PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state([
                                 'phpDocString' => '/**
-     * Register commands in the format of Command::class
+     * Register command Schedules.
      */',
                                 'namespace' => 'Modules\\Admin\\Providers',
                                 'uses' => [
-                                    'blade' => 'Illuminate\\Support\\Facades\\Blade',
                                     'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
                                     'pathnamespace' => 'Nwidart\\Modules\\Traits\\PathNamespace',
-                                    'recursivedirectoryiterator' => 'RecursiveDirectoryIterator',
-                                    'recursiveiteratoriterator' => 'RecursiveIteratorIterator',
                                 ],
                                 'constUses' => [
                                 ],
@@ -1906,18 +1961,15 @@ return [
                             ],
                         ]),
                         7 => PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state([
-                            'name' => 'registerCommandSchedules',
+                            'name' => 'registerConfig',
                             'phpDoc' => PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state([
                                 'phpDocString' => '/**
-     * Register command Schedules.
+     * Register config.
      */',
                                 'namespace' => 'Modules\\Admin\\Providers',
                                 'uses' => [
-                                    'blade' => 'Illuminate\\Support\\Facades\\Blade',
                                     'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
                                     'pathnamespace' => 'Nwidart\\Modules\\Traits\\PathNamespace',
-                                    'recursivedirectoryiterator' => 'RecursiveDirectoryIterator',
-                                    'recursiveiteratoriterator' => 'RecursiveIteratorIterator',
                                 ],
                                 'constUses' => [
                                 ],
@@ -1935,35 +1987,6 @@ return [
                             ],
                         ]),
                         8 => PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state([
-                            'name' => 'registerConfig',
-                            'phpDoc' => PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state([
-                                'phpDocString' => '/**
-     * Register config.
-     */',
-                                'namespace' => 'Modules\\Admin\\Providers',
-                                'uses' => [
-                                    'blade' => 'Illuminate\\Support\\Facades\\Blade',
-                                    'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
-                                    'pathnamespace' => 'Nwidart\\Modules\\Traits\\PathNamespace',
-                                    'recursivedirectoryiterator' => 'RecursiveDirectoryIterator',
-                                    'recursiveiteratoriterator' => 'RecursiveIteratorIterator',
-                                ],
-                                'constUses' => [
-                                ],
-                            ]),
-                            'byRef' => false,
-                            'public' => false,
-                            'private' => false,
-                            'abstract' => false,
-                            'final' => false,
-                            'static' => false,
-                            'returnType' => 'void',
-                            'parameters' => [
-                            ],
-                            'attributes' => [
-                            ],
-                        ]),
-                        9 => PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state([
                             'name' => 'merge_config_from',
                             'phpDoc' => PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state([
                                 'phpDocString' => '/**
@@ -1971,11 +1994,8 @@ return [
      */',
                                 'namespace' => 'Modules\\Admin\\Providers',
                                 'uses' => [
-                                    'blade' => 'Illuminate\\Support\\Facades\\Blade',
                                     'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
                                     'pathnamespace' => 'Nwidart\\Modules\\Traits\\PathNamespace',
-                                    'recursivedirectoryiterator' => 'RecursiveDirectoryIterator',
-                                    'recursiveiteratoriterator' => 'RecursiveIteratorIterator',
                                 ],
                                 'constUses' => [
                                 ],

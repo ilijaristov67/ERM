@@ -2,10 +2,12 @@
 
 namespace Modules\Admin\Models\User;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable
+class User extends Model
 {
     use HasRoles;
+
+    protected string $guard_name = 'api';
 }
