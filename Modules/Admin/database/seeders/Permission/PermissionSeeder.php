@@ -8,7 +8,7 @@ use Spatie\Permission\PermissionRegistrar;
 
 class PermissionSeeder extends Seeder
 {
-    public const string MODULE_NAME = 'shipping';
+    public const string MODULE_NAME = 'admin';
 
     public const string GUARD_NAME = 'api';
 
