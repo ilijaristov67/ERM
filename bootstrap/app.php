@@ -1,6 +1,6 @@
 <?php
 
-use App\Exceptions\NotFoundException;
+use App\Exceptions\CustomNotFoundException;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -18,6 +18,6 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->dontReport(NotFoundHttpException::class);
         $exceptions->render(function (NotFoundHttpException $e) {
-            throw new NotFoundException();
+            throw new CustomNotFoundException();
         });
     })->create();

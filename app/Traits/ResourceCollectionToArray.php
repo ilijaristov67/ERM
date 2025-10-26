@@ -15,7 +15,6 @@ trait ResourceCollectionToArray
             'total_records' => $this->pagination['total_records'] ?? null,
             'total_pages' => $this->pagination['total_pages'] ?? null,
             'filter' => $this->pagination['filter'] ?? null,
-            'state' => $this->pagination['state'] ?? null,
             'data' => $this->collection,
         ];
     }

@@ -9,7 +9,7 @@
 
 declare(strict_types=1);
 
-class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
+class Container_690b7f9220 extends _PHPStan_1611a8848\Nette\DI\Container
 {
     protected $tags = [
         'phpstan.broker.dynamicMethodReturnTypeExtension' => [
@@ -4501,7 +4501,7 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_0db11059f1 $container)
+            public function __construct(Container_690b7f9220 $container)
             {
                 $this->container = $container;
             }
@@ -4519,7 +4519,7 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_0db11059f1 $container)
+            public function __construct(Container_690b7f9220 $container)
             {
                 $this->container = $container;
             }
@@ -4540,7 +4540,7 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_0db11059f1 $container)
+            public function __construct(Container_690b7f9220 $container)
             {
                 $this->container = $container;
             }
@@ -4558,7 +4558,7 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_0db11059f1 $container)
+            public function __construct(Container_690b7f9220 $container)
             {
                 $this->container = $container;
             }
@@ -4621,7 +4621,7 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_0db11059f1 $container)
+            public function __construct(Container_690b7f9220 $container)
             {
                 $this->container = $container;
             }
@@ -4677,7 +4677,7 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
         {
             private $container;
 
-            public function __construct(Container_0db11059f1 $container)
+            public function __construct(Container_690b7f9220 $container)
             {
                 $this->container = $container;
             }
@@ -7967,7 +7967,7 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
             'cliAutoloadFile' => null,
             'env' => [
                 'SHELL' => '/bin/bash',
-                'SESSION_MANAGER' => 'local/user-IdeaPad-Slim-5-15IRH9:@/tmp/.ICE-unix/4037,unix/user-IdeaPad-Slim-5-15IRH9:/tmp/.ICE-unix/4037',
+                'SESSION_MANAGER' => 'local/user-IdeaPad-Slim-5-15IRH9:@/tmp/.ICE-unix/3214,unix/user-IdeaPad-Slim-5-15IRH9:/tmp/.ICE-unix/3214',
                 'QT_ACCESSIBILITY' => '1',
                 'SNAP_REVISION' => '557',
                 'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg',
@@ -7983,12 +7983,11 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
                 'LC_NAME' => 'en_US.UTF-8',
                 'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh',
                 'MEMORY_PRESSURE_WRITE' => 'c29tZSAyMDAwMDAgMjAwMDAwMAA=',
-                'TERM_SESSION_ID' => 'bb5e5a5f-6320-434a-bc1c-ba3d97526ed0',
+                'TERM_SESSION_ID' => '19472c96-9853-4109-ac85-08f8e6af0a90',
                 'SNAP_INSTANCE_KEY' => '',
                 'XMODIFIERS' => '@@im=ibus',
                 'DESKTOP_SESSION' => 'ubuntu-xorg',
                 'LC_MONETARY' => 'en_US.UTF-8',
-                'BAMF_DESKTOP_FILE_HINT' => '/var/lib/snapd/desktop/applications/phpstorm_phpstorm.desktop',
                 'GTK_MODULES' => 'gail:atk-bridge',
                 'SNAP_EUID' => '1000',
                 'PWD' => '/home/user/PhpstormProjects/expense-management/expense_management',
@@ -7997,9 +7996,9 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
                 'XDG_SESSION_TYPE' => 'x11',
                 'PROCESS_LAUNCHED_BY_CW' => '1',
                 'GPG_AGENT_INFO' => '/run/user/1000/gnupg/S.gpg-agent:0:1',
-                'SYSTEMD_EXEC_PID' => '4069',
+                'SYSTEMD_EXEC_PID' => '3245',
                 'XAUTHORITY' => '/run/user/1000/gdm/Xauthority',
-                'DESKTOP_STARTUP_ID' => 'gnome-shell/PhpStorm/4069-3-user-IdeaPad-Slim-5-15IRH9_TIME16546112',
+                'DESKTOP_STARTUP_ID' => 'gnome-shell/PhpStorm/3245-1-user-IdeaPad-Slim-5-15IRH9_TIME49072',
                 'SNAP_CONTEXT' => 'wOv8SswA7ZpABPMapyo3FMKx4TpC_nmCLVo3IQSiULjEwcCFhZod',
                 'GJS_DEBUG_TOPICS' => 'JS ERROR;JS LOG',
                 'WINDOWPATH' => '2',
@@ -8014,18 +8013,18 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
                 'SNAP_INSTANCE_NAME' => 'phpstorm',
                 'SNAP_USER_DATA' => '/home/user/snap/phpstorm/557',
                 '_INTELLIJ_FORCE_PREPEND_PATH' => '/bin:',
-                'INVOCATION_ID' => '1e771981707741e0b1fd6d6c6bf4450a',
+                'INVOCATION_ID' => '06331bbc8770448c8aebd7aab9171332',
                 'FIG_TERM' => '1',
-                'MANAGERPID' => '3689',
+                'MANAGERPID' => '2799',
                 'SNAP_REEXEC' => '',
                 'SNAP_UID' => '1000',
                 'GJS_DEBUG_OUTPUT' => 'stderr',
-                'XDG_ACTIVATION_TOKEN' => 'gnome-shell/PhpStorm/4069-3-user-IdeaPad-Slim-5-15IRH9_TIME16546112',
-                'LESSCLOSE' => '/bin/lesspipe %s %s',
+                'XDG_ACTIVATION_TOKEN' => 'gnome-shell/PhpStorm/3245-1-user-IdeaPad-Slim-5-15IRH9_TIME49072',
+                'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
                 'XDG_SESSION_CLASS' => 'user',
                 'TERM' => 'xterm-256color',
                 'LC_IDENTIFICATION' => 'en_US.UTF-8',
-                'LESSOPEN' => '| /bin/lesspipe %s',
+                'LESSOPEN' => '| /usr/bin/lesspipe %s',
                 'USER' => 'user',
                 'SNAP' => '/snap/phpstorm/557',
                 'CLUTTER_DISABLE_MIPMAPPED_TEXT' => '1',
@@ -8046,13 +8045,13 @@ class Container_0db11059f1 extends _PHPStan_1611a8848\Nette\DI\Container
                 'DEBUGINFOD_URLS' => 'https://debuginfod.ubuntu.com ',
                 'LC_TIME' => 'en_US.UTF-8',
                 'SNAP_NAME' => 'phpstorm',
-                'JOURNAL_STREAM' => '9:16173',
+                'JOURNAL_STREAM' => '9:24144',
                 'XDG_DATA_DIRS' => '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop',
-                'PATH' => '/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/bin:/home/user/.config/herd-lite/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/user/.local/share/JetBrains/Toolbox/scripts:/home/user/PhpstormProjects/expense-management/expense_management/node_modules/.bin',
+                'PATH' => '/bin:/home/user/.config/herd-lite/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/user/.local/share/JetBrains/Toolbox/scripts:/home/user/PhpstormProjects/expense-management/expense_management/node_modules/.bin',
                 'GDMSESSION' => 'ubuntu-xorg',
-                'PHP_INI_SCAN_DIR' => '/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:/home/user/.config/herd-lite/bin:',
+                'PHP_INI_SCAN_DIR' => '/home/user/.config/herd-lite/bin:',
                 'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus',
-                'GIO_LAUNCHED_DESKTOP_FILE_PID' => '13647',
+                'GIO_LAUNCHED_DESKTOP_FILE_PID' => '5429',
                 'GIO_LAUNCHED_DESKTOP_FILE' => '/var/lib/snapd/desktop/applications/phpstorm_phpstorm.desktop',
                 'LC_NUMERIC' => 'en_US.UTF-8',
                 '_' => 'vendor/bin/phpstan',

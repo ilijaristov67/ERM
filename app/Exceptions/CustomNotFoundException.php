@@ -5,14 +5,20 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Throwable;
 
-class NotFoundException extends Exception
+class CustomNotFoundException extends Exception
 {
     private const int DEFAULT_HTTP_CODE = Response::HTTP_NOT_FOUND;
 
-    /**
-     * Render the exception into an HTTP JSON response.
-     */
+    public function __construct(
+        string $message = '',
+        int $code = 0,
+        ?Throwable $previous = null
+    ) {
+        parent::__construct($message, $code, $previous);
+    }
+
     public function render(): JsonResponse
     {
         return response()->json(['error' => $this->getDisplayMessage()], $this->getDisplayCode());
@@ -30,6 +36,6 @@ class NotFoundException extends Exception
 
     private function defaultMessage(): string
     {
-        return __('Not found');
+        return __('Not found.');
     }
 }
