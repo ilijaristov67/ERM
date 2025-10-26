@@ -19,7 +19,6 @@ class BaseResourceCollection extends ResourceCollection
                 'total_pages' => $resource->lastPage(),
                 'filter' => request()->input('filter') ?? '',
                 'sort' => request()->input('sort') ?? '',
-                'state' => request()->input('state') ?? '',
             ];
         }
 

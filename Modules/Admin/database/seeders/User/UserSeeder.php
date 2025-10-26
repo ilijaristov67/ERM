@@ -11,7 +11,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $user = User::firstOrCreate(
-            ['email' => 'super_admin@admin.com'],
+            ['username' => 'super_admin'],
             [
                 'first_name' => 'Super',
                 'last_name' => 'Admin',
