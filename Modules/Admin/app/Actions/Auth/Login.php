@@ -5,8 +5,7 @@ namespace Modules\Admin\Actions\Auth;
 use Lorisleiva\Actions\Concerns\AsAction;
 use Modules\Admin\Http\Requests\Auth\LoginRequest;
 use Modules\Admin\Http\Resources\Auth\AuthResource;
-use Illuminate\Http\JsonResponse;
-use Tymon\JWTAuth\Facades\JWTAuth;
+
 class Login
 {
     use AsAction;

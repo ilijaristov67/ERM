@@ -2,11 +2,10 @@
 
 namespace Modules\Admin\Models\User;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Spatie\Permission\Traits\HasRoles;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
 /**
@@ -24,7 +23,6 @@ class User extends Authenticatable implements JWTSubject
     use HasRoles;
 
     protected string $guard_name = 'api';
-
 
     protected $hidden = [
         'password',
@@ -45,5 +43,4 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
-
 }

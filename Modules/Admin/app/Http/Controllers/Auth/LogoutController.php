@@ -4,9 +4,8 @@ namespace Modules\Admin\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\SuccessfulOperationMessageResource;
-use Symfony\Component\HttpFoundation\Response;
-
 use Modules\Admin\Actions\Auth\Logout;
+use Symfony\Component\HttpFoundation\Response;
 
 class LogoutController extends Controller
 {

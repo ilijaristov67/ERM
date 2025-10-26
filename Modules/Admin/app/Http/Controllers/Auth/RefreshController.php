@@ -3,7 +3,6 @@
 namespace Modules\Admin\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Dedoc\Scramble\Attributes\QueryParameter;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Modules\Admin\Actions\Auth\Refresh;

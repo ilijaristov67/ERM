@@ -5,7 +5,11 @@
         "storage",
         "vendor",
         "node_modules",
-        "mysql-data"
+        "mysql-data",
+        "var/cache",
+        "bootstrap/cache",
+        "storage",
+        "node_modules"
     ],
     "rules": {
         "array_push": true,

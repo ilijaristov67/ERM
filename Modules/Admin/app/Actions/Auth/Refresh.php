@@ -9,6 +9,7 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 class Refresh
 {
     use AsAction;
+
     public function handle($oldToken): AuthResource
     {
         JWTAuth::setToken($oldToken);
