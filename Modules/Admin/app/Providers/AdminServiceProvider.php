@@ -22,18 +22,12 @@ class AdminServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(module_path($this->moduleName, 'database/migrations'));
     }
 
-    /**
-     * Register the service provider.
-     */
     public function register(): void
     {
         $this->app->register(EventServiceProvider::class);
         $this->app->register(RouteServiceProvider::class);
     }
 
-    /**
-     * Register translations.
-     */
     public function registerTranslations(): void
     {
         $langPath = resource_path('lang/modules/'.$this->moduleNameLower);
@@ -47,22 +41,11 @@ class AdminServiceProvider extends ServiceProvider
         }
     }
 
-    //    public function provides(): array
-    //    {
-    //        return [];
-    //    }
-
-    /**
-     * Register commands in the format of Command::class
-     */
     protected function registerCommands(): void
     {
         // $this->commands([]);
     }
 
-    /**
-     * Register command Schedules.
-     */
     protected function registerCommandSchedules(): void
     {
         // $this->app->booted(function () {
@@ -71,18 +54,12 @@ class AdminServiceProvider extends ServiceProvider
         // });
     }
 
-    /**
-     * Register config.
-     */
     protected function registerConfig(): void
     {
         $this->publishes([module_path($this->moduleName, 'config/config.php') => config_path($this->moduleNameLower.'.php')], 'config');
         $this->mergeConfigFrom(module_path($this->moduleName, 'config/config.php'), $this->moduleNameLower);
     }
 
-    /**
-     * Merge config from the given path recursively.
-     */
     protected function merge_config_from(string $path, string $key): void
     {
         $existing = config($key, []);

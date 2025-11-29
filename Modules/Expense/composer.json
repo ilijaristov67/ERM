@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/expense",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Expense\\": "app/",
+            "Modules\\Expense\\Database\\Factories\\": "database/factories/",
+            "Modules\\Expense\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Expense\\Tests\\": "tests/"
+        }
+    }
+}

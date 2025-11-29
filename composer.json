@@ -36,7 +36,11 @@
             "Modules\\Admin\\": "Modules/Admin/app/",
             "Modules\\Admin\\Database\\Factories\\": "Modules/Admin/database/factories/",
             "Modules\\Admin\\Database\\Seeders\\": "Modules/Admin/database/seeders/",
-            "Modules\\Admin\\Tests\\": "Modules/Admin/tests/"
+            "Modules\\Admin\\Tests\\": "Modules/Admin/tests/",
+            "Modules\\Expense\\": "Modules/Expense/app/",
+            "Modules\\Expense\\Database\\Factories\\": "Modules/Expense/database/factories/",
+            "Modules\\Expense\\Database\\Seeders\\": "Modules/Expense/database/seeders/",
+            "Modules\\Expense\\Tests\\": "Modules/Expense/tests/"
         }
     },
     "autoload-dev": {

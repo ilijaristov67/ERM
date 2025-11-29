@@ -12,6 +12,7 @@ class Logout
     public function handle(): void
     {
         $token = JWTAuth::parseToken();
+        // @phpstan-ignore-next-line
         JWTAuth::invalidate($token);
     }
 }

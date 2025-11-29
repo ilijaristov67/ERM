@@ -10,6 +10,7 @@ use Modules\Admin\Models\Role\Role;
 /** @mixin Role */
 class RoleResource extends BaseJsonResource
 {
+    /** @return array<string, mixed> */
     public function toArray(Request $request): array
     {
         return [

@@ -10,11 +10,11 @@ class Refresh
 {
     use AsAction;
 
-    public function handle($oldToken): AuthResource
+    public function handle(string $oldToken): AuthResource
     {
         JWTAuth::setToken($oldToken);
 
-        $token = JWTAuth::refresh($oldToken);
+        $token = JWTAuth::refresh();
 
         JWTAuth::setToken($token)->toUser();
 
