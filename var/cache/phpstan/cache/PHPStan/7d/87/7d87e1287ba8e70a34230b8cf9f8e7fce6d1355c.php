@@ -319,7 +319,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Company/Company.php' => 
     array (
-      0 => 'bf6624de56a25b08a2b14f6227244b9b834c8fbc',
+      0 => 'c145c4cd9f1ada2bac69ab513218215db806f033',
       1 => 
       array (
         0 => 'modules\\admin\\models\\company\\company',
@@ -327,6 +327,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       2 => 
       array (
         0 => 'modules\\admin\\models\\company\\newfactory',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
+    array (
+      0 => '141e99da8b3d2f4dccf483c3d91a623588112f39',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\resources\\company\\companyresource',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\http\\resources\\company\\toarray',
       ),
       3 => 
       array (

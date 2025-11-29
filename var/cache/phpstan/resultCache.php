@@ -2274,6 +2274,18 @@ return [
       ),
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Modules\\Admin\\Http\\Resources\\Company\\CompanyResource',
+        1 => 'toArray',
+        2 => 'Modules\\Admin\\Http\\Resources\\Company\\CompanyResource',
+      ),
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
@@ -2322,11 +2334,11 @@ return [
     array (
       0 => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
       1 => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
       ),
     ),
   ),
@@ -2458,6 +2470,13 @@ return [
       3 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php',
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
+  array (
+    'fileHash' => '141e99da8b3d2f4dccf483c3d91a623588112f39',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
   array (
     'fileHash' => '560168bc7610fc04bbbee9a158d2ef73e9c7b033',
@@ -2506,9 +2525,10 @@ return [
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Company/Company.php' => 
   array (
-    'fileHash' => 'bf6624de56a25b08a2b14f6227244b9b834c8fbc',
+    'fileHash' => 'c145c4cd9f1ada2bac69ab513218215db806f033',
     'dependentFiles' => 
     array (
+      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php',
     ),
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Permission/Permission.php' => 
@@ -3088,6 +3108,87 @@ return [
       ),
     )),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Http\\Resources\\Company\\CompanyResource',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/** @mixin Company */',
+         'namespace' => 'Modules\\Admin\\Http\\Resources\\Company',
+         'uses' => 
+        array (
+          'request' => 'Illuminate\\Http\\Request',
+          'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+          'company' => 'Modules\\Admin\\Models\\Company\\Company',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'toArray',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return array<string, int|string> */',
+             'namespace' => 'Modules\\Admin\\Http\\Resources\\Company',
+             'uses' => 
+            array (
+              'request' => 'Illuminate\\Http\\Request',
+              'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+              'company' => 'Modules\\Admin\\Models\\Company\\Company',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
   array (
     0 => 
@@ -3457,8 +3558,8 @@ return [
       ),
        'usedTraits' => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
-        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        1 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
       ),
        'traitUseAdaptations' => 
       array (
