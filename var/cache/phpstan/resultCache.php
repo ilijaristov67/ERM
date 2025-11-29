@@ -2135,6 +2135,26 @@ return [
 	'projectExtensionFiles' => array (
 ),
 	'errorsCallback' => static function (): array { return array (
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Method Modules\\Admin\\Actions\\Company\\StoreCompany::handle() should return Modules\\Admin\\Http\\Resources\\Company\\CompanyResource but return statement is missing.',
+       'file' => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php',
+       'line' => 12,
+       'canBeIgnored' => false,
+       'filePath' => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 12,
+       'nodeType' => 'PHPStan\\Node\\ExecutionEndNode',
+       'identifier' => 'return.missing',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
 ); },
 	'locallyIgnoredErrorsCallback' => static function (): array { return array (
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Auth/Logout.php' => 
@@ -2208,6 +2228,25 @@ return [
       ),
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Modules\\Admin\\Actions\\Company\\StoreCompany',
+        1 => 'handle',
+        2 => 'Modules\\Admin\\Actions\\Company\\StoreCompany',
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Auth/LogoutController.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
@@ -2262,6 +2301,18 @@ return [
       ),
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Modules\\Admin\\Http\\Requests\\Company\\StoreCompanyRequest',
+        1 => 'rules',
+        2 => 'Modules\\Admin\\Http\\Requests\\Company\\StoreCompanyRequest',
+      ),
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
@@ -2283,6 +2334,16 @@ return [
         0 => 'Modules\\Admin\\Http\\Resources\\Company\\CompanyResource',
         1 => 'toArray',
         2 => 'Modules\\Admin\\Http\\Resources\\Company\\CompanyResource',
+      ),
+    ),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Traits\\ResourceCollectionToArray',
       ),
     ),
   ),
@@ -2429,6 +2490,13 @@ return [
       0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php',
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
+  array (
+    'fileHash' => 'd0b4a6418b727e08c11627edcffcc9a3e619679f',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Auth/LoginController.php' => 
   array (
     'fileHash' => '20f80dce5a76d597353153c1222cefde4fcf3043',
@@ -2459,6 +2527,13 @@ return [
       1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Auth/LoginController.php',
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
+  array (
+    'fileHash' => '8837c8dbcc1d8bd87dcfda2495f5eabb822945c7',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
   array (
     'fileHash' => 'b766b26188233fee6bdd5f8d457dcb91197f4965',
@@ -2473,6 +2548,14 @@ return [
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
   array (
     'fileHash' => '141e99da8b3d2f4dccf483c3d91a623588112f39',
+    'dependentFiles' => 
+    array (
+      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php',
+    ),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
+  array (
+    'fileHash' => '05754738ff35a755fb81836bbc921545289bf6bd',
     'dependentFiles' => 
     array (
     ),
@@ -2528,7 +2611,8 @@ return [
     'fileHash' => 'c145c4cd9f1ada2bac69ab513218215db806f033',
     'dependentFiles' => 
     array (
-      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php',
+      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php',
+      1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php',
     ),
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Permission/Permission.php' => 
@@ -2555,8 +2639,9 @@ return [
     'fileHash' => 'fb3aa6b924a1dfa8e2176f8f2df810b0c8de3fa3',
     'dependentFiles' => 
     array (
-      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
-      1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php',
+      1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
+      2 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/User/UserResource.php',
     ),
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
@@ -2730,6 +2815,51 @@ return [
               array (
               ),
             )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Actions\\Company\\StoreCompany',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\Admin\\Http\\Resources\\Company\\CompanyResource',
+           'parameters' => 
+          array (
           ),
            'attributes' => 
           array (
@@ -2922,6 +3052,79 @@ return [
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/** @return array<string, mixed> */',
              'namespace' => 'Modules\\Admin\\Http\\Requests\\Auth',
+             'uses' => 
+            array (
+              'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'authorize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'bool',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Http\\Requests\\Company\\StoreCompanyRequest',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Foundation\\Http\\FormRequest',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return array<string, array<string>> */',
+             'namespace' => 'Modules\\Admin\\Http\\Requests\\Company',
              'uses' => 
             array (
               'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
@@ -3183,6 +3386,33 @@ return [
           array (
           ),
         )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Http\\Resources\\Company\\CompanyResourceCollection',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Resources\\BaseResourceCollection',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Traits\\ResourceCollectionToArray',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
       ),
        'attributes' => 
       array (

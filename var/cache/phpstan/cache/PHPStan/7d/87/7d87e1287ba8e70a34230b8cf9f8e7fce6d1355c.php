@@ -347,5 +347,50 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
+    array (
+      0 => 'd0b4a6418b727e08c11627edcffcc9a3e619679f',
+      1 => 
+      array (
+        0 => 'modules\\admin\\actions\\company\\storecompany',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\actions\\company\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
+    array (
+      0 => '8837c8dbcc1d8bd87dcfda2495f5eabb822945c7',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\requests\\company\\storecompanyrequest',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\http\\requests\\company\\rules',
+        1 => 'modules\\admin\\http\\requests\\company\\authorize',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
+    array (
+      0 => '05754738ff35a755fb81836bbc921545289bf6bd',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\resources\\company\\companyresourcecollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
   ),
 ));
