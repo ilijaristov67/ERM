@@ -82,6 +82,6 @@ it('fails to log in with invalid credentials', function () {
     ]);
 
     expect($response->status())
-        ->toBe(400)
+        ->toBe(401)
         ->and($response->json('message'))->toBe(__('Wrong credentials.'));
 });
