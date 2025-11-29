@@ -16,7 +16,7 @@ class Login
         $token = auth()->attempt($credentials);
 
         if (! $token) {
-            abort('401', 'Wrong credentials.');
+            abort('400', 'Wrong credentials.');
         }
 
         return AuthResource::fromToken($token);
