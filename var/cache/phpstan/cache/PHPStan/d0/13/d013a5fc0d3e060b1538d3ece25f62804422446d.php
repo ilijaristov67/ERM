@@ -48,7 +48,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/global-state/src/Snapshot.php' => 
     array (
-      0 => '657d8157312e3a2e551089f0f2b057fa0af2700a',
+      0 => '5650f0e9e05453447c2673a04ce97e8dd3e4a25c',
       1 => 
       array (
         0 => 'sebastianbergmann\\globalstate\\snapshot',
@@ -76,8 +76,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         18 => 'sebastianbergmann\\globalstate\\snapshotsuperglobalarray',
         19 => 'sebastianbergmann\\globalstate\\snapshotstaticproperties',
         20 => 'sebastianbergmann\\globalstate\\setupsuperglobalarrays',
-        21 => 'sebastianbergmann\\globalstate\\canbeserialized',
-        22 => 'sebastianbergmann\\globalstate\\enumerateobjectsandresources',
+        21 => 'sebastianbergmann\\globalstate\\copywithserialize',
+        22 => 'sebastianbergmann\\globalstate\\canbeserialized',
+        23 => 'sebastianbergmann\\globalstate\\enumerateobjectsandresources',
       ),
       3 => 
       array (
@@ -113,7 +114,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/global-state/src/Restorer.php' => 
     array (
-      0 => '7f061eaab5aacc989109e8b61ec6630a5c4fca6d',
+      0 => '0ba876cf6dc842c81ec2f433fedd4947e66ba650',
       1 => 
       array (
         0 => 'sebastianbergmann\\globalstate\\restorer',

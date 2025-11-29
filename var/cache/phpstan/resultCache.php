@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
 return [
-	'lastFullAnalysisTime' => 1764446729,
+	'lastFullAnalysisTime' => 1764455285,
 	'meta' => array (
   'cacheVersion' => 'v12-linesToIgnore',
   'phpstanVersion' => '2.1.29',
@@ -19,7 +19,7 @@ return [
   ),
   'composerLocks' => 
   array (
-    '/home/ilijaristov67/projects/expense_management_backend/composer.lock' => '9b7697d6574399ee886f18f2dfcc43fe57f6fa3a',
+    '/home/ilijaristov67/projects/expense_management_backend/composer.lock' => '3f318b7811035740d436e150d37121b1c7cd51bb',
   ),
   'composerInstalled' => 
   array (
@@ -27,6 +27,18 @@ return [
     array (
       'versions' => 
       array (
+        'brianium/paratest' => 
+        array (
+          'pretty_version' => 'v7.14.1',
+          'version' => '7.14.1.0',
+          'reference' => 'e1a93c38a94f4808faf75552e835666d3a6f8bb2',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../brianium/paratest',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
         'brick/math' => 
         array (
           'pretty_version' => '0.14.0',
@@ -78,6 +90,18 @@ return [
           array (
           ),
           'dev_requirement' => false,
+        ),
+        'doctrine/deprecations' => 
+        array (
+          'pretty_version' => '1.1.5',
+          'version' => '1.1.5.0',
+          'reference' => '459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../doctrine/deprecations',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
         ),
         'doctrine/inflector' => 
         array (
@@ -134,6 +158,18 @@ return [
           'reference' => 'e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../fakerphp/faker',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
+        'fidry/cpu-core-counter' => 
+        array (
+          'pretty_version' => '1.3.0',
+          'version' => '1.3.0.0',
+          'reference' => 'db9508f7b1474469d9d3c53b86f817e344732678',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../fidry/cpu-core-counter',
           'aliases' => 
           array (
           ),
@@ -527,6 +563,18 @@ return [
             0 => 'v12.31.1',
           ),
         ),
+        'jean85/pretty-package-versions' => 
+        array (
+          'pretty_version' => '2.1.1',
+          'version' => '2.1.1.0',
+          'reference' => '4d7aa5dab42e2a76d99559706022885de0e18e1a',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../jean85/pretty-package-versions',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
         'kodova/hamcrest-php' => 
         array (
           'dev_requirement' => true,
@@ -845,9 +893,9 @@ return [
         ),
         'nikic/php-parser' => 
         array (
-          'pretty_version' => 'v5.6.1',
-          'version' => '5.6.1.0',
-          'reference' => 'f103601b29efebd7ff4a1ca7b3eeea9e3336a2a2',
+          'pretty_version' => 'v5.6.2',
+          'version' => '5.6.2.0',
+          'reference' => '3a454ca033b9e06b63282ce19562e892747449bb',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../nikic/php-parser',
           'aliases' => 
@@ -869,9 +917,9 @@ return [
         ),
         'nunomaduro/termwind' => 
         array (
-          'pretty_version' => 'v2.3.1',
-          'version' => '2.3.1.0',
-          'reference' => 'dfa08f390e509967a15c22493dc0bac5733d9123',
+          'pretty_version' => 'v2.3.2',
+          'version' => '2.3.2.0',
+          'reference' => 'eb61920a53057a7debd718a5b89c2178032b52c0',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../nunomaduro/termwind',
           'aliases' => 
@@ -890,6 +938,66 @@ return [
           array (
           ),
           'dev_requirement' => false,
+        ),
+        'pestphp/pest' => 
+        array (
+          'pretty_version' => 'v4.1.2',
+          'version' => '4.1.2.0',
+          'reference' => '08b09f2e98fc6830050c0237968b233768642d46',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../pestphp/pest',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
+        'pestphp/pest-plugin' => 
+        array (
+          'pretty_version' => 'v4.0.0',
+          'version' => '4.0.0.0',
+          'reference' => '9d4b93d7f73d3f9c3189bb22c220fef271cdf568',
+          'type' => 'composer-plugin',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../pestphp/pest-plugin',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
+        'pestphp/pest-plugin-arch' => 
+        array (
+          'pretty_version' => 'v4.0.0',
+          'version' => '4.0.0.0',
+          'reference' => '25bb17e37920ccc35cbbcda3b00d596aadf3e58d',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../pestphp/pest-plugin-arch',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
+        'pestphp/pest-plugin-mutate' => 
+        array (
+          'pretty_version' => 'v4.0.1',
+          'version' => '4.0.1.0',
+          'reference' => 'd9b32b60b2385e1688a68cc227594738ec26d96c',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../pestphp/pest-plugin-mutate',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
+        'pestphp/pest-plugin-profanity' => 
+        array (
+          'pretty_version' => 'v4.1.0',
+          'version' => '4.1.0.0',
+          'reference' => 'e279c844b6868da92052be27b5202c2ad7216e80',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../pestphp/pest-plugin-profanity',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
         ),
         'phar-io/manifest' => 
         array (
@@ -927,6 +1035,42 @@ return [
           ),
           'dev_requirement' => false,
         ),
+        'phpdocumentor/reflection-common' => 
+        array (
+          'pretty_version' => '2.2.0',
+          'version' => '2.2.0.0',
+          'reference' => '1d01c49d4ed62f25aa84a747ad35d5a16924662b',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpdocumentor/reflection-common',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
+        'phpdocumentor/reflection-docblock' => 
+        array (
+          'pretty_version' => '5.6.3',
+          'version' => '5.6.3.0',
+          'reference' => '94f8051919d1b0369a6bcc7931d679a511c03fe9',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpdocumentor/reflection-docblock',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
+        'phpdocumentor/type-resolver' => 
+        array (
+          'pretty_version' => '1.10.0',
+          'version' => '1.10.0.0',
+          'reference' => '679e3ce485b99e84c775d28e2e96fade9a7fb50a',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpdocumentor/type-resolver',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
         'phpoption/phpoption' => 
         array (
           'pretty_version' => '1.9.4',
@@ -938,6 +1082,18 @@ return [
           array (
           ),
           'dev_requirement' => false,
+        ),
+        'phpstan/phpdoc-parser' => 
+        array (
+          'pretty_version' => '2.3.0',
+          'version' => '2.3.0.0',
+          'reference' => '1e0cd5370df5dd2e556a36b9c62f62e555870495',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpstan/phpdoc-parser',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
         ),
         'phpstan/phpstan' => 
         array (
@@ -953,9 +1109,9 @@ return [
         ),
         'phpunit/php-code-coverage' => 
         array (
-          'pretty_version' => '11.0.11',
-          'version' => '11.0.11.0',
-          'reference' => '4f7722aa9a7b76aa775e2d9d4e95d1ea16eeeef4',
+          'pretty_version' => '12.4.0',
+          'version' => '12.4.0.0',
+          'reference' => '67e8aed88f93d0e6e1cb7effe1a2dfc2fee6022c',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpunit/php-code-coverage',
           'aliases' => 
@@ -965,9 +1121,9 @@ return [
         ),
         'phpunit/php-file-iterator' => 
         array (
-          'pretty_version' => '5.1.0',
-          'version' => '5.1.0.0',
-          'reference' => '118cfaaa8bc5aef3287bf315b6060b1174754af6',
+          'pretty_version' => '6.0.0',
+          'version' => '6.0.0.0',
+          'reference' => '961bc913d42fe24a257bfff826a5068079ac7782',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpunit/php-file-iterator',
           'aliases' => 
@@ -977,9 +1133,9 @@ return [
         ),
         'phpunit/php-invoker' => 
         array (
-          'pretty_version' => '5.0.1',
-          'version' => '5.0.1.0',
-          'reference' => 'c1ca3814734c07492b3d4c5f794f4b0995333da2',
+          'pretty_version' => '6.0.0',
+          'version' => '6.0.0.0',
+          'reference' => '12b54e689b07a25a9b41e57736dfab6ec9ae5406',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpunit/php-invoker',
           'aliases' => 
@@ -989,9 +1145,9 @@ return [
         ),
         'phpunit/php-text-template' => 
         array (
-          'pretty_version' => '4.0.1',
-          'version' => '4.0.1.0',
-          'reference' => '3e0404dc6b300e6bf56415467ebcb3fe4f33e964',
+          'pretty_version' => '5.0.0',
+          'version' => '5.0.0.0',
+          'reference' => 'e1367a453f0eda562eedb4f659e13aa900d66c53',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpunit/php-text-template',
           'aliases' => 
@@ -1001,9 +1157,9 @@ return [
         ),
         'phpunit/php-timer' => 
         array (
-          'pretty_version' => '7.0.1',
-          'version' => '7.0.1.0',
-          'reference' => '3b415def83fbcb41f991d9ebf16ae4ad8b7837b3',
+          'pretty_version' => '8.0.0',
+          'version' => '8.0.0.0',
+          'reference' => 'f258ce36aa457f3aa3339f9ed4c81fc66dc8c2cc',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpunit/php-timer',
           'aliases' => 
@@ -1013,9 +1169,9 @@ return [
         ),
         'phpunit/phpunit' => 
         array (
-          'pretty_version' => '11.5.41',
-          'version' => '11.5.41.0',
-          'reference' => 'b42782bcb947d2c197aea42ce9714ee2d974b283',
+          'pretty_version' => '12.4.0',
+          'version' => '12.4.0.0',
+          'reference' => 'f62aab5794e36ccd26860db2d1bbf89ac19028d9',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../phpunit/phpunit',
           'aliases' => 
@@ -1242,9 +1398,9 @@ return [
         ),
         'sebastian/cli-parser' => 
         array (
-          'pretty_version' => '3.0.2',
-          'version' => '3.0.2.0',
-          'reference' => '15c5dd40dc4f38794d383bb95465193f5e0ae180',
+          'pretty_version' => '4.2.0',
+          'version' => '4.2.0.0',
+          'reference' => '90f41072d220e5c40df6e8635f5dafba2d9d4d04',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/cli-parser',
           'aliases' => 
@@ -1252,35 +1408,11 @@ return [
           ),
           'dev_requirement' => true,
         ),
-        'sebastian/code-unit' => 
-        array (
-          'pretty_version' => '3.0.3',
-          'version' => '3.0.3.0',
-          'reference' => '54391c61e4af8078e5b276ab082b6d3c54c9ad64',
-          'type' => 'library',
-          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/code-unit',
-          'aliases' => 
-          array (
-          ),
-          'dev_requirement' => true,
-        ),
-        'sebastian/code-unit-reverse-lookup' => 
-        array (
-          'pretty_version' => '4.0.1',
-          'version' => '4.0.1.0',
-          'reference' => '183a9b2632194febd219bb9246eee421dad8d45e',
-          'type' => 'library',
-          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/code-unit-reverse-lookup',
-          'aliases' => 
-          array (
-          ),
-          'dev_requirement' => true,
-        ),
         'sebastian/comparator' => 
         array (
-          'pretty_version' => '6.3.2',
-          'version' => '6.3.2.0',
-          'reference' => '85c77556683e6eee4323e4c5468641ca0237e2e8',
+          'pretty_version' => '7.1.3',
+          'version' => '7.1.3.0',
+          'reference' => 'dc904b4bb3ab070865fa4068cd84f3da8b945148',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/comparator',
           'aliases' => 
@@ -1290,9 +1422,9 @@ return [
         ),
         'sebastian/complexity' => 
         array (
-          'pretty_version' => '4.0.1',
-          'version' => '4.0.1.0',
-          'reference' => 'ee41d384ab1906c68852636b6de493846e13e5a0',
+          'pretty_version' => '5.0.0',
+          'version' => '5.0.0.0',
+          'reference' => 'bad4316aba5303d0221f43f8cee37eb58d384bbb',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/complexity',
           'aliases' => 
@@ -1302,9 +1434,9 @@ return [
         ),
         'sebastian/diff' => 
         array (
-          'pretty_version' => '6.0.2',
-          'version' => '6.0.2.0',
-          'reference' => 'b4ccd857127db5d41a5b676f24b51371d76d8544',
+          'pretty_version' => '7.0.0',
+          'version' => '7.0.0.0',
+          'reference' => '7ab1ea946c012266ca32390913653d844ecd085f',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/diff',
           'aliases' => 
@@ -1314,9 +1446,9 @@ return [
         ),
         'sebastian/environment' => 
         array (
-          'pretty_version' => '7.2.1',
-          'version' => '7.2.1.0',
-          'reference' => 'a5c75038693ad2e8d4b6c15ba2403532647830c4',
+          'pretty_version' => '8.0.3',
+          'version' => '8.0.3.0',
+          'reference' => '24a711b5c916efc6d6e62aa65aa2ec98fef77f68',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/environment',
           'aliases' => 
@@ -1326,9 +1458,9 @@ return [
         ),
         'sebastian/exporter' => 
         array (
-          'pretty_version' => '6.3.2',
-          'version' => '6.3.2.0',
-          'reference' => '70a298763b40b213ec087c51c739efcaa90bcd74',
+          'pretty_version' => '7.0.2',
+          'version' => '7.0.2.0',
+          'reference' => '016951ae10980765e4e7aee491eb288c64e505b7',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/exporter',
           'aliases' => 
@@ -1338,9 +1470,9 @@ return [
         ),
         'sebastian/global-state' => 
         array (
-          'pretty_version' => '7.0.2',
-          'version' => '7.0.2.0',
-          'reference' => '3be331570a721f9a4b5917f4209773de17f747d7',
+          'pretty_version' => '8.0.2',
+          'version' => '8.0.2.0',
+          'reference' => 'ef1377171613d09edd25b7816f05be8313f9115d',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/global-state',
           'aliases' => 
@@ -1350,9 +1482,9 @@ return [
         ),
         'sebastian/lines-of-code' => 
         array (
-          'pretty_version' => '3.0.1',
-          'version' => '3.0.1.0',
-          'reference' => 'd36ad0d782e5756913e42ad87cb2890f4ffe467a',
+          'pretty_version' => '4.0.0',
+          'version' => '4.0.0.0',
+          'reference' => '97ffee3bcfb5805568d6af7f0f893678fc076d2f',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/lines-of-code',
           'aliases' => 
@@ -1362,9 +1494,9 @@ return [
         ),
         'sebastian/object-enumerator' => 
         array (
-          'pretty_version' => '6.0.1',
-          'version' => '6.0.1.0',
-          'reference' => 'f5b498e631a74204185071eb41f33f38d64608aa',
+          'pretty_version' => '7.0.0',
+          'version' => '7.0.0.0',
+          'reference' => '1effe8e9b8e068e9ae228e542d5d11b5d16db894',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/object-enumerator',
           'aliases' => 
@@ -1374,9 +1506,9 @@ return [
         ),
         'sebastian/object-reflector' => 
         array (
-          'pretty_version' => '4.0.1',
-          'version' => '4.0.1.0',
-          'reference' => '6e1a43b411b2ad34146dee7524cb13a068bb35f9',
+          'pretty_version' => '5.0.0',
+          'version' => '5.0.0.0',
+          'reference' => '4bfa827c969c98be1e527abd576533293c634f6a',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/object-reflector',
           'aliases' => 
@@ -1386,9 +1518,9 @@ return [
         ),
         'sebastian/recursion-context' => 
         array (
-          'pretty_version' => '6.0.3',
-          'version' => '6.0.3.0',
-          'reference' => 'f6458abbf32a6c8174f8f26261475dc133b3d9dc',
+          'pretty_version' => '7.0.1',
+          'version' => '7.0.1.0',
+          'reference' => '0b01998a7d5b1f122911a66bebcb8d46f0c82d8c',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/recursion-context',
           'aliases' => 
@@ -1398,9 +1530,9 @@ return [
         ),
         'sebastian/type' => 
         array (
-          'pretty_version' => '5.1.3',
-          'version' => '5.1.3.0',
-          'reference' => 'f77d2d4e78738c98d9a68d2596fe5e8fa380f449',
+          'pretty_version' => '6.0.3',
+          'version' => '6.0.3.0',
+          'reference' => 'e549163b9760b8f71f191651d22acf32d56d6d4d',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/type',
           'aliases' => 
@@ -1410,9 +1542,9 @@ return [
         ),
         'sebastian/version' => 
         array (
-          'pretty_version' => '5.0.2',
-          'version' => '5.0.2.0',
-          'reference' => 'c687e3387b99f5b03b6caa64c74b63e2936ff874',
+          'pretty_version' => '6.0.0',
+          'version' => '6.0.0.0',
+          'reference' => '3e6ccf7657d4f0a59200564b08cead899313b53c',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../sebastian/version',
           'aliases' => 
@@ -1466,9 +1598,9 @@ return [
         ),
         'symfony/console' => 
         array (
-          'pretty_version' => 'v7.3.3',
-          'version' => '7.3.3.0',
-          'reference' => 'cb0102a1c5ac3807cf3fdf8bea96007df7fdbea7',
+          'pretty_version' => 'v7.3.4',
+          'version' => '7.3.4.0',
+          'reference' => '2b9c5fafbac0399a20a2e82429e2bd735dcfb7db',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../symfony/console',
           'aliases' => 
@@ -1726,9 +1858,9 @@ return [
         ),
         'symfony/process' => 
         array (
-          'pretty_version' => 'v7.3.3',
-          'version' => '7.3.3.0',
-          'reference' => '32241012d521e2e8a9d713adb0812bb773b907f1',
+          'pretty_version' => 'v7.3.4',
+          'version' => '7.3.4.0',
+          'reference' => 'f24f8f316367b30810810d4eb30c543d7003ff3b',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../symfony/process',
           'aliases' => 
@@ -1762,9 +1894,9 @@ return [
         ),
         'symfony/string' => 
         array (
-          'pretty_version' => 'v7.3.3',
-          'version' => '7.3.3.0',
-          'reference' => '17a426cce5fd1f0901fefa9b2a490d0038fd3c9c',
+          'pretty_version' => 'v7.3.4',
+          'version' => '7.3.4.0',
+          'reference' => 'f96476035142921000338bad71e5247fbc138872',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../symfony/string',
           'aliases' => 
@@ -1840,6 +1972,18 @@ return [
           ),
           'dev_requirement' => true,
         ),
+        'ta-tikoma/phpunit-architecture-test' => 
+        array (
+          'pretty_version' => '0.8.5',
+          'version' => '0.8.5.0',
+          'reference' => 'cf6fb197b676ba716837c886baca842e4db29005',
+          'type' => 'library',
+          'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../ta-tikoma/phpunit-architecture-test',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => true,
+        ),
         'theseer/tokenizer' => 
         array (
           'pretty_version' => '1.2.3',
@@ -1902,9 +2046,9 @@ return [
         ),
         'webmozart/assert' => 
         array (
-          'pretty_version' => '1.11.0',
-          'version' => '1.11.0.0',
-          'reference' => '11cb2199493b2f8a3b53e7f19068fc6aac760991',
+          'pretty_version' => '1.12.0',
+          'version' => '1.12.0.0',
+          'reference' => '541057574806f942c94662b817a50f63f7345360',
           'type' => 'library',
           'install_path' => '/home/ilijaristov67/projects/expense_management_backend/vendor/composer/../webmozart/assert',
           'aliases' => 
@@ -2172,6 +2316,20 @@ return [
       ),
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Company/Company.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+      ),
+      1 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Permission/Permission.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2207,6 +2365,10 @@ return [
     array (
       0 => 
       array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+      1 => 
+      array (
         0 => 'Spatie\\Permission\\Traits\\HasRoles',
       ),
     ),
@@ -2218,7 +2380,7 @@ return [
       0 => 
       array (
         0 => 'config',
-        1 => 70,
+        1 => 68,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2287,7 +2449,7 @@ return [
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
   array (
-    'fileHash' => '2e4b51abd7fb0899ee7bea87ddc7d52022236ab6',
+    'fileHash' => 'b766b26188233fee6bdd5f8d457dcb91197f4965',
     'dependentFiles' => 
     array (
       0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Auth/Login.php',
@@ -2342,6 +2504,13 @@ return [
     array (
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Company/Company.php' => 
+  array (
+    'fileHash' => 'bf6624de56a25b08a2b14f6227244b9b834c8fbc',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Permission/Permission.php' => 
   array (
     'fileHash' => 'f8fea1ccdfe794653689a70c93e220963fad4f30',
@@ -2363,7 +2532,7 @@ return [
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/User/User.php' => 
   array (
-    'fileHash' => '1cc091099eeaf0ebfa5fec4f3ed6aff73c559ae0',
+    'fileHash' => 'fb3aa6b924a1dfa8e2176f8f2df810b0c8de3fa3',
     'dependentFiles' => 
     array (
       0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
@@ -2372,7 +2541,7 @@ return [
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
   array (
-    'fileHash' => '5f205cbbc94ab3393f2e6dd62eb0259d058a7524',
+    'fileHash' => 'b19e5620db5f0b9bb278882302903b62dd2c0560',
     'dependentFiles' => 
     array (
     ),
@@ -2387,7 +2556,7 @@ return [
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Providers/RouteServiceProvider.php' => 
   array (
-    'fileHash' => 'd9b936071d093b836e6a6cdcbba9ab848344be32',
+    'fileHash' => '20ffac89227fc87ca9f3376893cc552cffd771b7',
     'dependentFiles' => 
     array (
       0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Providers/AdminServiceProvider.php',
@@ -3251,6 +3420,100 @@ return [
       ),
     )),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Company/Company.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Models\\Company\\Company',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * @property int $id
+ * @property string $name
+ * @property string $email
+ * @property string $phone
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
+ * @property Carbon $deleted_at
+ */',
+         'namespace' => 'Modules\\Admin\\Models\\Company',
+         'uses' => 
+        array (
+          'carbon' => 'Carbon\\Carbon',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'companyfactory' => 'Modules\\Admin\\Database\\Factories\\Company\\CompanyFactory',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'guarded',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'newFactory',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'Modules\\Admin\\Database\\Factories\\Company\\CompanyFactory',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Permission/Permission.php' => 
   array (
     0 => 
@@ -3475,9 +3738,11 @@ return [
          'namespace' => 'Modules\\Admin\\Models\\User',
          'uses' => 
         array (
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
           'carbon' => 'Illuminate\\Support\\Carbon',
           'collection' => 'Illuminate\\Support\\Collection',
+          'userfactory' => 'Modules\\Admin\\Database\\Factories\\User\\UserFactory',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
           'jwtsubject' => 'Tymon\\JWTAuth\\Contracts\\JWTSubject',
         ),
@@ -3494,7 +3759,8 @@ return [
       ),
        'usedTraits' => 
       array (
-        0 => 'Spatie\\Permission\\Traits\\HasRoles',
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        1 => 'Spatie\\Permission\\Traits\\HasRoles',
       ),
        'traitUseAdaptations' => 
       array (
@@ -3603,9 +3869,11 @@ return [
              'namespace' => 'Modules\\Admin\\Models\\User',
              'uses' => 
             array (
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
               'carbon' => 'Illuminate\\Support\\Carbon',
               'collection' => 'Illuminate\\Support\\Collection',
+              'userfactory' => 'Modules\\Admin\\Database\\Factories\\User\\UserFactory',
               'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
               'jwtsubject' => 'Tymon\\JWTAuth\\Contracts\\JWTSubject',
             ),
@@ -3620,6 +3888,24 @@ return [
            'final' => false,
            'static' => false,
            'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'newFactory',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'Modules\\Admin\\Database\\Factories\\User\\UserFactory',
            'parameters' => 
           array (
           ),

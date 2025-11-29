@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-class Container_526ba99a86 extends _PHPStan_1611a8848\Nette\DI\Container
+class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
 {
 	protected $tags = [
 		'phpstan.broker.dynamicMethodReturnTypeExtension' => [
@@ -4856,7 +4856,7 @@ class Container_526ba99a86 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_526ba99a86 $container)
+			public function __construct(Container_4eaa60e9e4 $container)
 			{
 				$this->container = $container;
 			}
@@ -4876,7 +4876,7 @@ class Container_526ba99a86 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_526ba99a86 $container)
+			public function __construct(Container_4eaa60e9e4 $container)
 			{
 				$this->container = $container;
 			}
@@ -4899,7 +4899,7 @@ class Container_526ba99a86 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_526ba99a86 $container)
+			public function __construct(Container_4eaa60e9e4 $container)
 			{
 				$this->container = $container;
 			}
@@ -4919,7 +4919,7 @@ class Container_526ba99a86 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_526ba99a86 $container)
+			public function __construct(Container_4eaa60e9e4 $container)
 			{
 				$this->container = $container;
 			}
@@ -4984,7 +4984,7 @@ class Container_526ba99a86 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_526ba99a86 $container)
+			public function __construct(Container_4eaa60e9e4 $container)
 			{
 				$this->container = $container;
 			}
@@ -5042,7 +5042,7 @@ class Container_526ba99a86 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_526ba99a86 $container)
+			public function __construct(Container_4eaa60e9e4 $container)
 			{
 				$this->container = $container;
 			}
@@ -8239,7 +8239,7 @@ class Container_526ba99a86 extends _PHPStan_1611a8848\Nette\DI\Container
 	}
 
 
-	public function createServiceContainer(): Container_526ba99a86
+	public function createServiceContainer(): Container_4eaa60e9e4
 	{
 		return $this;
 	}
@@ -8873,7 +8873,7 @@ class Container_526ba99a86 extends _PHPStan_1611a8848\Nette\DI\Container
 				'MEMCACHED_HOST' => '127.0.0.1',
 				'LOGNAME' => 'ilijaristov67',
 				'NAME' => 'DESKTOP-SHP6BTR',
-				'WSL_INTEROP' => '/run/WSL/4061_interop',
+				'WSL_INTEROP' => '/run/WSL/19000_interop',
 				'PULSE_SERVER' => 'unix:/mnt/wslg/PulseServer',
 				'_' => 'vendor/bin/phpstan',
 				'AWS_DEFAULT_REGION' => 'us-east-1',

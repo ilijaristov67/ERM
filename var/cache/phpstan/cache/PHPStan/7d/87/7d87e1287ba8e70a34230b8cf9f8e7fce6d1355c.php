@@ -68,7 +68,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/User/User.php' => 
     array (
-      0 => '1cc091099eeaf0ebfa5fec4f3ed6aff73c559ae0',
+      0 => 'fb3aa6b924a1dfa8e2176f8f2df810b0c8de3fa3',
       1 => 
       array (
         0 => 'modules\\admin\\models\\user\\user',
@@ -77,6 +77,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'modules\\admin\\models\\user\\getjwtidentifier',
         1 => 'modules\\admin\\models\\user\\getjwtcustomclaims',
+        2 => 'modules\\admin\\models\\user\\newfactory',
       ),
       3 => 
       array (
@@ -189,7 +190,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
     array (
-      0 => '2e4b51abd7fb0899ee7bea87ddc7d52022236ab6',
+      0 => 'b766b26188233fee6bdd5f8d457dcb91197f4965',
       1 => 
       array (
         0 => 'modules\\admin\\http\\resources\\auth\\authresource',
@@ -265,7 +266,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Providers/RouteServiceProvider.php' => 
     array (
-      0 => 'd9b936071d093b836e6a6cdcbba9ab848344be32',
+      0 => '20ffac89227fc87ca9f3376893cc552cffd771b7',
       1 => 
       array (
         0 => 'modules\\admin\\providers\\routeserviceprovider',
@@ -297,7 +298,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
     array (
-      0 => '5f205cbbc94ab3393f2e6dd62eb0259d058a7524',
+      0 => 'b19e5620db5f0b9bb278882302903b62dd2c0560',
       1 => 
       array (
         0 => 'modules\\admin\\providers\\adminserviceprovider',
@@ -311,6 +312,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         4 => 'modules\\admin\\providers\\registercommandschedules',
         5 => 'modules\\admin\\providers\\registerconfig',
         6 => 'modules\\admin\\providers\\merge_config_from',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Company/Company.php' => 
+    array (
+      0 => 'bf6624de56a25b08a2b14f6227244b9b834c8fbc',
+      1 => 
+      array (
+        0 => 'modules\\admin\\models\\company\\company',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\models\\company\\newfactory',
       ),
       3 => 
       array (
