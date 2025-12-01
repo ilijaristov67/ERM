@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Modules\Admin\Http\Controllers\Auth\LoginController;
 use Modules\Admin\Http\Controllers\Auth\LogoutController;
 use Modules\Admin\Http\Controllers\Auth\RefreshController;
+use Modules\Admin\Http\Controllers\Company\PatchCompanyController;
 use Modules\Admin\Http\Controllers\Company\StoreCompanyController;
 
 Route::prefix('/users')
@@ -21,4 +22,5 @@ Route::prefix('/companies')
     ->name('companies.')
     ->group(function () {
         Route::post('/', StoreCompanyController::class)->name('store')->middleware(['permission:admin-companies-create']);
+        Route::patch('{company}', PatchCompanyController::class)->name('patch')->middleware(['permission:admin-companies-update']);
     });
