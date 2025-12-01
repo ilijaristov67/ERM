@@ -9,8 +9,7 @@ dataset('company', [
         'name' => 'company name',
         'email' => 'company@company.com',
         'phone' => '12345678',
-]]);
-
+    ]]);
 
 beforeEach(function () {
     $this->seed(PermissionSeeder::class);
@@ -23,7 +22,7 @@ beforeEach(function () {
     $this->actingAs($this->user);
 
     $this->token = JWTAuth::fromUser($this->user);
-    $this->withHeader('Authorization', 'Bearer ' . $this->token);
+    $this->withHeader('Authorization', 'Bearer '.$this->token);
 
     $this->routeName = 'api.admin.companies.store';
 });

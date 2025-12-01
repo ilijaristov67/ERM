@@ -16,7 +16,6 @@ class RouteServiceProvider extends ServiceProvider
     {
         parent::boot();
 
-
         $this->app['router']->aliasMiddleware('role', RoleMiddleware::class);
         $this->app['router']->aliasMiddleware('permission', PermissionMiddleware::class);
         $this->app['router']->aliasMiddleware('role_or_permission', RoleOrPermissionMiddleware::class);

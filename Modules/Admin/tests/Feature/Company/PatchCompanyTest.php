@@ -11,7 +11,6 @@ dataset('company', [
         'phone' => '87654321',
     ]]);
 
-
 beforeEach(function () {
     $this->seed(PermissionSeeder::class);
 
@@ -23,7 +22,7 @@ beforeEach(function () {
     $this->actingAs($this->user);
 
     $this->token = JWTAuth::fromUser($this->user);
-    $this->withHeader('Authorization', 'Bearer ' . $this->token);
+    $this->withHeader('Authorization', 'Bearer '.$this->token);
 
     $this->routeName = 'api.admin.companies.patch';
     $this->company = Company::factory()->create([
@@ -34,26 +33,26 @@ beforeEach(function () {
 })->with('company');
 
 it('successfully patches company', function (array $data) {
-   $this->assertDatabaseHas('companies', [
-       'id' => $this->company->id,
-       'name' => 'name',
-       'email' => 'email@company.com',
-       'phone' => '12345678',
-   ]);
+    $this->assertDatabaseHas('companies', [
+        'id' => $this->company->id,
+        'name' => 'name',
+        'email' => 'email@company.com',
+        'phone' => '12345678',
+    ]);
 
-   $response = $this->patchJson(route($this->routeName, $this->company), $data);
+    $response = $this->patchJson(route($this->routeName, $this->company), $data);
 
-   expect($response->status())->toBe(200)
-   ->and($response->json())->toBeArray()
-       ->and($response->json())->toHaveKeys([
-           'id',
-           'name',
-           'email',
-           'phone',
-           'created_at',
-           'updated_at',
-       ])
-       ->and($response->json('id'))->toBe($this->company->id);
+    expect($response->status())->toBe(200)
+        ->and($response->json())->toBeArray()
+        ->and($response->json())->toHaveKeys([
+            'id',
+            'name',
+            'email',
+            'phone',
+            'created_at',
+            'updated_at',
+        ])
+        ->and($response->json('id'))->toBe($this->company->id);
 
     $this->assertDatabaseMissing('companies', [
         'id' => $this->company->id,
@@ -95,7 +94,7 @@ it('fails to patch company without data', function () {
         ->and($response->json('errors'))->toHaveKeys([
             'name',
             'email',
-            'phone'
+            'phone',
         ]);
 
     $this->assertDatabaseHas('companies', [
@@ -129,11 +128,11 @@ it('fails to update company if email and phone are not unique', function (array 
 });
 
 it('successfully updates same values for existing record', function (array $data) {
-   $data['name']  = 'name';
-   $data['email'] =  'email@company.com';
-   $data['phone'] =  '12345678';
+    $data['name'] = 'name';
+    $data['email'] = 'email@company.com';
+    $data['phone'] = '12345678';
 
-   $response = $this->patchJson(route($this->routeName, $this->company), $data);
+    $response = $this->patchJson(route($this->routeName, $this->company), $data);
 
     expect($response->status())->toBe(200)
         ->and($response->json())->toBeArray()

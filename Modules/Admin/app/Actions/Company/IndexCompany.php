@@ -30,6 +30,6 @@ class IndexCompany
                 page: $request->input('page')
             );
 
-        dd($companies);
+        return CompanyResourceCollection::make($companies);
     }
 }

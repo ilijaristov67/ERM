@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
+class Container_584af299fc extends _PHPStan_1611a8848\Nette\DI\Container
 {
 	protected $tags = [
 		'phpstan.broker.dynamicMethodReturnTypeExtension' => [
@@ -4856,7 +4856,7 @@ class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_4eaa60e9e4 $container)
+			public function __construct(Container_584af299fc $container)
 			{
 				$this->container = $container;
 			}
@@ -4876,7 +4876,7 @@ class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_4eaa60e9e4 $container)
+			public function __construct(Container_584af299fc $container)
 			{
 				$this->container = $container;
 			}
@@ -4899,7 +4899,7 @@ class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_4eaa60e9e4 $container)
+			public function __construct(Container_584af299fc $container)
 			{
 				$this->container = $container;
 			}
@@ -4919,7 +4919,7 @@ class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_4eaa60e9e4 $container)
+			public function __construct(Container_584af299fc $container)
 			{
 				$this->container = $container;
 			}
@@ -4984,7 +4984,7 @@ class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_4eaa60e9e4 $container)
+			public function __construct(Container_584af299fc $container)
 			{
 				$this->container = $container;
 			}
@@ -5042,7 +5042,7 @@ class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_4eaa60e9e4 $container)
+			public function __construct(Container_584af299fc $container)
 			{
 				$this->container = $container;
 			}
@@ -8239,7 +8239,7 @@ class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
 	}
 
 
-	public function createServiceContainer(): Container_4eaa60e9e4
+	public function createServiceContainer(): Container_584af299fc
 	{
 		return $this;
 	}
@@ -8843,84 +8843,35 @@ class Container_4eaa60e9e4 extends _PHPStan_1611a8848\Nette\DI\Container
 			'usedLevel' => '6',
 			'cliAutoloadFile' => null,
 			'env' => [
-				'LESSOPEN' => '| /usr/bin/lesspipe %s',
-				'LOG_STACK' => 'single',
-				'REDIS_PORT' => '6379',
-				'USER' => 'ilijaristov67',
-				'LOG_LEVEL' => 'debug',
-				'DB_CONNECTION' => 'mysql',
-				'APP_DEBUG' => 'true',
-				'MAIL_USERNAME' => 'null',
-				'APP_URL' => 'http://localhost',
-				'DB_PORT' => '3306',
-				'MAIL_FROM_ADDRESS' => 'hello@example.com',
-				'SHLVL' => '1',
-				'AWS_USE_PATH_STYLE_ENDPOINT' => 'false',
-				'HOME' => '/home/ilijaristov67',
-				'REDIS_CLIENT' => 'phpredis',
-				'MAIL_FROM_NAME' => 'Laravel',
-				'DB_DATABASE' => 'expense_management',
-				'SESSION_PATH' => '/',
-				'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus',
-				'APP_NAME' => 'Laravel',
+				'SHELL' => '/bin/bash',
+				'WSL2_GUI_APPS_ENABLED' => '1',
 				'WSL_DISTRO_NAME' => 'Ubuntu',
-				'SESSION_DRIVER' => 'database',
-				'VITE_APP_NAME' => 'Laravel',
-				'WAYLAND_DISPLAY' => 'wayland-0',
-				'SHELL_VERBOSITY' => '0',
-				'LOG_CHANNEL' => 'stack',
-				'DB_USERNAME' => 'root',
-				'MEMCACHED_HOST' => '127.0.0.1',
-				'LOGNAME' => 'ilijaristov67',
 				'NAME' => 'DESKTOP-SHP6BTR',
-				'WSL_INTEROP' => '/run/WSL/19000_interop',
+				'PWD' => '/home/ilijaristov67/projects/expense_management_backend',
+				'LOGNAME' => 'ilijaristov67',
+				'HOME' => '/home/ilijaristov67',
+				'LANG' => 'C.UTF-8',
+				'WSL_INTEROP' => '/run/WSL/491_interop',
+				'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:',
+				'WAYLAND_DISPLAY' => 'wayland-0',
+				'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
+				'TERM' => 'xterm-256color',
+				'LESSOPEN' => '| /usr/bin/lesspipe %s',
+				'USER' => 'ilijaristov67',
+				'DISPLAY' => ':0',
+				'SHLVL' => '1',
+				'XDG_RUNTIME_DIR' => '/run/user/1000/',
+				'WSLENV' => '',
+				'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
+				'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/php84:/mnt/c/Users/Van4o/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Van4o/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Van4o/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Van4o/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PhpStorm 2024.3.2.1/bin:/mnt/c/Users/Van4o/AppData/Roaming/npm:/mnt/c/Users/Van4o/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/Program Files/JetBrains/PyCharm 2024.3.5/bin:/mnt/c/Users/Van4o/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Van4o/AppData/Local/Microsoft/WinGet/Packages/PHP.PHP.8.4_Microsoft.Winget.Source_8wekyb3d8bbwe:/snap/bin',
+				'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus',
+				'HOSTTYPE' => 'x86_64',
 				'PULSE_SERVER' => 'unix:/mnt/wslg/PulseServer',
 				'_' => 'vendor/bin/phpstan',
-				'AWS_DEFAULT_REGION' => 'us-east-1',
-				'TERM' => 'xterm-256color',
-				'COLUMNS' => '308',
-				'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/Docker/host/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/php84:/mnt/c/Users/Van4o/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Van4o/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Van4o/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Van4o/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PhpStorm 2024.3.2.1/bin:/mnt/c/Users/Van4o/AppData/Roaming/npm:/mnt/c/Users/Van4o/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/Program Files/JetBrains/PyCharm 2024.3.5/bin:/mnt/c/Users/Van4o/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Van4o/AppData/Local/Microsoft/WinGet/Packages/PHP.PHP.8.4_Microsoft.Winget.Source_8wekyb3d8bbwe:/home/ilijaristov67/projects/expense_management_backend/node_modules/.bin:/snap/bin',
-				'XDG_RUNTIME_DIR' => '/run/user/1000/',
-				'MAIL_PASSWORD' => 'null',
-				'AWS_BUCKET' => '',
-				'DISPLAY' => ':0',
-				'LANG' => 'C.UTF-8',
-				'SESSION_ENCRYPT' => 'false',
-				'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:',
-				'APP_FAKER_LOCALE' => 'en_US',
-				'FILESYSTEM_DISK' => 'local',
-				'MAIL_HOST' => '127.0.0.1',
-				'SHELL' => '/bin/bash',
-				'APP_MAINTENANCE_DRIVER' => 'file',
-				'BCRYPT_ROUNDS' => '12',
-				'SESSION_LIFETIME' => '120',
-				'BROADCAST_CONNECTION' => 'log',
-				'MAIL_SCHEME' => 'null',
-				'AWS_ACCESS_KEY_ID' => '',
-				'JWT_SECRET' => 'X4BWTPgjbVZDG22f3riqosO2XmtHUVjw0Vjt5ptB72tJAlqMfeD7xz6bBBpuY4C9',
-				'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
-				'APP_FALLBACK_LOCALE' => 'en',
-				'AWS_SECRET_ACCESS_KEY' => '',
-				'REDIS_PASSWORD' => 'null',
-				'LOG_DEPRECATIONS_CHANNEL' => 'null',
-				'SESSION_DOMAIN' => 'null',
-				'CACHE_STORE' => 'database',
-				'MAIL_MAILER' => 'log',
-				'MAIL_PORT' => '2525',
-				'PWD' => '/home/ilijaristov67/projects/expense_management_backend',
-				'APP_ENV' => 'local',
-				'APP_KEY' => 'base64:oKYOwW4UImjWjxUxkaPGpbWLn80H5MBmw5UMPqGu2Ns=',
-				'DB_PASSWORD' => '',
-				'REDIS_HOST' => '127.0.0.1',
-				'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
-				'LINES' => '18',
-				'DB_HOST' => 'db',
-				'QUEUE_CONNECTION' => 'database',
-				'WSL2_GUI_APPS_ENABLED' => '1',
-				'HOSTTYPE' => 'x86_64',
-				'APP_LOCALE' => 'en',
-				'WSLENV' => '',
-				'PHP_CLI_SERVER_WORKERS' => '4',
+				'OLDPWD' => '/home/ilijaristov67/projects',
+				'LINES' => '30',
+				'COLUMNS' => '143',
+				'SHELL_VERBOSITY' => '0',
 			],
 		];
 	}

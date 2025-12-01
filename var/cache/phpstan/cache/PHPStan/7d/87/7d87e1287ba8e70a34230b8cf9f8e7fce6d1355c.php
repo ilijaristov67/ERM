@@ -266,7 +266,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Providers/RouteServiceProvider.php' => 
     array (
-      0 => '20ffac89227fc87ca9f3376893cc552cffd771b7',
+      0 => '38489b1c25440efcb7382e931d23eb4259175625',
       1 => 
       array (
         0 => 'modules\\admin\\providers\\routeserviceprovider',
@@ -319,7 +319,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Company/Company.php' => 
     array (
-      0 => 'c145c4cd9f1ada2bac69ab513218215db806f033',
+      0 => '017c9cd417e1e65320403693ceaeae2c648510da',
       1 => 
       array (
         0 => 'modules\\admin\\models\\company\\company',
@@ -334,7 +334,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
     array (
-      0 => '141e99da8b3d2f4dccf483c3d91a623588112f39',
+      0 => 'f8e01c25ec46cd18d33f14bd16fc26e02b48cae3',
       1 => 
       array (
         0 => 'modules\\admin\\http\\resources\\company\\companyresource',
@@ -349,7 +349,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
     array (
-      0 => 'd0b4a6418b727e08c11627edcffcc9a3e619679f',
+      0 => '1d27f012dc4f3d72d998aa8448233c9e0cf04f7e',
       1 => 
       array (
         0 => 'modules\\admin\\actions\\company\\storecompany',
@@ -364,7 +364,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
     array (
-      0 => '8837c8dbcc1d8bd87dcfda2495f5eabb822945c7',
+      0 => '64b09ff8a28921eec5418b49d60ff0003640fbce',
       1 => 
       array (
         0 => 'modules\\admin\\http\\requests\\company\\storecompanyrequest',
@@ -387,6 +387,143 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       ),
       2 => 
       array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/PatchCompany.php' => 
+    array (
+      0 => '59bff3eace1a789f5a531be15dbd1db01598f171',
+      1 => 
+      array (
+        0 => 'modules\\admin\\actions\\company\\patchcompany',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\actions\\company\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/DeleteCompany.php' => 
+    array (
+      0 => '9d62da641fc129edd2b76d77dba489ad4b9217b5',
+      1 => 
+      array (
+        0 => 'modules\\admin\\actions\\company\\deletecompany',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\actions\\company\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/IndexCompany.php' => 
+    array (
+      0 => 'd58cc56595c81c75ca8f28dff345259a6868f103',
+      1 => 
+      array (
+        0 => 'modules\\admin\\actions\\company\\indexcompany',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\actions\\company\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php' => 
+    array (
+      0 => '77645ebd2ed08066ac46c65bfba162664cddd373',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\company\\storecompanycontroller',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\company\\__invoke',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php' => 
+    array (
+      0 => 'e069da90e51005a7c6b5636e1129d6cdd92171b5',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\company\\indexcompanycontroller',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\company\\__invoke',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php' => 
+    array (
+      0 => 'ca1228d6885f21124839194d47d67e9328d313b4',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\company\\patchcompanycontroller',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\company\\__invoke',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Company/DeleteCompanyController.php' => 
+    array (
+      0 => '10dd6af50b759f96ef4134ba39a105de2d68f463',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\company\\deletecompanycontroller',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\company\\__invoke',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/IndexCompanyRequest.php' => 
+    array (
+      0 => 'e3c0f6f68e0c7cbf5f2e17bc1ec5d1f665d6d4c7',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\requests\\company\\indexcompanyrequest',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\http\\requests\\company\\rules',
+        1 => 'modules\\admin\\http\\requests\\company\\authorize',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/PatchCompanyRequest.php' => 
+    array (
+      0 => 'f78fa399931b39e24963fe41e4d18b4035d0b342',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\requests\\company\\patchcompanyrequest',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\http\\requests\\company\\rules',
+        1 => 'modules\\admin\\http\\requests\\company\\authorize',
       ),
       3 => 
       array (

@@ -3,15 +3,15 @@
 namespace Modules\Admin\Actions\Company;
 
 use App\Http\Resources\SuccessfulOperationMessageResource;
-use Symfony\Component\HttpFoundation\Response;
 use Lorisleiva\Actions\Concerns\AsAction;
 use Modules\Admin\Models\Company\Company;
+use Symfony\Component\HttpFoundation\Response;
 
 class DeleteCompany
 {
     use AsAction;
 
-    public function handle( Company $company): SuccessfulOperationMessageResource
+    public function handle(Company $company): SuccessfulOperationMessageResource
     {
         $company->delete();
 

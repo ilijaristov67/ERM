@@ -15,7 +15,7 @@ beforeEach(function () {
     $this->actingAs($this->user);
 
     $this->token = JWTAuth::fromUser($this->user);
-    $this->withHeader('Authorization', 'Bearer ' . $this->token);
+    $this->withHeader('Authorization', 'Bearer '.$this->token);
 
     $this->routeName = 'api.admin.companies.index';
 
@@ -26,6 +26,30 @@ beforeEach(function () {
     $this->companies = Company::factory()->count($this->numberToSeed)->create();
 });
 
-it('successfully lists companies', function (){
-   $re
+it('successfully lists companies', function () {
+    $response = $this->getJson(route($this->routeName));
+
+    expect($response->status())->toBe(200)
+        ->and($response->json())->toBeArray()
+        ->and($response->json())->toHaveKeys([
+            'page',
+            'limit',
+            'total_records',
+            'total_pages',
+            'filter',
+            'sort',
+            'data',
+        ])
+        ->and($response->json('data'))
+        ->toBeArray()
+        ->toHaveCount($this->numberToSeed)
+        ->and($response->json('data')[0])
+        ->toHaveKeys([
+            'id',
+            'name',
+            'email',
+            'phone',
+            'created_at',
+            'updated_at',
+        ]);
 });
