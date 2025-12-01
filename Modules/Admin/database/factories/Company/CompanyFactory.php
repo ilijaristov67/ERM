@@ -13,8 +13,8 @@ class CompanyFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
-            'address' => $this->faker->unique()->streetAddress,
-            'phone' => $this->faker->phoneNumber,
+            'email' => $this->faker->unique()->email,
+            'phone' => $this->faker->unique()->phoneNumber,
         ];
     }
 }
