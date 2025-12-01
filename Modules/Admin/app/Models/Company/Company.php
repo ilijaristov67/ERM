@@ -24,7 +24,11 @@ class Company extends Model
 
     use SoftDeletes;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'name',
+        'email',
+        'phone',
+    ];
 
     public static function newFactory(): CompanyFactory
     {
