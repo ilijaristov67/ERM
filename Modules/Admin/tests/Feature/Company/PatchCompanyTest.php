@@ -164,3 +164,10 @@ it('fails to patch company without permission', function (array $data) {
         ->and($response->json())->toHaveKey('message')
         ->and($response->json('message'))->toBe(__('User does not have the right permissions.'));
 });
+
+it('fails to  patch company that doesnt exist', function () {
+    $response = $this->patch(route($this->routeName, 99999));
+
+    expect($response->status())->toBe(404)
+        ->and($response->json('error'))->toBe('Not found');
+});

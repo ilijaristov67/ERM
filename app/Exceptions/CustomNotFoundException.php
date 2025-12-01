@@ -36,6 +36,6 @@ class CustomNotFoundException extends Exception
 
     private function defaultMessage(): string
     {
-        return __('Not found.');
+        return __('Not found');
     }
 }
