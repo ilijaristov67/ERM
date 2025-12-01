@@ -2,12 +2,13 @@
 
 namespace Modules\Admin\Http\Resources\Company;
 
+use App\Http\Resources\BaseJsonResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Modules\Admin\Models\Company\Company;
 
 /** @mixin Company */
-class CompanyResource extends JsonResource
+class CompanyResource extends BaseJsonResource
 {
     /** @return array<string, int|string> */
     public function toArray(Request $request): array

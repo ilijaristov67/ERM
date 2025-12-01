@@ -14,6 +14,7 @@ class StoreCompany
     public function handle(StoreCompanyRequest $request): CompanyResource
     {
         $company = Company::query()->create($request->validated());
-        dd($company);
+
+        return CompanyResource::make($company);
     }
 }
