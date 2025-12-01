@@ -53,3 +53,19 @@ it('successfully lists companies', function () {
             'updated_at',
         ]);
 });
+
+it('successfully lists companies with pagination', function () {
+    $response = $this->getJson(route($this->routeName),[
+        'page' => $this->page,
+        'limit' => $this->limit,
+    ]);
+
+    expect($response->status())->toBe(200)
+        ->and($response->json())
+        ->toHaveKeys(['page', 'limit', 'total_records', 'total_pages', 'filter', 'data'])
+        ->and($response->json()['page'])->toBe($this->page)
+        ->and($response->json()['limit'])->toBe($this->limit)
+        ->and($response->json()['filter'])->toBe('')
+        ->and($response->json()['total_records'])->toBe($this->numberToSeed)
+        ->and($response->json()['total_pages'])->toBe((int) ceil($this->numberToSeed / $response->json()['limit']));
+});
