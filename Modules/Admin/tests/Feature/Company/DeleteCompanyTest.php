@@ -15,14 +15,14 @@ beforeEach(function () {
     $this->actingAs($this->user);
 
     $this->token = JWTAuth::fromUser($this->user);
-    $this->withHeader('Authorization', 'Bearer ' . $this->token);
+    $this->withHeader('Authorization', 'Bearer '.$this->token);
 
     $this->routeName = 'api.admin.companies.delete';
     $this->company = Company::factory()->create();
 });
 
 it('successfully deletes company', function () {
-   $response = $this->deleteJson(route($this->routeName, $this->company));
+    $response = $this->deleteJson(route($this->routeName, $this->company));
 
     expect($response->status())->toBe(200)
         ->and($response->json())->toHaveKeys(['message', 'code'])

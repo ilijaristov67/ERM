@@ -13,29 +13,30 @@ class PatchCompanyRequest extends FormRequest
         'phone',
     ];
 
+    /** @return array<string, array<string>> */
     public function rules(): array
     {
         $requiredWithoutAll = new RequiredWithoutAllHelper(collect(self::COLUMNS));
         $company = $this->route('company');
 
         return [
-            'name'=> [
+            'name' => [
                 'nullable',
                 'string',
-                'required_without_all:' . $requiredWithoutAll->handle('name'),
+                'required_without_all:'.$requiredWithoutAll->handle('name'),
             ],
-            'email'=> [
+            'email' => [
                 'nullable',
                 'string',
-                'unique:companies,email,' . $company->id,
-                'required_without_all:' . $requiredWithoutAll->handle('email'),
+                'unique:companies,email,'.$company->id,
+                'required_without_all:'.$requiredWithoutAll->handle('email'),
             ],
-            'phone'=> [
+            'phone' => [
                 'nullable',
                 'string',
-                'unique:companies,phone,'  . $company->id,
-                'required_without_all:' . $requiredWithoutAll->handle('phone'),
-            ]
+                'unique:companies,phone,'.$company->id,
+                'required_without_all:'.$requiredWithoutAll->handle('phone'),
+            ],
         ];
     }
 

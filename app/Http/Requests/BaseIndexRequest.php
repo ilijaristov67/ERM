@@ -16,7 +16,9 @@ class BaseIndexRequest extends FormRequest
         return true;
     }
 
-    /** @return array<string, list<(Closure)|string>> */
+    /**
+     * @return array<string, array<int,mixed>>
+     */
     public function rules(): array
     {
         $sortable = new ArraySortHelper(collect(static::$sortArray));
@@ -32,6 +34,8 @@ class BaseIndexRequest extends FormRequest
                     }
                 },
             ],
+            'filter.id' => ['sometimes', 'integer'],
+            /** accepted values: with, only */
             'sort' => ['sometimes', 'array'],
             'sort.*' => [
                 'sometimes',

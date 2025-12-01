@@ -5,6 +5,7 @@ use Modules\Admin\Http\Controllers\Auth\LoginController;
 use Modules\Admin\Http\Controllers\Auth\LogoutController;
 use Modules\Admin\Http\Controllers\Auth\RefreshController;
 use Modules\Admin\Http\Controllers\Company\DeleteCompanyController;
+use Modules\Admin\Http\Controllers\Company\IndexCompanyController;
 use Modules\Admin\Http\Controllers\Company\PatchCompanyController;
 use Modules\Admin\Http\Controllers\Company\StoreCompanyController;
 
@@ -25,4 +26,5 @@ Route::prefix('/companies')
         Route::post('/', StoreCompanyController::class)->name('store')->middleware(['permission:admin-companies-create']);
         Route::patch('{company}', PatchCompanyController::class)->name('patch')->middleware(['permission:admin-companies-update']);
         Route::delete('{company}', DeleteCompanyController::class)->name('delete')->middleware(['permission:admin-companies-delete']);
+        Route::get('/', IndexCompanyController::class)->name('index')->middleware(['permission:admin-companies-read']);
     });
