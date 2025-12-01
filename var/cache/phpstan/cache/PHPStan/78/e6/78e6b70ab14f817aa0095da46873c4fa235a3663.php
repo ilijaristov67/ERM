@@ -87,7 +87,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/phpunit/php-timer/src/ResourceUsageFormatter.php' => 
     array (
-      0 => 'c89198c7ee4a06fb1337ba8af9ed1440d3a45a4a',
+      0 => 'd7350c8d41bb6e0d6e16382c9f6d2c999e3459f5',
       1 => 
       array (
         0 => 'sebastianbergmann\\timer\\resourceusageformatter',

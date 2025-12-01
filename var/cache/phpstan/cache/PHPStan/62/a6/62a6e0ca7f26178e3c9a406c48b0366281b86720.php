@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/cli-parser/src/exceptions/UnknownOptionException.php' => 
     array (
-      0 => 'f0605798d3c3ae00645df1385df6c8d62f211b0f',
+      0 => '64e569c79b86796141894d724e38f32b22e518e9',
       1 => 
       array (
         0 => 'sebastianbergmann\\cliparser\\unknownoptionexception',
@@ -66,7 +66,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php' => 
     array (
-      0 => '5cbf71bd59993fba2e04573fd2af3e896ba6cb44',
+      0 => '961090451811f97125a0687afd7c122b71fc81cd',
       1 => 
       array (
         0 => 'sebastianbergmann\\cliparser\\ambiguousoptionexception',
@@ -81,7 +81,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/cli-parser/src/Parser.php' => 
     array (
-      0 => '517dbea4d8a6272691f0225149eb79b272a53694',
+      0 => 'b3499e4d1af04c38461fa10948ba0b66da23ba1d',
       1 => 
       array (
         0 => 'sebastianbergmann\\cliparser\\parser',
@@ -91,6 +91,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         0 => 'sebastianbergmann\\cliparser\\parse',
         1 => 'sebastianbergmann\\cliparser\\parseshortoption',
         2 => 'sebastianbergmann\\cliparser\\parselongoption',
+        3 => 'sebastianbergmann\\cliparser\\formatsimilaroptions',
       ),
       3 => 
       array (

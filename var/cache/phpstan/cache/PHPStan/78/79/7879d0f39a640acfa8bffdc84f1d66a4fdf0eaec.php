@@ -5,20 +5,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
    'variableKey' => 'v1',
    'data' => 
   array (
-    '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/lines-of-code/src/Exception/NegativeValueException.php' => 
-    array (
-      0 => '2a5c2802c7e7237357d1f01eb112bb9e745e5f1b',
-      1 => 
-      array (
-        0 => 'sebastianbergmann\\linesofcode\\negativevalueexception',
-      ),
-      2 => 
-      array (
-      ),
-      3 => 
-      array (
-      ),
-    ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/lines-of-code/src/Exception/IllogicalValuesException.php' => 
     array (
       0 => 'f6aa84e6523cf722c342e5354720cef59f133e23',
@@ -63,7 +49,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/lines-of-code/src/Counter.php' => 
     array (
-      0 => '8dd8bef677e9ae4201d75eb7eddcd6a2cc8b62b7',
+      0 => 'fbf3fd4a93f0e234cf9a72f2b8011068b1172f94',
       1 => 
       array (
         0 => 'sebastianbergmann\\linesofcode\\counter',
@@ -80,7 +66,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/lines-of-code/src/LineCountingVisitor.php' => 
     array (
-      0 => '9da2fbce123885e666c8f040a3b005b4d9585ffe',
+      0 => '72566501277ba276dd8f442fa222e0754cbb1299',
       1 => 
       array (
         0 => 'sebastianbergmann\\linesofcode\\linecountingvisitor',
@@ -98,7 +84,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/lines-of-code/src/LinesOfCode.php' => 
     array (
-      0 => '5cc86f125be2fe1b73cd0d956190ae29437a7b2e',
+      0 => 'f23a297672198436792a0e787f38e6202450f93e',
       1 => 
       array (
         0 => 'sebastianbergmann\\linesofcode\\linesofcode',

@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/home/ilijaristov67/projects/expense_management_backend/vendor/phpunit/php-file-iterator/src/Iterator.php' => 
     array (
-      0 => '678ba73fbeb1648ef0ec82e55c8e273889a8bd91',
+      0 => '0537e0bc6fd66a2b35f49402d81e75c84a83b7cb',
       1 => 
       array (
         0 => 'sebastianbergmann\\fileiterator\\iterator',
@@ -61,7 +61,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/vendor/phpunit/php-file-iterator/src/Factory.php' => 
     array (
-      0 => 'e69d15c6d5f465604fad3df75be7607ddcf9543b',
+      0 => '046c776ccc68f7f72373e7a8eed4fc3828364411',
       1 => 
       array (
         0 => 'sebastianbergmann\\fileiterator\\factory',

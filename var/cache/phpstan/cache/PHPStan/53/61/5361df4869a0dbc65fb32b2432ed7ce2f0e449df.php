@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/home/ilijaristov67/projects/expense_management_backend/vendor/sebastian/exporter/src/Exporter.php' => 
     array (
-      0 => '36f24a5ce47cfa4bb11c23a5921b79b0ba752001',
+      0 => '727441dfe4c24b1a3e76ef073db585e62336f073',
       1 => 
       array (
         0 => 'sebastianbergmann\\exporter\\exporter',
