@@ -3,8 +3,10 @@
 namespace Modules\Admin\Models\Country;
 
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Modules\Admin\Database\Factories\Country\CountryFactory;
 
 /**
  * @property int $id
@@ -18,6 +20,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Country extends Model
 {
+    /** @use HasFactory<CountryFactory> */
+    use HasFactory;
+
     use SoftDeletes;
 
     protected $fillable = [
@@ -28,4 +33,9 @@ class Country extends Model
     ];
 
     protected $table = 'countries';
+
+    public static function newFactory(): CountryFactory
+    {
+        return new CountryFactory();
+    }
 }

@@ -2441,6 +2441,20 @@ return [
       ),
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Country/Country.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+      1 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+      ),
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Permission/Permission.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2735,6 +2749,13 @@ return [
       5 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
       6 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
       7 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Company/CompanyResource.php',
+    ),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Country/Country.php' => 
+  array (
+    'fileHash' => 'ce276843589f327f3a9cbf1964e2a5996afdeb26',
+    'dependentFiles' => 
+    array (
     ),
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Permission/Permission.php' => 
@@ -4549,6 +4570,126 @@ return [
            'final' => false,
            'static' => true,
            'returnType' => 'Modules\\Admin\\Database\\Factories\\Company\\CompanyFactory',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Country/Country.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Models\\Country\\Country',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * @property int $id
+ * @property string $name
+ * @property string $iso_alpha_2
+ * @property string $iso_alpha_3
+ * @property string $numeric_code
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
+ * @property Carbon $deleted_at
+ */',
+         'namespace' => 'Modules\\Admin\\Models\\Country',
+         'uses' => 
+        array (
+          'carbon' => 'Carbon\\Carbon',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'countryfactory' => 'Modules\\Admin\\Database\\Factories\\Country\\CountryFactory',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        1 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'table',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'newFactory',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'Modules\\Admin\\Database\\Factories\\Country\\CountryFactory',
            'parameters' => 
           array (
           ),

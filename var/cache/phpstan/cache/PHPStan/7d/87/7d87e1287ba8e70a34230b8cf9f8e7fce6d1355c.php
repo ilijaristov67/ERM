@@ -529,5 +529,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
+    '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Country/Country.php' => 
+    array (
+      0 => 'ce276843589f327f3a9cbf1964e2a5996afdeb26',
+      1 => 
+      array (
+        0 => 'modules\\admin\\models\\country\\country',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\models\\country\\newfactory',
+      ),
+      3 => 
+      array (
+      ),
+    ),
   ),
 ));
