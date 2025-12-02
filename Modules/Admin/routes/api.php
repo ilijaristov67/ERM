@@ -8,6 +8,7 @@ use Modules\Admin\Http\Controllers\Company\DeleteCompanyController;
 use Modules\Admin\Http\Controllers\Company\IndexCompanyController;
 use Modules\Admin\Http\Controllers\Company\PatchCompanyController;
 use Modules\Admin\Http\Controllers\Company\StoreCompanyController;
+use Modules\Admin\Http\Controllers\Country\DeleteCountryController;
 use Modules\Admin\Http\Controllers\Country\PatchCountryController;
 use Modules\Admin\Http\Controllers\Country\StoreCountryController;
 
@@ -36,4 +37,5 @@ Route::prefix('/countries')
     ->group(function () {
         Route::post('/', StoreCountryController::class)->name('store')->middleware(['permission:admin-countries-create']);
         Route::patch('/{country}', PatchCountryController::class)->name('patch')->middleware(['permission:admin-countries-update']);
+        Route::delete('/{country}', DeleteCountryController::class)->name('delete')->middleware(['permission:admin-countries-delete']);
     });
