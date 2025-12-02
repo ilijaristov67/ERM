@@ -35,5 +35,5 @@ Route::prefix('/countries')
     ->name('countries.')
     ->group(function () {
         Route::post('/', StoreCountryController::class)->name('store')->middleware(['permission:admin-countries-create']);
-        Route::patch('/{country}',  PatchCountryController::class)->name('patch')->middleware(['permission:admin-countries-update']);
+        Route::patch('/{country}', PatchCountryController::class)->name('patch')->middleware(['permission:admin-countries-update']);
     });

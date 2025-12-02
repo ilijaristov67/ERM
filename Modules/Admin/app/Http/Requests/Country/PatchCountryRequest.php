@@ -14,6 +14,7 @@ class PatchCountryRequest extends FormRequest
         'numeric_code',
     ];
 
+    /** @return array<string, array<string>> */
     public function rules(): array
     {
         $requiredWithoutAll = new RequiredWithoutAllHelper(collect(self::COLUMNS));

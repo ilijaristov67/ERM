@@ -14,6 +14,7 @@ class PatchCountry
     public function handle(PatchCountryRequest $request, Country $country): CountryResource
     {
         $country->update($request->validated());
+
         return CountryResource::make($country);
     }
 }
