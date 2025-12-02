@@ -3,7 +3,6 @@
 namespace Modules\Admin\Http\Requests\Country;
 
 use App\Http\Requests\BaseIndexRequest;
-use Illuminate\Foundation\Http\FormRequest;
 
 class IndexCountryRequest extends BaseIndexRequest
 {
@@ -43,7 +42,7 @@ class IndexCountryRequest extends BaseIndexRequest
             'filter.numeric_code' => [
                 'sometimes',
                 'string',
-            ]
+            ],
         ]);
     }
 

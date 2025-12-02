@@ -39,5 +39,5 @@ Route::prefix('/countries')
         Route::post('/', StoreCountryController::class)->name('store')->middleware(['permission:admin-countries-create']);
         Route::patch('/{country}', PatchCountryController::class)->name('patch')->middleware(['permission:admin-countries-update']);
         Route::delete('/{country}', DeleteCountryController::class)->name('delete')->middleware(['permission:admin-countries-delete']);
-        Route::get('/',  IndexCountryController::class)->name('index')->middleware(['permission:admin-countries-read']);
+        Route::get('/', IndexCountryController::class)->name('index')->middleware(['permission:admin-countries-read']);
     });

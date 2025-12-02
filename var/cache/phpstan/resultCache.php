@@ -2308,6 +2308,16 @@ return [
       ),
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/IndexCountry.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2449,6 +2459,16 @@ return [
         0 => 'Modules\\Admin\\Http\\Resources\\Country\\CountryResource',
         1 => 'toArray',
         2 => 'Modules\\Admin\\Http\\Resources\\Country\\CountryResource',
+      ),
+    ),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Country/CountryResourceCollection.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Traits\\ResourceCollectionToArray',
       ),
     ),
   ),
@@ -2649,6 +2669,14 @@ return [
       0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php',
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/IndexCountry.php' => 
+  array (
+    'fileHash' => '1cccc8781d0168d169eee24b41c564d268aa62a6',
+    'dependentFiles' => 
+    array (
+      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php',
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
   array (
     'fileHash' => '5acf77ac295a94880280f66014efa625ff93bef2',
@@ -2721,6 +2749,13 @@ return [
     array (
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php' => 
+  array (
+    'fileHash' => '9119220c484cbd726f457eb0be4c228f3a37c1cc',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php' => 
   array (
     'fileHash' => 'dae9d66658d8eced1fa66ed78ade74a8e5744de7',
@@ -2769,6 +2804,15 @@ return [
     array (
       0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Company/StoreCompany.php',
       1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
+    ),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Country/IndexCountryRequest.php' => 
+  array (
+    'fileHash' => 'ec82a5a84da9466f1d59f3ee2645ab28759cbefe',
+    'dependentFiles' => 
+    array (
+      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/IndexCountry.php',
+      1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php',
     ),
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Country/PatchCountryRequest.php' => 
@@ -2829,6 +2873,15 @@ return [
       1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/StoreCountry.php',
       2 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
       3 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
+    ),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Country/CountryResourceCollection.php' => 
+  array (
+    'fileHash' => 'ba4232ceca2399851ad75edde4c526ca1a1df9f4',
+    'dependentFiles' => 
+    array (
+      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/IndexCountry.php',
+      1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php',
     ),
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
@@ -2898,12 +2951,13 @@ return [
     'dependentFiles' => 
     array (
       0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/DeleteCountry.php',
-      1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/PatchCountry.php',
-      2 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/StoreCountry.php',
-      3 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php',
-      4 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
-      5 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
-      6 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Country/CountryResource.php',
+      1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/IndexCountry.php',
+      2 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/PatchCountry.php',
+      3 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/StoreCountry.php',
+      4 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php',
+      5 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
+      6 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
+      7 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Country/CountryResource.php',
     ),
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Permission/Permission.php' => 
@@ -2933,10 +2987,11 @@ return [
       0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/IndexCompanyRequest.php',
       1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/PatchCompanyRequest.php',
       2 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php',
-      3 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Country/PatchCountryRequest.php',
-      4 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php',
-      5 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
-      6 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      3 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Country/IndexCountryRequest.php',
+      4 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Country/PatchCountryRequest.php',
+      5 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php',
+      6 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
+      7 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/User/UserResource.php',
     ),
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
@@ -3394,6 +3449,62 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'country',
                'type' => 'Modules\\Admin\\Models\\Country\\Country',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/IndexCountry.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Actions\\Country\\IndexCountry',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\Admin\\Http\\Resources\\Country\\CountryResourceCollection',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\Admin\\Http\\Requests\\Country\\IndexCountryRequest',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
@@ -3975,6 +4086,61 @@ return [
       ),
     )),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Http\\Controllers\\Country\\IndexCountryController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\Admin\\Http\\Resources\\Country\\CountryResourceCollection',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\Admin\\Http\\Requests\\Country\\IndexCountryRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php' => 
   array (
     0 => 
@@ -4391,6 +4557,104 @@ return [
           ),
         )),
         1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'authorize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'bool',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Requests/Country/IndexCountryRequest.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Http\\Requests\\Country\\IndexCountryRequest',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Requests\\BaseIndexRequest',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'sortArray',
+          ),
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @var list<string> */',
+             'namespace' => 'Modules\\Admin\\Http\\Requests\\Country',
+             'uses' => 
+            array (
+              'baseindexrequest' => 'App\\Http\\Requests\\BaseIndexRequest',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'type' => 'array',
+           'public' => false,
+           'private' => false,
+           'static' => true,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'authorize',
            'phpDoc' => NULL,
@@ -4884,6 +5148,33 @@ return [
           array (
           ),
         )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Country/CountryResourceCollection.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Http\\Resources\\Country\\CountryResourceCollection',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Resources\\BaseResourceCollection',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Traits\\ResourceCollectionToArray',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
       ),
        'attributes' => 
       array (
