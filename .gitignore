@@ -25,3 +25,4 @@ Thumbs.db
 /mysql-data
 /var/cache/phpstan/
 /var/cache/phpstan/*
+/var/cache
