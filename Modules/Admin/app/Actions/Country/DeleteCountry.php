@@ -17,7 +17,7 @@ class DeleteCountry
 
         return SuccessfulOperationMessageResource::make([
             'message' => __('Successfully deleted', [
-                'entity' => __('entities.company'),
+                'entity' => __('entities.country'),
             ]),
             'code' => Response::HTTP_OK,
         ]);

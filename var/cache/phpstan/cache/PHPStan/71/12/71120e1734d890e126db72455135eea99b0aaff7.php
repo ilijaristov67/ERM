@@ -651,5 +651,35 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
+    '/app/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
+    array (
+      0 => 'b8fdf24f99c732719464bf1cce83677d749d6c76',
+      1 => 
+      array (
+        0 => 'modules\\admin\\actions\\country\\deletecountry',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\actions\\country\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/app/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php' => 
+    array (
+      0 => 'e0ee2693ce091392956d3cdde865c3bb794256fa',
+      1 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\country\\deletecountrycontroller',
+      ),
+      2 => 
+      array (
+        0 => 'modules\\admin\\http\\controllers\\country\\__invoke',
+      ),
+      3 => 
+      array (
+      ),
+    ),
   ),
 ));

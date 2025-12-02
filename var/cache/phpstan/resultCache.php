@@ -2285,6 +2285,29 @@ return [
       ),
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Successfully deleted',
+        1 => 19,
+      ),
+      1 => 
+      array (
+        0 => 'entities.country',
+        1 => 20,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2618,6 +2641,14 @@ return [
       0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
     ),
   ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
+  array (
+    'fileHash' => 'b8fdf24f99c732719464bf1cce83677d749d6c76',
+    'dependentFiles' => 
+    array (
+      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php',
+    ),
+  ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
   array (
     'fileHash' => '5acf77ac295a94880280f66014efa625ff93bef2',
@@ -2679,6 +2710,13 @@ return [
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php' => 
   array (
     'fileHash' => '77645ebd2ed08066ac46c65bfba162664cddd373',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php' => 
+  array (
+    'fileHash' => 'e0ee2693ce091392956d3cdde865c3bb794256fa',
     'dependentFiles' => 
     array (
     ),
@@ -2859,11 +2897,13 @@ return [
     'fileHash' => 'ce276843589f327f3a9cbf1964e2a5996afdeb26',
     'dependentFiles' => 
     array (
-      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/PatchCountry.php',
-      1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/StoreCountry.php',
-      2 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
-      3 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
-      4 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Country/CountryResource.php',
+      0 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/DeleteCountry.php',
+      1 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/PatchCountry.php',
+      2 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/StoreCountry.php',
+      3 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php',
+      4 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
+      5 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
+      6 => '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/Country/CountryResource.php',
     ),
   ),
   '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Permission/Permission.php' => 
@@ -3298,6 +3338,62 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'request',
                'type' => 'Modules\\Admin\\Http\\Requests\\Company\\StoreCompanyRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Actions\\Country\\DeleteCountry',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'App\\Http\\Resources\\SuccessfulOperationMessageResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'country',
+               'type' => 'Modules\\Admin\\Models\\Country\\Country',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
@@ -3806,6 +3902,61 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'request',
                'type' => 'Modules\\Admin\\Http\\Requests\\Company\\StoreCompanyRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Admin\\Http\\Controllers\\Country\\DeleteCountryController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'App\\Http\\Resources\\SuccessfulOperationMessageResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'country',
+               'type' => 'Modules\\Admin\\Models\\Country\\Country',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
