@@ -26,10 +26,10 @@ class StoreCountryRequest extends FormRequest
                 'unique:countries,iso_alpha_3',
                 'max:3'
             ],
-            'iso_numeric' => [
+            'numeric_code' => [
                 'required',
                 'string',
-                'unique:countries,iso_numeric',
+                'unique:countries,numeric_code',
             ]
         ];
     }
