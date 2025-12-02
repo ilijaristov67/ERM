@@ -33,5 +33,5 @@ Route::prefix('/companies')
 Route::prefix('/countries')
     ->name('countries.')
     ->group(function () {
-       Route::post('/', StoreCountryController::class)->name('store')->middleware(['permission:admin-countries-create']);
+        Route::post('/', StoreCountryController::class)->name('store')->middleware(['permission:admin-countries-create']);
     });

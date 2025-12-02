@@ -4,13 +4,13 @@ namespace Modules\Admin\Http\Resources\Country;
 
 use App\Http\Resources\BaseJsonResource;
 use Illuminate\Http\Request;
-use Illuminate\Http\Resources\Json\JsonResource;
 use Modules\Admin\Models\Country\Country;
 
 /** @mixin Country */
 class CountryResource extends BaseJsonResource
 {
-    /** @return array<string, int|string> */    public function toArray(Request $request): array
+    /** @return array<string, int|string> */
+    public function toArray(Request $request): array
     {
         return [
             'id' => $this->id,

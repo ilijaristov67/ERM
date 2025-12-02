@@ -1,14 +1,14 @@
 <?php
-// source: phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.neon
-// source: phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon
-// source: /home/ilijaristov67/projects/expense_management_backend/phpstan.neon
+// source: phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.neon
+// source: phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon
+// source: /app/phpstan.neon
 // source: array
 
 /** @noinspection PhpParamsInspection,PhpMethodMayBeStaticInspection */
 
 declare(strict_types=1);
 
-class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
+class Container_598db2d4fa extends _PHPStan_1611a8848\Nette\DI\Container
 {
 	protected $tags = [
 		'phpstan.broker.dynamicMethodReturnTypeExtension' => [
@@ -2325,7 +2325,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 
 	public function createService05(): PHPStan\File\FileHelper
 	{
-		return new PHPStan\File\FileHelper('/home/ilijaristov67/projects/expense_management_backend');
+		return new PHPStan\File\FileHelper('/app');
 	}
 
 
@@ -2447,7 +2447,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			[],
 			[],
 			$this->getParameter('analysedPaths'),
-			['/home/ilijaristov67/projects/expense_management_backend'],
+			['/app'],
 			$this->getParameter('analysedPathsFromConfig'),
 			false,
 			$this->getParameter('singleReflectionFile')
@@ -2560,7 +2560,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 
 	public function createService031(): PHPStan\Analyser\ResultCache\ResultCacheClearer
 	{
-		return new PHPStan\Analyser\ResultCache\ResultCacheClearer('/home/ilijaristov67/projects/expense_management_backend/var/cache/phpstan/resultCache.php');
+		return new PHPStan\Analyser\ResultCache\ResultCacheClearer('/app/var/cache/phpstan/resultCache.php');
 	}
 
 
@@ -2693,29 +2693,29 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			$this->getService('042'),
 			$this->getService('080'),
 			$this->getParameter('analysedPaths'),
-			'/home/ilijaristov67/projects/expense_management_backend',
+			'/app',
 			($this->getParameter('sysGetTempDir')) . '/phpstan-fixer',
 			['1.1.1.2'],
-			['/home/ilijaristov67/projects/expense_management_backend'],
+			['/app'],
 			[
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/parametersSchema.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level5.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level4.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level3.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level2.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level1.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level0.neon',
-				'/home/ilijaristov67/projects/expense_management_backend/phpstan.neon',
-				'/home/ilijaristov67/projects/expense_management_backend/vendor/larastan/larastan/extension.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/parametersSchema.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level5.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level4.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level3.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level2.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level1.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level0.neon',
+				'/app/phpstan.neon',
+				'/app/vendor/larastan/larastan/extension.neon',
 			],
 			null,
 			[
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php',
-				'/home/ilijaristov67/projects/expense_management_backend/vendor/larastan/larastan/bootstrap.php',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php',
+				'/app/vendor/larastan/larastan/bootstrap.php',
 			],
 			null,
 			'6'
@@ -2953,33 +2953,33 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 		return new PHPStan\PhpDoc\DefaultStubFilesProvider(
 			$this->getService('0340'),
 			[
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionAttribute.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionClassConstant.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionFunctionAbstract.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionMethod.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionParameter.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionProperty.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/iterable.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ArrayObject.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/WeakReference.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ext-ds.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ImagickPixel.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/PDOStatement.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/date.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ibm_db2.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/mysqli.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/zip.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/dom.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/spl.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/SplObjectStorage.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/Exception.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/arrayFunctions.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/core.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/typeCheckingFunctions.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/Countable.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/file.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionAttribute.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionClassConstant.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionFunctionAbstract.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionMethod.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionParameter.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionProperty.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/iterable.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ArrayObject.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/WeakReference.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ext-ds.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ImagickPixel.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/PDOStatement.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/date.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ibm_db2.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/mysqli.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/zip.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/dom.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/spl.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/SplObjectStorage.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/Exception.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/arrayFunctions.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/core.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/typeCheckingFunctions.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/Countable.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/file.stub',
 			],
-			['/home/ilijaristov67/projects/expense_management_backend']
+			['/app']
 		);
 	}
 
@@ -4736,14 +4736,11 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 	public function createService0339(): PHPStan\DependencyInjection\DerivativeContainerFactory
 	{
 		return new PHPStan\DependencyInjection\DerivativeContainerFactory(
-			'/home/ilijaristov67/projects/expense_management_backend',
-			'/home/ilijaristov67/projects/expense_management_backend/var/cache/phpstan',
-			[
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
-				'/home/ilijaristov67/projects/expense_management_backend/phpstan.neon',
-			],
+			'/app',
+			'/app/var/cache/phpstan',
+			['phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon', '/app/phpstan.neon'],
 			$this->getParameter('analysedPaths'),
-			['/home/ilijaristov67/projects/expense_management_backend'],
+			['/app'],
 			$this->getParameter('analysedPathsFromConfig'),
 			'6',
 			null,
@@ -4816,7 +4813,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 
 	public function createService0350(): PHPStan\Php\PhpVersionFactoryFactory
 	{
-		return new PHPStan\Php\PhpVersionFactoryFactory(null, ['/home/ilijaristov67/projects/expense_management_backend']);
+		return new PHPStan\Php\PhpVersionFactoryFactory(null, ['/app']);
 	}
 
 
@@ -4834,7 +4831,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 
 	public function createService0353(): PHPStan\Php\ComposerPhpVersionFactory
 	{
-		return new PHPStan\Php\ComposerPhpVersionFactory(['/home/ilijaristov67/projects/expense_management_backend']);
+		return new PHPStan\Php\ComposerPhpVersionFactory(['/app']);
 	}
 
 
@@ -4856,7 +4853,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_5ece8cc250 $container)
+			public function __construct(Container_598db2d4fa $container)
 			{
 				$this->container = $container;
 			}
@@ -4876,7 +4873,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_5ece8cc250 $container)
+			public function __construct(Container_598db2d4fa $container)
 			{
 				$this->container = $container;
 			}
@@ -4899,7 +4896,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_5ece8cc250 $container)
+			public function __construct(Container_598db2d4fa $container)
 			{
 				$this->container = $container;
 			}
@@ -4919,7 +4916,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_5ece8cc250 $container)
+			public function __construct(Container_598db2d4fa $container)
 			{
 				$this->container = $container;
 			}
@@ -4984,7 +4981,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_5ece8cc250 $container)
+			public function __construct(Container_598db2d4fa $container)
 			{
 				$this->container = $container;
 			}
@@ -5042,7 +5039,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_5ece8cc250 $container)
+			public function __construct(Container_598db2d4fa $container)
 			{
 				$this->container = $container;
 			}
@@ -5057,18 +5054,18 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 					$this->container->getService('reflectionProvider'),
 					$this->container->getService('080'),
 					$this->container->getService('05'),
-					'/home/ilijaristov67/projects/expense_management_backend/var/cache/phpstan/resultCache.php',
+					'/app/var/cache/phpstan/resultCache.php',
 					$this->container->getParameter('analysedPaths'),
 					$this->container->getParameter('analysedPathsFromConfig'),
-					['/home/ilijaristov67/projects/expense_management_backend'],
+					['/app'],
 					'6',
 					null,
 					[
-						'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php',
-						'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php',
-						'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php',
-						'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php',
-						'/home/ilijaristov67/projects/expense_management_backend/vendor/larastan/larastan/bootstrap.php',
+						'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php',
+						'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php',
+						'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php',
+						'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php',
+						'/app/vendor/larastan/larastan/bootstrap.php',
 					],
 					[],
 					[],
@@ -5911,7 +5908,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 
 	public function createService0488(): PHPStan\Rules\Keywords\RequireFileExistsRule
 	{
-		return new PHPStan\Rules\Keywords\RequireFileExistsRule('/home/ilijaristov67/projects/expense_management_backend');
+		return new PHPStan\Rules\Keywords\RequireFileExistsRule('/app');
 	}
 
 
@@ -8235,11 +8232,11 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 
 	public function createServiceCacheStorage(): PHPStan\Cache\FileCacheStorage
 	{
-		return new PHPStan\Cache\FileCacheStorage('/home/ilijaristov67/projects/expense_management_backend/var/cache/phpstan/cache/PHPStan');
+		return new PHPStan\Cache\FileCacheStorage('/app/var/cache/phpstan/cache/PHPStan');
 	}
 
 
-	public function createServiceContainer(): Container_5ece8cc250
+	public function createServiceContainer(): Container_598db2d4fa
 	{
 		return $this;
 	}
@@ -8408,7 +8405,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 
 	public function createServiceParentDirectoryRelativePathHelper(): PHPStan\File\ParentDirectoryRelativePathHelper
 	{
-		return new PHPStan\File\ParentDirectoryRelativePathHelper('/home/ilijaristov67/projects/expense_management_backend');
+		return new PHPStan\File\ParentDirectoryRelativePathHelper('/app');
 	}
 
 
@@ -8459,18 +8456,18 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			$this->getService('0352'),
 			null,
 			$this->getService('05'),
-			['/home/ilijaristov67/projects/expense_management_backend'],
+			['/app'],
 			[
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/parametersSchema.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level5.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level4.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level3.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level2.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level1.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level0.neon',
-				'/home/ilijaristov67/projects/expense_management_backend/phpstan.neon',
-				'/home/ilijaristov67/projects/expense_management_backend/vendor/larastan/larastan/extension.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/parametersSchema.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level5.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level4.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level3.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level2.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level1.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level0.neon',
+				'/app/phpstan.neon',
+				'/app/vendor/larastan/larastan/extension.neon',
 			],
 			$this->getService('0353')
 		);
@@ -8499,7 +8496,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 	{
 		return new PHPStan\File\FuzzyRelativePathHelper(
 			$this->getService('parentDirectoryRelativePathHelper'),
-			'/home/ilijaristov67/projects/expense_management_backend',
+			'/app',
 			$this->getParameter('analysedPaths')
 		);
 	}
@@ -8531,7 +8528,7 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 
 	public function createServiceSimpleRelativePathHelper(): PHPStan\File\SimpleRelativePathHelper
 	{
-		return new PHPStan\File\SimpleRelativePathHelper('/home/ilijaristov67/projects/expense_management_backend');
+		return new PHPStan\File\SimpleRelativePathHelper('/app');
 	}
 
 
@@ -8585,15 +8582,15 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 	{
 		return [
 			'bootstrapFiles' => [
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php',
-				'/home/ilijaristov67/projects/expense_management_backend/vendor/larastan/larastan/bootstrap.php',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php',
+				'/app/vendor/larastan/larastan/bootstrap.php',
 			],
 			'excludePaths' => ['analyseAndScan' => [], 'analyse' => []],
 			'level' => 6,
-			'paths' => ['/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app'],
+			'paths' => ['/app/Modules/Admin/app'],
 			'exceptions' => [
 				'implicitThrows' => true,
 				'reportUncheckedExceptionDeadCatch' => true,
@@ -8688,35 +8685,35 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			'typeAliases' => [],
 			'universalObjectCratesClasses' => ['stdClass', 'Illuminate\Http\Request', 'Illuminate\Support\Optional'],
 			'stubFiles' => [
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionAttribute.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionClassConstant.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionFunctionAbstract.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionMethod.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionParameter.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionProperty.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/iterable.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ArrayObject.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/WeakReference.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ext-ds.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ImagickPixel.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/PDOStatement.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/date.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/ibm_db2.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/mysqli.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/zip.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/dom.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/spl.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/SplObjectStorage.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/Exception.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/arrayFunctions.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/core.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/typeCheckingFunctions.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/Countable.stub',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/stubs/file.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionAttribute.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionClassConstant.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionFunctionAbstract.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionMethod.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionParameter.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionProperty.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/iterable.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ArrayObject.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/WeakReference.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ext-ds.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ImagickPixel.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/PDOStatement.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/date.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/ibm_db2.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/mysqli.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/zip.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/dom.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/spl.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/SplObjectStorage.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/Exception.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/arrayFunctions.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/core.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/typeCheckingFunctions.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/Countable.stub',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/file.stub',
 			],
 			'earlyTerminatingMethodCalls' => [],
 			'earlyTerminatingFunctionCalls' => ['abort', 'dd'],
-			'resultCachePath' => '/home/ilijaristov67/projects/expense_management_backend/var/cache/phpstan/resultCache.php',
+			'resultCachePath' => '/app/var/cache/phpstan/resultCache.php',
 			'resultCacheSkipIfOlderThanDays' => 7,
 			'resultCacheChecksProjectExtensionFilesDependencies' => false,
 			'dynamicConstantNames' => [
@@ -8815,113 +8812,56 @@ class Container_5ece8cc250 extends _PHPStan_1611a8848\Nette\DI\Container
 			'generalizeEnvReturnType' => false,
 			'checkConfigTypes' => false,
 			'checkAuthCallsWhenInRequestScope' => false,
-			'tmpDir' => '/home/ilijaristov67/projects/expense_management_backend/var/cache/phpstan',
+			'tmpDir' => '/app/var/cache/phpstan',
+			'memoryLimit' => '1G',
 			'debugMode' => true,
 			'productionMode' => false,
-			'tempDir' => '/home/ilijaristov67/projects/expense_management_backend/var/cache/phpstan',
-			'rootDir' => '/home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan',
-			'currentWorkingDirectory' => '/home/ilijaristov67/projects/expense_management_backend',
+			'tempDir' => '/app/var/cache/phpstan',
+			'rootDir' => '/app/vendor/phpstan/phpstan',
+			'currentWorkingDirectory' => '/app',
 			'cliArgumentsVariablesRegistered' => true,
 			'additionalConfigFiles' => [
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
-				'/home/ilijaristov67/projects/expense_management_backend/phpstan.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
+				'/app/phpstan.neon',
 			],
 			'allConfigFiles' => [
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/parametersSchema.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level5.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level4.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level3.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level2.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level1.neon',
-				'phar:///home/ilijaristov67/projects/expense_management_backend/vendor/phpstan/phpstan/phpstan.phar/conf/config.level0.neon',
-				'/home/ilijaristov67/projects/expense_management_backend/phpstan.neon',
-				'/home/ilijaristov67/projects/expense_management_backend/vendor/larastan/larastan/extension.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/parametersSchema.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level5.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level4.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level3.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level2.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level1.neon',
+				'phar:///app/vendor/phpstan/phpstan/phpstan.phar/conf/config.level0.neon',
+				'/app/phpstan.neon',
+				'/app/vendor/larastan/larastan/extension.neon',
 			],
-			'composerAutoloaderProjectPaths' => ['/home/ilijaristov67/projects/expense_management_backend'],
+			'composerAutoloaderProjectPaths' => ['/app'],
 			'generateBaselineFile' => null,
 			'usedLevel' => '6',
 			'cliAutoloadFile' => null,
 			'env' => [
-				'LESSOPEN' => '| /usr/bin/lesspipe %s',
-				'LOG_STACK' => 'single',
-				'REDIS_PORT' => '6379',
-				'USER' => 'ilijaristov67',
-				'LOG_LEVEL' => 'debug',
-				'DB_CONNECTION' => 'mysql',
-				'APP_DEBUG' => 'true',
-				'MAIL_USERNAME' => 'null',
-				'APP_URL' => 'http://localhost',
-				'DB_PORT' => '3306',
-				'MAIL_FROM_ADDRESS' => 'hello@example.com',
-				'SHLVL' => '1',
-				'AWS_USE_PATH_STYLE_ENDPOINT' => 'false',
-				'HOME' => '/home/ilijaristov67',
-				'OLDPWD' => '/home/ilijaristov67/projects',
-				'REDIS_CLIENT' => 'phpredis',
-				'MAIL_FROM_NAME' => 'Laravel',
+				'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
+				'HOSTNAME' => '7f61bbebf28c',
+				'TERM' => 'xterm',
+				'DB_HOST' => 'mysql-db',
 				'DB_DATABASE' => 'expense_management',
-				'SESSION_PATH' => '/',
-				'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus',
-				'APP_NAME' => 'Laravel',
-				'WSL_DISTRO_NAME' => 'Ubuntu',
-				'SESSION_DRIVER' => 'database',
-				'VITE_APP_NAME' => 'Laravel',
-				'WAYLAND_DISPLAY' => 'wayland-0',
-				'SHELL_VERBOSITY' => '0',
-				'LOG_CHANNEL' => 'stack',
 				'DB_USERNAME' => 'root',
-				'MEMCACHED_HOST' => '127.0.0.1',
-				'LOGNAME' => 'ilijaristov67',
-				'NAME' => 'DESKTOP-SHP6BTR',
-				'WSL_INTEROP' => '/run/WSL/491_interop',
-				'PULSE_SERVER' => 'unix:/mnt/wslg/PulseServer',
-				'_' => 'vendor/bin/phpstan',
-				'AWS_DEFAULT_REGION' => 'us-east-1',
-				'TERM' => 'xterm-256color',
-				'COLUMNS' => '143',
-				'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.1.0_x64__8wekyb3d8bbwe:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/tools/php84:/mnt/c/Users/Van4o/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/Van4o/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Van4o/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Van4o/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/JetBrains/PhpStorm 2024.3.2.1/bin:/mnt/c/Users/Van4o/AppData/Roaming/npm:/mnt/c/Users/Van4o/AppData/Local/JetBrains/Toolbox/scripts:/mnt/c/Program Files/JetBrains/PyCharm 2024.3.5/bin:/mnt/c/Users/Van4o/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Van4o/AppData/Local/Microsoft/WinGet/Packages/PHP.PHP.8.4_Microsoft.Winget.Source_8wekyb3d8bbwe:/snap/bin',
-				'XDG_RUNTIME_DIR' => '/run/user/1000/',
-				'MAIL_PASSWORD' => 'null',
-				'AWS_BUCKET' => '',
-				'DISPLAY' => ':0',
-				'LANG' => 'C.UTF-8',
-				'SESSION_ENCRYPT' => 'false',
-				'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:',
-				'APP_FAKER_LOCALE' => 'en_US',
-				'FILESYSTEM_DISK' => 'local',
-				'MAIL_HOST' => '127.0.0.1',
-				'SHELL' => '/bin/bash',
-				'APP_MAINTENANCE_DRIVER' => 'file',
-				'BCRYPT_ROUNDS' => '12',
-				'SESSION_LIFETIME' => '120',
-				'BROADCAST_CONNECTION' => 'log',
-				'MAIL_SCHEME' => 'null',
-				'AWS_ACCESS_KEY_ID' => '',
-				'JWT_SECRET' => 'X4BWTPgjbVZDG22f3riqosO2XmtHUVjw0Vjt5ptB72tJAlqMfeD7xz6bBBpuY4C9',
-				'LESSCLOSE' => '/usr/bin/lesspipe %s %s',
-				'APP_FALLBACK_LOCALE' => 'en',
-				'AWS_SECRET_ACCESS_KEY' => '',
-				'REDIS_PASSWORD' => 'null',
-				'LOG_DEPRECATIONS_CHANNEL' => 'null',
-				'SESSION_DOMAIN' => 'null',
-				'CACHE_STORE' => 'database',
-				'MAIL_MAILER' => 'log',
-				'MAIL_PORT' => '2525',
-				'PWD' => '/home/ilijaristov67/projects/expense_management_backend',
-				'APP_ENV' => 'local',
-				'APP_KEY' => 'base64:oKYOwW4UImjWjxUxkaPGpbWLn80H5MBmw5UMPqGu2Ns=',
 				'DB_PASSWORD' => '',
-				'REDIS_HOST' => '127.0.0.1',
-				'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop',
-				'LINES' => '30',
-				'DB_HOST' => 'db',
-				'QUEUE_CONNECTION' => 'database',
-				'WSL2_GUI_APPS_ENABLED' => '1',
-				'HOSTTYPE' => 'x86_64',
-				'APP_LOCALE' => 'en',
-				'WSLENV' => '',
-				'PHP_CLI_SERVER_WORKERS' => '4',
+				'PHPIZE_DEPS' => "autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+				'PHP_INI_DIR' => '/usr/local/etc/php',
+				'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+				'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
+				'PHP_LDFLAGS' => '-Wl,-O1 -pie',
+				'GPG_KEYS' => 'AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD',
+				'PHP_VERSION' => '8.4.15',
+				'PHP_URL' => 'https://www.php.net/distributions/php-8.4.15.tar.xz',
+				'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.4.15.tar.xz.asc',
+				'PHP_SHA256' => 'a060684f614b8344f9b34c334b6ba8db1177555997edb5b1aceab0a4b807da7e',
+				'HOME' => '/root',
+				'LINES' => '18',
+				'COLUMNS' => '308',
+				'SHELL_VERBOSITY' => '0',
 			],
 		];
 	}

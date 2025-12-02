@@ -6,3 +6,4 @@ parameters:
     - Modules/Admin/app
     level: 6
     tmpDir: var/cache/phpstan
+

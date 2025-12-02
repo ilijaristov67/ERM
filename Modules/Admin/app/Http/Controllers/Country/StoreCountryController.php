@@ -11,6 +11,6 @@ class StoreCountryController extends Controller
 {
     public function __invoke(StoreCountryRequest $request): CountryResource
     {
-        return  StoreCountry::run($request);
+        return StoreCountry::run($request);
     }
 }

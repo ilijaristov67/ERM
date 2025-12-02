@@ -14,6 +14,7 @@ class StoreCountry
     public function handle(StoreCountryRequest $request): CountryResource
     {
         $country = Country::query()->create($request->validated());
+
         return CountryResource::make($country);
     }
 }

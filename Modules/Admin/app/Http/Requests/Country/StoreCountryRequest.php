@@ -6,6 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class StoreCountryRequest extends FormRequest
 {
+    /** @return array<string, list<string>> */
     public function rules(): array
     {
         return [
@@ -18,19 +19,19 @@ class StoreCountryRequest extends FormRequest
                 'required',
                 'string',
                 'unique:countries,iso_alpha_2',
-                'max:2'
+                'max:2',
             ],
             'iso_alpha_3' => [
                 'required',
                 'string',
                 'unique:countries,iso_alpha_3',
-                'max:3'
+                'max:3',
             ],
             'numeric_code' => [
                 'required',
                 'string',
                 'unique:countries,numeric_code',
-            ]
+            ],
         ];
     }
 
