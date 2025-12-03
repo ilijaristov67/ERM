@@ -2844,6 +2844,7 @@ return [
       1 => '/app/Modules/Admin/app/Actions/Company/StoreCompany.php',
       2 => '/app/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
       3 => '/app/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
+      4 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
     ),
   ),
   '/app/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
@@ -2908,7 +2909,7 @@ return [
   ),
   '/app/Modules/Admin/app/Http/Resources/User/UserResource.php' => 
   array (
-    'fileHash' => '1dae992536d53626688e72bf6deafcfca2198d03',
+    'fileHash' => '6fa211cc825938c85f434b39777403851e244770',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
@@ -2923,7 +2924,7 @@ return [
   ),
   '/app/Modules/Admin/app/Models/Company/Company.php' => 
   array (
-    'fileHash' => '017c9cd417e1e65320403693ceaeae2c648510da',
+    'fileHash' => '863cf6a9939da4424312f41e7b53820b7504b6ae',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Admin/app/Actions/Company/DeleteCompany.php',
@@ -2934,6 +2935,8 @@ return [
       5 => '/app/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
       6 => '/app/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
       7 => '/app/Modules/Admin/app/Http/Resources/Company/CompanyResource.php',
+      8 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      9 => '/app/Modules/Admin/app/Models/User/User.php',
     ),
   ),
   '/app/Modules/Admin/app/Models/Country/Country.php' => 
@@ -2972,7 +2975,7 @@ return [
   ),
   '/app/Modules/Admin/app/Models/User/User.php' => 
   array (
-    'fileHash' => 'fb3aa6b924a1dfa8e2176f8f2df810b0c8de3fa3',
+    'fileHash' => 'faeb4296e735a5d848923b359d9341a51417b074',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Admin/app/Http/Requests/Company/IndexCompanyRequest.php',
@@ -2983,6 +2986,7 @@ return [
       5 => '/app/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php',
       6 => '/app/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
       7 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      8 => '/app/Modules/Admin/app/Models/Company/Company.php',
     ),
   ),
   '/app/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
@@ -5404,6 +5408,7 @@ return [
           'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
           'request' => 'Illuminate\\Http\\Request',
           'anonymousresourcecollection' => 'Illuminate\\Http\\Resources\\Json\\AnonymousResourceCollection',
+          'companyresource' => 'Modules\\Admin\\Http\\Resources\\Company\\CompanyResource',
           'permissionresource' => 'Modules\\Admin\\Http\\Resources\\Permission\\PermissionResource',
           'roleresource' => 'Modules\\Admin\\Http\\Resources\\Role\\RoleResource',
           'user' => 'Modules\\Admin\\Models\\User\\User',
@@ -5431,13 +5436,14 @@ return [
            'name' => 'toArray',
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/** @return array<string, AnonymousResourceCollection|int|string|null> */',
+             'phpDocString' => '/** @return array<string, AnonymousResourceCollection|int|string|null|CompanyResource> */',
              'namespace' => 'Modules\\Admin\\Http\\Resources\\User',
              'uses' => 
             array (
               'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
               'request' => 'Illuminate\\Http\\Request',
               'anonymousresourcecollection' => 'Illuminate\\Http\\Resources\\Json\\AnonymousResourceCollection',
+              'companyresource' => 'Modules\\Admin\\Http\\Resources\\Company\\CompanyResource',
               'permissionresource' => 'Modules\\Admin\\Http\\Resources\\Permission\\PermissionResource',
               'roleresource' => 'Modules\\Admin\\Http\\Resources\\Role\\RoleResource',
               'user' => 'Modules\\Admin\\Models\\User\\User',
@@ -5526,8 +5532,11 @@ return [
           'carbon' => 'Carbon\\Carbon',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongstomany' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
           'companyfactory' => 'Modules\\Admin\\Database\\Factories\\Company\\CompanyFactory',
+          'user' => 'Modules\\Admin\\Models\\User\\User',
         ),
          'constUses' => 
         array (
@@ -5575,6 +5584,42 @@ return [
           ),
         )),
         1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'users',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return HasMany<User, covariant Company> */',
+             'namespace' => 'Modules\\Admin\\Models\\Company',
+             'uses' => 
+            array (
+              'carbon' => 'Carbon\\Carbon',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongstomany' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+              'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+              'companyfactory' => 'Modules\\Admin\\Database\\Factories\\Company\\CompanyFactory',
+              'user' => 'Modules\\Admin\\Models\\User\\User',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'newFactory',
            'phpDoc' => NULL,
@@ -5943,10 +5988,12 @@ return [
          'uses' => 
         array (
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
           'carbon' => 'Illuminate\\Support\\Carbon',
           'collection' => 'Illuminate\\Support\\Collection',
           'userfactory' => 'Modules\\Admin\\Database\\Factories\\User\\UserFactory',
+          'company' => 'Modules\\Admin\\Models\\Company\\Company',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
           'jwtsubject' => 'Tymon\\JWTAuth\\Contracts\\JWTSubject',
         ),
@@ -6048,6 +6095,43 @@ return [
         )),
         3 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'company',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return BelongsTo<Company, covariant User> */',
+             'namespace' => 'Modules\\Admin\\Models\\User',
+             'uses' => 
+            array (
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+              'carbon' => 'Illuminate\\Support\\Carbon',
+              'collection' => 'Illuminate\\Support\\Collection',
+              'userfactory' => 'Modules\\Admin\\Database\\Factories\\User\\UserFactory',
+              'company' => 'Modules\\Admin\\Models\\Company\\Company',
+              'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+              'jwtsubject' => 'Tymon\\JWTAuth\\Contracts\\JWTSubject',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'getJWTIdentifier',
            'phpDoc' => NULL,
            'byRef' => false,
@@ -6064,7 +6148,7 @@ return [
           array (
           ),
         )),
-        4 => 
+        5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'getJWTCustomClaims',
            'phpDoc' => 
@@ -6074,10 +6158,12 @@ return [
              'uses' => 
             array (
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
               'carbon' => 'Illuminate\\Support\\Carbon',
               'collection' => 'Illuminate\\Support\\Collection',
               'userfactory' => 'Modules\\Admin\\Database\\Factories\\User\\UserFactory',
+              'company' => 'Modules\\Admin\\Models\\Company\\Company',
               'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
               'jwtsubject' => 'Tymon\\JWTAuth\\Contracts\\JWTSubject',
             ),
@@ -6099,7 +6185,7 @@ return [
           array (
           ),
         )),
-        5 => 
+        6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'newFactory',
            'phpDoc' => NULL,

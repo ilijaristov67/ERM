@@ -3,10 +3,12 @@
 namespace Modules\Admin\Models\User;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\Admin\Database\Factories\User\UserFactory;
+use Modules\Admin\Models\Company\Company;
 use Spatie\Permission\Traits\HasRoles;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
@@ -37,6 +39,12 @@ class User extends Authenticatable implements JWTSubject
     protected $casts = [
         'password' => 'hashed',
     ];
+
+    /** @return BelongsTo<Company, covariant User> */
+    public function company(): BelongsTo
+    {
+        return $this->belongsTo(Company::class);
+    }
 
     public function getJWTIdentifier(): mixed
     {
