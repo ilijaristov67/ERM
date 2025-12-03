@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Inventory\Http\Controllers\InventoryController;
+use Modules\Inventory\Http\Controllers\Product\StoreProductController;
 
-Route::middleware(['auth:sanctum'])->prefix('v1')->group(function () {
-    Route::apiResource('inventories', InventoryController::class)->names('inventory');
-});
+Route::prefix('/products')
+    ->name('products.')
+    ->group(function () {
+        Route::post('/', StoreProductController::class)->name('store')->middleware(['permission:inventory-products-create']);
+    });
