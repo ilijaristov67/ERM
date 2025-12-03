@@ -5,6 +5,7 @@ namespace Modules\Admin\Http\Resources\User;
 use App\Http\Resources\BaseJsonResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Modules\Admin\Http\Resources\Company\CompanyResource;
 use Modules\Admin\Http\Resources\Permission\PermissionResource;
 use Modules\Admin\Http\Resources\Role\RoleResource;
 use Modules\Admin\Models\User\User;
@@ -12,7 +13,7 @@ use Modules\Admin\Models\User\User;
 /** @mixin User */
 class UserResource extends BaseJsonResource
 {
-    /** @return array<string, AnonymousResourceCollection|int|string|null> */
+    /** @return array<string, AnonymousResourceCollection|int|string|null|CompanyResource> */
     public function toArray(Request $request): array
     {
         return [
@@ -28,6 +29,7 @@ class UserResource extends BaseJsonResource
             'direct_permissions' => PermissionResource::collection(
                 $this->whenLoaded('permissions')
             ),
+            'company' => CompanyResource::make($this->whenLoaded('company')),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
