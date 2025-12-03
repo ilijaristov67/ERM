@@ -41,7 +41,11 @@
             "Modules\\Expense\\": "Modules/Expense/app/",
             "Modules\\Expense\\Database\\Factories\\": "Modules/Expense/database/factories/",
             "Modules\\Expense\\Database\\Seeders\\": "Modules/Expense/database/seeders/",
-            "Modules\\Expense\\Tests\\": "Modules/Expense/tests/"
+            "Modules\\Expense\\Tests\\": "Modules/Inventory/tests/",
+            "Modules\\Inventory\\": "Modules/Inventory/app/",
+            "Modules\\Inventory\\Database\\Factories\\": "Modules/Inventory/database/factories/",
+            "Modules\\Inventory\\Database\\Seeders\\": "Modules/Inventory/database/seeders/",
+            "Modules\\Inventory\\Tests\\": "Modules/Inventory/tests/"
         }
     },
     "autoload-dev": {

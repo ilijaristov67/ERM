@@ -2,5 +2,6 @@
     "Warehouse": true,
     "User": true,
     "Admin": true,
-    "Expense": true
+    "Expense": true,
+    "Inventory": true
 }
