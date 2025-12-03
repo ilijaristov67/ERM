@@ -8,5 +8,5 @@ Route::prefix('/products')
     ->name('products.')
     ->group(function () {
         Route::post('/', StoreProductController::class)->name('store')->middleware(['permission:inventory-products-create']);
-        Route::delete('/{product}', DeleteProductController::class)->name('destroy')->middleware(['permission:inventory-products-delete']);
+        Route::delete('/{product}', DeleteProductController::class)->name('delete')->middleware(['permission:inventory-products-delete']);
     });

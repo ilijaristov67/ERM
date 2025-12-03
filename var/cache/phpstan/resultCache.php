@@ -2924,7 +2924,7 @@ return [
   ),
   '/app/Modules/Admin/app/Models/Company/Company.php' => 
   array (
-    'fileHash' => '863cf6a9939da4424312f41e7b53820b7504b6ae',
+    'fileHash' => '1533ef9019dedc1ad59d40e0c46d58def232a3d7',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Admin/app/Actions/Company/DeleteCompany.php',
@@ -5532,7 +5532,6 @@ return [
           'carbon' => 'Carbon\\Carbon',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
-          'belongstomany' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany',
           'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
           'companyfactory' => 'Modules\\Admin\\Database\\Factories\\Company\\CompanyFactory',
@@ -5585,6 +5584,24 @@ return [
         )),
         1 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'newFactory',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'Modules\\Admin\\Database\\Factories\\Company\\CompanyFactory',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'users',
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
@@ -5595,7 +5612,6 @@ return [
               'carbon' => 'Carbon\\Carbon',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
-              'belongstomany' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
               'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
               'companyfactory' => 'Modules\\Admin\\Database\\Factories\\Company\\CompanyFactory',
@@ -5612,24 +5628,6 @@ return [
            'final' => false,
            'static' => false,
            'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        2 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'newFactory',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => true,
-           'returnType' => 'Modules\\Admin\\Database\\Factories\\Company\\CompanyFactory',
            'parameters' => 
           array (
           ),

@@ -5,4 +5,4 @@ return [
     'company' => 'Company',
     'country' => 'Country',
     'product' => 'Product',
-    ];
+];

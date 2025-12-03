@@ -143,15 +143,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/app/Modules/Admin/app/Models/Company/Company.php' => 
     array (
-      0 => '863cf6a9939da4424312f41e7b53820b7504b6ae',
+      0 => '1533ef9019dedc1ad59d40e0c46d58def232a3d7',
       1 => 
       array (
         0 => 'modules\\admin\\models\\company\\company',
       ),
       2 => 
       array (
-        0 => 'modules\\admin\\models\\company\\users',
-        1 => 'modules\\admin\\models\\company\\newfactory',
+        0 => 'modules\\admin\\models\\company\\newfactory',
+        1 => 'modules\\admin\\models\\company\\users',
       ),
       3 => 
       array (
