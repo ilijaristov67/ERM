@@ -20,9 +20,9 @@ class PatchProductRequest extends FormRequest
             'name' => [
                 'nullable',
                 'string',
-                'unique:products,name,'  . $product->id,
+                'unique:products,name,'.$product->id,
                 'required_without_all:'.$requiredWithoutAll->handle('name'),
-            ]
+            ],
         ];
     }
 

@@ -13,7 +13,7 @@ class PatchProduct
 
     public function handle(PatchProductRequest $request, Product $product): ProductResource
     {
-        $product = Product::query()->create($request->validated());
+        $product->update($request->validated());
 
         return ProductResource::make($product);
     }
