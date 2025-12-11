@@ -11,7 +11,6 @@ class IndexProductController extends Controller
 {
     public function __invoke(IndexProductRequest $request): ProductResourceCollection
     {
-
         return IndexProduct::run($request);
     }
 }
