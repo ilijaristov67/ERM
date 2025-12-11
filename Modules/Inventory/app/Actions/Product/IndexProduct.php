@@ -27,9 +27,9 @@ class IndexProduct
             ->defaultSort('-id')
             ->paginate(
                 perPage: $request->input('limit'),
-                page:  $request->input('page')
+                page: $request->input('page')
             );
 
-        return  ProductResourceCollection::make($products);
+        return ProductResourceCollection::make($products);
     }
 }

@@ -3,7 +3,6 @@
 namespace Modules\Inventory\Http\Requests\Product;
 
 use App\Http\Requests\BaseIndexRequest;
-use Illuminate\Foundation\Http\FormRequest;
 
 class IndexProductRequest extends BaseIndexRequest
 {
@@ -27,8 +26,8 @@ class IndexProductRequest extends BaseIndexRequest
             ],
             'filter.name' => [
                 'sometimes',
-                'string'
-            ]
+                'string',
+            ],
         ];
     }
 
