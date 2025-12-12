@@ -45,7 +45,11 @@
             "Modules\\Inventory\\": "Modules/Inventory/app/",
             "Modules\\Inventory\\Database\\Factories\\": "Modules/Inventory/database/factories/",
             "Modules\\Inventory\\Database\\Seeders\\": "Modules/Inventory/database/seeders/",
-            "Modules\\Inventory\\Tests\\": "Modules/Inventory/tests/"
+            "Modules\\Inventory\\Tests\\": "Modules/MasterData/tests/",
+            "Modules\\MasterData\\": "Modules/MasterData/app/",
+            "Modules\\MasterData\\Database\\Factories\\": "Modules/MasterData/database/factories/",
+            "Modules\\MasterData\\Database\\Seeders\\": "Modules/MasterData/database/seeders/",
+            "Modules\\MasterData\\Tests\\": "Modules/MasterData/tests/"
         }
     },
     "autoload-dev": {
