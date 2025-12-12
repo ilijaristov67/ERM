@@ -1,5 +1,5 @@
 {
-    "name": "nwidart/warehouse",
+    "name": "nwidart/masterdata",
     "description": "",
     "authors": [
         {
@@ -17,14 +17,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Warehouse\\": "app/",
-            "Modules\\Warehouse\\Database\\Factories\\": "database/factories/",
-            "Modules\\Warehouse\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\MasterData\\": "app/",
+            "Modules\\MasterData\\Database\\Factories\\": "database/factories/",
+            "Modules\\MasterData\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Modules\\Warehouse\\Tests\\": "tests/"
+            "Modules\\MasterData\\Tests\\": "tests/"
         }
     }
 }

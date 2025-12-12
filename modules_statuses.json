@@ -3,5 +3,6 @@
     "User": true,
     "Admin": true,
     "Expense": true,
-    "Inventory": true
+    "Inventory": true,
+    "MasterData": true
 }

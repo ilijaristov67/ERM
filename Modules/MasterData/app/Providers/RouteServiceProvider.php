@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\Warehouse\Providers;
+namespace Modules\MasterData\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
-    protected string $name = 'Warehouse';
+    protected string $name = 'MasterData';
 
     /**
      * Called before routes are registered.

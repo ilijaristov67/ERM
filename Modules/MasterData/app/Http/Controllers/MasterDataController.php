@@ -1,18 +1,18 @@
 <?php
 
-namespace Modules\Warehouse\Http\Controllers;
+namespace Modules\MasterData\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class WarehouseController extends Controller
+class MasterDataController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('warehouse::index');
+        return view('masterdata::index');
     }
 
     /**
@@ -20,7 +20,7 @@ class WarehouseController extends Controller
      */
     public function create()
     {
-        return view('warehouse::create');
+        return view('masterdata::create');
     }
 
     /**
@@ -33,7 +33,7 @@ class WarehouseController extends Controller
      */
     public function show($id)
     {
-        return view('warehouse::show');
+        return view('masterdata::show');
     }
 
     /**
@@ -41,7 +41,7 @@ class WarehouseController extends Controller
      */
     public function edit($id)
     {
-        return view('warehouse::edit');
+        return view('masterdata::edit');
     }
 
     /**

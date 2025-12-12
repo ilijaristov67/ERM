@@ -1,0 +1,11 @@
+{
+    "name": "MasterData",
+    "alias": "masterdata",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MasterData\\Providers\\MasterDataServiceProvider"
+    ],
+    "files": []
+}
