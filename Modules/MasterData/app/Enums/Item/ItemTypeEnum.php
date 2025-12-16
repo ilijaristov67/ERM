@@ -11,5 +11,5 @@ enum ItemTypeEnum: string
 
     case FINISHED_MATERIAL = 'finished_material';
 
-    case TRADE_GOOD =  'trade_good';
+    case TRADE_GOOD = 'trade_good';
 }
