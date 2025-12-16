@@ -13,6 +13,7 @@ use Modules\MasterData\Enums\Item\ItemTypeEnum;
  * @property int $id
  * @property string $name
  * @property string $code
+ * @property ItemTypeEnum $type
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null  $deleted_at
