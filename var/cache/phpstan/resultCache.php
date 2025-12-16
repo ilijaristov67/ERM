@@ -2696,7 +2696,7 @@ return [
       0 => 
       array (
         0 => 'config',
-        1 => 79,
+        1 => 78,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -3177,6 +3177,7 @@ return [
     'fileHash' => '3be97bcd949cc6a4131990ae7c06a411f93b8e97',
     'dependentFiles' => 
     array (
+      0 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
   '/app/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
@@ -3188,7 +3189,15 @@ return [
       1 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
       2 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
       3 => '/app/Modules/MasterData/app/Models/Item/Item.php',
-      4 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      4 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
+      5 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+    ),
+  ),
+  '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php' => 
+  array (
+    'fileHash' => '626c223bd3ade06599838c842bfd078f30527f01',
+    'dependentFiles' => 
+    array (
     ),
   ),
   '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php' => 
@@ -3197,19 +3206,21 @@ return [
     'dependentFiles' => 
     array (
       0 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      1 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
   '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
   array (
-    'fileHash' => 'b4d4bb20baa41873a2ea0c4efb258dde68e36650',
+    'fileHash' => 'bc4baa516fe055c2f1b613769333183d6008b168',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      1 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
   '/app/Modules/MasterData/app/Http/Resources/Item/ItemResourceCollection.php' => 
   array (
-    'fileHash' => 'a2cc5ff17f2b9435ff2fa809f231919f062c5caf',
+    'fileHash' => '1bb8ac6cbc046c6c7b4260202c0fdc58565790f4',
     'dependentFiles' => 
     array (
     ),
@@ -3220,13 +3231,15 @@ return [
     'dependentFiles' => 
     array (
       0 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      1 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
-      2 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      1 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+      2 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      3 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
+      4 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
   '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
   array (
-    'fileHash' => 'f49f5365809b4b441c9acbacef00bff99e61ac1a',
+    'fileHash' => 'c13ddf6853b0ac4e8685e17e4439bf1d32d28356',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
@@ -3242,7 +3255,7 @@ return [
   ),
   '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php' => 
   array (
-    'fileHash' => '2b87dd87478f3fee3ee66fc50a286f82abcb4a04',
+    'fileHash' => '36b07de180bb0cc1f2ddacc5d91060713cfd4af7',
     'dependentFiles' => 
     array (
     ),
@@ -7943,6 +7956,61 @@ return [
       ),
     )),
   ),
+  '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Http\\Controllers\\Item\\StoreItemController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\MasterData\\Http\\Requests\\Item\\StoreItemRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php' => 
   array (
     0 => 
@@ -8297,6 +8365,35 @@ return [
       ),
        'statements' => 
       array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'creating',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'item',
+               'type' => 'Modules\\MasterData\\Models\\Item\\Item',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
       ),
        'attributes' => 
       array (
