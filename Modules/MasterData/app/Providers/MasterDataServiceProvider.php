@@ -3,6 +3,8 @@
 namespace Modules\MasterData\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Modules\MasterData\Models\Item\Item;
+use Modules\MasterData\Observers\Item\ItemObserver;
 use Nwidart\Modules\Traits\PathNamespace;
 
 class MasterDataServiceProvider extends ServiceProvider
@@ -26,6 +28,8 @@ class MasterDataServiceProvider extends ServiceProvider
     {
         $this->app->register(EventServiceProvider::class);
         $this->app->register(RouteServiceProvider::class);
+
+        Item::observe(ItemObserver::class);
     }
 
     public function registerTranslations(): void
