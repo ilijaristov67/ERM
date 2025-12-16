@@ -4,8 +4,7 @@ namespace App\Helpers;
 
 class getNextMaxNumberHelper
 {
-    public function __construct(protected mixed $maxNumber)
-    {}
+    public function __construct(protected mixed $maxNumber) {}
 
     public function handle(): int
     {

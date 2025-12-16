@@ -16,7 +16,7 @@ use Modules\MasterData\Enums\Item\ItemTypeEnum;
  * @property ItemTypeEnum $type
  * @property Carbon $created_at
  * @property Carbon $updated_at
- * @property Carbon|null  $deleted_at
+ * @property Carbon|null $deleted_at
  */
 class Item extends Model
 {
@@ -28,7 +28,7 @@ class Item extends Model
     protected $fillable = [
         'name',
         'code',
-        'type'
+        'type',
     ];
 
     protected $table = 'items';

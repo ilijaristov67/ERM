@@ -2,11 +2,11 @@
 
 namespace Modules\MasterData\Http\Resources\Item;
 
+use App\Http\Resources\BaseResourceCollection;
 use App\Traits\ResourceCollectionToArray;
-use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class ItemResourceCollection extends ResourceCollection
+class ItemResourceCollection extends BaseResourceCollection
 {
-   use ResourceCollectionToArray;
+    use ResourceCollectionToArray;
 }

@@ -68,16 +68,17 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/User/User.php' => 
     array (
-      0 => 'fb3aa6b924a1dfa8e2176f8f2df810b0c8de3fa3',
+      0 => 'faeb4296e735a5d848923b359d9341a51417b074',
       1 => 
       array (
         0 => 'modules\\admin\\models\\user\\user',
       ),
       2 => 
       array (
-        0 => 'modules\\admin\\models\\user\\getjwtidentifier',
-        1 => 'modules\\admin\\models\\user\\getjwtcustomclaims',
-        2 => 'modules\\admin\\models\\user\\newfactory',
+        0 => 'modules\\admin\\models\\user\\company',
+        1 => 'modules\\admin\\models\\user\\getjwtidentifier',
+        2 => 'modules\\admin\\models\\user\\getjwtcustomclaims',
+        3 => 'modules\\admin\\models\\user\\newfactory',
       ),
       3 => 
       array (
@@ -208,7 +209,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Http/Resources/User/UserResource.php' => 
     array (
-      0 => '1dae992536d53626688e72bf6deafcfca2198d03',
+      0 => '6fa211cc825938c85f434b39777403851e244770',
       1 => 
       array (
         0 => 'modules\\admin\\http\\resources\\user\\userresource',
@@ -319,7 +320,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/ilijaristov67/projects/expense_management_backend/Modules/Admin/app/Models/Company/Company.php' => 
     array (
-      0 => '017c9cd417e1e65320403693ceaeae2c648510da',
+      0 => '1533ef9019dedc1ad59d40e0c46d58def232a3d7',
       1 => 
       array (
         0 => 'modules\\admin\\models\\company\\company',
@@ -327,6 +328,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       2 => 
       array (
         0 => 'modules\\admin\\models\\company\\newfactory',
+        1 => 'modules\\admin\\models\\company\\users',
       ),
       3 => 
       array (

@@ -8,19 +8,22 @@ use Modules\MasterData\Enums\Item\ItemTypeEnum;
 
 class StoreItemRequest extends FormRequest
 {
+    /**
+     * @return array<string, array<int, string|\Illuminate\Contracts\Validation\Rule>>
+     */
     public function rules(): array
     {
         return [
             'name' => [
                 'required',
                 'string',
-                'unique:items'
+                'unique:items',
             ],
             'type' => [
                 'required',
                 'string',
-                Rule::in(ItemTypeEnum::values())
-            ]
+                Rule::in(ItemTypeEnum::values()),
+            ],
         ];
     }
 

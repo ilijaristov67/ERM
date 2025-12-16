@@ -4,6 +4,9 @@ includes:
 parameters:
     paths:
     - Modules/Admin/app
+    - Modules/Expense/app
+    - Modules/Inventory/app
+    - Modules/MasterData/app
     level: 6
     tmpDir: var/cache/phpstan
 
