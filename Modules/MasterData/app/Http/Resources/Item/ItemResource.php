@@ -12,7 +12,6 @@ use Modules\MasterData\Models\Item\Item;
 class ItemResource extends BaseJsonResource
 {
     /** @return array<string, int|string|ItemTypeEnum|Carbon> */
-
     public function toArray(Request $request): array
     {
         return [

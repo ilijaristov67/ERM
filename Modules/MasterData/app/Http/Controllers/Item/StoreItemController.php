@@ -9,8 +9,8 @@ use Modules\MasterData\Http\Resources\Item\ItemResource;
 
 class StoreItemController extends Controller
 {
-    public function __invoke(StoreItemRequest $request):  ItemResource
+    public function __invoke(StoreItemRequest $request): ItemResource
     {
-     return StoreItem::run($request);
+        return StoreItem::run($request);
     }
 }
