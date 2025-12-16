@@ -22,14 +22,13 @@ class MasterDataServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->registerConfig();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'database/migrations'));
+        Item::observe(ItemObserver::class);
     }
 
     public function register(): void
     {
         $this->app->register(EventServiceProvider::class);
         $this->app->register(RouteServiceProvider::class);
-
-        Item::observe(ItemObserver::class);
     }
 
     public function registerTranslations(): void
