@@ -10,6 +10,7 @@ dataset('item', [
     fn () => [
         'name' => 'chair updated',
         'type' => ItemTypeEnum::RAW_MATERIAL->value,
+        'weight' => '10',
     ],
 ]);
 
@@ -31,6 +32,7 @@ beforeEach(function () {
     $this->item = Item::factory()->create([
         'name' => 'item',
         'type' => ItemTypeEnum::FINISHED_MATERIAL->value,
+        'weight' => '32',
     ]);
 })->with('item');
 
@@ -39,6 +41,7 @@ it('successfully patches all fields', function (array $data) {
         'id' => $this->item->id,
         'name' => 'item',
         'type' => ItemTypeEnum::FINISHED_MATERIAL->value,
+        'weight' => '32',
     ]);
 
     $response = $this->patchJson(route($this->route, $this->item), $data);
@@ -47,17 +50,21 @@ it('successfully patches all fields', function (array $data) {
         ->and($response->json('id'))->toBe($this->item->id)
         ->and($response->json('name'))->toBe($data['name'])
         ->and($response->json('type'))->toBe($data['type'])
-        ->and($response->json())->toHaveKeys(['id', 'name', 'code', 'type', 'created_at', 'updated_at']);
+        ->and($response->json('weight'))->toBe($data['weight'])
+        ->and($response->json())->toHaveKeys(['id', 'name', 'code', 'type', 'weight', 'created_at', 'updated_at']);
 
     $this->assertDatabaseHas('items', [
         'id' => $this->item->id,
         'name' => $data['name'],
         'type' => $data['type'],
+        'weight' => $data['weight'],
     ]);
 
     $this->assertDatabaseMissing('items', [
         'id' => $this->item->id,
         'name' => 'item',
+        'type' => ItemTypeEnum::FINISHED_MATERIAL->value,
+        'weight' => '32',
     ]);
 });
 
@@ -133,6 +140,26 @@ it('successfully patches with the same name for current record', function () {
     ]);
 });
 
+it('fails when all fields are missing', function () {
+    $response = $this->patchJson(route($this->route, $this->item), []);
+
+    expect($response->status())->toBe(422)
+        ->and($response->json())->toBeArray()
+        ->and($response->json())->toHaveKeys([
+            'message',
+            'errors',
+        ])
+        ->and($response->json('message'))->toBe('The name field is required when none of type / weight are present. (and 2 more errors)')
+        ->and($response->json('errors'))->toHaveKeys([
+            'name',
+            'type',
+            'weight',
+        ])
+        ->and($response->json('errors')['name'][0])->toContain('required')
+        ->and($response->json('errors')['type'][0])->toContain('required')
+        ->and($response->json('errors')['weight'][0])->toContain('required');
+});
+
 it('fails when name is not unique', function (array $data) {
     Item::factory()->create(['name' => $data['name']]);
 
@@ -178,4 +205,50 @@ it('fails to patch item without permission', function (array $data) {
 
     expect($response->status())->toBe(403)
         ->and($response->json('message'))->toBe(__('User does not have the right permissions.'));
+});
+
+it('fails when weight is not numeric', function () {
+    $response = $this->patchJson(route($this->route, $this->item), [
+        'weight' => 'not-a-number',
+    ]);
+
+    expect($response->status())->toBe(422)
+        ->and($response->json('errors'))->toHaveKey('weight')
+        ->and($response->json('message'))->toContain('must be a number');
+});
+
+it('fails when weight is below or equal to 0', function () {
+    $response = $this->patchJson(route($this->route, $this->item), [
+        'weight' => 0,
+    ]);
+
+    expect($response->status())->toBe(422)
+        ->and($response->json('errors'))->toHaveKey('weight')
+        ->and($response->json('message'))->toContain('must be greater than 0');
+});
+
+it('successfully patches only weight', function (array $data) {
+    $this->assertDatabaseHas('items', [
+        'id' => $this->item->id,
+        'weight' => '32',
+    ]);
+
+    $response = $this->patchJson(route($this->route, $this->item), [
+        'weight' => $data['weight'],
+    ]);
+
+    expect($response->status())->toBe(200)
+        ->and($response->json('id'))->toBe($this->item->id)
+        ->and($response->json('weight'))->toBe($data['weight'])
+        ->and($response->json())->toHaveKeys(['id', 'name', 'code', 'type', 'weight', 'created_at', 'updated_at']);
+
+    $this->assertDatabaseHas('items', [
+        'id' => $this->item->id,
+        'weight' => $data['weight'],
+    ]);
+
+    $this->assertDatabaseMissing('items', [
+        'id' => $this->item->id,
+        'weight' => '32',
+    ]);
 });
