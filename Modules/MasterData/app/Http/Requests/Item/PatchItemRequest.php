@@ -12,6 +12,7 @@ class PatchItemRequest extends FormRequest
     private const array COLUMNS = [
         'name',
         'type',
+        'weight'
     ];
 
     /**
@@ -35,6 +36,11 @@ class PatchItemRequest extends FormRequest
                 Rule::in(ItemTypeEnum::values()),
                 'required_without_all:'.$requiredWithoutAll->handle('type'),
             ],
+            'weight' => [
+                'nullable',
+                'string',
+                'required_without_all:'.$requiredWithoutAll->handle('weight'),
+            ]
         ];
     }
 
