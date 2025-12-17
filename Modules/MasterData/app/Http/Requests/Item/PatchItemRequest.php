@@ -12,7 +12,7 @@ class PatchItemRequest extends FormRequest
     private const array COLUMNS = [
         'name',
         'type',
-        'weight'
+        'weight',
     ];
 
     /**
@@ -38,9 +38,10 @@ class PatchItemRequest extends FormRequest
             ],
             'weight' => [
                 'nullable',
-                'string',
+                'numeric:',
+                'gt:0',
                 'required_without_all:'.$requiredWithoutAll->handle('weight'),
-            ]
+            ],
         ];
     }
 

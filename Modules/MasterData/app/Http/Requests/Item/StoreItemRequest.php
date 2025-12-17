@@ -24,6 +24,11 @@ class StoreItemRequest extends FormRequest
                 'string',
                 Rule::in(ItemTypeEnum::values()),
             ],
+            'weight' => [
+                'required',
+                'numeric',
+                'gt:0',
+            ],
         ];
     }
 

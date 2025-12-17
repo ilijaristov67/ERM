@@ -24,6 +24,7 @@ dataset('item', [
     fn () => [
         'name' => 'chair',
         'type' => ItemTypeEnum::RAW_MATERIAL->value,
+        'weight' => '1',
     ],
 ]);
 
@@ -39,6 +40,7 @@ it('successfully stores item', function (array $data) {
             'name',
             'code',
             'type',
+            'weight',
             'created_at',
             'updated_at',
         ]);
@@ -48,6 +50,7 @@ it('successfully stores item', function (array $data) {
         'id' => $response->json('id'),
         'name' => $data['name'],
         'type' => $data['type'],
+        'weight' => $data['weight'],
     ]);
 })->with('item');
 
@@ -157,6 +160,63 @@ it('fails to store item without permission', function (array $data) {
     expect($response->status())->toBe(403)
         ->and($response->json())->toHaveKey('message')
         ->and($response->json('message'))->toBe(__('User does not have the right permissions.'));
+
+    $this->assertDatabaseCount('items', 0);
+})->with('item');
+
+it('fails when weight is missing', function (array $data) {
+    unset($data['weight']);
+
+    $this->assertDatabaseCount('items', 0);
+
+    $response = $this->postJson(route($this->route), $data);
+
+    expect($response->status())->toBe(422)
+        ->and($response->json())->toBeArray()
+        ->and($response->json())->toHaveKeys([
+            'message',
+            'errors',
+        ])
+        ->and($response->json('message'))->toContain('is required')
+        ->and($response->json('errors'))->toHaveKey('weight');
+
+    $this->assertDatabaseCount('items', 0);
+})->with('item');
+
+it('fails when weight is below 1', function (array $data) {
+    $data['weight'] = 0;
+
+    $this->assertDatabaseCount('items', 0);
+
+    $response = $this->postJson(route($this->route), $data);
+
+    expect($response->status())->toBe(422)
+        ->and($response->json())->toBeArray()
+        ->and($response->json())->toHaveKeys([
+            'message',
+            'errors',
+        ])
+        ->and($response->json('message'))->toContain('The weight field must be greater than 0')
+        ->and($response->json('errors'))->toHaveKey('weight');
+
+    $this->assertDatabaseCount('items', 0);
+})->with('item');
+
+it('fails when weight is not numeric', function (array $data) {
+    $data['weight'] = 'not-a-number';
+
+    $this->assertDatabaseCount('items', 0);
+
+    $response = $this->postJson(route($this->route), $data);
+
+    expect($response->status())->toBe(422)
+        ->and($response->json())->toBeArray()
+        ->and($response->json())->toHaveKeys([
+            'message',
+            'errors',
+        ])
+        ->and($response->json('message'))->toContain('must be a number')
+        ->and($response->json('errors'))->toHaveKey('weight');
 
     $this->assertDatabaseCount('items', 0);
 })->with('item');
