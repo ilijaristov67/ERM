@@ -13,6 +13,7 @@ class PatchItemRequest extends FormRequest
         'name',
         'type',
     ];
+
     /**
      * @return array<string, array<int, string|\Illuminate\Contracts\Validation\Rule>>
      */
