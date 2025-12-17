@@ -14,6 +14,7 @@ use Modules\MasterData\Enums\Item\ItemTypeEnum;
  * @property string $name
  * @property string $code
  * @property ItemTypeEnum $type
+ * @property string $weight
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null $deleted_at
@@ -29,6 +30,7 @@ class Item extends Model
         'name',
         'code',
         'type',
+        'weight',
     ];
 
     protected $table = 'items';

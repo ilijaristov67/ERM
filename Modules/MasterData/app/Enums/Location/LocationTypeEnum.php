@@ -12,9 +12,9 @@ enum LocationTypeEnum: string
 
     case FACTORY = 'factory';
 
-    case STORE  = 'store';
+    case STORE = 'store';
 
-     case TRANSIT = 'transit';
+    case TRANSIT = 'transit';
 
-     case DAMAGED = 'damaged';
+    case DAMAGED = 'damaged';
 }

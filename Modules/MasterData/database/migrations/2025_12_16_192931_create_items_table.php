@@ -17,6 +17,7 @@ return new class extends Migration
                 'type',
                 ItemTypeEnum::values()
             );
+            $table->string('weight');
             $table->timestamps();
         });
     }

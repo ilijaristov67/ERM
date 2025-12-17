@@ -16,6 +16,7 @@ class ItemFactory extends Factory
             'name' => $this->faker->unique()->word(),
             'code' => $this->faker->unique()->word(),
             'type' => $this->faker->randomElement(ItemTypeEnum::values()),
+            'weight' => $this->faker->numberBetween(1, 100),
         ];
     }
 }

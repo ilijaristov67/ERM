@@ -19,6 +19,7 @@ class ItemResource extends BaseJsonResource
             'name' => $this->name,
             'code' => $this->code,
             'type' => $this->type,
+            'weight' => $this->weight,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

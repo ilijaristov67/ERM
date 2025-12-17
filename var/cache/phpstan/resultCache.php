@@ -2653,12 +2653,12 @@ return [
       0 => 
       array (
         0 => 'Successfully deleted',
-        1 => 18,
+        1 => 19,
       ),
       1 => 
       array (
         0 => 'entities.item',
-        1 => 19,
+        1 => 20,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2709,6 +2709,16 @@ return [
       ),
     ),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Enums/Location/LocationTypeEnum.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Traits\\EnumToArray',
+      ),
+    ),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
@@ -2740,6 +2750,16 @@ return [
         0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
       1 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+      ),
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Location/Location.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
       array (
         0 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
       ),
@@ -3232,7 +3252,7 @@ return [
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/DeleteItem.php' => 
   array (
-    'fileHash' => '963ae1589d5b7b707062ab1bd98b6385d213a41c',
+    'fileHash' => '38376d845df7ad4068c8398f54d756fb3b625ea3',
     'dependentFiles' => 
     array (
       0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
@@ -3279,6 +3299,13 @@ return [
       9 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Item/Item.php',
       10 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php',
       11 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Enums/Location/LocationTypeEnum.php' => 
+  array (
+    'fileHash' => '676fa5378bec5ba3e373e789ccc3e2cc4ee60920',
+    'dependentFiles' => 
+    array (
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php' => 
@@ -3338,7 +3365,7 @@ return [
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
   array (
-    'fileHash' => 'bc4baa516fe055c2f1b613769333183d6008b168',
+    'fileHash' => 'ece5ac6d13dbf461c6af4222fbe2163ac297a5ab',
     'dependentFiles' => 
     array (
       0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',
@@ -3358,7 +3385,7 @@ return [
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Item/Item.php' => 
   array (
-    'fileHash' => '9b3f5acfc63923fcc67ccce9cbf7e4df62bf2731',
+    'fileHash' => '512fc9e79bff92740c19e63a108d8e1994b512c7',
     'dependentFiles' => 
     array (
       0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/DeleteItem.php',
@@ -3371,6 +3398,13 @@ return [
       7 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
       8 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php',
       9 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Location/Location.php' => 
+  array (
+    'fileHash' => '0d8a47e558be31ff6b57fe796e815eb64c886b8f',
+    'dependentFiles' => 
+    array (
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
@@ -8271,6 +8305,54 @@ return [
       ),
     )),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Enums/Location/LocationTypeEnum.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Enums\\Location\\LocationTypeEnum',
+       'scalarType' => 'string',
+       'phpDoc' => NULL,
+       'implements' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedEnumCaseNode::__set_state(array(
+           'name' => 'WAREHOUSE',
+           'value' => '\'warehouse\'',
+           'phpDoc' => NULL,
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedEnumCaseNode::__set_state(array(
+           'name' => 'FACTORY',
+           'value' => '\'factory\'',
+           'phpDoc' => NULL,
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedEnumCaseNode::__set_state(array(
+           'name' => 'STORE',
+           'value' => '\'store\'',
+           'phpDoc' => NULL,
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedEnumCaseNode::__set_state(array(
+           'name' => 'TRANSIT',
+           'value' => '\'transit\'',
+           'phpDoc' => NULL,
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedEnumCaseNode::__set_state(array(
+           'name' => 'DAMAGED',
+           'value' => '\'damaged\'',
+           'phpDoc' => NULL,
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php' => 
   array (
     0 => 
@@ -8879,6 +8961,7 @@ return [
  * @property string $name
  * @property string $code
  * @property ItemTypeEnum $type
+ * @property string $weight
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null $deleted_at
@@ -9006,6 +9089,33 @@ return [
           array (
           ),
         )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Location/Location.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Models\\Location\\Location',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
       ),
        'attributes' => 
       array (
