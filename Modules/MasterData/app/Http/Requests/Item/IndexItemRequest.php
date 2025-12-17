@@ -3,7 +3,6 @@
 namespace Modules\MasterData\Http\Requests\Item;
 
 use App\Http\Requests\BaseIndexRequest;
-use Illuminate\Foundation\Http\FormRequest;
 
 class IndexItemRequest extends BaseIndexRequest
 {
@@ -11,7 +10,7 @@ class IndexItemRequest extends BaseIndexRequest
         'id',
         'name',
         'type',
-        'code'
+        'code',
     ];
 
     /** @var list<string> */
@@ -38,7 +37,7 @@ class IndexItemRequest extends BaseIndexRequest
             'filter.code' => [
                 'sometimes',
                 'string',
-            ]
+            ],
         ]);
     }
 
