@@ -17,19 +17,20 @@ class PatchItemRequest extends FormRequest
     public function rules(): array
     {
         $requiredWithoutAll = new RequiredWithoutAllHelper(collect(self::COLUMNS));
+
         return [
             'name' => [
                 'nullable',
                 'string',
                 'unique:items',
                 'required_without_all:'.$requiredWithoutAll->handle('name'),
-                ],
+            ],
             'type' => [
                 'nullable',
                 'string',
                 Rule::in(ItemTypeEnum::values()),
                 'required_without_all:'.$requiredWithoutAll->handle('type'),
-            ]
+            ],
         ];
     }
 
