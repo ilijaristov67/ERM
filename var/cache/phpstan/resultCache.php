@@ -3244,7 +3244,7 @@ return [
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php' => 
   array (
-    'fileHash' => '77efbc75f47b85f1efcda64050765fe2325a6567',
+    'fileHash' => 'a89834a8ce64d2bcb2cb272938f7d8d1ccf0e625',
     'dependentFiles' => 
     array (
       0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',

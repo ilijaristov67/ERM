@@ -20,12 +20,13 @@ class PatchItemRequest extends FormRequest
     public function rules(): array
     {
         $requiredWithoutAll = new RequiredWithoutAllHelper(collect(self::COLUMNS));
+        $item = $this->route('item');
 
         return [
             'name' => [
                 'nullable',
                 'string',
-                'unique:items',
+                'unique:items,name,'.$item->id,
                 'required_without_all:'.$requiredWithoutAll->handle('name'),
             ],
             'type' => [
