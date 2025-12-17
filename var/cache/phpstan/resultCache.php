@@ -2646,6 +2646,29 @@ return [
       ),
     ),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/DeleteItem.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Successfully deleted',
+        1 => 18,
+      ),
+      1 => 
+      array (
+        0 => 'entities.item',
+        1 => 19,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+    ),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/IndexItem.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -3207,6 +3230,14 @@ return [
       0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/InventoryServiceProvider.php',
     ),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/DeleteItem.php' => 
+  array (
+    'fileHash' => '963ae1589d5b7b707062ab1bd98b6385d213a41c',
+    'dependentFiles' => 
+    array (
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
+    ),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/IndexItem.php' => 
   array (
     'fileHash' => '6ff359b12366b2185aa1789f292602e163363f47',
@@ -3236,16 +3267,25 @@ return [
     'fileHash' => '56e6735f70879d12b729f58f166aa632ef47fc92',
     'dependentFiles' => 
     array (
-      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/IndexItem.php',
-      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',
-      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
-      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
-      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
-      6 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
-      7 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Item/Item.php',
-      8 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php',
-      9 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/DeleteItem.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/IndexItem.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
+      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
+      6 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
+      7 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
+      8 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      9 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Item/Item.php',
+      10 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php',
+      11 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php' => 
+  array (
+    'fileHash' => 'e0d0649da204c056e6bac13620fceee01c153d52',
+    'dependentFiles' => 
+    array (
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/IndexItemController.php' => 
@@ -3321,14 +3361,16 @@ return [
     'fileHash' => '9b3f5acfc63923fcc67ccce9cbf7e4df62bf2731',
     'dependentFiles' => 
     array (
-      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/IndexItem.php',
-      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',
-      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
-      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
-      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
-      6 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php',
-      7 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/DeleteItem.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/IndexItem.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
+      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
+      6 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+      7 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      8 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php',
+      9 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
@@ -7958,6 +8000,62 @@ return [
       ),
     )),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/DeleteItem.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Actions\\Item\\DeleteItem',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'App\\Http\\Resources\\SuccessfulOperationMessageResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'item',
+               'type' => 'Modules\\MasterData\\Models\\Item\\Item',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/IndexItem.php' => 
   array (
     0 => 
@@ -8166,6 +8264,61 @@ return [
            'name' => 'TRADE_GOOD',
            'value' => '\'trade_good\'',
            'phpDoc' => NULL,
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Http\\Controllers\\Item\\DeleteItemController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'App\\Http\\Resources\\SuccessfulOperationMessageResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'item',
+               'type' => 'Modules\\MasterData\\Models\\Item\\Item',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
         )),
       ),
        'attributes' => 
