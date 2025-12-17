@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/DOMNodeComparator.php' => 
     array (
-      0 => '59f3cbd6cd783a70863941e3b09ca2112d6c8511',
+      0 => 'd1e90954f43ba619a4b2221c34308bdb69cb08a9',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\domnodecomparator',
@@ -24,7 +24,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/SplObjectStorageComparator.php' => 
     array (
-      0 => 'd1416f56d65171fbe999e14854530fa59b0c754e',
+      0 => '001835596c2cbbcef7da4e1cd7a142a01561f872',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\splobjectstoragecomparator',
@@ -40,7 +40,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/ObjectComparator.php' => 
     array (
-      0 => 'b4afaa81066faf1196f2a31bc54440c2274266b1',
+      0 => 'b98e6a5fc07a32b90adb226ede0c3a44d3fcc30f',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\objectcomparator',
@@ -57,7 +57,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/ScalarComparator.php' => 
     array (
-      0 => '4054db6501f1d8ca4633838feac034d01af1a2f3',
+      0 => '2c77035ce7a1fdeccef61349c5027c5c4b0d029e',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\scalarcomparator',
@@ -77,7 +77,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/EnumerationComparator.php' => 
     array (
-      0 => '8bf8b606dbe97642f5335b7eaabe7ce2a25abf70',
+      0 => '370afbd874e5bfbad17bf801fd1d3c5663841440',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\enumerationcomparator',
@@ -93,7 +93,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/ArrayComparator.php' => 
     array (
-      0 => '0762c0b8f0283f3a12eba475e68bb7e18136f2dd',
+      0 => '58697c60c0d8409d2056ead648b69776bbd6cae5',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\arraycomparator',
@@ -110,7 +110,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/ComparisonFailure.php' => 
     array (
-      0 => '7f7b6a0bf1f828dc2476d76c7b024ddf2eb96a35',
+      0 => 'c1597a8b98e2e222778db196142e4575c51f0e38',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\comparisonfailure',
@@ -131,7 +131,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/NumberComparator.php' => 
     array (
-      0 => '4fe968b48b5ec6f58911f7bacc643d3083545c66',
+      0 => '1f2edb7cb6d26280e7d642baedadcc9b79c2d03a',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\numbercomparator',
@@ -147,7 +147,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/Factory.php' => 
     array (
-      0 => '9b6254ffac6ddd1c9173d0ae37f852de3d9bbda1',
+      0 => '8dd6cc948cad6aa0ab91de37f5f4c1c6a9e38872',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\factory',
@@ -169,7 +169,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/Comparator.php' => 
     array (
-      0 => '65a17773ecbc26b7210cc14269d734eb46732767',
+      0 => 'bdbf29dd43ccc421fc853fe124d732cfef65ceb6',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\comparator',
@@ -187,7 +187,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/ExceptionComparator.php' => 
     array (
-      0 => '6903f3314181ea2f25478c45a8d694fe57d54e3e',
+      0 => 'd3864b4da9320a260919436ce879e78bc8bc9215',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\exceptioncomparator',
@@ -203,7 +203,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/exceptions/RuntimeException.php' => 
     array (
-      0 => 'd003040d7e1f41055e36d6ffc4386fa5b69a0657',
+      0 => '33d5a35b38d809c3f7f1e65c77fe9d6b03a15d38',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\runtimeexception',
@@ -217,7 +217,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/exceptions/Exception.php' => 
     array (
-      0 => 'f1e8aa746d62e8f73b40edc650b39bac4bb05e66',
+      0 => 'b8af7f7eec5d2d604c6777c8ca9a7fdbd5ab1fa5',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\exception',
@@ -231,7 +231,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/MockObjectComparator.php' => 
     array (
-      0 => 'a2456a9ee515f4a6addd8dc6fd039b4990797cb9',
+      0 => '9cdbb6ebed4aedf5b7ce7727da241f46f03bdd61',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\mockobjectcomparator',
@@ -247,7 +247,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/NumericComparator.php' => 
     array (
-      0 => '103d6be08db1b980e0e14e3e7214e43017a99db0',
+      0 => '83ecc728b4f7c42c7a35e93a074d7d9d59131f15',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\numericcomparator',
@@ -265,7 +265,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/ResourceComparator.php' => 
     array (
-      0 => '0481704c620be00d69ac3c88436c0e94a34d7f11',
+      0 => '49930352d07dcfcb9adfb095cf2de7bef7878f2f',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\resourcecomparator',
@@ -281,7 +281,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/TypeComparator.php' => 
     array (
-      0 => '03c9915bfa9ebe20e06941c7920660985fc92f4f',
+      0 => 'c086c3499af58349c6d55b2242ce9ee1925795d9',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\typecomparator',
@@ -297,10 +297,26 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/DateTimeComparator.php' => 
     array (
-      0 => '3242d8422b096e75ff332c4964dbe8819b5c58c5',
+      0 => '59810e24aa086438817c835d0f961bda6373afd4',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\datetimecomparator',
+      ),
+      2 => 
+      array (
+        0 => 'sebastianbergmann\\comparator\\accepts',
+        1 => 'sebastianbergmann\\comparator\\assertequals',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/comparator/src/ClosureComparator.php' => 
+    array (
+      0 => 'cd83a66000ed0decce5ca4f6bf1dcaff3995e59d',
+      1 => 
+      array (
+        0 => 'sebastianbergmann\\comparator\\closurecomparator',
       ),
       2 => 
       array (

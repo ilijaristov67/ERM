@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/version/src/Version.php' => 
     array (
-      0 => '3cc851321f987fa548ad171836abc846c2b73810',
+      0 => '6f5064921ae0a162dc3275024daae4dcbee20b3c',
       1 => 
       array (
         0 => 'sebastianbergmann\\version',

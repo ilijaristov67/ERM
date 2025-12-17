@@ -94,7 +94,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/type/src/type/IntersectionType.php' => 
     array (
-      0 => '38c89a518c905000c33c495ca3275e6ee60a19b3',
+      0 => '1e33ce293337877c46fac076da0e3f7147532bf8',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\intersectiontype',
@@ -304,7 +304,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/type/src/type/UnionType.php' => 
     array (
-      0 => '66f02aa3de0415878ffac04cf14dd213631cafdd',
+      0 => 'f3c7d0e5357b105d8b2da7c51a62338e6128ee6c',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\uniontype',

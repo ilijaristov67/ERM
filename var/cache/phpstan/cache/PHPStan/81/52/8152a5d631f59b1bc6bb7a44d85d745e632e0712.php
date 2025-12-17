@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/recursion-context/src/Context.php' => 
     array (
-      0 => '658ae4dc165ae4bf9cd210b51e1e21608c82007e',
+      0 => 'd3d19f5d3e7e8aaed6aa095c96ee62cbfe37af33',
       1 => 
       array (
         0 => 'sebastianbergmann\\recursioncontext\\context',

@@ -1,32 +1,32 @@
 <?php declare(strict_types = 1);
 
 return [
-	'lastFullAnalysisTime' => 1765920796,
+	'lastFullAnalysisTime' => 1765979268,
 	'meta' => array (
   'cacheVersion' => 'v12-linesToIgnore',
   'phpstanVersion' => '2.1.29',
   'metaExtensions' => 
   array (
   ),
-  'phpVersion' => 80415,
-  'projectConfig' => '{conditionalTags: {Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule: {phpstan.rules.rule: %noEnvCallsOutsideOfConfig%}, Larastan\\Larastan\\Rules\\NoModelMakeRule: {phpstan.rules.rule: %noModelMake%}, Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule: {phpstan.rules.rule: %noUnnecessaryCollectionCall%}, Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule: {phpstan.rules.rule: %noUnnecessaryEnumerableToArrayCalls%}, Larastan\\Larastan\\Rules\\OctaneCompatibilityRule: {phpstan.rules.rule: %checkOctaneCompatibility%}, Larastan\\Larastan\\Rules\\UnusedViewsRule: {phpstan.rules.rule: %checkUnusedViews%}, Larastan\\Larastan\\Rules\\NoMissingTranslationsRule: {phpstan.rules.rule: %checkMissingTranslations%}, Larastan\\Larastan\\Rules\\ModelAppendsRule: {phpstan.rules.rule: %checkModelAppends%}, Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule: {phpstan.rules.rule: %checkModelMethodVisibility%}, Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %generalizeEnvReturnType%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension: {phpstan.broker.dynamicMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension: {phpstan.broker.dynamicStaticMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\Rules\\ConfigCollectionRule: {phpstan.rules.rule: %checkConfigTypes%}}, parameters: {universalObjectCratesClasses: [Illuminate\\Http\\Request, Illuminate\\Support\\Optional], earlyTerminatingFunctionCalls: [abort, dd], mixinExcludeClasses: [Eloquent], bootstrapFiles: [bootstrap.php], checkOctaneCompatibility: false, noEnvCallsOutsideOfConfig: true, noModelMake: true, noUnnecessaryCollectionCall: true, noUnnecessaryCollectionCallOnly: [], noUnnecessaryCollectionCallExcept: [], noUnnecessaryEnumerableToArrayCalls: false, squashedMigrationsPath: [], databaseMigrationsPath: [], disableMigrationScan: false, disableSchemaScan: false, configDirectories: [], viewDirectories: [], translationDirectories: [], checkModelProperties: false, checkUnusedViews: false, checkMissingTranslations: false, checkModelAppends: true, checkModelMethodVisibility: false, generalizeEnvReturnType: false, checkConfigTypes: false, checkAuthCallsWhenInRequestScope: false, paths: [/app/Modules/Admin/app, /app/Modules/Expense/app, /app/Modules/Inventory/app, /app/Modules/MasterData/app], level: 6, tmpDir: /app/var/cache/phpstan}, rules: [Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessWithFunctionCallsRule, Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessValueFunctionCallsRule, Larastan\\Larastan\\Rules\\DeferrableServiceProviderMissingProvidesRule, Larastan\\Larastan\\Rules\\ConsoleCommand\\UndefinedArgumentOrOptionRule], services: [{class: Larastan\\Larastan\\Methods\\RelationForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\EloquentBuilderForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderTapProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderCollectionProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\StorageMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\Extension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelFactoryMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\RedirectResponseMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\MacroMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ViewWithMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelAccessorExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\HigherOrderCollectionProxyPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\HigherOrderTapProxyExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\Properties\\ModelRelationsExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelOnlyDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelFactoryDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthManagerExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DateExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestFileExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestRouteExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestUserExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentBuilderExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RelationCollectionExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TestCaseExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Support\\CollectionHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AuthExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\CollectExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\NowAndTodayExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ResponseExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValidatorExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\LiteralExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionFilterRejectDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionWhereNotNullDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\NewModelQueryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\FactoryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: true}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: true}}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AppExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValueExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\StrExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\TapExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\StorageDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\GenericEloquentCollectionTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Types\\ViewStringTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Rules\\OctaneCompatibilityRule}, {class: Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule, arguments: {configDirectories: %configDirectories%}}, {class: Larastan\\Larastan\\Rules\\NoModelMakeRule}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule, arguments: {onlyMethods: %noUnnecessaryCollectionCallOnly%, excludeMethods: %noUnnecessaryCollectionCallExcept%}}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule}, {class: Larastan\\Larastan\\Rules\\ModelAppendsRule}, {class: Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule}, {class: Larastan\\Larastan\\Types\\GenericEloquentBuilderTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppFacadeEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\ModelProperty\\ModelPropertyTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension], arguments: {active: %checkModelProperties%}}, {class: Larastan\\Larastan\\Types\\CollectionOf\\CollectionOfTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Properties\\MigrationHelper, arguments: {databaseMigrationPath: %databaseMigrationsPath%, disableMigrationScan: %disableMigrationScan%, parser: @currentPhpVersionSimpleDirectParser, reflectionProvider: @reflectionProvider}}, {class: Larastan\\Larastan\\Properties\\SquashedMigrationHelper, arguments: {schemaPaths: %squashedMigrationsPath%, disableSchemaScan: %disableSchemaScan%}}, {class: Larastan\\Larastan\\Properties\\ModelCastHelper}, {class: Larastan\\Larastan\\Properties\\ModelPropertyHelper}, {class: Larastan\\Larastan\\Rules\\ModelRuleHelper}, {class: Larastan\\Larastan\\Methods\\BuilderHelper, arguments: {checkProperties: %checkModelProperties%}}, {class: Larastan\\Larastan\\Rules\\RelationExistenceRule, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Bus\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Events\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Properties\\Schema\\MySqlDataTypeToPhpTypeConverter}, {class: Larastan\\Larastan\\LarastanStubFilesExtension, tags: [phpstan.stubFilesExtension]}, {class: Larastan\\Larastan\\Rules\\UnusedViewsRule}, {class: Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedEmailViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewFacadeMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedRouteFacadeViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewInAnotherViewCollector}, {class: Larastan\\Larastan\\Support\\ViewFileHelper, arguments: {viewDirectories: %viewDirectories%}}, {class: Larastan\\Larastan\\Support\\ViewParser, arguments: {parser: @currentPhpVersionSimpleDirectParser}}, {class: Larastan\\Larastan\\Rules\\NoMissingTranslationsRule, arguments: {translationDirectories: %translationDirectories%}}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationTranslatorCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFacadeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationViewCollector}, {class: Larastan\\Larastan\\ReturnTypes\\ApplicationMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\ArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\OptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasOptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TranslatorGetReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\LangGetReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TransHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DoubleUnderscoreHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeHelper}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationResolver}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationHelper}, {class: Larastan\\Larastan\\Support\\HigherOrderCollectionProxyHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension}, {class: Larastan\\Larastan\\Support\\ConfigParser, arguments: {parser: @currentPhpVersionSimpleDirectParser, configPaths: %configDirectories%}}, {class: Larastan\\Larastan\\Internal\\ConfigHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\FormRequestSafeDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\ConfigCollectionRule}, {class: Illuminate\\Filesystem\\Filesystem, autowired: self}]}',
+  'phpVersion' => 80412,
+  'projectConfig' => '{conditionalTags: {Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule: {phpstan.rules.rule: %noEnvCallsOutsideOfConfig%}, Larastan\\Larastan\\Rules\\NoModelMakeRule: {phpstan.rules.rule: %noModelMake%}, Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule: {phpstan.rules.rule: %noUnnecessaryCollectionCall%}, Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule: {phpstan.rules.rule: %noUnnecessaryEnumerableToArrayCalls%}, Larastan\\Larastan\\Rules\\OctaneCompatibilityRule: {phpstan.rules.rule: %checkOctaneCompatibility%}, Larastan\\Larastan\\Rules\\UnusedViewsRule: {phpstan.rules.rule: %checkUnusedViews%}, Larastan\\Larastan\\Rules\\NoMissingTranslationsRule: {phpstan.rules.rule: %checkMissingTranslations%}, Larastan\\Larastan\\Rules\\ModelAppendsRule: {phpstan.rules.rule: %checkModelAppends%}, Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule: {phpstan.rules.rule: %checkModelMethodVisibility%}, Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %generalizeEnvReturnType%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension: {phpstan.broker.dynamicMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension: {phpstan.broker.dynamicStaticMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\Rules\\ConfigCollectionRule: {phpstan.rules.rule: %checkConfigTypes%}}, parameters: {universalObjectCratesClasses: [Illuminate\\Http\\Request, Illuminate\\Support\\Optional], earlyTerminatingFunctionCalls: [abort, dd], mixinExcludeClasses: [Eloquent], bootstrapFiles: [bootstrap.php], checkOctaneCompatibility: false, noEnvCallsOutsideOfConfig: true, noModelMake: true, noUnnecessaryCollectionCall: true, noUnnecessaryCollectionCallOnly: [], noUnnecessaryCollectionCallExcept: [], noUnnecessaryEnumerableToArrayCalls: false, squashedMigrationsPath: [], databaseMigrationsPath: [], disableMigrationScan: false, disableSchemaScan: false, configDirectories: [], viewDirectories: [], translationDirectories: [], checkModelProperties: false, checkUnusedViews: false, checkMissingTranslations: false, checkModelAppends: true, checkModelMethodVisibility: false, generalizeEnvReturnType: false, checkConfigTypes: false, checkAuthCallsWhenInRequestScope: false, paths: [/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app, /home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app, /home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app, /home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app], level: 6, tmpDir: /home/user/PhpstormProjects/expense-management/expense_management/var/cache/phpstan}, rules: [Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessWithFunctionCallsRule, Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessValueFunctionCallsRule, Larastan\\Larastan\\Rules\\DeferrableServiceProviderMissingProvidesRule, Larastan\\Larastan\\Rules\\ConsoleCommand\\UndefinedArgumentOrOptionRule], services: [{class: Larastan\\Larastan\\Methods\\RelationForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\EloquentBuilderForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderTapProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderCollectionProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\StorageMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\Extension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelFactoryMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\RedirectResponseMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\MacroMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ViewWithMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelAccessorExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\HigherOrderCollectionProxyPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\HigherOrderTapProxyExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\Properties\\ModelRelationsExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelOnlyDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelFactoryDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthManagerExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DateExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestFileExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestRouteExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestUserExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentBuilderExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RelationCollectionExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TestCaseExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Support\\CollectionHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AuthExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\CollectExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\NowAndTodayExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ResponseExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValidatorExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\LiteralExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionFilterRejectDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionWhereNotNullDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\NewModelQueryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\FactoryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: true}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: true}}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AppExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValueExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\StrExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\TapExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\StorageDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\GenericEloquentCollectionTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Types\\ViewStringTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Rules\\OctaneCompatibilityRule}, {class: Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule, arguments: {configDirectories: %configDirectories%}}, {class: Larastan\\Larastan\\Rules\\NoModelMakeRule}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule, arguments: {onlyMethods: %noUnnecessaryCollectionCallOnly%, excludeMethods: %noUnnecessaryCollectionCallExcept%}}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule}, {class: Larastan\\Larastan\\Rules\\ModelAppendsRule}, {class: Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule}, {class: Larastan\\Larastan\\Types\\GenericEloquentBuilderTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppFacadeEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\ModelProperty\\ModelPropertyTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension], arguments: {active: %checkModelProperties%}}, {class: Larastan\\Larastan\\Types\\CollectionOf\\CollectionOfTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Properties\\MigrationHelper, arguments: {databaseMigrationPath: %databaseMigrationsPath%, disableMigrationScan: %disableMigrationScan%, parser: @currentPhpVersionSimpleDirectParser, reflectionProvider: @reflectionProvider}}, {class: Larastan\\Larastan\\Properties\\SquashedMigrationHelper, arguments: {schemaPaths: %squashedMigrationsPath%, disableSchemaScan: %disableSchemaScan%}}, {class: Larastan\\Larastan\\Properties\\ModelCastHelper}, {class: Larastan\\Larastan\\Properties\\ModelPropertyHelper}, {class: Larastan\\Larastan\\Rules\\ModelRuleHelper}, {class: Larastan\\Larastan\\Methods\\BuilderHelper, arguments: {checkProperties: %checkModelProperties%}}, {class: Larastan\\Larastan\\Rules\\RelationExistenceRule, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Bus\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Events\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Properties\\Schema\\MySqlDataTypeToPhpTypeConverter}, {class: Larastan\\Larastan\\LarastanStubFilesExtension, tags: [phpstan.stubFilesExtension]}, {class: Larastan\\Larastan\\Rules\\UnusedViewsRule}, {class: Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedEmailViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewFacadeMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedRouteFacadeViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewInAnotherViewCollector}, {class: Larastan\\Larastan\\Support\\ViewFileHelper, arguments: {viewDirectories: %viewDirectories%}}, {class: Larastan\\Larastan\\Support\\ViewParser, arguments: {parser: @currentPhpVersionSimpleDirectParser}}, {class: Larastan\\Larastan\\Rules\\NoMissingTranslationsRule, arguments: {translationDirectories: %translationDirectories%}}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationTranslatorCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFacadeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationViewCollector}, {class: Larastan\\Larastan\\ReturnTypes\\ApplicationMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\ArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\OptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasOptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TranslatorGetReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\LangGetReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TransHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DoubleUnderscoreHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeHelper}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationResolver}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationHelper}, {class: Larastan\\Larastan\\Support\\HigherOrderCollectionProxyHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension}, {class: Larastan\\Larastan\\Support\\ConfigParser, arguments: {parser: @currentPhpVersionSimpleDirectParser, configPaths: %configDirectories%}}, {class: Larastan\\Larastan\\Internal\\ConfigHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\FormRequestSafeDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\ConfigCollectionRule}, {class: Illuminate\\Filesystem\\Filesystem, autowired: self}]}',
   'analysedPaths' => 
   array (
-    0 => '/app/Modules/Admin/app',
-    1 => '/app/Modules/Expense/app',
-    2 => '/app/Modules/Inventory/app',
-    3 => '/app/Modules/MasterData/app',
+    0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app',
+    1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app',
+    2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app',
+    3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app',
   ),
   'scannedFiles' => 
   array (
   ),
   'composerLocks' => 
   array (
-    '/app/composer.lock' => '55a0858326f0fd8897c52ad3cadaee9a7910a4a4',
+    '/home/user/PhpstormProjects/expense-management/expense_management/composer.lock' => '55a0858326f0fd8897c52ad3cadaee9a7910a4a4',
   ),
   'composerInstalled' => 
   array (
-    '/app/vendor/composer/installed.php' => 
+    '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/installed.php' => 
     array (
       'versions' => 
       array (
@@ -36,7 +36,7 @@ return [
           'version' => '7.14.1.0',
           'reference' => 'e1a93c38a94f4808faf75552e835666d3a6f8bb2',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../brianium/paratest',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../brianium/paratest',
           'aliases' => 
           array (
           ),
@@ -48,7 +48,7 @@ return [
           'version' => '0.14.0.0',
           'reference' => '113a8ee2656b882d4c3164fa31aa6e12cbb7aaa2',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../brick/math',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../brick/math',
           'aliases' => 
           array (
           ),
@@ -60,7 +60,7 @@ return [
           'version' => '3.2.0.0',
           'reference' => '18ba5ddfec8976260ead6e866180bd5d2f71aa1d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../carbonphp/carbon-doctrine-types',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../carbonphp/carbon-doctrine-types',
           'aliases' => 
           array (
           ),
@@ -88,7 +88,7 @@ return [
           'version' => '3.0.3.0',
           'reference' => 'a23a2bf4f31d3518f3ecb38660c95715dfead60f',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../dflydev/dot-access-data',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../dflydev/dot-access-data',
           'aliases' => 
           array (
           ),
@@ -100,7 +100,7 @@ return [
           'version' => '1.1.5.0',
           'reference' => '459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../doctrine/deprecations',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../doctrine/deprecations',
           'aliases' => 
           array (
           ),
@@ -112,7 +112,7 @@ return [
           'version' => '2.1.0.0',
           'reference' => '6d6c96277ea252fc1304627204c3d5e6e15faa3b',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../doctrine/inflector',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../doctrine/inflector',
           'aliases' => 
           array (
           ),
@@ -124,7 +124,7 @@ return [
           'version' => '3.0.1.0',
           'reference' => '31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../doctrine/lexer',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../doctrine/lexer',
           'aliases' => 
           array (
           ),
@@ -136,7 +136,7 @@ return [
           'version' => '3.4.0.0',
           'reference' => '8c784d071debd117328803d86b2097615b457500',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../dragonmantank/cron-expression',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../dragonmantank/cron-expression',
           'aliases' => 
           array (
           ),
@@ -148,7 +148,7 @@ return [
           'version' => '4.0.4.0',
           'reference' => 'd42c8731f0624ad6bdc8d3e5e9a4524f68801cfa',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../egulias/email-validator',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../egulias/email-validator',
           'aliases' => 
           array (
           ),
@@ -160,7 +160,7 @@ return [
           'version' => '1.24.1.0',
           'reference' => 'e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../fakerphp/faker',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../fakerphp/faker',
           'aliases' => 
           array (
           ),
@@ -172,7 +172,7 @@ return [
           'version' => '1.3.0.0',
           'reference' => 'db9508f7b1474469d9d3c53b86f817e344732678',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../fidry/cpu-core-counter',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../fidry/cpu-core-counter',
           'aliases' => 
           array (
           ),
@@ -184,7 +184,7 @@ return [
           'version' => '2.18.4.0',
           'reference' => 'd2102955e48b9fd9ab24280a7ad12ed552752c4d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../filp/whoops',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../filp/whoops',
           'aliases' => 
           array (
           ),
@@ -196,7 +196,7 @@ return [
           'version' => '1.3.0.0',
           'reference' => '3d158f36e7875e2f040f37bc0573956240a5a38b',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../fruitcake/php-cors',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../fruitcake/php-cors',
           'aliases' => 
           array (
           ),
@@ -208,7 +208,7 @@ return [
           'version' => '1.1.3.0',
           'reference' => '3ba905c11371512af9d9bdd27d99b782216b6945',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../graham-campbell/result-type',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../graham-campbell/result-type',
           'aliases' => 
           array (
           ),
@@ -220,7 +220,7 @@ return [
           'version' => '7.10.0.0',
           'reference' => 'b51ac707cfa420b7bfd4e4d5e510ba8008e822b4',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../guzzlehttp/guzzle',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../guzzlehttp/guzzle',
           'aliases' => 
           array (
           ),
@@ -232,7 +232,7 @@ return [
           'version' => '2.3.0.0',
           'reference' => '481557b130ef3790cf82b713667b43030dc9c957',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../guzzlehttp/promises',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../guzzlehttp/promises',
           'aliases' => 
           array (
           ),
@@ -244,7 +244,7 @@ return [
           'version' => '2.8.0.0',
           'reference' => '21dc724a0583619cd1652f673303492272778051',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../guzzlehttp/psr7',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../guzzlehttp/psr7',
           'aliases' => 
           array (
           ),
@@ -256,7 +256,7 @@ return [
           'version' => '1.0.5.0',
           'reference' => '4f4bbd4e7172148801e76e3decc1e559bdee34e1',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../guzzlehttp/uri-template',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../guzzlehttp/uri-template',
           'aliases' => 
           array (
           ),
@@ -268,7 +268,7 @@ return [
           'version' => '2.1.1.0',
           'reference' => 'f8b1c0173b22fa6ec77a81fe63e5b01eba7e6487',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../hamcrest/hamcrest-php',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../hamcrest/hamcrest-php',
           'aliases' => 
           array (
           ),
@@ -280,7 +280,7 @@ return [
           'version' => '0.6.0.0',
           'reference' => '947083e2dca211a6f12fb1beb67a01e387de9b62',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../iamcal/sql-parser',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../iamcal/sql-parser',
           'aliases' => 
           array (
           ),
@@ -572,7 +572,7 @@ return [
           'version' => '2.1.1.0',
           'reference' => '4d7aa5dab42e2a76d99559706022885de0e18e1a',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../jean85/pretty-package-versions',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../jean85/pretty-package-versions',
           'aliases' => 
           array (
           ),
@@ -592,7 +592,7 @@ return [
           'version' => '3.7.2.0',
           'reference' => 'a761859a7487bd7d0cb8b662a7538a234d5bb5ae',
           'type' => 'phpstan-extension',
-          'install_path' => '/app/vendor/composer/../larastan/larastan',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../larastan/larastan',
           'aliases' => 
           array (
           ),
@@ -604,7 +604,7 @@ return [
           'version' => '12.31.1.0',
           'reference' => '281b711710c245dd8275d73132e92635be3094df',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../laravel/framework',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../laravel/framework',
           'aliases' => 
           array (
           ),
@@ -616,7 +616,7 @@ return [
           'version' => '1.2.3.0',
           'reference' => '8cc3d575c1f0e57eeb923f366a37528c50d2385a',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../laravel/pail',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../laravel/pail',
           'aliases' => 
           array (
           ),
@@ -628,7 +628,7 @@ return [
           'version' => '1.25.1.0',
           'reference' => '5016e263f95d97670d71b9a987bd8996ade6d8d9',
           'type' => 'project',
-          'install_path' => '/app/vendor/composer/../laravel/pint',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../laravel/pint',
           'aliases' => 
           array (
           ),
@@ -640,7 +640,7 @@ return [
           'version' => '0.3.7.0',
           'reference' => 'a1891d362714bc40c8d23b0b1d7090f022ea27cc',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../laravel/prompts',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../laravel/prompts',
           'aliases' => 
           array (
           ),
@@ -652,7 +652,7 @@ return [
           'version' => '1.46.0.0',
           'reference' => 'eb90c4f113c4a9637b8fdd16e24cfc64f2b0ae6e',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../laravel/sail',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../laravel/sail',
           'aliases' => 
           array (
           ),
@@ -664,7 +664,7 @@ return [
           'version' => '2.0.5.0',
           'reference' => '3832547db6e0e2f8bb03d4093857b378c66eceed',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../laravel/serializable-closure',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../laravel/serializable-closure',
           'aliases' => 
           array (
           ),
@@ -676,7 +676,7 @@ return [
           'version' => '2.10.1.0',
           'reference' => '22177cc71807d38f2810c6204d8f7183d88a57d3',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../laravel/tinker',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../laravel/tinker',
           'aliases' => 
           array (
           ),
@@ -688,7 +688,7 @@ return [
           'version' => '3.4.0.0',
           'reference' => 'f91d84f65cb3e974988bbe872b5da8ca132a155f',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../lcobucci/clock',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../lcobucci/clock',
           'aliases' => 
           array (
           ),
@@ -700,7 +700,7 @@ return [
           'version' => '4.3.0.0',
           'reference' => '4d7de2fe0d51a96418c0d04004986e410e87f6b4',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../lcobucci/jwt',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../lcobucci/jwt',
           'aliases' => 
           array (
           ),
@@ -712,7 +712,7 @@ return [
           'version' => '2.7.1.0',
           'reference' => '10732241927d3971d28e7ea7b5712721fa2296ca',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../league/commonmark',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../league/commonmark',
           'aliases' => 
           array (
           ),
@@ -724,7 +724,7 @@ return [
           'version' => '1.2.0.0',
           'reference' => '754b3604fb2984c71f4af4a9cbe7b57f346ec1f3',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../league/config',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../league/config',
           'aliases' => 
           array (
           ),
@@ -736,7 +736,7 @@ return [
           'version' => '3.30.0.0',
           'reference' => '2203e3151755d874bb2943649dae1eb8533ac93e',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../league/flysystem',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../league/flysystem',
           'aliases' => 
           array (
           ),
@@ -748,7 +748,7 @@ return [
           'version' => '3.30.0.0',
           'reference' => '6691915f77c7fb69adfb87dcd550052dc184ee10',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../league/flysystem-local',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../league/flysystem-local',
           'aliases' => 
           array (
           ),
@@ -760,7 +760,7 @@ return [
           'version' => '1.16.0.0',
           'reference' => '2d6702ff215bf922936ccc1ad31007edc76451b9',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../league/mime-type-detection',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../league/mime-type-detection',
           'aliases' => 
           array (
           ),
@@ -772,7 +772,7 @@ return [
           'version' => '7.5.1.0',
           'reference' => '81fb5145d2644324614cc532b28efd0215bda430',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../league/uri',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../league/uri',
           'aliases' => 
           array (
           ),
@@ -784,7 +784,7 @@ return [
           'version' => '7.5.0.0',
           'reference' => '08cfc6c4f3d811584fb09c37e2849e6a7f9b0742',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../league/uri-interfaces',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../league/uri-interfaces',
           'aliases' => 
           array (
           ),
@@ -796,7 +796,7 @@ return [
           'version' => '2.9.1.0',
           'reference' => '11c2531366ca8bd5efcd0afc9e8047e7999926ff',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../lorisleiva/laravel-actions',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../lorisleiva/laravel-actions',
           'aliases' => 
           array (
           ),
@@ -808,7 +808,7 @@ return [
           'version' => '0.6.0.0',
           'reference' => '6bada710ebc75f06fdf62db26327be1592c4f014',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../lorisleiva/lody',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../lorisleiva/lody',
           'aliases' => 
           array (
           ),
@@ -820,7 +820,7 @@ return [
           'version' => '1.6.12.0',
           'reference' => '1f4efdd7d3beafe9807b08156dfcb176d18f1699',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../mockery/mockery',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../mockery/mockery',
           'aliases' => 
           array (
           ),
@@ -832,7 +832,7 @@ return [
           'version' => '3.9.0.0',
           'reference' => '10d85740180ecba7896c87e06a166e0c95a0e3b6',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../monolog/monolog',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../monolog/monolog',
           'aliases' => 
           array (
           ),
@@ -852,7 +852,7 @@ return [
           'version' => '1.13.4.0',
           'reference' => '07d290f0c47959fd5eed98c95ee5602db07e0b6a',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../myclabs/deep-copy',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../myclabs/deep-copy',
           'aliases' => 
           array (
           ),
@@ -864,7 +864,7 @@ return [
           'version' => '3.10.3.0',
           'reference' => '8e3643dcd149ae0fe1d2ff4f2c8e4bbfad7c165f',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../nesbot/carbon',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../nesbot/carbon',
           'aliases' => 
           array (
           ),
@@ -876,7 +876,7 @@ return [
           'version' => '1.3.2.0',
           'reference' => 'da801d52f0354f70a638673c4a0f04e16529431d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../nette/schema',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../nette/schema',
           'aliases' => 
           array (
           ),
@@ -888,7 +888,7 @@ return [
           'version' => '4.0.8.0',
           'reference' => 'c930ca4e3cf4f17dcfb03037703679d2396d2ede',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../nette/utils',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../nette/utils',
           'aliases' => 
           array (
           ),
@@ -900,7 +900,7 @@ return [
           'version' => '5.6.2.0',
           'reference' => '3a454ca033b9e06b63282ce19562e892747449bb',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../nikic/php-parser',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../nikic/php-parser',
           'aliases' => 
           array (
           ),
@@ -912,7 +912,7 @@ return [
           'version' => '8.8.2.0',
           'reference' => '60207965f9b7b7a4ce15a0f75d57f9dadb105bdb',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../nunomaduro/collision',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../nunomaduro/collision',
           'aliases' => 
           array (
           ),
@@ -924,7 +924,7 @@ return [
           'version' => '2.3.2.0',
           'reference' => 'eb61920a53057a7debd718a5b89c2178032b52c0',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../nunomaduro/termwind',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../nunomaduro/termwind',
           'aliases' => 
           array (
           ),
@@ -936,7 +936,7 @@ return [
           'version' => '12.0.4.0',
           'reference' => '6e1f50de63366206b06ec53bbc823282977ddd06',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../nwidart/laravel-modules',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../nwidart/laravel-modules',
           'aliases' => 
           array (
           ),
@@ -948,7 +948,7 @@ return [
           'version' => '4.1.2.0',
           'reference' => '08b09f2e98fc6830050c0237968b233768642d46',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../pestphp/pest',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../pestphp/pest',
           'aliases' => 
           array (
           ),
@@ -960,7 +960,7 @@ return [
           'version' => '4.0.0.0',
           'reference' => '9d4b93d7f73d3f9c3189bb22c220fef271cdf568',
           'type' => 'composer-plugin',
-          'install_path' => '/app/vendor/composer/../pestphp/pest-plugin',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../pestphp/pest-plugin',
           'aliases' => 
           array (
           ),
@@ -972,7 +972,7 @@ return [
           'version' => '4.0.0.0',
           'reference' => '25bb17e37920ccc35cbbcda3b00d596aadf3e58d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../pestphp/pest-plugin-arch',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../pestphp/pest-plugin-arch',
           'aliases' => 
           array (
           ),
@@ -984,7 +984,7 @@ return [
           'version' => '4.0.1.0',
           'reference' => 'd9b32b60b2385e1688a68cc227594738ec26d96c',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../pestphp/pest-plugin-mutate',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../pestphp/pest-plugin-mutate',
           'aliases' => 
           array (
           ),
@@ -996,7 +996,7 @@ return [
           'version' => '4.1.0.0',
           'reference' => 'e279c844b6868da92052be27b5202c2ad7216e80',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../pestphp/pest-plugin-profanity',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../pestphp/pest-plugin-profanity',
           'aliases' => 
           array (
           ),
@@ -1008,7 +1008,7 @@ return [
           'version' => '2.0.4.0',
           'reference' => '54750ef60c58e43759730615a392c31c80e23176',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phar-io/manifest',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phar-io/manifest',
           'aliases' => 
           array (
           ),
@@ -1020,7 +1020,7 @@ return [
           'version' => '3.2.1.0',
           'reference' => '4f7fd7836c6f332bb2933569e566a0d6c4cbed74',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phar-io/version',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phar-io/version',
           'aliases' => 
           array (
           ),
@@ -1032,7 +1032,7 @@ return [
           'version' => '2.0.4.0',
           'reference' => '160785c50c01077780ab217e5808f00ab8f05a13',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phiki/phiki',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phiki/phiki',
           'aliases' => 
           array (
           ),
@@ -1044,7 +1044,7 @@ return [
           'version' => '2.2.0.0',
           'reference' => '1d01c49d4ed62f25aa84a747ad35d5a16924662b',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpdocumentor/reflection-common',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpdocumentor/reflection-common',
           'aliases' => 
           array (
           ),
@@ -1056,7 +1056,7 @@ return [
           'version' => '5.6.3.0',
           'reference' => '94f8051919d1b0369a6bcc7931d679a511c03fe9',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpdocumentor/reflection-docblock',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpdocumentor/reflection-docblock',
           'aliases' => 
           array (
           ),
@@ -1068,7 +1068,7 @@ return [
           'version' => '1.10.0.0',
           'reference' => '679e3ce485b99e84c775d28e2e96fade9a7fb50a',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpdocumentor/type-resolver',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpdocumentor/type-resolver',
           'aliases' => 
           array (
           ),
@@ -1080,7 +1080,7 @@ return [
           'version' => '1.9.4.0',
           'reference' => '638a154f8d4ee6a5cfa96d6a34dfbe0cffa9566d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpoption/phpoption',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpoption/phpoption',
           'aliases' => 
           array (
           ),
@@ -1092,7 +1092,7 @@ return [
           'version' => '2.3.0.0',
           'reference' => '1e0cd5370df5dd2e556a36b9c62f62e555870495',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpstan/phpdoc-parser',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpstan/phpdoc-parser',
           'aliases' => 
           array (
           ),
@@ -1104,7 +1104,7 @@ return [
           'version' => '2.1.29.0',
           'reference' => 'd618573eed4a1b6b75e37b2e0b65ac65c885d88e',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpstan/phpstan',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpstan/phpstan',
           'aliases' => 
           array (
           ),
@@ -1116,7 +1116,7 @@ return [
           'version' => '12.4.0.0',
           'reference' => '67e8aed88f93d0e6e1cb7effe1a2dfc2fee6022c',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpunit/php-code-coverage',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpunit/php-code-coverage',
           'aliases' => 
           array (
           ),
@@ -1128,7 +1128,7 @@ return [
           'version' => '6.0.0.0',
           'reference' => '961bc913d42fe24a257bfff826a5068079ac7782',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpunit/php-file-iterator',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpunit/php-file-iterator',
           'aliases' => 
           array (
           ),
@@ -1140,7 +1140,7 @@ return [
           'version' => '6.0.0.0',
           'reference' => '12b54e689b07a25a9b41e57736dfab6ec9ae5406',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpunit/php-invoker',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpunit/php-invoker',
           'aliases' => 
           array (
           ),
@@ -1152,7 +1152,7 @@ return [
           'version' => '5.0.0.0',
           'reference' => 'e1367a453f0eda562eedb4f659e13aa900d66c53',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpunit/php-text-template',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpunit/php-text-template',
           'aliases' => 
           array (
           ),
@@ -1164,7 +1164,7 @@ return [
           'version' => '8.0.0.0',
           'reference' => 'f258ce36aa457f3aa3339f9ed4c81fc66dc8c2cc',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpunit/php-timer',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpunit/php-timer',
           'aliases' => 
           array (
           ),
@@ -1176,7 +1176,7 @@ return [
           'version' => '12.4.0.0',
           'reference' => 'f62aab5794e36ccd26860db2d1bbf89ac19028d9',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../phpunit/phpunit',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../phpunit/phpunit',
           'aliases' => 
           array (
           ),
@@ -1188,7 +1188,7 @@ return [
           'version' => '1.0.0.0',
           'reference' => 'e41a24703d4560fd0acb709162f73b8adfc3aa0d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../psr/clock',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../psr/clock',
           'aliases' => 
           array (
           ),
@@ -1208,7 +1208,7 @@ return [
           'version' => '2.0.2.0',
           'reference' => 'c71ecc56dfe541dbd90c5360474fbc405f8d5963',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../psr/container',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../psr/container',
           'aliases' => 
           array (
           ),
@@ -1228,7 +1228,7 @@ return [
           'version' => '1.0.0.0',
           'reference' => 'dbefd12671e8a14ec7f180cab83036ed26714bb0',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../psr/event-dispatcher',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../psr/event-dispatcher',
           'aliases' => 
           array (
           ),
@@ -1248,7 +1248,7 @@ return [
           'version' => '1.0.3.0',
           'reference' => 'bb5906edc1c324c9a05aa0873d40117941e5fa90',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../psr/http-client',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../psr/http-client',
           'aliases' => 
           array (
           ),
@@ -1268,7 +1268,7 @@ return [
           'version' => '1.1.0.0',
           'reference' => '2b4765fddfe3b508ac62f829e852b1501d3f6e8a',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../psr/http-factory',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../psr/http-factory',
           'aliases' => 
           array (
           ),
@@ -1288,7 +1288,7 @@ return [
           'version' => '2.0.0.0',
           'reference' => '402d35bcb92c70c026d1a6a9883f06b2ead23d71',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../psr/http-message',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../psr/http-message',
           'aliases' => 
           array (
           ),
@@ -1308,7 +1308,7 @@ return [
           'version' => '3.0.2.0',
           'reference' => 'f16e1d5863e37f8d8c2a01719f5b34baa2b714d3',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../psr/log',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../psr/log',
           'aliases' => 
           array (
           ),
@@ -1329,7 +1329,7 @@ return [
           'version' => '3.0.0.0',
           'reference' => '764e0b3939f5ca87cb904f570ef9be2d78a07865',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../psr/simple-cache',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../psr/simple-cache',
           'aliases' => 
           array (
           ),
@@ -1349,7 +1349,7 @@ return [
           'version' => '0.12.12.0',
           'reference' => 'cd23863404a40ccfaf733e3af4db2b459837f7e7',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../psy/psysh',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../psy/psysh',
           'aliases' => 
           array (
           ),
@@ -1361,7 +1361,7 @@ return [
           'version' => '3.0.3.0',
           'reference' => '120b605dfeb996808c31b6477290a714d356e822',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../ralouphie/getallheaders',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../ralouphie/getallheaders',
           'aliases' => 
           array (
           ),
@@ -1373,7 +1373,7 @@ return [
           'version' => '2.1.1.0',
           'reference' => '344572933ad0181accbf4ba763e85a0306a8c5e2',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../ramsey/collection',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../ramsey/collection',
           'aliases' => 
           array (
           ),
@@ -1385,7 +1385,7 @@ return [
           'version' => '4.9.1.0',
           'reference' => '81f941f6f729b1e3ceea61d9d014f8b6c6800440',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../ramsey/uuid',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../ramsey/uuid',
           'aliases' => 
           array (
           ),
@@ -1405,7 +1405,7 @@ return [
           'version' => '4.2.0.0',
           'reference' => '90f41072d220e5c40df6e8635f5dafba2d9d4d04',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/cli-parser',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/cli-parser',
           'aliases' => 
           array (
           ),
@@ -1417,7 +1417,7 @@ return [
           'version' => '7.1.3.0',
           'reference' => 'dc904b4bb3ab070865fa4068cd84f3da8b945148',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/comparator',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/comparator',
           'aliases' => 
           array (
           ),
@@ -1429,7 +1429,7 @@ return [
           'version' => '5.0.0.0',
           'reference' => 'bad4316aba5303d0221f43f8cee37eb58d384bbb',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/complexity',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/complexity',
           'aliases' => 
           array (
           ),
@@ -1441,7 +1441,7 @@ return [
           'version' => '7.0.0.0',
           'reference' => '7ab1ea946c012266ca32390913653d844ecd085f',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/diff',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/diff',
           'aliases' => 
           array (
           ),
@@ -1453,7 +1453,7 @@ return [
           'version' => '8.0.3.0',
           'reference' => '24a711b5c916efc6d6e62aa65aa2ec98fef77f68',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/environment',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/environment',
           'aliases' => 
           array (
           ),
@@ -1465,7 +1465,7 @@ return [
           'version' => '7.0.2.0',
           'reference' => '016951ae10980765e4e7aee491eb288c64e505b7',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/exporter',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/exporter',
           'aliases' => 
           array (
           ),
@@ -1477,7 +1477,7 @@ return [
           'version' => '8.0.2.0',
           'reference' => 'ef1377171613d09edd25b7816f05be8313f9115d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/global-state',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/global-state',
           'aliases' => 
           array (
           ),
@@ -1489,7 +1489,7 @@ return [
           'version' => '4.0.0.0',
           'reference' => '97ffee3bcfb5805568d6af7f0f893678fc076d2f',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/lines-of-code',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/lines-of-code',
           'aliases' => 
           array (
           ),
@@ -1501,7 +1501,7 @@ return [
           'version' => '7.0.0.0',
           'reference' => '1effe8e9b8e068e9ae228e542d5d11b5d16db894',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/object-enumerator',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/object-enumerator',
           'aliases' => 
           array (
           ),
@@ -1513,7 +1513,7 @@ return [
           'version' => '5.0.0.0',
           'reference' => '4bfa827c969c98be1e527abd576533293c634f6a',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/object-reflector',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/object-reflector',
           'aliases' => 
           array (
           ),
@@ -1525,7 +1525,7 @@ return [
           'version' => '7.0.1.0',
           'reference' => '0b01998a7d5b1f122911a66bebcb8d46f0c82d8c',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/recursion-context',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/recursion-context',
           'aliases' => 
           array (
           ),
@@ -1537,7 +1537,7 @@ return [
           'version' => '6.0.3.0',
           'reference' => 'e549163b9760b8f71f191651d22acf32d56d6d4d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/type',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/type',
           'aliases' => 
           array (
           ),
@@ -1549,7 +1549,7 @@ return [
           'version' => '6.0.0.0',
           'reference' => '3e6ccf7657d4f0a59200564b08cead899313b53c',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../sebastian/version',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../sebastian/version',
           'aliases' => 
           array (
           ),
@@ -1561,7 +1561,7 @@ return [
           'version' => '1.92.7.0',
           'reference' => 'f09a799850b1ed765103a4f0b4355006360c49a5',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../spatie/laravel-package-tools',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../spatie/laravel-package-tools',
           'aliases' => 
           array (
           ),
@@ -1573,7 +1573,7 @@ return [
           'version' => '6.21.0.0',
           'reference' => '6a118e8855dfffcd90403aab77bbf35a03db51b3',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../spatie/laravel-permission',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../spatie/laravel-permission',
           'aliases' => 
           array (
           ),
@@ -1585,7 +1585,7 @@ return [
           'version' => '6.3.6.0',
           'reference' => 'b9a5af31c79ae8fb79ae0aa8ba2b9e7180f39481',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../spatie/laravel-query-builder',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../spatie/laravel-query-builder',
           'aliases' => 
           array (
           ),
@@ -1605,7 +1605,7 @@ return [
           'version' => '1.0.5.0',
           'reference' => 'd8334211a140ce329c13726d4a715adbddd0a163',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../staabm/side-effects-detector',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../staabm/side-effects-detector',
           'aliases' => 
           array (
           ),
@@ -1617,7 +1617,7 @@ return [
           'version' => '7.3.0.0',
           'reference' => 'b81435fbd6648ea425d1ee96a2d8e68f4ceacd24',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/clock',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/clock',
           'aliases' => 
           array (
           ),
@@ -1629,7 +1629,7 @@ return [
           'version' => '7.3.4.0',
           'reference' => '2b9c5fafbac0399a20a2e82429e2bd735dcfb7db',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/console',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/console',
           'aliases' => 
           array (
           ),
@@ -1641,7 +1641,7 @@ return [
           'version' => '7.3.0.0',
           'reference' => '601a5ce9aaad7bf10797e3663faefce9e26c24e2',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/css-selector',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/css-selector',
           'aliases' => 
           array (
           ),
@@ -1653,7 +1653,7 @@ return [
           'version' => '3.6.0.0',
           'reference' => '63afe740e99a13ba87ec199bb07bbdee937a5b62',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/deprecation-contracts',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/deprecation-contracts',
           'aliases' => 
           array (
           ),
@@ -1665,7 +1665,7 @@ return [
           'version' => '7.3.2.0',
           'reference' => '0b31a944fcd8759ae294da4d2808cbc53aebd0c3',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/error-handler',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/error-handler',
           'aliases' => 
           array (
           ),
@@ -1677,7 +1677,7 @@ return [
           'version' => '7.3.3.0',
           'reference' => 'b7dc69e71de420ac04bc9ab830cf3ffebba48191',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/event-dispatcher',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/event-dispatcher',
           'aliases' => 
           array (
           ),
@@ -1689,7 +1689,7 @@ return [
           'version' => '3.6.0.0',
           'reference' => '59eb412e93815df44f05f342958efa9f46b1e586',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/event-dispatcher-contracts',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/event-dispatcher-contracts',
           'aliases' => 
           array (
           ),
@@ -1709,7 +1709,7 @@ return [
           'version' => '7.3.2.0',
           'reference' => '2a6614966ba1074fa93dae0bc804227422df4dfe',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/finder',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/finder',
           'aliases' => 
           array (
           ),
@@ -1721,7 +1721,7 @@ return [
           'version' => '7.3.3.0',
           'reference' => '7475561ec27020196c49bb7c4f178d33d7d3dc00',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/http-foundation',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/http-foundation',
           'aliases' => 
           array (
           ),
@@ -1733,7 +1733,7 @@ return [
           'version' => '7.3.3.0',
           'reference' => '72c304de37e1a1cec6d5d12b81187ebd4850a17b',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/http-kernel',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/http-kernel',
           'aliases' => 
           array (
           ),
@@ -1745,7 +1745,7 @@ return [
           'version' => '7.3.3.0',
           'reference' => 'a32f3f45f1990db8c4341d5122a7d3a381c7e575',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/mailer',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/mailer',
           'aliases' => 
           array (
           ),
@@ -1757,7 +1757,7 @@ return [
           'version' => '7.3.2.0',
           'reference' => 'e0a0f859148daf1edf6c60b398eb40bfc96697d1',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/mime',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/mime',
           'aliases' => 
           array (
           ),
@@ -1769,7 +1769,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => 'a3cc8b044a6ea513310cbd48ef7333b384945638',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-ctype',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-ctype',
           'aliases' => 
           array (
           ),
@@ -1781,7 +1781,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => '380872130d3a5dd3ace2f4010d95125fde5d5c70',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-intl-grapheme',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-intl-grapheme',
           'aliases' => 
           array (
           ),
@@ -1793,7 +1793,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => '9614ac4d8061dc257ecc64cba1b140873dce8ad3',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-intl-idn',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-intl-idn',
           'aliases' => 
           array (
           ),
@@ -1805,7 +1805,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => '3833d7255cc303546435cb650316bff708a1c75c',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-intl-normalizer',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-intl-normalizer',
           'aliases' => 
           array (
           ),
@@ -1817,7 +1817,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => '6d857f4d76bd4b343eac26d6b539585d2bc56493',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-mbstring',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-mbstring',
           'aliases' => 
           array (
           ),
@@ -1829,7 +1829,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => '0cc9dd0f17f61d8131e7df6b84bd344899fe2608',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-php80',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-php80',
           'aliases' => 
           array (
           ),
@@ -1841,7 +1841,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => '17f6f9a6b1735c0f163024d959f700cfbc5155e5',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-php83',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-php83',
           'aliases' => 
           array (
           ),
@@ -1853,7 +1853,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => 'd8ced4d875142b6a7426000426b8abc631d6b191',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-php84',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-php84',
           'aliases' => 
           array (
           ),
@@ -1865,7 +1865,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => 'd4e5fcd4ab3d998ab16c0db48e6cbb9a01993f91',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-php85',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-php85',
           'aliases' => 
           array (
           ),
@@ -1877,7 +1877,7 @@ return [
           'version' => '1.33.0.0',
           'reference' => '21533be36c24be3f4b1669c4725c7d1d2bab4ae2',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/polyfill-uuid',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/polyfill-uuid',
           'aliases' => 
           array (
           ),
@@ -1889,7 +1889,7 @@ return [
           'version' => '7.3.4.0',
           'reference' => 'f24f8f316367b30810810d4eb30c543d7003ff3b',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/process',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/process',
           'aliases' => 
           array (
           ),
@@ -1901,7 +1901,7 @@ return [
           'version' => '7.3.2.0',
           'reference' => '7614b8ca5fa89b9cd233e21b627bfc5774f586e4',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/routing',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/routing',
           'aliases' => 
           array (
           ),
@@ -1913,7 +1913,7 @@ return [
           'version' => '3.6.0.0',
           'reference' => 'f021b05a130d35510bd6b25fe9053c2a8a15d5d4',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/service-contracts',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/service-contracts',
           'aliases' => 
           array (
           ),
@@ -1925,7 +1925,7 @@ return [
           'version' => '7.3.4.0',
           'reference' => 'f96476035142921000338bad71e5247fbc138872',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/string',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/string',
           'aliases' => 
           array (
           ),
@@ -1937,7 +1937,7 @@ return [
           'version' => '7.3.3.0',
           'reference' => 'e0837b4cbcef63c754d89a4806575cada743a38d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/translation',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/translation',
           'aliases' => 
           array (
           ),
@@ -1949,7 +1949,7 @@ return [
           'version' => '3.6.0.0',
           'reference' => 'df210c7a2573f1913b2d17cc95f90f53a73d8f7d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/translation-contracts',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/translation-contracts',
           'aliases' => 
           array (
           ),
@@ -1969,7 +1969,7 @@ return [
           'version' => '7.3.1.0',
           'reference' => 'a69f69f3159b852651a6bf45a9fdd149520525bb',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/uid',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/uid',
           'aliases' => 
           array (
           ),
@@ -1981,7 +1981,7 @@ return [
           'version' => '7.3.3.0',
           'reference' => '34d8d4c4b9597347306d1ec8eb4e1319b1e6986f',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/var-dumper',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/var-dumper',
           'aliases' => 
           array (
           ),
@@ -1993,7 +1993,7 @@ return [
           'version' => '7.3.3.0',
           'reference' => 'd4f4a66866fe2451f61296924767280ab5732d9d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../symfony/yaml',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../symfony/yaml',
           'aliases' => 
           array (
           ),
@@ -2005,7 +2005,7 @@ return [
           'version' => '0.8.5.0',
           'reference' => 'cf6fb197b676ba716837c886baca842e4db29005',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../ta-tikoma/phpunit-architecture-test',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../ta-tikoma/phpunit-architecture-test',
           'aliases' => 
           array (
           ),
@@ -2017,7 +2017,7 @@ return [
           'version' => '1.2.3.0',
           'reference' => '737eda637ed5e28c3413cb1ebe8bb52cbf1ca7a2',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../theseer/tokenizer',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../theseer/tokenizer',
           'aliases' => 
           array (
           ),
@@ -2029,7 +2029,7 @@ return [
           'version' => '2.3.0.0',
           'reference' => '0d72ac1c00084279c1816675284073c5a337c20d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../tijsverkoyen/css-to-inline-styles',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../tijsverkoyen/css-to-inline-styles',
           'aliases' => 
           array (
           ),
@@ -2041,7 +2041,7 @@ return [
           'version' => '2.2.1.0',
           'reference' => '42381e56db1bf887c12e5302d11901d65cc74856',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../tymon/jwt-auth',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../tymon/jwt-auth',
           'aliases' => 
           array (
           ),
@@ -2053,7 +2053,7 @@ return [
           'version' => '5.6.2.0',
           'reference' => '24ac4c74f91ee2c193fa1aaa5c249cb0822809af',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../vlucas/phpdotenv',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../vlucas/phpdotenv',
           'aliases' => 
           array (
           ),
@@ -2065,7 +2065,7 @@ return [
           'version' => '2.0.3.0',
           'reference' => 'b1d923f88091c6bf09699efcd7c8a1b1bfd7351d',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../voku/portable-ascii',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../voku/portable-ascii',
           'aliases' => 
           array (
           ),
@@ -2077,7 +2077,7 @@ return [
           'version' => '1.12.0.0',
           'reference' => '541057574806f942c94662b817a50f63f7345360',
           'type' => 'library',
-          'install_path' => '/app/vendor/composer/../webmozart/assert',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../webmozart/assert',
           'aliases' => 
           array (
           ),
@@ -2089,7 +2089,7 @@ return [
           'version' => '2.1.0.0',
           'reference' => 'a03d426c8e9fb2c9c569d9deeb31a083292788bc',
           'type' => 'composer-plugin',
-          'install_path' => '/app/vendor/composer/../wikimedia/composer-merge-plugin',
+          'install_path' => '/home/user/PhpstormProjects/expense-management/expense_management/vendor/composer/../wikimedia/composer-merge-plugin',
           'aliases' => 
           array (
           ),
@@ -2100,50 +2100,63 @@ return [
   ),
   'executedFilesHashes' => 
   array (
-    '/app/vendor/larastan/larastan/bootstrap.php' => '28392079817075879815f110287690e80398fe5e',
-    'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php' => '123dcd45f03f2463904087a66bfe2bc139760df0',
-    'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php' => '0b4b78277eb6545955d2ce5e09bff28f1f8052c8',
-    'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php' => 'a3e6299b87ee5d407dae7651758edfa11a74cb11',
-    'phar:///app/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php' => '1b349aa997a834faeafe05fa21bc31cae22bf2e2',
+    '/home/user/PhpstormProjects/expense-management/expense_management/vendor/larastan/larastan/bootstrap.php' => '28392079817075879815f110287690e80398fe5e',
+    'phar:///home/user/PhpstormProjects/expense-management/expense_management/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php' => '123dcd45f03f2463904087a66bfe2bc139760df0',
+    'phar:///home/user/PhpstormProjects/expense-management/expense_management/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php' => '0b4b78277eb6545955d2ce5e09bff28f1f8052c8',
+    'phar:///home/user/PhpstormProjects/expense-management/expense_management/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php' => 'a3e6299b87ee5d407dae7651758edfa11a74cb11',
+    'phar:///home/user/PhpstormProjects/expense-management/expense_management/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php' => '1b349aa997a834faeafe05fa21bc31cae22bf2e2',
   ),
   'phpExtensions' => 
   array (
     0 => 'Core',
-    1 => 'PDO',
-    2 => 'Phar',
-    3 => 'Reflection',
-    4 => 'SPL',
-    5 => 'SimpleXML',
-    6 => 'Zend OPcache',
-    7 => 'ctype',
-    8 => 'curl',
-    9 => 'date',
-    10 => 'dom',
-    11 => 'fileinfo',
-    12 => 'filter',
-    13 => 'hash',
-    14 => 'iconv',
-    15 => 'json',
-    16 => 'libxml',
-    17 => 'mbstring',
-    18 => 'mysqlnd',
-    19 => 'openssl',
-    20 => 'pcre',
-    21 => 'pdo_mysql',
-    22 => 'pdo_pgsql',
-    23 => 'pdo_sqlite',
-    24 => 'posix',
-    25 => 'random',
-    26 => 'readline',
-    27 => 'session',
-    28 => 'sodium',
-    29 => 'sqlite3',
-    30 => 'standard',
-    31 => 'tokenizer',
-    32 => 'xml',
-    33 => 'xmlreader',
-    34 => 'xmlwriter',
-    35 => 'zlib',
+    1 => 'FFI',
+    2 => 'PDO',
+    3 => 'Phar',
+    4 => 'Reflection',
+    5 => 'SPL',
+    6 => 'SimpleXML',
+    7 => 'Zend OPcache',
+    8 => 'calendar',
+    9 => 'ctype',
+    10 => 'curl',
+    11 => 'date',
+    12 => 'dom',
+    13 => 'exif',
+    14 => 'fileinfo',
+    15 => 'filter',
+    16 => 'ftp',
+    17 => 'gd',
+    18 => 'gettext',
+    19 => 'hash',
+    20 => 'iconv',
+    21 => 'intl',
+    22 => 'json',
+    23 => 'libxml',
+    24 => 'mbstring',
+    25 => 'mysqli',
+    26 => 'mysqlnd',
+    27 => 'openssl',
+    28 => 'pcntl',
+    29 => 'pcre',
+    30 => 'pdo_mysql',
+    31 => 'posix',
+    32 => 'random',
+    33 => 'readline',
+    34 => 'session',
+    35 => 'shmop',
+    36 => 'sockets',
+    37 => 'sodium',
+    38 => 'standard',
+    39 => 'sysvmsg',
+    40 => 'sysvsem',
+    41 => 'sysvshm',
+    42 => 'tokenizer',
+    43 => 'xml',
+    44 => 'xmlreader',
+    45 => 'xmlwriter',
+    46 => 'xsl',
+    47 => 'zip',
+    48 => 'zlib',
   ),
   'stubFiles' => 
   array (
@@ -2155,15 +2168,15 @@ return [
 	'errorsCallback' => static function (): array { return array (
 ); },
 	'locallyIgnoredErrorsCallback' => static function (): array { return array (
-  '/app/Modules/Admin/app/Actions/Auth/Logout.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Logout.php' => 
   array (
     0 => 
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Parameter #1 $forceForever of static method Tymon\\JWTAuth\\JWT::invalidate() expects bool, Tymon\\JWTAuth\\Facades\\JWTAuth given.',
-       'file' => '/app/Modules/Admin/app/Actions/Auth/Logout.php',
+       'file' => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Logout.php',
        'line' => 16,
        'canBeIgnored' => true,
-       'filePath' => '/app/Modules/Admin/app/Actions/Auth/Logout.php',
+       'filePath' => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Logout.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
        'nodeLine' => 16,
@@ -2177,9 +2190,9 @@ return [
   ),
 ); },
 	'linesToIgnore' => array (
-  '/app/Modules/Admin/app/Actions/Auth/Logout.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Logout.php' => 
   array (
-    '/app/Modules/Admin/app/Actions/Auth/Logout.php' => 
+    '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Logout.php' => 
     array (
       16 => NULL,
     ),
@@ -2188,7 +2201,7 @@ return [
 	'unmatchedLineIgnores' => array (
 ),
 	'collectedDataCallback' => static function (): array { return array (
-  '/app/Modules/Admin/app/Actions/Auth/Login.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Login.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
@@ -2206,7 +2219,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Auth/Logout.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Logout.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2216,7 +2229,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Auth/Refresh.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Refresh.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2226,7 +2239,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Company/DeleteCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/DeleteCompany.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
     array (
@@ -2249,7 +2262,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Company/IndexCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/IndexCompany.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2259,7 +2272,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Company/PatchCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/PatchCompany.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2269,7 +2282,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2279,7 +2292,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
     array (
@@ -2302,7 +2315,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Country/IndexCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/IndexCountry.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2312,7 +2325,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2322,7 +2335,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Country/StoreCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/StoreCountry.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2332,7 +2345,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Auth/LogoutController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/LogoutController.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
     array (
@@ -2352,7 +2365,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
     array (
@@ -2368,7 +2381,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Auth/LoginRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Auth/LoginRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -2386,7 +2399,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -2398,7 +2411,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -2410,7 +2423,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -2422,7 +2435,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -2434,7 +2447,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2444,7 +2457,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Country/CountryResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Country/CountryResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -2456,7 +2469,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Country/CountryResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Country/CountryResourceCollection.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2466,7 +2479,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -2478,7 +2491,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Permission/PermissionResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Permission/PermissionResourceCollection.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2488,7 +2501,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Role/RoleResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Role/RoleResourceCollection.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2498,7 +2511,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/User/UserResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResourceCollection.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2508,7 +2521,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Models/Company/Company.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Company/Company.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2522,7 +2535,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Models/Country/Country.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Country/Country.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2536,7 +2549,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Models/Permission/Permission.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Permission/Permission.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2546,7 +2559,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Models/Role/Role.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Role/Role.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2556,7 +2569,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Models/User/User.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/User/User.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -2579,7 +2592,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
@@ -2597,7 +2610,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Expense/app/Providers/ExpenseServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app/Providers/ExpenseServiceProvider.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
@@ -2615,7 +2628,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/InventoryServiceProvider.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
@@ -2633,7 +2646,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/MasterData/app/Actions/Item/StoreItem.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2643,7 +2656,17 @@ return [
       ),
     ),
   ),
-  '/app/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2653,7 +2676,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -2665,7 +2688,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/MasterData/app/Http/Resources/Item/ItemResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResourceCollection.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2675,7 +2698,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/MasterData/app/Models/Item/Item.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Item/Item.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -2689,7 +2712,7 @@ return [
       ),
     ),
   ),
-  '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
@@ -2709,568 +2732,588 @@ return [
   ),
 ); },
 	'dependencies' => array (
-  '/app/Modules/Admin/app/Actions/Auth/Login.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Login.php' => 
   array (
     'fileHash' => '70db69b71d120cf3d56ee13e32f65d165263e54a',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Auth/LoginController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/LoginController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Auth/Logout.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Logout.php' => 
   array (
     'fileHash' => '487c8dc2c7db0b96c1d17b6a931c818a96c6c9fe',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Auth/LogoutController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/LogoutController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Auth/Refresh.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Refresh.php' => 
   array (
     'fileHash' => 'd8dd04853a4d36c7a5a573c4912e546377a51297',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Company/DeleteCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/DeleteCompany.php' => 
   array (
     'fileHash' => '9d62da641fc129edd2b76d77dba489ad4b9217b5',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Company/DeleteCompanyController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/DeleteCompanyController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Company/IndexCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/IndexCompany.php' => 
   array (
     'fileHash' => 'd58cc56595c81c75ca8f28dff345259a6868f103',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Company/PatchCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/PatchCompany.php' => 
   array (
     'fileHash' => '59bff3eace1a789f5a531be15dbd1db01598f171',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
   array (
     'fileHash' => '1d27f012dc4f3d72d998aa8448233c9e0cf04f7e',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
   array (
     'fileHash' => 'b8fdf24f99c732719464bf1cce83677d749d6c76',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Country/IndexCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/IndexCountry.php' => 
   array (
     'fileHash' => '1cccc8781d0168d169eee24b41c564d268aa62a6',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
   array (
     'fileHash' => '5acf77ac295a94880280f66014efa625ff93bef2',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Actions/Country/StoreCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/StoreCountry.php' => 
   array (
     'fileHash' => '8de33386710ff845d38c7317efae0b33011e2e99',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Auth/LoginController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/LoginController.php' => 
   array (
     'fileHash' => '20f80dce5a76d597353153c1222cefde4fcf3043',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Auth/LogoutController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/LogoutController.php' => 
   array (
     'fileHash' => '6d7b2e9e3d7013496d09e65e74be0a79c3ea5403',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php' => 
   array (
     'fileHash' => '2cb28cc652218a40f54be624b41bc6b00ecae53b',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Company/DeleteCompanyController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/DeleteCompanyController.php' => 
   array (
     'fileHash' => '10dd6af50b759f96ef4134ba39a105de2d68f463',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php' => 
   array (
     'fileHash' => 'e069da90e51005a7c6b5636e1129d6cdd92171b5',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php' => 
   array (
     'fileHash' => 'ca1228d6885f21124839194d47d67e9328d313b4',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php' => 
   array (
     'fileHash' => '77645ebd2ed08066ac46c65bfba162664cddd373',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php' => 
   array (
     'fileHash' => 'e0ee2693ce091392956d3cdde865c3bb794256fa',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php' => 
   array (
     'fileHash' => '9119220c484cbd726f457eb0be4c228f3a37c1cc',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php' => 
   array (
     'fileHash' => 'dae9d66658d8eced1fa66ed78ade74a8e5744de7',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php' => 
   array (
     'fileHash' => '213d6e295c6ff7892010e2027fe703def58a558e',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Auth/LoginRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Auth/LoginRequest.php' => 
   array (
     'fileHash' => '31af73265acd120b5112aa5ddfd9518a75bbf67d',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Auth/Login.php',
-      1 => '/app/Modules/Admin/app/Http/Controllers/Auth/LoginController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Login.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/LoginController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Company/IndexCompanyRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/IndexCompanyRequest.php' => 
   array (
     'fileHash' => 'e3c0f6f68e0c7cbf5f2e17bc1ec5d1f665d6d4c7',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Company/IndexCompany.php',
-      1 => '/app/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/IndexCompany.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Company/PatchCompanyRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/PatchCompanyRequest.php' => 
   array (
     'fileHash' => 'f78fa399931b39e24963fe41e4d18b4035d0b342',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Company/PatchCompany.php',
-      1 => '/app/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/PatchCompany.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
   array (
     'fileHash' => '64b09ff8a28921eec5418b49d60ff0003640fbce',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Company/StoreCompany.php',
-      1 => '/app/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/StoreCompany.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Country/IndexCountryRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/IndexCountryRequest.php' => 
   array (
     'fileHash' => 'ec82a5a84da9466f1d59f3ee2645ab28759cbefe',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Country/IndexCountry.php',
-      1 => '/app/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/IndexCountry.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Country/PatchCountryRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/PatchCountryRequest.php' => 
   array (
     'fileHash' => '52e84c5726259ebc3291277dffd402d572f066b2',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Country/PatchCountry.php',
-      1 => '/app/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/PatchCountry.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php' => 
   array (
     'fileHash' => '2ffd3b8ccd096a2fd76077e28be6d381ec33aa09',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Country/StoreCountry.php',
-      1 => '/app/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/StoreCountry.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
   array (
     'fileHash' => 'b766b26188233fee6bdd5f8d457dcb91197f4965',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Auth/Login.php',
-      1 => '/app/Modules/Admin/app/Actions/Auth/Refresh.php',
-      2 => '/app/Modules/Admin/app/Http/Controllers/Auth/LoginController.php',
-      3 => '/app/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Login.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Refresh.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/LoginController.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
   array (
     'fileHash' => 'f8e01c25ec46cd18d33f14bd16fc26e02b48cae3',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Company/PatchCompany.php',
-      1 => '/app/Modules/Admin/app/Actions/Company/StoreCompany.php',
-      2 => '/app/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
-      3 => '/app/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
-      4 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/PatchCompany.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/StoreCompany.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResource.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
   array (
     'fileHash' => '05754738ff35a755fb81836bbc921545289bf6bd',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Company/IndexCompany.php',
-      1 => '/app/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/IndexCompany.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Country/CountryResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Country/CountryResource.php' => 
   array (
     'fileHash' => '7434203a68d61a3cede284c38b20342ee80b74e6',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Country/PatchCountry.php',
-      1 => '/app/Modules/Admin/app/Actions/Country/StoreCountry.php',
-      2 => '/app/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
-      3 => '/app/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/PatchCountry.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/StoreCountry.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Country/CountryResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Country/CountryResourceCollection.php' => 
   array (
     'fileHash' => 'ba4232ceca2399851ad75edde4c526ca1a1df9f4',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Country/IndexCountry.php',
-      1 => '/app/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/IndexCountry.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
   array (
     'fileHash' => '560168bc7610fc04bbbee9a158d2ef73e9c7b033',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Resources/Role/RoleResource.php',
-      1 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Role/RoleResource.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResource.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Permission/PermissionResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Permission/PermissionResourceCollection.php' => 
   array (
     'fileHash' => '8ac00969b2d9acdf21974d8495c61cb304e36cad',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Role/RoleResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Role/RoleResource.php' => 
   array (
     'fileHash' => 'd656d964b33d52f4c5384ebfb46fe0d7607b52f1',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResource.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Role/RoleResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Role/RoleResourceCollection.php' => 
   array (
     'fileHash' => 'e197b8c4695d0eb7572a01fa27d14a7dc5ad967b',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/User/UserResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResource.php' => 
   array (
     'fileHash' => '6fa211cc825938c85f434b39777403851e244770',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
     ),
   ),
-  '/app/Modules/Admin/app/Http/Resources/User/UserResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResourceCollection.php' => 
   array (
     'fileHash' => 'f8d9bea92f913de8e5f8264e0c67eb8631f054b0',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Models/Company/Company.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Company/Company.php' => 
   array (
     'fileHash' => '1533ef9019dedc1ad59d40e0c46d58def232a3d7',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Company/DeleteCompany.php',
-      1 => '/app/Modules/Admin/app/Actions/Company/IndexCompany.php',
-      2 => '/app/Modules/Admin/app/Actions/Company/PatchCompany.php',
-      3 => '/app/Modules/Admin/app/Actions/Company/StoreCompany.php',
-      4 => '/app/Modules/Admin/app/Http/Controllers/Company/DeleteCompanyController.php',
-      5 => '/app/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
-      6 => '/app/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
-      7 => '/app/Modules/Admin/app/Http/Resources/Company/CompanyResource.php',
-      8 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
-      9 => '/app/Modules/Admin/app/Models/User/User.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/DeleteCompany.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/IndexCompany.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/PatchCompany.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/StoreCompany.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/DeleteCompanyController.php',
+      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php',
+      6 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php',
+      7 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Company/CompanyResource.php',
+      8 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      9 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/User/User.php',
     ),
   ),
-  '/app/Modules/Admin/app/Models/Country/Country.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Country/Country.php' => 
   array (
     'fileHash' => 'ce276843589f327f3a9cbf1964e2a5996afdeb26',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Actions/Country/DeleteCountry.php',
-      1 => '/app/Modules/Admin/app/Actions/Country/IndexCountry.php',
-      2 => '/app/Modules/Admin/app/Actions/Country/PatchCountry.php',
-      3 => '/app/Modules/Admin/app/Actions/Country/StoreCountry.php',
-      4 => '/app/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php',
-      5 => '/app/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
-      6 => '/app/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
-      7 => '/app/Modules/Admin/app/Http/Resources/Country/CountryResource.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/DeleteCountry.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/IndexCountry.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/PatchCountry.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/StoreCountry.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php',
+      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php',
+      6 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php',
+      7 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Country/CountryResource.php',
     ),
   ),
-  '/app/Modules/Admin/app/Models/Permission/Permission.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Permission/Permission.php' => 
   array (
     'fileHash' => 'f8fea1ccdfe794653689a70c93e220963fad4f30',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php',
-      1 => '/app/Modules/Admin/app/Http/Resources/Role/RoleResource.php',
-      2 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Role/RoleResource.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResource.php',
     ),
   ),
-  '/app/Modules/Admin/app/Models/Role/Role.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Role/Role.php' => 
   array (
     'fileHash' => '99e1368e64e5a5229e976462605f6367219787d7',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Resources/Role/RoleResource.php',
-      1 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Role/RoleResource.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResource.php',
     ),
   ),
-  '/app/Modules/Admin/app/Models/User/User.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/User/User.php' => 
   array (
     'fileHash' => 'faeb4296e735a5d848923b359d9341a51417b074',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Http/Requests/Company/IndexCompanyRequest.php',
-      1 => '/app/Modules/Admin/app/Http/Requests/Company/PatchCompanyRequest.php',
-      2 => '/app/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php',
-      3 => '/app/Modules/Admin/app/Http/Requests/Country/IndexCountryRequest.php',
-      4 => '/app/Modules/Admin/app/Http/Requests/Country/PatchCountryRequest.php',
-      5 => '/app/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php',
-      6 => '/app/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
-      7 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
-      8 => '/app/Modules/Admin/app/Models/Company/Company.php',
-      9 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/IndexCompanyRequest.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/PatchCompanyRequest.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/IndexCountryRequest.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/PatchCountryRequest.php',
+      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php',
+      6 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Auth/AuthResource.php',
+      7 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResource.php',
+      8 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Company/Company.php',
+      9 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
+      10 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
     ),
   ),
-  '/app/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
   array (
     'fileHash' => 'b19e5620db5f0b9bb278882302903b62dd2c0560',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Admin/app/Providers/EventServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/EventServiceProvider.php' => 
   array (
     'fileHash' => 'a5451a8dbcff41e6d48f0f013655ca156f9939bf',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Providers/AdminServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/AdminServiceProvider.php',
     ),
   ),
-  '/app/Modules/Admin/app/Providers/RouteServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/RouteServiceProvider.php' => 
   array (
     'fileHash' => '38489b1c25440efcb7382e931d23eb4259175625',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Admin/app/Providers/AdminServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/AdminServiceProvider.php',
     ),
   ),
-  '/app/Modules/Expense/app/Providers/EventServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app/Providers/EventServiceProvider.php' => 
   array (
     'fileHash' => '8b4768c560df6984f99ffb1eab54dfae594270fb',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Expense/app/Providers/ExpenseServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app/Providers/ExpenseServiceProvider.php',
     ),
   ),
-  '/app/Modules/Expense/app/Providers/ExpenseServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app/Providers/ExpenseServiceProvider.php' => 
   array (
     'fileHash' => 'aeb5870a8ae41ed07f6250071e1c0c04fcd6382f',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Expense/app/Providers/RouteServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app/Providers/RouteServiceProvider.php' => 
   array (
     'fileHash' => 'cd4b19921a9cc828cc16a118542ed9abdd65335d',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Expense/app/Providers/ExpenseServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app/Providers/ExpenseServiceProvider.php',
     ),
   ),
-  '/app/Modules/Inventory/app/Providers/EventServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/EventServiceProvider.php' => 
   array (
     'fileHash' => 'c09015126d674ac5fc741012e3a72eac34c41028',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/InventoryServiceProvider.php',
     ),
   ),
-  '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/InventoryServiceProvider.php' => 
   array (
     'fileHash' => '0ec1248d09dada6c08f375f00a87478ecbdb17d8',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/Inventory/app/Providers/RouteServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/RouteServiceProvider.php' => 
   array (
     'fileHash' => '11a928f5134a8e5c8711e54d9332d5651eb0e4a4',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/InventoryServiceProvider.php',
     ),
   ),
-  '/app/Modules/MasterData/app/Actions/Item/StoreItem.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php' => 
+  array (
+    'fileHash' => 'bf9c2f25a2808f6bffea2a02d8a716f042fd6368',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php' => 
   array (
     'fileHash' => '3be97bcd949cc6a4131990ae7c06a411f93b8e97',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
-  '/app/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
   array (
     'fileHash' => '56e6735f70879d12b729f58f166aa632ef47fc92',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      1 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
-      2 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
-      3 => '/app/Modules/MasterData/app/Models/Item/Item.php',
-      4 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
-      5 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Item/Item.php',
+      6 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php',
+      7 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
-  '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php' => 
   array (
     'fileHash' => '626c223bd3ade06599838c842bfd078f30527f01',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php' => 
+  array (
+    'fileHash' => '4780ac64ec09146b66fad6af7f5cdea334079a1c',
+    'dependentFiles' => 
+    array (
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php' => 
   array (
     'fileHash' => 'd727b4b150bca481b74a74dd997aa70155631be1',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      1 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
-  '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
   array (
     'fileHash' => 'bc4baa516fe055c2f1b613769333183d6008b168',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      1 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
-  '/app/Modules/MasterData/app/Http/Resources/Item/ItemResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResourceCollection.php' => 
   array (
     'fileHash' => '1bb8ac6cbc046c6c7b4260202c0fdc58565790f4',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/MasterData/app/Models/Item/Item.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Item/Item.php' => 
   array (
     'fileHash' => '9b3f5acfc63923fcc67ccce9cbf7e4df62bf2731',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      1 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
-      2 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
-      3 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
-      4 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php',
+      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
-  '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
   array (
     'fileHash' => 'c13ddf6853b0ac4e8685e17e4439bf1d32d28356',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
-  '/app/Modules/MasterData/app/Providers/EventServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/EventServiceProvider.php' => 
   array (
     'fileHash' => '86a11b8c012f68ce388935f3bb3b2ea494de2672',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
-  '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php' => 
   array (
     'fileHash' => '36b07de180bb0cc1f2ddacc5d91060713cfd4af7',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/app/Modules/MasterData/app/Providers/RouteServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/RouteServiceProvider.php' => 
   array (
     'fileHash' => '4d2b2537baf4ab9e92d43076e6b3f180924db44e',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
 ),
 	'exportedNodesCallback' => static function (): array { return array (
-  '/app/Modules/Admin/app/Actions/Auth/Login.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Login.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3326,7 +3369,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Auth/Logout.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Logout.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3371,7 +3414,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Auth/Refresh.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Auth/Refresh.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3427,7 +3470,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Company/DeleteCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/DeleteCompany.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3483,7 +3526,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Company/IndexCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/IndexCompany.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3539,7 +3582,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Company/PatchCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/PatchCompany.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3606,7 +3649,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Company/StoreCompany.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3662,7 +3705,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/DeleteCountry.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3718,7 +3761,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Country/IndexCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/IndexCountry.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3774,7 +3817,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/PatchCountry.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3841,7 +3884,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Actions/Country/StoreCountry.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Actions/Country/StoreCountry.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3897,7 +3940,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Auth/LoginController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/LoginController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3952,7 +3995,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Auth/LogoutController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/LogoutController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -3996,7 +4039,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Auth/RefreshController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4051,7 +4094,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Company/DeleteCompanyController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/DeleteCompanyController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4106,7 +4149,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/IndexCompanyController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4161,7 +4204,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/PatchCompanyController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4227,7 +4270,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Company/StoreCompanyController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4282,7 +4325,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/DeleteCountryController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4337,7 +4380,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/IndexCountryController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4392,7 +4435,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/PatchCountryController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4458,7 +4501,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Controllers/Country/StoreCountryController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4513,7 +4556,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Auth/LoginRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Auth/LoginRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4586,7 +4629,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Company/IndexCompanyRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/IndexCompanyRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4684,7 +4727,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Company/PatchCompanyRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/PatchCompanyRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4758,7 +4801,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Company/StoreCompanyRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4831,7 +4874,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Country/IndexCountryRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/IndexCountryRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -4929,7 +4972,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Country/PatchCountryRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/PatchCountryRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5003,7 +5046,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Requests/Country/StoreCountryRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5076,7 +5119,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Auth/AuthResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5216,7 +5259,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Company/CompanyResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5297,7 +5340,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Company/CompanyResourceCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5324,7 +5367,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Country/CountryResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Country/CountryResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5405,7 +5448,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Country/CountryResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Country/CountryResourceCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5432,7 +5475,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Permission/PermissionResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5513,7 +5556,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Permission/PermissionResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Permission/PermissionResourceCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5540,7 +5583,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Role/RoleResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Role/RoleResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5623,7 +5666,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/Role/RoleResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/Role/RoleResourceCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5650,7 +5693,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/User/UserResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5739,7 +5782,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Http/Resources/User/UserResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Http/Resources/User/UserResourceCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5766,7 +5809,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Models/Company/Company.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Company/Company.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -5897,7 +5940,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Models/Country/Country.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Country/Country.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -6017,7 +6060,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Models/Permission/Permission.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Permission/Permission.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -6102,7 +6145,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Models/Role/Role.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/Role/Role.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -6221,7 +6264,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Models/User/User.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Models/User/User.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -6463,7 +6506,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -6688,7 +6731,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Providers/EventServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/EventServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -6825,7 +6868,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Admin/app/Providers/RouteServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/RouteServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -6930,7 +6973,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Expense/app/Providers/EventServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app/Providers/EventServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -7067,7 +7110,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Expense/app/Providers/ExpenseServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app/Providers/ExpenseServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -7292,7 +7335,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Expense/app/Providers/RouteServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Expense/app/Providers/RouteServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -7397,7 +7440,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Inventory/app/Providers/EventServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/EventServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -7534,7 +7577,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/InventoryServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -7759,7 +7802,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/Inventory/app/Providers/RouteServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Inventory/app/Providers/RouteServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -7864,7 +7907,74 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Actions/Item/StoreItem.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/PatchItem.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Actions\\Item\\PatchItem',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\MasterData\\Http\\Requests\\Item\\PatchItemRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'item',
+               'type' => 'Modules\\MasterData\\Models\\Item\\Item',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -7920,7 +8030,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -7956,7 +8066,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -8011,7 +8121,85 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Http\\Requests\\Item\\PatchItemRequest',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Foundation\\Http\\FormRequest',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array<string, array<int, string|\\Illuminate\\Contracts\\Validation\\Rule>>
+     */',
+             'namespace' => 'Modules\\MasterData\\Http\\Requests\\Item',
+             'uses' => 
+            array (
+              'requiredwithoutallhelper' => 'App\\Helpers\\RequiredWithoutAllHelper',
+              'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+              'rule' => 'Illuminate\\Validation\\Rule',
+              'itemtypeenum' => 'Modules\\MasterData\\Enums\\Item\\ItemTypeEnum',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'authorize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'bool',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -8088,7 +8276,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -8173,7 +8361,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Http/Resources/Item/ItemResourceCollection.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResourceCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -8200,7 +8388,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Models/Item/Item.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Item/Item.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -8345,7 +8533,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -8400,7 +8588,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Providers/EventServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/EventServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -8537,7 +8725,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/MasterDataServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -8762,7 +8950,7 @@ return [
       ),
     )),
   ),
-  '/app/Modules/MasterData/app/Providers/RouteServiceProvider.php' => 
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Providers/RouteServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(

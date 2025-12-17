@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/environment/src/Runtime.php' => 
     array (
-      0 => 'c3834066a86f1274440289f8a35b4ea8242b0536',
+      0 => '22293c94d864b5f0000ea93021cec9edb24d4fb1',
       1 => 
       array (
         0 => 'sebastianbergmann\\environment\\runtime',
@@ -38,7 +38,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/environment/src/Console.php' => 
     array (
-      0 => '8dba4957948bc4e425c2c8eda096a82d61d75809',
+      0 => '9f0ae5e8de6a9c0cbfd5b0f077f1568000dd7e20',
       1 => 
       array (
         0 => 'sebastianbergmann\\environment\\console',

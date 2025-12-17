@@ -51,7 +51,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/phpunit/php-invoker/src/exceptions/ProcessControlExtensionNotLoadedException.php' => 
     array (
-      0 => 'beccc7e344258fc935b2fb16c70a3031dc8774f8',
+      0 => '12538103d463c116f74f2b1e044712cc2d2b80c4',
       1 => 
       array (
         0 => 'sebastianbergmann\\invoker\\processcontrolextensionnotloadedexception',

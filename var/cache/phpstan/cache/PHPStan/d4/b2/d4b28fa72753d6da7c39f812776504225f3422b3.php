@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/complexity/src/Visitor/CyclomaticComplexityCalculatingVisitor.php' => 
     array (
-      0 => '1672f2af02daf3bf9f9f5618245efd0c50b03afa',
+      0 => '57e06b8165d2d9efacbc2a624d7b810dd05b6798',
       1 => 
       array (
         0 => 'sebastianbergmann\\complexity\\cyclomaticcomplexitycalculatingvisitor',
@@ -23,7 +23,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/complexity/src/Visitor/ComplexityCalculatingVisitor.php' => 
     array (
-      0 => 'c746502b1b404069bde9066c3a11d9cb927520c8',
+      0 => '26dfb09339e105d24ea64afb40715af75672133c',
       1 => 
       array (
         0 => 'sebastianbergmann\\complexity\\complexitycalculatingvisitor',
@@ -71,7 +71,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/complexity/src/Complexity/ComplexityCollection.php' => 
     array (
-      0 => '6d6bfd6d40dec3ab1b0307fa7b6c97ef7725e8d9',
+      0 => '2ecfa3edd54d0c336e320e2a3988c7680860e7c0',
       1 => 
       array (
         0 => 'sebastianbergmann\\complexity\\complexitycollection',
@@ -135,7 +135,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/home/user/PhpstormProjects/expense-management/expense_management/vendor/sebastian/complexity/src/Calculator.php' => 
     array (
-      0 => 'b8042bf3f7eda0cb1441c6eda42151454e189174',
+      0 => '405203790792c74d3b71a632c2df0906cf36d930',
       1 => 
       array (
         0 => 'sebastianbergmann\\complexity\\calculator',
