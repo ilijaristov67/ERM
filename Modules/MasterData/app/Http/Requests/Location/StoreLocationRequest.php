@@ -38,6 +38,6 @@ class StoreLocationRequest extends FormRequest
 
     public function authorize(): bool
     {
-        return auth()->user()->can('master-data-location-create');
+        return auth()->user()->can('master-data-locations-create');
     }
 }

@@ -11,7 +11,7 @@ use Modules\MasterData\Models\Location\Location;
 /** @mixin Location */
 class LocationResource extends BaseJsonResource
 {
-    /** @return array<string, int|LocationTypeEnum|string|Carbon> */
+    /** @return array<string, int|LocationTypeEnum|string|bool|Carbon> */
     public function toArray(Request $request): array
     {
         return [
@@ -19,6 +19,7 @@ class LocationResource extends BaseJsonResource
             'name' => $this->name,
             'type' => $this->type,
             'capacity' => $this->capacity,
+            'is_virtual' => $this->is_virtual,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
