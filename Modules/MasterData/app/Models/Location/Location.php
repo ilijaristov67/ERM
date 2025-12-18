@@ -25,4 +25,17 @@ class Location extends Model
     use HasFactory;
 
     use SoftDeletes;
+
+    protected $fillable = [
+        'name',
+        'type',
+        'capacity',
+        'is_virtual'
+    ];
+
+    protected $table = 'locations';
+
+    protected $casts = [
+        'type' => LocationTypeEnum::class,
+    ];
 }
