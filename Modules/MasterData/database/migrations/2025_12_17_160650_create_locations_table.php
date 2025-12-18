@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('capacity')->nullable();
             $table->boolean('is_virtual');
             $table->timestamps();
+
+            $table->softDeletes();
         });
     }
 
