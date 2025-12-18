@@ -11,10 +11,10 @@ class StoreLocation
 {
     use AsAction;
 
-        public function handle(StoreLocationRequest $request): LocationResource
-        {
-            $location = Location::query()->create($request->validated());
-            return LocationResource::make($location);
-        }
-    }
+    public function handle(StoreLocationRequest $request): LocationResource
+    {
+        $location = Location::query()->create($request->validated());
 
+        return LocationResource::make($location);
+    }
+}
