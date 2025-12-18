@@ -2699,6 +2699,16 @@ return [
       ),
     ),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+    ),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2738,6 +2748,18 @@ return [
       0 => 
       array (
         0 => 'App\\Traits\\ResourceCollectionToArray',
+      ),
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResource.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Modules\\MasterData\\Http\\Resources\\Location\\LocationResource',
+        1 => 'toArray',
+        2 => 'Modules\\MasterData\\Http\\Resources\\Location\\LocationResource',
       ),
     ),
   ),
@@ -3287,6 +3309,13 @@ return [
       0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php' => 
+  array (
+    'fileHash' => '452309ddca7f82e05defeb9e3b0ca94860ce1cfc',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
   array (
     'fileHash' => '56e6735f70879d12b729f58f166aa632ef47fc92',
@@ -3312,7 +3341,8 @@ return [
     'dependentFiles' => 
     array (
       0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
-      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Location/Location.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Location/Location.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php' => 
@@ -3372,7 +3402,7 @@ return [
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php' => 
   array (
-    'fileHash' => '6af3e8c18b2f640a517d926f25f19bc39fcd8361',
+    'fileHash' => '9e96b235f6267acec22b4f9131d4f270b45a9c13',
     'dependentFiles' => 
     array (
     ),
@@ -3397,6 +3427,13 @@ return [
       1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/IndexItemController.php',
     ),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResource.php' => 
+  array (
+    'fileHash' => '586bb1b7cadb2dc4b6ca62bfeb230ff1827147fb',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Item/Item.php' => 
   array (
     'fileHash' => '512fc9e79bff92740c19e63a108d8e1994b512c7',
@@ -3419,6 +3456,7 @@ return [
     'fileHash' => '74a8c244fc8931890232e2a01c51f4b82272ba92',
     'dependentFiles' => 
     array (
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
@@ -8283,6 +8321,33 @@ return [
       ),
     )),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Actions\\Location\\StoreLocation',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Enums/Item/ItemTypeEnum.php' => 
   array (
     0 => 
@@ -8877,7 +8942,7 @@ return [
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
-     * @return array<string, array<int, string|\\Illuminate\\Contracts\\Validation\\Rule|boolean>>
+     * @return array<string, array<int, string|\\Illuminate\\Contracts\\Validation\\Rule|bool>>
      */',
              'namespace' => 'Modules\\MasterData\\Http\\Requests\\Location',
              'uses' => 
@@ -9034,6 +9099,93 @@ return [
       ),
        'statements' => 
       array (
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResource.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Http\\Resources\\Location\\LocationResource',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/** @mixin Location */',
+         'namespace' => 'Modules\\MasterData\\Http\\Resources\\Location',
+         'uses' => 
+        array (
+          'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
+          'carbon' => 'Carbon\\Carbon',
+          'request' => 'Illuminate\\Http\\Request',
+          'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+          'locationtypeenum' => 'Modules\\MasterData\\Enums\\Location\\LocationTypeEnum',
+          'location' => 'Modules\\MasterData\\Models\\Location\\Location',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Resources\\BaseJsonResource',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'toArray',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return array<string, int|LocationTypeEnum|string|Carbon> */',
+             'namespace' => 'Modules\\MasterData\\Http\\Resources\\Location',
+             'uses' => 
+            array (
+              'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
+              'carbon' => 'Carbon\\Carbon',
+              'request' => 'Illuminate\\Http\\Request',
+              'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+              'locationtypeenum' => 'Modules\\MasterData\\Enums\\Location\\LocationTypeEnum',
+              'location' => 'Modules\\MasterData\\Models\\Location\\Location',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
       ),
        'attributes' => 
       array (
