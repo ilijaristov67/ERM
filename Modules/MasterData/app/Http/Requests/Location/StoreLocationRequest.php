@@ -8,6 +8,9 @@ use Modules\MasterData\Enums\Location\LocationTypeEnum;
 
 class StoreLocationRequest extends FormRequest
 {
+    /**
+     * @return array<string, array<int, string|\Illuminate\Contracts\Validation\Rule|bool>>
+     */
     public function rules(): array
     {
         return [

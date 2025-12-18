@@ -3183,6 +3183,7 @@ return [
       9 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/IndexItemRequest.php',
       10 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
       11 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
+      12 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
@@ -3310,7 +3311,8 @@ return [
     'fileHash' => '676fa5378bec5ba3e373e789ccc3e2cc4ee60920',
     'dependentFiles' => 
     array (
-      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Location/Location.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Location/Location.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php' => 
@@ -3366,6 +3368,13 @@ return [
     array (
       0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Item/StoreItem.php',
       1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php' => 
+  array (
+    'fileHash' => '6af3e8c18b2f640a517d926f25f19bc39fcd8361',
+    'dependentFiles' => 
+    array (
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
@@ -8799,6 +8808,83 @@ return [
               'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
               'rule' => 'Illuminate\\Validation\\Rule',
               'itemtypeenum' => 'Modules\\MasterData\\Enums\\Item\\ItemTypeEnum',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'authorize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'bool',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Http\\Requests\\Location\\StoreLocationRequest',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Foundation\\Http\\FormRequest',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array<string, array<int, string|\\Illuminate\\Contracts\\Validation\\Rule|boolean>>
+     */',
+             'namespace' => 'Modules\\MasterData\\Http\\Requests\\Location',
+             'uses' => 
+            array (
+              'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+              'rule' => 'Illuminate\\Validation\\Rule',
+              'locationtypeenum' => 'Modules\\MasterData\\Enums\\Location\\LocationTypeEnum',
             ),
              'constUses' => 
             array (
