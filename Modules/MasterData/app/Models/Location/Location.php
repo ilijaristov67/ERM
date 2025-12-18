@@ -38,4 +38,9 @@ class Location extends Model
     protected $casts = [
         'type' => LocationTypeEnum::class,
     ];
+
+    public static function newFactory(): LocationFactory
+    {
+        return LocationFactory::new();
+    }
 }
