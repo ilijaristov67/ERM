@@ -30,7 +30,7 @@ class Location extends Model
         'name',
         'type',
         'capacity',
-        'is_virtual'
+        'is_virtual',
     ];
 
     protected $table = 'locations';
