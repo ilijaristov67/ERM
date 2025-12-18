@@ -8,29 +8,28 @@ use Modules\MasterData\Enums\Location\LocationTypeEnum;
 
 class StoreLocationRequest extends FormRequest
 {
-
     public function rules(): array
     {
         return [
             'name' => [
                 'required',
                 'string',
-                'unique:locations'
+                'unique:locations',
             ],
             'type' => [
                 'required',
                 'string',
-                Rule::in(LocationTypeEnum::values())
+                Rule::in(LocationTypeEnum::values()),
             ],
             'capacity' => [
                 'required',
                 'numeric',
-                'gt:0'
+                'gt:0',
             ],
             'is_virtual' => [
                 'required',
-                'boolean'
-            ]
+                'boolean',
+            ],
         ];
     }
 
