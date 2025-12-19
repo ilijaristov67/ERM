@@ -2699,6 +2699,16 @@ return [
       ),
     ),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/PatchLocation.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+    ),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -3215,8 +3225,9 @@ return [
       9 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/IndexItemRequest.php',
       10 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
       11 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
-      12 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
-      13 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
+      12 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/IndexLocationRequest.php',
+      13 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
+      14 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
@@ -3320,6 +3331,14 @@ return [
       0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/PatchLocation.php' => 
+  array (
+    'fileHash' => 'f1d19bfa5cc5fdfcde0c670c7239c7d52794c388',
+    'dependentFiles' => 
+    array (
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
+    ),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php' => 
   array (
     'fileHash' => '0719dbfb27dac374d03950eeb7ef4c3ef1032fbf',
@@ -3352,11 +3371,13 @@ return [
     'fileHash' => '676fa5378bec5ba3e373e789ccc3e2cc4ee60920',
     'dependentFiles' => 
     array (
-      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php',
-      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
-      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
-      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
-      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Location/Location.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/PatchLocation.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
+      5 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
+      6 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Models/Location/Location.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php' => 
@@ -3383,6 +3404,13 @@ return [
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php' => 
   array (
     'fileHash' => '626c223bd3ade06599838c842bfd078f30527f01',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php' => 
+  array (
+    'fileHash' => 'e54ec8ecf046e27c0d41378ee4fc7c86c58f599d',
     'dependentFiles' => 
     array (
     ),
@@ -3421,11 +3449,20 @@ return [
       1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/IndexLocationRequest.php' => 
+  array (
+    'fileHash' => '99fc6e92c84c5467314f7aadc929ddcb2271c3c1',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php' => 
   array (
     'fileHash' => '31afc20f8e3b7f1657b97ee0cacbd8baae6be5ed',
     'dependentFiles' => 
     array (
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/PatchLocation.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php' => 
@@ -3462,8 +3499,10 @@ return [
     'fileHash' => '2df2b89fc93cfcc8e9e481d576a6872783371e88',
     'dependentFiles' => 
     array (
-      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php',
-      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/StoreLocationController.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/PatchLocation.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/StoreLocationController.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResourceCollection.php' => 
@@ -3495,9 +3534,11 @@ return [
     'fileHash' => '74a8c244fc8931890232e2a01c51f4b82272ba92',
     'dependentFiles' => 
     array (
-      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php',
-      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/StoreLocationController.php',
-      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
+      0 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/PatchLocation.php',
+      1 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php',
+      2 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
+      3 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/StoreLocationController.php',
+      4 => '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
     ),
   ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
@@ -8362,6 +8403,73 @@ return [
       ),
     )),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/PatchLocation.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Actions\\Location\\PatchLocation',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\MasterData\\Http\\Resources\\Location\\LocationResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\MasterData\\Http\\Requests\\Location\\PatchLocationRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'location',
+               'type' => 'Modules\\MasterData\\Models\\Location\\Location',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Actions/Location/StoreLocation.php' => 
   array (
     0 => 
@@ -8733,6 +8841,72 @@ return [
       ),
     )),
   ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Http\\Controllers\\Location\\PatchLocationController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\MasterData\\Http\\Resources\\Location\\LocationResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\MasterData\\Http\\Requests\\Location\\PatchLocationRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'location',
+               'type' => 'Modules\\MasterData\\Models\\Location\\Location',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Controllers/Location/StoreLocationController.php' => 
   array (
     0 => 
@@ -9018,6 +9192,104 @@ return [
           ),
         )),
         1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'authorize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'bool',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/home/user/PhpstormProjects/expense-management/expense_management/Modules/MasterData/app/Http/Requests/Location/IndexLocationRequest.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Http\\Requests\\Location\\IndexLocationRequest',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Requests\\BaseIndexRequest',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'sortArray',
+          ),
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @var list<string> */',
+             'namespace' => 'Modules\\MasterData\\Http\\Requests\\Location',
+             'uses' => 
+            array (
+              'baseindexrequest' => 'App\\Http\\Requests\\BaseIndexRequest',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'type' => 'array',
+           'public' => false,
+           'private' => false,
+           'static' => true,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'authorize',
            'phpDoc' => NULL,
