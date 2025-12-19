@@ -53,7 +53,7 @@ it('successfully patches all fields', function (array $data) {
         ->and($response->json('id'))->toBe($this->location->id)
         ->and($response->json('name'))->toBe($data['name'])
         ->and($response->json('type'))->toBe($data['type'])
-        ->and($response->json('capacity'))->toBe((string)$data['capacity'])
+        ->and($response->json('capacity'))->toBe((string) $data['capacity'])
         ->and($response->json('is_virtual'))->toBe($data['is_virtual'])
         ->and($response->json())->toHaveKeys(['id', 'name', 'type', 'capacity', 'is_virtual', 'created_at', 'updated_at']);
 
@@ -134,7 +134,7 @@ it('successfully patches only capacity', function (array $data) {
 
     expect($response->status())->toBe(200)
         ->and($response->json('id'))->toBe($this->location->id)
-        ->and($response->json('capacity'))->toBe((string)$data['capacity']);
+        ->and($response->json('capacity'))->toBe((string) $data['capacity']);
 
     $this->assertDatabaseHas('locations', [
         'id' => $this->location->id,
