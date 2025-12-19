@@ -16,6 +16,9 @@ class PatchLocationRequest extends FormRequest
         'is_virtual',
     ];
 
+    /**
+     * @return array<string, array<int, string|\Illuminate\Contracts\Validation\Rule|bool>>
+     */
     public function rules(): array
     {
         $locationId = $this->route('location')->id;
@@ -34,7 +37,17 @@ class PatchLocationRequest extends FormRequest
                 Rule::in(LocationTypeEnum::values()),
                 'required_without_all:'.$requiredWithoutAll->handle('type'),
             ],
-
+            'capacity' => [
+                'nullable',
+                'numeric',
+                'gt:0',
+                'required_without_all:'.$requiredWithoutAll->handle('capacity'),
+            ],
+            'is_virtual' => [
+                'nullable',
+                'boolean',
+                'required_without_all:'.$requiredWithoutAll->handle('is_virtual'),
+            ],
         ];
     }
 
