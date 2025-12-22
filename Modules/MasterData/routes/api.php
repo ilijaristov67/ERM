@@ -22,4 +22,5 @@ Route::prefix('/locations')
     ->group(function () {
         Route::post('/', StoreLocationController::class)->name('store')->middleware(['permission:master-data-locations-create']);
         Route::patch('/{location}', PatchLocationController::class)->name('patch')->middleware(['permission:master-data-locations-update']);
+        Route::get('/', );
     });
