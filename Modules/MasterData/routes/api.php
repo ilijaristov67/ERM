@@ -5,6 +5,7 @@ use Modules\MasterData\Http\Controllers\Item\DeleteItemController;
 use Modules\MasterData\Http\Controllers\Item\IndexItemController;
 use Modules\MasterData\Http\Controllers\Item\PatchItemController;
 use Modules\MasterData\Http\Controllers\Item\StoreItemController;
+use Modules\MasterData\Http\Controllers\Location\IndexLocationController;
 use Modules\MasterData\Http\Controllers\Location\PatchLocationController;
 use Modules\MasterData\Http\Controllers\Location\StoreLocationController;
 
@@ -22,5 +23,5 @@ Route::prefix('/locations')
     ->group(function () {
         Route::post('/', StoreLocationController::class)->name('store')->middleware(['permission:master-data-locations-create']);
         Route::patch('/{location}', PatchLocationController::class)->name('patch')->middleware(['permission:master-data-locations-update']);
-        Route::get('/', );
+        Route::get('/', IndexLocationController::class)->name('index')->middleware(['permission:master-data-locations-read']);
     });
