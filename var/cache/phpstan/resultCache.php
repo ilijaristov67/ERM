@@ -3333,6 +3333,7 @@ return [
     'fileHash' => '1dc9cf4f0ae9f7bec6793c8cb6857537a2ea441c',
     'dependentFiles' => 
     array (
+      0 => '/app/Modules/MasterData/app/Http/Controllers/Location/IndexLocationController.php',
     ),
   ),
   '/app/Modules/MasterData/app/Actions/Location/PatchLocation.php' => 
@@ -3413,6 +3414,13 @@ return [
     array (
     ),
   ),
+  '/app/Modules/MasterData/app/Http/Controllers/Location/IndexLocationController.php' => 
+  array (
+    'fileHash' => 'a5158982a8e572fee5227f542328fb789582d1cf',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php' => 
   array (
     'fileHash' => 'e54ec8ecf046e27c0d41378ee4fc7c86c58f599d',
@@ -3460,6 +3468,7 @@ return [
     'dependentFiles' => 
     array (
       0 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
+      1 => '/app/Modules/MasterData/app/Http/Controllers/Location/IndexLocationController.php',
     ),
   ),
   '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php' => 
@@ -3513,10 +3522,11 @@ return [
   ),
   '/app/Modules/MasterData/app/Http/Resources/Location/LocationResourceCollection.php' => 
   array (
-    'fileHash' => '531aaacd8a6564d2a51c0f21f6a2c08794d25a4e',
+    'fileHash' => '3b6d5f41ed948575ebbbba50e5a7340b94a5cdb6',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
+      1 => '/app/Modules/MasterData/app/Http/Controllers/Location/IndexLocationController.php',
     ),
   ),
   '/app/Modules/MasterData/app/Models/Item/Item.php' => 
@@ -8905,6 +8915,61 @@ return [
       ),
     )),
   ),
+  '/app/Modules/MasterData/app/Http/Controllers/Location/IndexLocationController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Http\\Controllers\\Location\\IndexLocationController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\MasterData\\Http\\Resources\\Location\\LocationResourceCollection',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\MasterData\\Http\\Requests\\Location\\IndexLocationRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php' => 
   array (
     0 => 
@@ -9737,7 +9802,7 @@ return [
        'phpDoc' => NULL,
        'abstract' => false,
        'final' => false,
-       'extends' => 'App\\Http\\Resources\\BaseJsonResource',
+       'extends' => 'App\\Http\\Resources\\BaseResourceCollection',
        'implements' => 
       array (
       ),
