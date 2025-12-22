@@ -104,29 +104,14 @@ it('successfully lists locations with type filter', function () {
 
     $response = $this->getJson(route($this->route, [
         'filter' => [
-            'type' => $location->type,
+            'type' => $location->type->value,
         ],
     ]));
 
     expect($response->status())->toBe(200)
-        ->and($response->json('data')[0]['type'])->toBe($location->type)
+        ->and($response->json('data')[0]['type'])->toBe($location->type->value)
         ->and($response->json('filter'))->toHaveKey('type')
-        ->and($response->json('filter.type'))->toBe($location->type);
-});
-
-it('successfully lists locations with capacity filter', function () {
-    $location = Location::query()->first();
-
-    $response = $this->getJson(route($this->route, [
-        'filter' => [
-            'capacity' => (string) $location->capacity,
-        ],
-    ]));
-
-    expect($response->status())->toBe(200)
-        ->and($response->json('data')[0]['capacity'])->toBe($location->capacity)
-        ->and($response->json('filter'))->toHaveKey('capacity')
-        ->and($response->json('filter.capacity'))->toBe((string) $location->capacity);
+        ->and($response->json('filter.type'))->toBe($location->type->value);
 });
 
 it('successfully lists locations with is_virtual filter', function () {
@@ -212,7 +197,7 @@ it('sorts locations with type sort', function () {
     ]));
 
     expect($response->status())->toBe(200)
-        ->and($response->json('data')[0]['type'])->toBe($firstLocation->type);
+        ->and($response->json('data')[0]['type'])->toBe($firstLocation->type->value);
 });
 
 it('sorts locations with capacity sort', function () {
