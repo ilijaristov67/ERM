@@ -2686,6 +2686,29 @@ return [
       ),
     ),
   ),
+  '/app/Modules/MasterData/app/Actions/Location/DeleteLocation.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Successfully deleted',
+        1 => 19,
+      ),
+      1 => 
+      array (
+        0 => 'entities.location',
+        1 => 20,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+    ),
+  ),
   '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -3328,6 +3351,14 @@ return [
       0 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
+  '/app/Modules/MasterData/app/Actions/Location/DeleteLocation.php' => 
+  array (
+    'fileHash' => '312b748c97b4847eb1a0cd75ce1bdf506a59ee8d',
+    'dependentFiles' => 
+    array (
+      0 => '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php',
+    ),
+  ),
   '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php' => 
   array (
     'fileHash' => '1dc9cf4f0ae9f7bec6793c8cb6857537a2ea441c',
@@ -3376,14 +3407,16 @@ return [
     'fileHash' => '676fa5378bec5ba3e373e789ccc3e2cc4ee60920',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
-      1 => '/app/Modules/MasterData/app/Actions/Location/PatchLocation.php',
-      2 => '/app/Modules/MasterData/app/Actions/Location/StoreLocation.php',
-      3 => '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
-      4 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
-      5 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
-      6 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
-      7 => '/app/Modules/MasterData/app/Models/Location/Location.php',
+      0 => '/app/Modules/MasterData/app/Actions/Location/DeleteLocation.php',
+      1 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
+      2 => '/app/Modules/MasterData/app/Actions/Location/PatchLocation.php',
+      3 => '/app/Modules/MasterData/app/Actions/Location/StoreLocation.php',
+      4 => '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php',
+      5 => '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
+      6 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
+      7 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
+      8 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
+      9 => '/app/Modules/MasterData/app/Models/Location/Location.php',
     ),
   ),
   '/app/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php' => 
@@ -3410,6 +3443,13 @@ return [
   '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php' => 
   array (
     'fileHash' => '626c223bd3ade06599838c842bfd078f30527f01',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php' => 
+  array (
+    'fileHash' => 'df601c55c23511db3ff362d55babc77db775b416',
     'dependentFiles' => 
     array (
     ),
@@ -3551,12 +3591,14 @@ return [
     'fileHash' => '74a8c244fc8931890232e2a01c51f4b82272ba92',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
-      1 => '/app/Modules/MasterData/app/Actions/Location/PatchLocation.php',
-      2 => '/app/Modules/MasterData/app/Actions/Location/StoreLocation.php',
-      3 => '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
-      4 => '/app/Modules/MasterData/app/Http/Controllers/Location/StoreLocationController.php',
-      5 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
+      0 => '/app/Modules/MasterData/app/Actions/Location/DeleteLocation.php',
+      1 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
+      2 => '/app/Modules/MasterData/app/Actions/Location/PatchLocation.php',
+      3 => '/app/Modules/MasterData/app/Actions/Location/StoreLocation.php',
+      4 => '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php',
+      5 => '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
+      6 => '/app/Modules/MasterData/app/Http/Controllers/Location/StoreLocationController.php',
+      7 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
     ),
   ),
   '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
@@ -8421,6 +8463,62 @@ return [
       ),
     )),
   ),
+  '/app/Modules/MasterData/app/Actions/Location/DeleteLocation.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Actions\\Location\\DeleteLocation',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'App\\Http\\Resources\\SuccessfulOperationMessageResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'location',
+               'type' => 'Modules\\MasterData\\Models\\Location\\Location',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php' => 
   array (
     0 => 
@@ -8897,6 +8995,61 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'request',
                'type' => 'Modules\\MasterData\\Http\\Requests\\Item\\StoreItemRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\MasterData\\Http\\Controllers\\Location\\DeleteLocationController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'App\\Http\\Resources\\SuccessfulOperationMessageResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'location',
+               'type' => 'Modules\\MasterData\\Models\\Location\\Location',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
