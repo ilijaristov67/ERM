@@ -3336,6 +3336,8 @@ return [
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
+      1 => '/app/Modules/MasterData/app/Models/Item/Item.php',
+      2 => '/app/Modules/MasterData/app/Models/Location/Location.php',
     ),
   ),
   '/app/Modules/Inventory/app/Providers/EventServiceProvider.php' => 
@@ -3617,7 +3619,7 @@ return [
   ),
   '/app/Modules/MasterData/app/Models/Item/Item.php' => 
   array (
-    'fileHash' => '512fc9e79bff92740c19e63a108d8e1994b512c7',
+    'fileHash' => 'c75379c9943f2e5c8566e1a5dbb7a0f2e7dee528',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
@@ -3636,7 +3638,7 @@ return [
   ),
   '/app/Modules/MasterData/app/Models/Location/Location.php' => 
   array (
-    'fileHash' => '74a8c244fc8931890232e2a01c51f4b82272ba92',
+    'fileHash' => 'a49b3ee7f8f6eb8e98a742debc0254ad2f7efe54',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
@@ -10325,7 +10327,9 @@ return [
           'carbon' => 'Carbon\\Carbon',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'inventoryquantity' => 'Modules\\Inventory\\Models\\InventoryQuantity\\InventoryQuantity',
           'itemfactory' => 'Modules\\MasterData\\Database\\Factories\\Item\\ItemFactory',
           'itemtypeenum' => 'Modules\\MasterData\\Enums\\Item\\ItemTypeEnum',
         ),
@@ -10442,6 +10446,42 @@ return [
           array (
           ),
         )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'inventoryQuantities',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return HasMany<InventoryQuantity, covariant Item> */',
+             'namespace' => 'Modules\\MasterData\\Models\\Item',
+             'uses' => 
+            array (
+              'carbon' => 'Carbon\\Carbon',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+              'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+              'inventoryquantity' => 'Modules\\Inventory\\Models\\InventoryQuantity\\InventoryQuantity',
+              'itemfactory' => 'Modules\\MasterData\\Database\\Factories\\Item\\ItemFactory',
+              'itemtypeenum' => 'Modules\\MasterData\\Enums\\Item\\ItemTypeEnum',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
       ),
        'attributes' => 
       array (
@@ -10471,7 +10511,9 @@ return [
           'carbon' => 'Carbon\\Carbon',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'inventoryquantity' => 'Modules\\Inventory\\Models\\InventoryQuantity\\InventoryQuantity',
           'locationfactory' => 'Modules\\MasterData\\Database\\Factories\\Location\\LocationFactory',
           'locationtypeenum' => 'Modules\\MasterData\\Enums\\Location\\LocationTypeEnum',
         ),
@@ -10581,6 +10623,42 @@ return [
            'final' => false,
            'static' => true,
            'returnType' => 'Modules\\MasterData\\Database\\Factories\\Location\\LocationFactory',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'inventoryQuantities',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return HasMany<InventoryQuantity, covariant Location> */',
+             'namespace' => 'Modules\\MasterData\\Models\\Location',
+             'uses' => 
+            array (
+              'carbon' => 'Carbon\\Carbon',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+              'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+              'inventoryquantity' => 'Modules\\Inventory\\Models\\InventoryQuantity\\InventoryQuantity',
+              'locationfactory' => 'Modules\\MasterData\\Database\\Factories\\Location\\LocationFactory',
+              'locationtypeenum' => 'Modules\\MasterData\\Enums\\Location\\LocationTypeEnum',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
            'parameters' => 
           array (
           ),

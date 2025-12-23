@@ -5,7 +5,9 @@ namespace Modules\MasterData\Models\Item;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Modules\Inventory\Models\InventoryQuantity\InventoryQuantity;
 use Modules\MasterData\Database\Factories\Item\ItemFactory;
 use Modules\MasterData\Enums\Item\ItemTypeEnum;
 
@@ -42,5 +44,11 @@ class Item extends Model
     public static function newFactory(): ItemFactory
     {
         return ItemFactory::new();
+    }
+
+    /** @return HasMany<InventoryQuantity, covariant Item> */
+    public function inventoryQuantities(): HasMany
+    {
+        return $this->hasMany(InventoryQuantity::class);
     }
 }
