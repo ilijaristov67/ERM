@@ -19,7 +19,4 @@ use Modules\Inventory\Enums\InventoryMovement\InventoryMovementSourceTypeEnum;
  * @property Carbon created_at
  * @property Carbon updated_at
  */
-class InventoryMovement extends Model
-{
-
-}
+class InventoryMovement extends Model {}
