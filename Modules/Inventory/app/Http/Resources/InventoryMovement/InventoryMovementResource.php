@@ -2,15 +2,15 @@
 
 namespace Modules\Inventory\Http\Resources\InventoryMovement;
 
+use App\Http\Resources\BaseJsonResource;
 use Illuminate\Http\Request;
-use Illuminate\Http\Resources\Json\JsonResource;
 use Modules\Admin\Http\Resources\User\UserResource;
 use Modules\Inventory\Models\InventoryMovement\InventoryMovement;
 use Modules\MasterData\Http\Resources\Item\ItemResource;
 use Modules\MasterData\Http\Resources\Location\LocationResource;
 
 /** @mixin InventoryMovement */
-class InventoryMovementResource extends JsonResource
+class InventoryMovementResource extends BaseJsonResource
 {
     /** @return array<string, mixed> */
     public function toArray(Request $request): array
