@@ -3,8 +3,10 @@
 namespace Modules\Inventory\Models\InventoryQuantity;
 
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\Inventory\Database\Factories\InventoryQuantity\InventoryQuantityFactory;
 use Modules\MasterData\Models\Item\Item;
 use Modules\MasterData\Models\Location\Location;
 
@@ -18,6 +20,8 @@ use Modules\MasterData\Models\Location\Location;
  */
 class InventoryQuantity extends Model
 {
+    /** @use HasFactory<InventoryQuantityFactory>  */
+    use HasFactory;
     protected $fillable = [
         'item_id',
         'location_id',
@@ -34,5 +38,10 @@ class InventoryQuantity extends Model
     public function location(): BelongsTo
     {
         return $this->belongsTo(Location::class);
+    }
+
+    public static function newFactory():  InventoryQuantityFactory
+    {
+        return InventoryQuantityFactory::new();
     }
 }
