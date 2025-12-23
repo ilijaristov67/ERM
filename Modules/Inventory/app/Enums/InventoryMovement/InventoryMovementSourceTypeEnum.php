@@ -11,6 +11,6 @@ enum InventoryMovementSourceTypeEnum: string implements MorphableInterface
 
     public function modelClass(): string
     {
-        //
+        return 'string';
     }
 }
