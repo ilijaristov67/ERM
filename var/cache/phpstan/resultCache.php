@@ -3298,7 +3298,7 @@ return [
   ),
   '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php' => 
   array (
-    'fileHash' => '0673e13b7a60971fbe537b6356800a7c033d5e1f',
+    'fileHash' => '4f1c706dbdda8b58e7be70dfbd1d159b34794c54',
     'dependentFiles' => 
     array (
     ),
@@ -7777,7 +7777,29 @@ return [
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
        'name' => 'Modules\\Inventory\\Models\\InventoryQuantity\\InventoryQuantity',
-       'phpDoc' => NULL,
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * @property int $id
+ * @property int $item_id
+ * @property int $location_id
+ * @property string $quantity
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
+ */',
+         'namespace' => 'Modules\\Inventory\\Models\\InventoryQuantity',
+         'uses' => 
+        array (
+          'carbon' => 'Carbon\\Carbon',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'item' => 'Modules\\MasterData\\Models\\Item\\Item',
+          'location' => 'Modules\\MasterData\\Models\\Location\\Location',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
        'abstract' => false,
        'final' => false,
        'extends' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -7826,6 +7848,7 @@ return [
              'namespace' => 'Modules\\Inventory\\Models\\InventoryQuantity',
              'uses' => 
             array (
+              'carbon' => 'Carbon\\Carbon',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'item' => 'Modules\\MasterData\\Models\\Item\\Item',
@@ -7858,6 +7881,7 @@ return [
              'namespace' => 'Modules\\Inventory\\Models\\InventoryQuantity',
              'uses' => 
             array (
+              'carbon' => 'Carbon\\Carbon',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'item' => 'Modules\\MasterData\\Models\\Item\\Item',

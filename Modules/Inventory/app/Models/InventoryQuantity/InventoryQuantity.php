@@ -2,11 +2,20 @@
 
 namespace Modules\Inventory\Models\InventoryQuantity;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\MasterData\Models\Item\Item;
 use Modules\MasterData\Models\Location\Location;
 
+/**
+ * @property int $id
+ * @property int $item_id
+ * @property int $location_id
+ * @property string $quantity
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
+ */
 class InventoryQuantity extends Model
 {
     protected $fillable = [
