@@ -2634,6 +2634,16 @@ return [
       ),
     ),
   ),
+  '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResourceCollection.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Traits\\ResourceCollectionToArray',
+      ),
+    ),
+  ),
   '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResourceCollection.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -3325,7 +3335,14 @@ return [
   ),
   '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php' => 
   array (
-    'fileHash' => '6ef2fe44acdd5f8e5bd6134e9582671c2f84c775',
+    'fileHash' => '95089c2d5528460d1f4d14bcc212e6df954d1153',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResourceCollection.php' => 
+  array (
+    'fileHash' => '01ae3d4c912c5a21effd262ec4298ead3b44d2fc',
     'dependentFiles' => 
     array (
     ),
@@ -7895,8 +7912,8 @@ return [
          'namespace' => 'Modules\\Inventory\\Http\\Resources\\InventoryMovement',
          'uses' => 
         array (
+          'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
           'request' => 'Illuminate\\Http\\Request',
-          'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
           'userresource' => 'Modules\\Admin\\Http\\Resources\\User\\UserResource',
           'inventorymovement' => 'Modules\\Inventory\\Models\\InventoryMovement\\InventoryMovement',
           'itemresource' => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
@@ -7908,7 +7925,7 @@ return [
       )),
        'abstract' => false,
        'final' => false,
-       'extends' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+       'extends' => 'App\\Http\\Resources\\BaseJsonResource',
        'implements' => 
       array (
       ),
@@ -7929,8 +7946,8 @@ return [
              'namespace' => 'Modules\\Inventory\\Http\\Resources\\InventoryMovement',
              'uses' => 
             array (
+              'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
               'request' => 'Illuminate\\Http\\Request',
-              'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
               'userresource' => 'Modules\\Admin\\Http\\Resources\\User\\UserResource',
               'inventorymovement' => 'Modules\\Inventory\\Models\\InventoryMovement\\InventoryMovement',
               'itemresource' => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
@@ -7965,6 +7982,33 @@ return [
           array (
           ),
         )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResourceCollection.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Inventory\\Http\\Resources\\InventoryMovement\\InventoryMovementResourceCollection',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Resources\\BaseResourceCollection',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Traits\\ResourceCollectionToArray',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
       ),
        'attributes' => 
       array (

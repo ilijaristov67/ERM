@@ -41,15 +41,19 @@
             "Modules\\Expense\\": "Modules/Expense/app/",
             "Modules\\Expense\\Database\\Factories\\": "Modules/Expense/database/factories/",
             "Modules\\Expense\\Database\\Seeders\\": "Modules/Expense/database/seeders/",
-            "Modules\\Expense\\Tests\\": "Modules/Inventory/tests/",
+            "Modules\\Expense\\Tests\\": "Modules/Expense/tests/",
             "Modules\\Inventory\\": "Modules/Inventory/app/",
             "Modules\\Inventory\\Database\\Factories\\": "Modules/Inventory/database/factories/",
             "Modules\\Inventory\\Database\\Seeders\\": "Modules/Inventory/database/seeders/",
-            "Modules\\Inventory\\Tests\\": "Modules/MasterData/tests/",
+            "Modules\\Inventory\\Tests\\": "Modules/Inventory/tests/",
             "Modules\\MasterData\\": "Modules/MasterData/app/",
             "Modules\\MasterData\\Database\\Factories\\": "Modules/MasterData/database/factories/",
             "Modules\\MasterData\\Database\\Seeders\\": "Modules/MasterData/database/seeders/",
-            "Modules\\MasterData\\Tests\\": "Modules/MasterData/tests/"
+            "Modules\\MasterData\\Tests\\": "Modules/MasterData/tests/",
+            "Modules\\Import\\": "Modules/Import/app/",
+            "Modules\\Import\\Database\\Factories\\": "Modules/Import/database/factories/",
+            "Modules\\Import\\Database\\Seeders\\": "Modules/Import/database/seeders/",
+            "Modules\\Import\\Tests\\": "Modules/Import/tests/"
         }
     },
     "autoload-dev": {

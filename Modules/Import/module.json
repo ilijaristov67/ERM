@@ -1,0 +1,11 @@
+{
+    "name": "Import",
+    "alias": "import",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Import\\Providers\\ImportServiceProvider"
+    ],
+    "files": []
+}

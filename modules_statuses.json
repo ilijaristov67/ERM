@@ -4,5 +4,6 @@
     "Admin": true,
     "Expense": true,
     "Inventory": true,
-    "MasterData": true
+    "MasterData": true,
+    "Import": true
 }
