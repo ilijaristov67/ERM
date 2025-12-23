@@ -22,11 +22,17 @@ class InventoryQuantity extends Model
 {
     /** @use HasFactory<InventoryQuantityFactory>  */
     use HasFactory;
+
     protected $fillable = [
         'item_id',
         'location_id',
         'quantity',
     ];
+
+    public static function newFactory(): InventoryQuantityFactory
+    {
+        return InventoryQuantityFactory::new();
+    }
 
     /** @return BelongsTo<Item, covariant InventoryQuantity> */
     public function item(): BelongsTo
@@ -38,10 +44,5 @@ class InventoryQuantity extends Model
     public function location(): BelongsTo
     {
         return $this->belongsTo(Location::class);
-    }
-
-    public static function newFactory():  InventoryQuantityFactory
-    {
-        return InventoryQuantityFactory::new();
     }
 }
