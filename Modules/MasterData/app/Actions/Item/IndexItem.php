@@ -29,6 +29,9 @@ class IndexItem
                 'code',
             ])
             ->defaultSort('-id')
+            ->with([
+                'inventoryQuantities.location',
+            ])
             ->paginate(
                 perPage: $request->input('limit'),
                 page: $request->input('page'),

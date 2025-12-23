@@ -31,6 +31,9 @@ class IndexLocation
                 'is_virtual',
             ])
             ->defaultSort('-id')
+            ->with([
+                'inventoryQuantities.item',
+            ])
             ->paginate(
                 perPage: $request->input('limit'),
                 page: $request->input('page'),
