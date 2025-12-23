@@ -3296,6 +3296,13 @@ return [
       0 => '/app/Modules/Expense/app/Providers/ExpenseServiceProvider.php',
     ),
   ),
+  '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php' => 
+  array (
+    'fileHash' => '0673e13b7a60971fbe537b6356800a7c033d5e1f',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/app/Modules/Inventory/app/Providers/EventServiceProvider.php' => 
   array (
     'fileHash' => 'c09015126d674ac5fc741012e3a72eac34c41028',
@@ -3388,18 +3395,19 @@ return [
     'fileHash' => '56e6735f70879d12b729f58f166aa632ef47fc92',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Item/DeleteItem.php',
-      1 => '/app/Modules/MasterData/app/Actions/Item/IndexItem.php',
-      2 => '/app/Modules/MasterData/app/Actions/Item/PatchItem.php',
-      3 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      4 => '/app/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
-      5 => '/app/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
-      6 => '/app/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
-      7 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
-      8 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
-      9 => '/app/Modules/MasterData/app/Models/Item/Item.php',
-      10 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
-      11 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php',
+      1 => '/app/Modules/MasterData/app/Actions/Item/DeleteItem.php',
+      2 => '/app/Modules/MasterData/app/Actions/Item/IndexItem.php',
+      3 => '/app/Modules/MasterData/app/Actions/Item/PatchItem.php',
+      4 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      5 => '/app/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
+      6 => '/app/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
+      7 => '/app/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
+      8 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
+      9 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      10 => '/app/Modules/MasterData/app/Models/Item/Item.php',
+      11 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
+      12 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
   '/app/Modules/MasterData/app/Enums/Location/LocationTypeEnum.php' => 
@@ -3407,16 +3415,17 @@ return [
     'fileHash' => '676fa5378bec5ba3e373e789ccc3e2cc4ee60920',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Location/DeleteLocation.php',
-      1 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
-      2 => '/app/Modules/MasterData/app/Actions/Location/PatchLocation.php',
-      3 => '/app/Modules/MasterData/app/Actions/Location/StoreLocation.php',
-      4 => '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php',
-      5 => '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
-      6 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
-      7 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
-      8 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
-      9 => '/app/Modules/MasterData/app/Models/Location/Location.php',
+      0 => '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php',
+      1 => '/app/Modules/MasterData/app/Actions/Location/DeleteLocation.php',
+      2 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
+      3 => '/app/Modules/MasterData/app/Actions/Location/PatchLocation.php',
+      4 => '/app/Modules/MasterData/app/Actions/Location/StoreLocation.php',
+      5 => '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php',
+      6 => '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
+      7 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
+      8 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
+      9 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
+      10 => '/app/Modules/MasterData/app/Models/Location/Location.php',
     ),
   ),
   '/app/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php' => 
@@ -3449,7 +3458,7 @@ return [
   ),
   '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php' => 
   array (
-    'fileHash' => 'df601c55c23511db3ff362d55babc77db775b416',
+    'fileHash' => '6149ecbda8bd760d21984a0e77c8faca7e754343',
     'dependentFiles' => 
     array (
     ),
@@ -3574,16 +3583,17 @@ return [
     'fileHash' => '512fc9e79bff92740c19e63a108d8e1994b512c7',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Item/DeleteItem.php',
-      1 => '/app/Modules/MasterData/app/Actions/Item/IndexItem.php',
-      2 => '/app/Modules/MasterData/app/Actions/Item/PatchItem.php',
-      3 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      4 => '/app/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
-      5 => '/app/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
-      6 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
-      7 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
-      8 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
-      9 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php',
+      1 => '/app/Modules/MasterData/app/Actions/Item/DeleteItem.php',
+      2 => '/app/Modules/MasterData/app/Actions/Item/IndexItem.php',
+      3 => '/app/Modules/MasterData/app/Actions/Item/PatchItem.php',
+      4 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      5 => '/app/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
+      6 => '/app/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
+      7 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+      8 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      9 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
+      10 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
   '/app/Modules/MasterData/app/Models/Location/Location.php' => 
@@ -3591,14 +3601,15 @@ return [
     'fileHash' => '74a8c244fc8931890232e2a01c51f4b82272ba92',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/MasterData/app/Actions/Location/DeleteLocation.php',
-      1 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
-      2 => '/app/Modules/MasterData/app/Actions/Location/PatchLocation.php',
-      3 => '/app/Modules/MasterData/app/Actions/Location/StoreLocation.php',
-      4 => '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php',
-      5 => '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
-      6 => '/app/Modules/MasterData/app/Http/Controllers/Location/StoreLocationController.php',
-      7 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
+      0 => '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php',
+      1 => '/app/Modules/MasterData/app/Actions/Location/DeleteLocation.php',
+      2 => '/app/Modules/MasterData/app/Actions/Location/IndexLocation.php',
+      3 => '/app/Modules/MasterData/app/Actions/Location/PatchLocation.php',
+      4 => '/app/Modules/MasterData/app/Actions/Location/StoreLocation.php',
+      5 => '/app/Modules/MasterData/app/Http/Controllers/Location/DeleteLocationController.php',
+      6 => '/app/Modules/MasterData/app/Http/Controllers/Location/PatchLocationController.php',
+      7 => '/app/Modules/MasterData/app/Http/Controllers/Location/StoreLocationController.php',
+      8 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
     ),
   ),
   '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php' => 
@@ -7748,6 +7759,121 @@ return [
            'final' => false,
            'static' => false,
            'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Inventory\\Models\\InventoryQuantity\\InventoryQuantity',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'item',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return BelongsTo<Item, covariant InventoryQuantity> */',
+             'namespace' => 'Modules\\Inventory\\Models\\InventoryQuantity',
+             'uses' => 
+            array (
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'item' => 'Modules\\MasterData\\Models\\Item\\Item',
+              'location' => 'Modules\\MasterData\\Models\\Location\\Location',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'location',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return BelongsTo<Location, covariant InventoryQuantity> */',
+             'namespace' => 'Modules\\Inventory\\Models\\InventoryQuantity',
+             'uses' => 
+            array (
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'item' => 'Modules\\MasterData\\Models\\Item\\Item',
+              'location' => 'Modules\\MasterData\\Models\\Location\\Location',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
            'parameters' => 
           array (
           ),
