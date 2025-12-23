@@ -23,6 +23,8 @@ class InventoryQuantity extends Model
     /** @use HasFactory<InventoryQuantityFactory>  */
     use HasFactory;
 
+    protected $table = 'inventory_quantity';
+
     protected $fillable = [
         'item_id',
         'location_id',

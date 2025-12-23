@@ -85,6 +85,9 @@ it('successfully lists items with id filter', function () {
 
 it('successfully lists items with name filter', function () {
     $item = Item::query()->first();
+    $item->update([
+        'name' => 'Aaaaa',
+    ]);
 
     $response = $this->getJson(route($this->route, [
         'filter' => [

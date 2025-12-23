@@ -2779,18 +2779,6 @@ return [
       ),
     ),
   ),
-  '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
-  array (
-    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
-    array (
-      0 => 
-      array (
-        0 => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
-        1 => 'toArray',
-        2 => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
-      ),
-    ),
-  ),
   '/app/Modules/MasterData/app/Http/Resources/Item/ItemResourceCollection.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2798,18 +2786,6 @@ return [
       0 => 
       array (
         0 => 'App\\Traits\\ResourceCollectionToArray',
-      ),
-    ),
-  ),
-  '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php' => 
-  array (
-    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
-    array (
-      0 => 
-      array (
-        0 => 'Modules\\MasterData\\Http\\Resources\\Location\\LocationResource',
-        1 => 'toArray',
-        2 => 'Modules\\MasterData\\Http\\Resources\\Location\\LocationResource',
       ),
     ),
   ),
@@ -3321,6 +3297,8 @@ return [
     'fileHash' => '8d65079b9e69e686dbde358caa91de31af4bbcc7',
     'dependentFiles' => 
     array (
+      0 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      1 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
     ),
   ),
   '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResourceCollection.php' => 
@@ -3332,12 +3310,14 @@ return [
   ),
   '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php' => 
   array (
-    'fileHash' => 'a3e36937e9ca3fca0822436292484f664bef7273',
+    'fileHash' => '293da405258de695b8e5af696668c52b8c888d84',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
-      1 => '/app/Modules/MasterData/app/Models/Item/Item.php',
-      2 => '/app/Modules/MasterData/app/Models/Location/Location.php',
+      1 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      2 => '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php',
+      3 => '/app/Modules/MasterData/app/Models/Item/Item.php',
+      4 => '/app/Modules/MasterData/app/Models/Location/Location.php',
     ),
   ),
   '/app/Modules/Inventory/app/Providers/EventServiceProvider.php' => 
@@ -3577,7 +3557,7 @@ return [
   ),
   '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php' => 
   array (
-    'fileHash' => 'ece5ac6d13dbf461c6af4222fbe2163ac297a5ab',
+    'fileHash' => '2b68dcc1076cc18c84559d662a6029c901479d30',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
@@ -3598,7 +3578,7 @@ return [
   ),
   '/app/Modules/MasterData/app/Http/Resources/Location/LocationResource.php' => 
   array (
-    'fileHash' => '2df2b89fc93cfcc8e9e481d576a6872783371e88',
+    'fileHash' => '3e42f1f3a0c81ca3a3580c5da24e56ee7d67ac76',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
@@ -7976,7 +7956,7 @@ return [
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
-            0 => 'fillable',
+            0 => 'table',
           ),
            'phpDoc' => NULL,
            'type' => NULL,
@@ -7998,6 +7978,31 @@ return [
           ),
         )),
         1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'newFactory',
            'phpDoc' => NULL,
@@ -8015,7 +8020,7 @@ return [
           array (
           ),
         )),
-        2 => 
+        3 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'item',
            'phpDoc' => 
@@ -8050,7 +8055,7 @@ return [
           array (
           ),
         )),
-        3 => 
+        4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'location',
            'phpDoc' => 
@@ -10092,9 +10097,8 @@ return [
          'uses' => 
         array (
           'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
-          'carbon' => 'Carbon\\Carbon',
           'request' => 'Illuminate\\Http\\Request',
-          'itemtypeenum' => 'Modules\\MasterData\\Enums\\Item\\ItemTypeEnum',
+          'inventoryquantityresource' => 'Modules\\Inventory\\Http\\Resources\\InventoryQuantity\\InventoryQuantityResource',
           'item' => 'Modules\\MasterData\\Models\\Item\\Item',
         ),
          'constUses' => 
@@ -10120,14 +10124,13 @@ return [
            'name' => 'toArray',
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/** @return array<string, int|string|ItemTypeEnum|Carbon> */',
+             'phpDocString' => '/** @return array<string, mixed> */',
              'namespace' => 'Modules\\MasterData\\Http\\Resources\\Item',
              'uses' => 
             array (
               'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
-              'carbon' => 'Carbon\\Carbon',
               'request' => 'Illuminate\\Http\\Request',
-              'itemtypeenum' => 'Modules\\MasterData\\Enums\\Item\\ItemTypeEnum',
+              'inventoryquantityresource' => 'Modules\\Inventory\\Http\\Resources\\InventoryQuantity\\InventoryQuantityResource',
               'item' => 'Modules\\MasterData\\Models\\Item\\Item',
             ),
              'constUses' => 
@@ -10204,9 +10207,8 @@ return [
          'uses' => 
         array (
           'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
-          'carbon' => 'Carbon\\Carbon',
           'request' => 'Illuminate\\Http\\Request',
-          'locationtypeenum' => 'Modules\\MasterData\\Enums\\Location\\LocationTypeEnum',
+          'inventoryquantityresource' => 'Modules\\Inventory\\Http\\Resources\\InventoryQuantity\\InventoryQuantityResource',
           'location' => 'Modules\\MasterData\\Models\\Location\\Location',
         ),
          'constUses' => 
@@ -10232,14 +10234,13 @@ return [
            'name' => 'toArray',
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/** @return array<string, int|LocationTypeEnum|string|bool|Carbon> */',
+             'phpDocString' => '/** @return array<string,mixed> */',
              'namespace' => 'Modules\\MasterData\\Http\\Resources\\Location',
              'uses' => 
             array (
               'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
-              'carbon' => 'Carbon\\Carbon',
               'request' => 'Illuminate\\Http\\Request',
-              'locationtypeenum' => 'Modules\\MasterData\\Enums\\Location\\LocationTypeEnum',
+              'inventoryquantityresource' => 'Modules\\Inventory\\Http\\Resources\\InventoryQuantity\\InventoryQuantityResource',
               'location' => 'Modules\\MasterData\\Models\\Location\\Location',
             ),
              'constUses' => 
