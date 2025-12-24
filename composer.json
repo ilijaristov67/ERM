@@ -53,7 +53,11 @@
             "Modules\\Import\\": "Modules/Import/app/",
             "Modules\\Import\\Database\\Factories\\": "Modules/Import/database/factories/",
             "Modules\\Import\\Database\\Seeders\\": "Modules/Import/database/seeders/",
-            "Modules\\Import\\Tests\\": "Modules/Import/tests/"
+            "Modules\\Import\\Tests\\": "Modules/Import/tests/",
+            "Modules\\Procurement\\": "Modules/Procurement/app/",
+            "Modules\\Procurement\\Database\\Factories\\": "Modules/Procurement/database/factories/",
+            "Modules\\Procurement\\Database\\Seeders\\": "Modules/Procurement/database/seeders/",
+            "Modules\\Procurement\\Tests\\": "Modules/Procurement/tests/"
         }
     },
     "autoload-dev": {
