@@ -3,14 +3,14 @@
 namespace Modules\Procurement\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Modules\Procurement\Database\Seeders\Permission\PermissionSeeder;
 
 class ProcurementDatabaseSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        // $this->call([]);
+         $this->call([
+             PermissionSeeder::class,
+         ]);
     }
 }

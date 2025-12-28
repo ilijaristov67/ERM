@@ -13,8 +13,8 @@ return new class extends Migration
             $table->string('number')->unique();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->date('import_date')->nullable();
-            $table->foreignId('supplier_id')->nullable()->constrained()->cascadeOnDelete();
-            $table->foreignId('invoice_id')->nullable()->constrained()->cascadeOnDelete();
+            $table->foreignId('supplier_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('invoice_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }
