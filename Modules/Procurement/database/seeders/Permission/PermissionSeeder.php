@@ -8,10 +8,11 @@ use Spatie\Permission\PermissionRegistrar;
 
 class PermissionSeeder extends Seeder
 {
-        public const string MODULE_NAME = 'procurement';
-        public const string GUARD_NAME = 'api';
+    public const string MODULE_NAME = 'procurement';
 
-        public function run(): void
+    public const string GUARD_NAME = 'api';
+
+    public function run(): void
     {
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
 
