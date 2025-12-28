@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Procurement\Http\Controllers\ProcurementController;
+use Modules\Procurement\Http\Controllers\Supplier\StoreSupplierController;
 
-Route::middleware(['auth:sanctum'])->prefix('v1')->group(function () {
-    Route::apiResource('procurements', ProcurementController::class)->names('procurement');
-});
+Route::prefix('/suppliers')
+    ->name('suppliers.')
+    ->group(function () {
+        Route::post('/', StoreSupplierController::class)->name('store')->middleware(['permission:procurement-suppliers-create']);
+    });
