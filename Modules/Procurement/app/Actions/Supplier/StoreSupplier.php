@@ -9,8 +9,5 @@ class StoreSupplier
 {
     use AsAction;
 
-    public function handle(StoreSupplierRequest $request)
-    {
-
-    }
+    public function handle(StoreSupplierRequest $request) {}
 }
