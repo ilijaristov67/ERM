@@ -17,18 +17,19 @@ use Modules\Procurement\Database\Factories\Supplier\SupplierFactory;
  */
 class Supplier extends Model
 {
-    use SoftDeletes;
-
     /** @use HasFactory<SupplierFactory> */
     use HasFactory;
+
+    use SoftDeletes;
 
     protected $table = 'suppliers';
 
     protected $fillable = [
         'name',
     ];
+
     public static function newFactory(): SupplierFactory
-        {
+    {
         return new SupplierFactory();
-        }
+    }
 }
