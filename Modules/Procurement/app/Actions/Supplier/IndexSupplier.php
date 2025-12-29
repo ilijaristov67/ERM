@@ -22,14 +22,13 @@ class IndexSupplier
             ])
             ->allowedSorts([
                 'id',
-                'name'
+                'name',
             ])
             ->defaultSort('-id')
             ->paginate(
                 perPage: $request->input('limit'),
                 page: $request->input('page'),
             );
-
 
         return SupplierResourceCollection::make($suppliers);
     }
