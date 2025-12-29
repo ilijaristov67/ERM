@@ -11,6 +11,7 @@ class PatchSupplierRequest extends FormRequest
         'name',
     ];
 
+    /** @return array<string, array<int, string>> */
     public function rules(): array
     {
         $supplier = $this->route('supplier');
