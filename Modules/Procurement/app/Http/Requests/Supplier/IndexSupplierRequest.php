@@ -3,7 +3,6 @@
 namespace Modules\Procurement\Http\Requests\Supplier;
 
 use App\Http\Requests\BaseIndexRequest;
-use Illuminate\Foundation\Http\FormRequest;
 
 class IndexSupplierRequest extends BaseIndexRequest
 {
@@ -11,7 +10,6 @@ class IndexSupplierRequest extends BaseIndexRequest
         'id',
         'name',
     ];
-
 
     /** @var list<string> */
     protected static array $sortArray = [];
@@ -29,7 +27,7 @@ class IndexSupplierRequest extends BaseIndexRequest
             'filter.name' => [
                 'sometimes',
                 'string',
-            ]
+            ],
 
         ]);
     }
