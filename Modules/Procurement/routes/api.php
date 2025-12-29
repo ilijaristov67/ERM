@@ -9,4 +9,5 @@ Route::prefix('/suppliers')
     ->group(function () {
         Route::post('/', StoreSupplierController::class)->name('store')->middleware(['permission:procurement-suppliers-create']);
         Route::patch('/{supplier}', PatchSupplierController::class)->name('patch')->middleware(['permission:procurement-suppliers-update']);
+        Route::get('/', IndexSupplierController::class)->name('index')->middleware(['permission:procurement-suppliers-read']);
     });
