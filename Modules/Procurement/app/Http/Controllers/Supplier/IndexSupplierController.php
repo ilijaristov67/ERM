@@ -9,7 +9,7 @@ use Modules\Procurement\Http\Resources\Supplier\SupplierResourceCollection;
 
 class IndexSupplierController extends Controller
 {
-    public function __invoke(IndexSupplierRequest $request):  SupplierResourceCollection
+    public function __invoke(IndexSupplierRequest $request): SupplierResourceCollection
     {
         return IndexSupplier::run($request);
     }
