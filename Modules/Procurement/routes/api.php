@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Modules\Procurement\Http\Controllers\Supplier\IndexSupplierController;
 use Modules\Procurement\Http\Controllers\Supplier\PatchSupplierController;
 use Modules\Procurement\Http\Controllers\Supplier\StoreSupplierController;
 
