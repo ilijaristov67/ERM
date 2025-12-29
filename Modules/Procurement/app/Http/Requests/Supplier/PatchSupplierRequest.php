@@ -8,7 +8,7 @@ use Illuminate\Foundation\Http\FormRequest;
 class PatchSupplierRequest extends FormRequest
 {
     private const array COLUMNS = [
-        'name'
+        'name',
     ];
 
     public function rules(): array
@@ -20,9 +20,9 @@ class PatchSupplierRequest extends FormRequest
             'name' => [
                 'nullable',
                 'string',
-                'unique:suppliers,name,' . $supplier->id,
-                'required_without_all:' . $requiredWithoutAll->handle('name')
-            ]
+                'unique:suppliers,name,'.$supplier->id,
+                'required_without_all:'.$requiredWithoutAll->handle('name'),
+            ],
         ];
     }
 
