@@ -3,7 +3,9 @@
 namespace Modules\Import\Http;
 
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Import\Database\Factories\Import\ImportFactory;
 
 /**
  * @property int $id
@@ -17,6 +19,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Import extends Model
 {
+    /** @use HasFactory<ImportFactory> */
+    use HasFactory;
+
     protected $table = 'imports';
 
     protected $fillable = [
@@ -26,4 +31,9 @@ class Import extends Model
         'supplier_id',
         'invoice_id',
     ];
+
+    public static function newFactory(): ImportFactory
+    {
+        return ImportFactory::new();
+    }
 }
