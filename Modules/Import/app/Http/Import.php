@@ -5,7 +5,11 @@ namespace Modules\Import\Http;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\Admin\Models\User\User;
 use Modules\Import\Database\Factories\Import\ImportFactory;
+use Modules\MasterData\Models\Invoice\Invoice;
+use Modules\Procurement\Models\Supplier\Supplier;
 
 /**
  * @property int $id
@@ -35,5 +39,23 @@ class Import extends Model
     public static function newFactory(): ImportFactory
     {
         return ImportFactory::new();
+    }
+
+    /** @return BelongsTo<User, covariant Import> */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    /** @return BelongsTo<Supplier, covariant Import> */
+    public function supplier(): BelongsTo
+    {
+        return $this->belongsTo(Supplier::class);
+    }
+
+    /** @return BelongsTo<Invoice, covariant Import> */
+    public function invoice(): BelongsTo
+    {
+        return $this->belongsTo(Invoice::class);
     }
 }

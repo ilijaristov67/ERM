@@ -7,6 +7,7 @@ parameters:
     - Modules/Expense/app
     - Modules/Inventory/app
     - Modules/MasterData/app
+    - Modules/Import/app
     level: 6
     tmpDir: var/cache/phpstan
 
