@@ -5,7 +5,6 @@ namespace Modules\Import\Actions\Import;
 use Lorisleiva\Actions\Concerns\AsAction;
 use Modules\Import\Http\Import;
 use Modules\Import\Http\Requests\Import\IndexImportRequest;
-use Modules\Import\Http\Resources\Import\ImportResource;
 use Modules\Import\Http\Resources\Import\ImportResourceCollection;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
@@ -35,7 +34,7 @@ class IndexImport
             ->with([
                 'user',
                 'supplier',
-                'invoice'
+                'invoice',
             ])
             ->paginate(
                 perPage: $request->input('limit'),

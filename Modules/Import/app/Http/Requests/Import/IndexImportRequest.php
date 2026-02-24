@@ -3,11 +3,9 @@
 namespace Modules\Import\Http\Requests\Import;
 
 use App\Http\Requests\BaseIndexRequest;
-use Illuminate\Foundation\Http\FormRequest;
 
 class IndexImportRequest extends BaseIndexRequest
 {
-
     private const array  SORTABLE = [
         'id',
         'number',
@@ -20,6 +18,7 @@ class IndexImportRequest extends BaseIndexRequest
     public function rules(): array
     {
         static::$sortArray = self::SORTABLE;
+
         return array_merge(parent::rules(), [
             'filter.id' => [
                 'sometimes',
@@ -38,7 +37,7 @@ class IndexImportRequest extends BaseIndexRequest
             'filter.import_date' => [
                 'sometimes',
                 'string',
-            ]
+            ],
         ]);
     }
 
