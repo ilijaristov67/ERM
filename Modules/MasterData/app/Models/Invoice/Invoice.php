@@ -17,7 +17,7 @@ class Invoice extends Model
     /** @use HasFactory<InvoiceFactory> */
     use HasFactory;
 
-    protected $table = 'invoice';
+    protected $table = 'invoices';
 
     protected $fillable = [];
 

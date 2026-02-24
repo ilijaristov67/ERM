@@ -31,7 +31,6 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('api')
             ->prefix('api/import')
             ->name('api.import.')
-
             ->group(module_path($this->name, '/routes/api.php'));
     }
 }

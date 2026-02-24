@@ -36,6 +36,10 @@ class Import extends Model
         'invoice_id',
     ];
 
+    protected $casts = [
+        'import_date' => 'date',
+    ];
+
     public static function newFactory(): ImportFactory
     {
         return ImportFactory::new();

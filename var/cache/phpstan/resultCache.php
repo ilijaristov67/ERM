@@ -2154,26 +2154,6 @@ return [
 	'projectExtensionFiles' => array (
 ),
 	'errorsCallback' => static function (): array { return array (
-  '/app/Modules/Import/app/Actions/Import/StoreImport.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method Modules\\Import\\Actions\\Import\\StoreImport::handle() should return Modules\\Import\\Http\\Resources\\Import\\ImportResource but return statement is missing.',
-       'file' => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
-       'line' => 14,
-       'canBeIgnored' => false,
-       'filePath' => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 14,
-       'nodeType' => 'PHPStan\\Node\\ExecutionEndNode',
-       'identifier' => 'return.missing',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
 ); },
 	'locallyIgnoredErrorsCallback' => static function (): array { return array (
   '/app/Modules/Admin/app/Actions/Auth/Logout.php' => 
@@ -2638,15 +2618,6 @@ return [
   ),
   '/app/Modules/Import/app/Actions/Import/StoreImport.php' => 
   array (
-    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
-    array (
-      0 => 
-      array (
-        0 => 'Modules\\Import\\Actions\\Import\\StoreImport',
-        1 => 'handle',
-        2 => 'Modules\\Import\\Actions\\Import\\StoreImport',
-      ),
-    ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
@@ -3430,7 +3401,15 @@ return [
   ),
   '/app/Modules/Import/app/Actions/Import/StoreImport.php' => 
   array (
-    'fileHash' => 'd3629eda913b13b8158b31b00732dcc7f32188b0',
+    'fileHash' => '16832acc8b11dae5c9a69a0d8eb584707f29e8bd',
+    'dependentFiles' => 
+    array (
+      0 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
+    ),
+  ),
+  '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php' => 
+  array (
+    'fileHash' => '8aef51a019cf421b8644e1840ea2467a6176fc06',
     'dependentFiles' => 
     array (
     ),
@@ -3441,7 +3420,8 @@ return [
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
-      1 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+      1 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
+      2 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
     ),
   ),
   '/app/Modules/Import/app/Http/Requests/Import/StoreImportRequest.php' => 
@@ -3449,6 +3429,8 @@ return [
     'fileHash' => 'ee8eef81e5cb799091684b16cafa7e2cd436c43a',
     'dependentFiles' => 
     array (
+      0 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
+      1 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
     ),
   ),
   '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php' => 
@@ -3457,6 +3439,7 @@ return [
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
+      1 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
     ),
   ),
   '/app/Modules/Import/app/Providers/EventServiceProvider.php' => 
@@ -8081,6 +8064,72 @@ return [
            'returnType' => 'Modules\\Import\\Http\\Resources\\Import\\ImportResource',
            'parameters' => 
           array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\Import\\Http\\Requests\\Import\\StoreImportRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Http\\Controllers\\Import\\StoreImportController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\Import\\Http\\Resources\\Import\\ImportResource',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\Import\\Http\\Requests\\Import\\StoreImportRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
           ),
            'attributes' => 
           array (

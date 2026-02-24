@@ -1,8 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Import\Http\Controllers\ImportController;
+use Modules\Import\Http\Controllers\Import\StoreImportController;
 
-Route::middleware(['auth:sanctum'])->prefix('v1')->group(function () {
-    Route::apiResource('imports', ImportController::class)->names('import');
-});
+
+Route::prefix('/')
+    ->name('')
+    ->group(function () {
+        Route::post('',StoreImportController::class)->name('store')->middleware('permission:import-create');
+    });
