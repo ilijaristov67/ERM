@@ -5,7 +5,6 @@ use Modules\Import\Database\Seeders\Permission\PermissionSeeder;
 use Modules\MasterData\Models\Invoice\Invoice;
 use Modules\Procurement\Models\Supplier\Supplier;
 
-
 beforeEach(function () {
     $this->seed(PermissionSeeder::class);
 
@@ -30,9 +29,8 @@ dataset('import data', [
     ],
 ]);
 
-
 it('can store import', function (array $data) {
-   $response = $this->postJson(route($this->route), $data);
+    $response = $this->postJson(route($this->route), $data);
 
-   dd($response->json());
+    dd($response->json());
 })->with('import data');
