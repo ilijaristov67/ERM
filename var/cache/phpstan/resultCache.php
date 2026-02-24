@@ -2643,7 +2643,7 @@ return [
       0 => 
       array (
         0 => 'config',
-        1 => 75,
+        1 => 78,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -3416,17 +3416,19 @@ return [
   ),
   '/app/Modules/Import/app/Http/Import.php' => 
   array (
-    'fileHash' => '00c7d662b41c12f7599fa940e7f62a9857885fca',
+    'fileHash' => '4ce8934f6380aaf1f2a4b46a2879ebd226148b29',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
       1 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
       2 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+      3 => '/app/Modules/Import/app/Observers/Import/ImportObserver.php',
+      4 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
     ),
   ),
   '/app/Modules/Import/app/Http/Requests/Import/StoreImportRequest.php' => 
   array (
-    'fileHash' => 'ee8eef81e5cb799091684b16cafa7e2cd436c43a',
+    'fileHash' => 'bed5aa5471ad1722921b37cfd5b3a5480a8f976a',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
@@ -3435,11 +3437,19 @@ return [
   ),
   '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php' => 
   array (
-    'fileHash' => '5877a64322d431633b1d572ba89903f1c4adccf6',
+    'fileHash' => 'e527011c7da9a3201376eb3a1285a51323262838',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
       1 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
+    ),
+  ),
+  '/app/Modules/Import/app/Observers/Import/ImportObserver.php' => 
+  array (
+    'fileHash' => '003ac1d99cab25238a5e89c5ed027f8e1852939d',
+    'dependentFiles' => 
+    array (
+      0 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
     ),
   ),
   '/app/Modules/Import/app/Providers/EventServiceProvider.php' => 
@@ -3452,14 +3462,14 @@ return [
   ),
   '/app/Modules/Import/app/Providers/ImportServiceProvider.php' => 
   array (
-    'fileHash' => 'dd86816820f9831b5d8b819de24e3b7f7f180bc3',
+    'fileHash' => '92d54ae3648af8cae4628f067fd1f30a68bb0282',
     'dependentFiles' => 
     array (
     ),
   ),
   '/app/Modules/Import/app/Providers/RouteServiceProvider.php' => 
   array (
-    'fileHash' => 'e139bfb97749c32644baa01abf6ac2a730f9b53a',
+    'fileHash' => 'fa312fa6910dbb70f8a148ab27e581195327c3e7',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
@@ -3822,7 +3832,7 @@ return [
   ),
   '/app/Modules/MasterData/app/Models/Invoice/Invoice.php' => 
   array (
-    'fileHash' => '35ca25807c55ab0fba5027d26f87250647ef70be',
+    'fileHash' => 'cb78d8412ba26b636033be54deeb62e3c52ea3ec',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Http/Import.php',
@@ -8149,6 +8159,8 @@ return [
        'phpDoc' => 
       \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
          'phpDocString' => '/**
+ * Observed by ImportObserver
+ *
  * @property int $id
  * @property string $number
  * @property int $user_id
@@ -8240,6 +8252,31 @@ return [
           ),
         )),
         2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'casts',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'newFactory',
            'phpDoc' => NULL,
@@ -8257,7 +8294,7 @@ return [
           array (
           ),
         )),
-        3 => 
+        4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'user',
            'phpDoc' => 
@@ -8293,7 +8330,7 @@ return [
           array (
           ),
         )),
-        4 => 
+        5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'supplier',
            'phpDoc' => 
@@ -8329,7 +8366,7 @@ return [
           array (
           ),
         )),
-        5 => 
+        6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'invoice',
            'phpDoc' => 
@@ -8475,8 +8512,8 @@ return [
          'namespace' => 'Modules\\Import\\Http\\Resources\\Import',
          'uses' => 
         array (
+          'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
           'request' => 'Illuminate\\Http\\Request',
-          'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
           'userresource' => 'Modules\\Admin\\Http\\Resources\\User\\UserResource',
           'import' => 'Modules\\Import\\Http\\Import',
           'invoiceresource' => 'Modules\\MasterData\\Http\\Resources\\Invoice\\InvoiceResource',
@@ -8488,7 +8525,7 @@ return [
       )),
        'abstract' => false,
        'final' => false,
-       'extends' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+       'extends' => 'App\\Http\\Resources\\BaseJsonResource',
        'implements' => 
       array (
       ),
@@ -8509,8 +8546,8 @@ return [
              'namespace' => 'Modules\\Import\\Http\\Resources\\Import',
              'uses' => 
             array (
+              'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
               'request' => 'Illuminate\\Http\\Request',
-              'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
               'userresource' => 'Modules\\Admin\\Http\\Resources\\User\\UserResource',
               'import' => 'Modules\\Import\\Http\\Import',
               'invoiceresource' => 'Modules\\MasterData\\Http\\Resources\\Invoice\\InvoiceResource',
@@ -8533,6 +8570,61 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'request',
                'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Import/app/Observers/Import/ImportObserver.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Observers\\Import\\ImportObserver',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'creating',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'import',
+               'type' => 'Modules\\Import\\Http\\Import',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
