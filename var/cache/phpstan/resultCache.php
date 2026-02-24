@@ -3428,7 +3428,7 @@ return [
   ),
   '/app/Modules/Import/app/Http/Controllers/Import/PatchImportController.php' => 
   array (
-    'fileHash' => '23f6909b7c62a3b2a648783a691e7ddba578721f',
+    'fileHash' => '626d525c40e78b09367b3ea44acc547f742888be',
     'dependentFiles' => 
     array (
     ),
@@ -3474,7 +3474,7 @@ return [
   ),
   '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php' => 
   array (
-    'fileHash' => 'e527011c7da9a3201376eb3a1285a51323262838',
+    'fileHash' => '52b51f7d379f8ae19e819258cd5f2503d06d0369',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Actions/Import/PatchImport.php',

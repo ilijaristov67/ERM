@@ -12,6 +12,6 @@ class PatchImportController extends Controller
 {
     public function __invoke(PatchImportRequest $request, Import $import): ImportResource
     {
-        return PatchImport::run($import, $request);
+        return PatchImport::run($request, $import);
     }
 }

@@ -19,7 +19,7 @@ class ImportResource extends BaseJsonResource
             'id' => $this->id,
             'number' => $this->number,
             'user' => UserResource::make($this->whenLoaded('user')),
-            'import_date' => $this->import_date,
+            'import_date' => $this->import_date->toDateString(),
             'supplier' => SupplierResource::make($this->whenLoaded('supplier')),
             'invoice' => InvoiceResource::make($this->whenLoaded('invoice')),
             'created_at' => $this->created_at,
