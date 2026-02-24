@@ -6,4 +6,5 @@ return [
     'country' => 'Country',
     'product' => 'Product',
     'item' => 'Item',
+    'import' => 'Import',
 ];
