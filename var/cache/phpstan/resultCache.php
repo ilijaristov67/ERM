@@ -2154,6 +2154,26 @@ return [
 	'projectExtensionFiles' => array (
 ),
 	'errorsCallback' => static function (): array { return array (
+  '/app/Modules/Import/app/Actions/Import/StoreImport.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Method Modules\\Import\\Actions\\Import\\StoreImport::handle() should return Modules\\Import\\Http\\Resources\\Import\\ImportResource but return statement is missing.',
+       'file' => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
+       'line' => 14,
+       'canBeIgnored' => false,
+       'filePath' => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 14,
+       'nodeType' => 'PHPStan\\Node\\ExecutionEndNode',
+       'identifier' => 'return.missing',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
 ); },
 	'locallyIgnoredErrorsCallback' => static function (): array { return array (
   '/app/Modules/Admin/app/Actions/Auth/Logout.php' => 
@@ -2613,6 +2633,25 @@ return [
       0 => 
       array (
         0 => 'Nwidart\\Modules\\Traits\\PathNamespace',
+      ),
+    ),
+  ),
+  '/app/Modules/Import/app/Actions/Import/StoreImport.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Modules\\Import\\Actions\\Import\\StoreImport',
+        1 => 'handle',
+        2 => 'Modules\\Import\\Actions\\Import\\StoreImport',
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
       ),
     ),
   ),
@@ -3331,15 +3370,16 @@ return [
       7 => '/app/Modules/Admin/app/Http/Resources/User/UserResource.php',
       8 => '/app/Modules/Admin/app/Models/Company/Company.php',
       9 => '/app/Modules/Import/app/Http/Import.php',
-      10 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
-      11 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
-      12 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
-      13 => '/app/Modules/MasterData/app/Http/Requests/Item/IndexItemRequest.php',
-      14 => '/app/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
-      15 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
-      16 => '/app/Modules/MasterData/app/Http/Requests/Location/IndexLocationRequest.php',
-      17 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
-      18 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
+      10 => '/app/Modules/Import/app/Http/Requests/Import/StoreImportRequest.php',
+      11 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+      12 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
+      13 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
+      14 => '/app/Modules/MasterData/app/Http/Requests/Item/IndexItemRequest.php',
+      15 => '/app/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
+      16 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
+      17 => '/app/Modules/MasterData/app/Http/Requests/Location/IndexLocationRequest.php',
+      18 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
+      19 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
     ),
   ),
   '/app/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
@@ -3388,19 +3428,35 @@ return [
       0 => '/app/Modules/Expense/app/Providers/ExpenseServiceProvider.php',
     ),
   ),
+  '/app/Modules/Import/app/Actions/Import/StoreImport.php' => 
+  array (
+    'fileHash' => 'd3629eda913b13b8158b31b00732dcc7f32188b0',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/app/Modules/Import/app/Http/Import.php' => 
   array (
     'fileHash' => '00c7d662b41c12f7599fa940e7f62a9857885fca',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+      0 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
+      1 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+    ),
+  ),
+  '/app/Modules/Import/app/Http/Requests/Import/StoreImportRequest.php' => 
+  array (
+    'fileHash' => 'ee8eef81e5cb799091684b16cafa7e2cd436c43a',
+    'dependentFiles' => 
+    array (
     ),
   ),
   '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php' => 
   array (
-    'fileHash' => 'a098200382ba2246175f5eac12ef197b8872c83c',
+    'fileHash' => '5877a64322d431633b1d572ba89903f1c4adccf6',
     'dependentFiles' => 
     array (
+      0 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
     ),
   ),
   '/app/Modules/Import/app/Providers/EventServiceProvider.php' => 
@@ -3727,6 +3783,7 @@ return [
     'fileHash' => '300af22e99f9b20f946988d9790735ef80342644',
     'dependentFiles' => 
     array (
+      0 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
     ),
   ),
   '/app/Modules/MasterData/app/Http/Resources/Invoice/InvoiceResourceCollection.php' => 
@@ -3786,7 +3843,8 @@ return [
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Http/Import.php',
-      1 => '/app/Modules/MasterData/app/Http/Resources/Invoice/InvoiceResource.php',
+      1 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+      2 => '/app/Modules/MasterData/app/Http/Resources/Invoice/InvoiceResource.php',
     ),
   ),
   '/app/Modules/MasterData/app/Models/Item/Item.php' => 
@@ -7989,6 +8047,51 @@ return [
       ),
     )),
   ),
+  '/app/Modules/Import/app/Actions/Import/StoreImport.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Actions\\Import\\StoreImport',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\Import\\Http\\Resources\\Import\\ImportResource',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/app/Modules/Import/app/Http/Import.php' => 
   array (
     0 => 
@@ -8219,6 +8322,99 @@ return [
       ),
     )),
   ),
+  '/app/Modules/Import/app/Http/Requests/Import/StoreImportRequest.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Http\\Requests\\Import\\StoreImportRequest',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Foundation\\Http\\FormRequest',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array<string, mixed>
+     */',
+             'namespace' => 'Modules\\Import\\Http\\Requests\\Import',
+             'uses' => 
+            array (
+              'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'authorize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'bool',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'prepareForValidation',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php' => 
   array (
     0 => 
@@ -8234,6 +8430,7 @@ return [
           'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
           'userresource' => 'Modules\\Admin\\Http\\Resources\\User\\UserResource',
           'import' => 'Modules\\Import\\Http\\Import',
+          'invoiceresource' => 'Modules\\MasterData\\Http\\Resources\\Invoice\\InvoiceResource',
           'supplierresource' => 'Modules\\Procurement\\Http\\Resources\\Supplier\\SupplierResource',
         ),
          'constUses' => 
@@ -8267,6 +8464,7 @@ return [
               'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
               'userresource' => 'Modules\\Admin\\Http\\Resources\\User\\UserResource',
               'import' => 'Modules\\Import\\Http\\Import',
+              'invoiceresource' => 'Modules\\MasterData\\Http\\Resources\\Invoice\\InvoiceResource',
               'supplierresource' => 'Modules\\Procurement\\Http\\Resources\\Supplier\\SupplierResource',
             ),
              'constUses' => 
