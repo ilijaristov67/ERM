@@ -2,6 +2,7 @@
 
 namespace Modules\Import\Http\Resources\Import;
 
+use App\Http\Resources\BaseJsonResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Modules\Admin\Http\Resources\User\UserResource;
@@ -10,7 +11,7 @@ use Modules\MasterData\Http\Resources\Invoice\InvoiceResource;
 use Modules\Procurement\Http\Resources\Supplier\SupplierResource;
 
 /** @mixin Import */
-class ImportResource extends JsonResource
+class ImportResource extends BaseJsonResource
 {
     /** @return array<string, mixed> */
     public function toArray(Request $request): array

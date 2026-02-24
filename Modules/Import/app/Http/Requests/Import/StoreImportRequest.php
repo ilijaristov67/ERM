@@ -21,6 +21,7 @@ class StoreImportRequest extends FormRequest
                 'required',
                 'date',
                 'date_format:'.config('constants.front_end_date_format'),
+                'before_or_equal:today',
             ],
             'supplier_id' => [
                 'required',

@@ -3,6 +3,8 @@
 namespace Modules\Import\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Modules\Import\Http\Import;
+use Modules\Import\Observers\Import\ImportObserver;
 use Nwidart\Modules\Traits\PathNamespace;
 
 class ImportServiceProvider extends ServiceProvider
@@ -20,6 +22,7 @@ class ImportServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->registerConfig();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'database/migrations'));
+        Import::observe(ImportObserver::class);
     }
 
     public function register(): void

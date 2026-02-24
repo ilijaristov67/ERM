@@ -12,6 +12,8 @@ use Modules\MasterData\Models\Invoice\Invoice;
 use Modules\Procurement\Models\Supplier\Supplier;
 
 /**
+ * Observed by ImportObserver
+ *
  * @property int $id
  * @property string $number
  * @property int $user_id
