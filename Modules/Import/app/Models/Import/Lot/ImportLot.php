@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property int $id
+ * @property int $import_id
  * @property int $location_id
  * @property Carbon $arrived_at
  * @property int $user_id
@@ -15,14 +16,13 @@ use Illuminate\Database\Eloquent\Model;
  */
 class ImportLot extends Model
 {
-
     protected $table = 'import_lots';
 
     protected $fillable = [
         'import_id',
         'location_id',
         'arrived_at',
-        'user_id'
+        'user_id',
     ];
 
     protected $casts = [
