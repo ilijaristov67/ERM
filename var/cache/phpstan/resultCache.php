@@ -2728,7 +2728,7 @@ return [
       0 => 
       array (
         0 => 'config',
-        1 => 78,
+        1 => 81,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -3641,15 +3641,25 @@ return [
   ),
   '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php' => 
   array (
-    'fileHash' => 'b382112c1ef3284aa865f7daed24ce15fd87d3f4',
+    'fileHash' => 'd9b01fa452392fcc601f5bb6f6e0cc93189b5c71',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
+      1 => '/app/Modules/Import/app/Observers/Import/Lot/ImportLotObserver.php',
+      2 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
     ),
   ),
   '/app/Modules/Import/app/Observers/Import/ImportObserver.php' => 
   array (
     'fileHash' => 'd92f5deb1f3f3c8feb4d44df3dc2e5787f14a35b',
+    'dependentFiles' => 
+    array (
+      0 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+    ),
+  ),
+  '/app/Modules/Import/app/Observers/Import/Lot/ImportLotObserver.php' => 
+  array (
+    'fileHash' => '3f8d0be7201f4c5b086596cafdfe79290ee7a4ab',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
@@ -3665,7 +3675,7 @@ return [
   ),
   '/app/Modules/Import/app/Providers/ImportServiceProvider.php' => 
   array (
-    'fileHash' => '045891aa948f315a80cb368b62eb628dead3a4bb',
+    'fileHash' => 'ce0d04e59e4a75e263d31179bc789ebf18b9373c',
     'dependentFiles' => 
     array (
     ),
@@ -9531,6 +9541,8 @@ return [
        'phpDoc' => 
       \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
          'phpDocString' => '/**
+ * Observed by ImportLotObserver
+ *
  * @property int $id
  * @property int $import_id
  * @property int $location_id
@@ -9818,6 +9830,61 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'import',
                'type' => 'Modules\\Import\\Models\\Import\\Import',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Import/app/Observers/Import/Lot/ImportLotObserver.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Observers\\Import\\Lot\\ImportLotObserver',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'creating',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'importLot',
+               'type' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,

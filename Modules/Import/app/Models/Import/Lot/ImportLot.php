@@ -13,6 +13,8 @@ use Modules\Import\Models\Import\Import;
 use Modules\MasterData\Models\Location\Location;
 
 /**
+ * Observed by ImportLotObserver
+ *
  * @property int $id
  * @property int $import_id
  * @property int $location_id
