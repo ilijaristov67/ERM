@@ -22,11 +22,11 @@ class StoreImportLotRequest extends FormRequest
                 'integer',
                 'exists:locations,id',
             ],
-            'user_id' =>[
+            'user_id' => [
                 'required',
                 'integer',
                 'exists:users,id',
-            ]
+            ],
         ];
     }
 
@@ -38,7 +38,7 @@ class StoreImportLotRequest extends FormRequest
     public function prepareForValidation(): void
     {
         $this->merge([
-            'user_id' => auth()->id()
+            'user_id' => auth()->id(),
         ]);
     }
 }
