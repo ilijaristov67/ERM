@@ -3,7 +3,7 @@
 namespace Modules\Import\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Modules\Import\Http\Import;
+use Modules\Import\Models\Import\Import;
 use Modules\Import\Observers\Import\ImportObserver;
 use Nwidart\Modules\Traits\PathNamespace;
 

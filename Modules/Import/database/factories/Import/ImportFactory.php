@@ -4,7 +4,7 @@ namespace Modules\Import\Database\Factories\Import;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Admin\Models\User\User;
-use Modules\Import\Http\Import;
+use Modules\Import\Models\Import\Import;
 use Modules\MasterData\Models\Invoice\Invoice;
 use Modules\Procurement\Models\Supplier\Supplier;
 

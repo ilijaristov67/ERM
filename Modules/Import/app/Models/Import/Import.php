@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Import\Http;
+namespace Modules\Import\Models\Import;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

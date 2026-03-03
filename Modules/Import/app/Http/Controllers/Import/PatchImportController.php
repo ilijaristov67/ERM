@@ -4,9 +4,9 @@ namespace Modules\Import\Http\Controllers\Import;
 
 use App\Http\Controllers\Controller;
 use Modules\Import\Actions\Import\PatchImport;
-use Modules\Import\Http\Import;
 use Modules\Import\Http\Requests\Import\PatchImportRequest;
 use Modules\Import\Http\Resources\Import\ImportResource;
+use Modules\Import\Models\Import\Import;
 
 class PatchImportController extends Controller
 {

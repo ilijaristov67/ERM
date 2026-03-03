@@ -3,7 +3,7 @@
 namespace Modules\Import\Observers\Import;
 
 use App\Helpers\GenerateImportAndExportNumberHelper;
-use Modules\Import\Http\Import;
+use Modules\Import\Models\Import\Import;
 
 class ImportObserver
 {

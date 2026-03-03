@@ -3,7 +3,7 @@
 use Carbon\Carbon;
 use Modules\Admin\Models\User\User;
 use Modules\Import\Database\Seeders\Permission\PermissionSeeder;
-use Modules\Import\Http\Import;
+use Modules\Import\Models\Import\Import;
 use Modules\MasterData\Models\Invoice\Invoice;
 use Modules\Procurement\Models\Supplier\Supplier;
 
@@ -50,15 +50,15 @@ it('can update import', function (array $data) {
         ->and($response->status())->toBe(200)
         ->and($response->json())->toBeArray()
         ->and($response->json())->toHaveKeys([
-                 'id',
-                 'number',
-                 'user',
-                 'import_date',
-                 'supplier',
-                 'invoice',
-                 'created_at',
-                 'updated_at',
-             ])
+            'id',
+            'number',
+            'user',
+            'import_date',
+            'supplier',
+            'invoice',
+            'created_at',
+            'updated_at',
+        ])
         ->and($response->json('id'))->toBe($this->import->id)
         ->and($response->json('import_date'))->toBe(Carbon::parse($data['import_date'])->format(config('constants.database_date_format')))
         ->and($response->json('supplier')['id'])->toBe($data['supplier_id'])

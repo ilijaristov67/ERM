@@ -3,9 +3,9 @@
 namespace Modules\Import\Actions\Import;
 
 use Lorisleiva\Actions\Concerns\AsAction;
-use Modules\Import\Http\Import;
 use Modules\Import\Http\Requests\Import\IndexImportRequest;
 use Modules\Import\Http\Resources\Import\ImportResourceCollection;
+use Modules\Import\Models\Import\Import;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
 

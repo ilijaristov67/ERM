@@ -4,7 +4,7 @@ namespace Modules\Import\Actions\Import;
 
 use App\Http\Resources\SuccessfulOperationMessageResource;
 use Lorisleiva\Actions\Concerns\AsAction;
-use Modules\Import\Http\Import;
+use Modules\Import\Models\Import\Import;
 use Symfony\Component\HttpFoundation\Response;
 
 class DeleteImport

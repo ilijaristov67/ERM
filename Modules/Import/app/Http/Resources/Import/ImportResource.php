@@ -5,7 +5,7 @@ namespace Modules\Import\Http\Resources\Import;
 use App\Http\Resources\BaseJsonResource;
 use Illuminate\Http\Request;
 use Modules\Admin\Http\Resources\User\UserResource;
-use Modules\Import\Http\Import;
+use Modules\Import\Models\Import\Import;
 use Modules\MasterData\Http\Resources\Invoice\InvoiceResource;
 use Modules\Procurement\Http\Resources\Supplier\SupplierResource;
 

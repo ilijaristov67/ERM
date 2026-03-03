@@ -2,7 +2,7 @@
 
 use Modules\Admin\Models\User\User;
 use Modules\Import\Database\Seeders\Permission\PermissionSeeder;
-use Modules\Import\Http\Import;
+use Modules\Import\Models\Import\Import;
 
 beforeEach(function () {
     $this->seed(PermissionSeeder::class);
