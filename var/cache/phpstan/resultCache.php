@@ -2733,6 +2733,16 @@ return [
       ),
     ),
   ),
+  '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+    ),
+  ),
   '/app/Modules/Import/app/Providers/ImportServiceProvider.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
@@ -3634,8 +3644,16 @@ return [
       5 => '/app/Modules/Import/app/Http/Controllers/Import/PatchImportController.php',
       6 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
       7 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
-      8 => '/app/Modules/Import/app/Observers/Import/ImportObserver.php',
-      9 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+      8 => '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php',
+      9 => '/app/Modules/Import/app/Observers/Import/ImportObserver.php',
+      10 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+    ),
+  ),
+  '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php' => 
+  array (
+    'fileHash' => 'c5da96a8790eede69bdbe664d9a2f1da1a139f37',
+    'dependentFiles' => 
+    array (
     ),
   ),
   '/app/Modules/Import/app/Observers/Import/ImportObserver.php' => 
@@ -9424,6 +9442,186 @@ return [
               'importfactory' => 'Modules\\Import\\Database\\Factories\\Import\\ImportFactory',
               'invoice' => 'Modules\\MasterData\\Models\\Invoice\\Invoice',
               'supplier' => 'Modules\\Procurement\\Models\\Supplier\\Supplier',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * @property int $id
+ * @property int $import_id
+ * @property int $location_id
+ * @property Carbon $arrived_at
+ * @property int $user_id
+ * @property Carbon $created_at
+ * @property Carbon $updated_at
+ */',
+         'namespace' => 'Modules\\Import\\Models\\Import\\Lot',
+         'uses' => 
+        array (
+          'carbon' => 'Carbon\\Carbon',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'importfactory' => 'Modules\\Import\\Database\\Factories\\Import\\ImportFactory',
+          'importlotfactory' => 'Modules\\Import\\Database\\Factories\\Import\\Lot\\ImportLotFactory',
+          'import' => 'Modules\\Import\\Models\\Import\\Import',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'table',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'casts',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'newFactory',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\Import\\Database\\Factories\\Import\\Lot\\ImportLotFactory',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'import',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return BelongsTo<Import, covariant ImportLot> */',
+             'namespace' => 'Modules\\Import\\Models\\Import\\Lot',
+             'uses' => 
+            array (
+              'carbon' => 'Carbon\\Carbon',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'importfactory' => 'Modules\\Import\\Database\\Factories\\Import\\ImportFactory',
+              'importlotfactory' => 'Modules\\Import\\Database\\Factories\\Import\\Lot\\ImportLotFactory',
+              'import' => 'Modules\\Import\\Models\\Import\\Import',
             ),
              'constUses' => 
             array (
