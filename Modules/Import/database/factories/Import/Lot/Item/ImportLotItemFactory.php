@@ -14,7 +14,7 @@ class ImportLotItemFactory extends Factory
     public function definition(): array
     {
         return [
-        'import_lot_id' => ImportLot::factory(),
+            'import_lot_id' => ImportLot::factory(),
             'item_id' => Item::factory(),
             'quantity' => (string) $this->faker->numberBetween(1, 100),
         ];
