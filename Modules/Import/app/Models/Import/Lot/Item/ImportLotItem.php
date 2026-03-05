@@ -3,7 +3,9 @@
 namespace Modules\Import\Models\Import\Lot\Item;
 
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Import\Database\Factories\Import\Lot\Item\ImportLotItemFactory;
 
 /**
  * @property int $id
@@ -15,6 +17,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class ImportLotItem extends Model
 {
+    /** @use HasFactory<ImportLotItemFactory> */
+    use HasFactory;
+
     protected $table = 'import_lot_item';
 
     protected $fillable = [
@@ -22,4 +27,9 @@ class ImportLotItem extends Model
         'item_id',
         'quantity',
     ];
+
+    public static function newFactory(): ImportLotItemFactory
+    {
+        return new ImportLotItemFactory();
+    }
 }
