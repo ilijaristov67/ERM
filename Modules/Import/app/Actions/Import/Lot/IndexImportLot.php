@@ -15,7 +15,7 @@ class IndexImportLot
 {
     use AsAction;
 
-    public function handle(IndexImportLotRequest $request, Import $import): ImportLotResource
+    public function handle(IndexImportLotRequest $request, Import $import): ImportLotResourceCollection
     {
         $importLots = QueryBuilder::for(ImportLot::class)
             ->where('import_id', $import->id)
