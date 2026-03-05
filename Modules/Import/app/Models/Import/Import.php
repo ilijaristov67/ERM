@@ -6,8 +6,10 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\Admin\Models\User\User;
 use Modules\Import\Database\Factories\Import\ImportFactory;
+use Modules\Import\Models\Import\Lot\ImportLot;
 use Modules\MasterData\Models\Invoice\Invoice;
 use Modules\Procurement\Models\Supplier\Supplier;
 
@@ -63,5 +65,11 @@ class Import extends Model
     public function invoice(): BelongsTo
     {
         return $this->belongsTo(Invoice::class);
+    }
+
+    /** @return HasMany<ImportLot, covariant Import> */
+    public function importLots(): HasMany
+    {
+        return $this->hasMany(ImportLot::class);
     }
 }

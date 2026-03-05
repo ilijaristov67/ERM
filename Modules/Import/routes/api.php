@@ -18,6 +18,6 @@ Route::prefix('/')
         Route::prefix('/lots')
             ->name('lots.')
             ->group(function () {
-                Route::post('/', StoreImportLotController::class)->name('store')->middleware('permission:import-lots-create');
+                Route::post('/{import}', StoreImportLotController::class)->name('store')->middleware('permission:import-lots-create');
             });
     });
