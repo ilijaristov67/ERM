@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Modules\Import\Http\Controllers\Import\DeleteImportController;
 use Modules\Import\Http\Controllers\Import\IndexImportController;
+use Modules\Import\Http\Controllers\Import\Lot\IndexImportLotController;
 use Modules\Import\Http\Controllers\Import\Lot\PatchImportLotController;
 use Modules\Import\Http\Controllers\Import\Lot\StoreImportLotController;
 use Modules\Import\Http\Controllers\Import\PatchImportController;
@@ -21,5 +22,6 @@ Route::prefix('/')
             ->group(function () {
                 Route::post('/', StoreImportLotController::class)->name('store')->middleware('permission:import-lots-create');
                 Route::patch('/{import_lot}', PatchImportLotController::class)->name('patch')->middleware('permission:import-lots-update');
+                Route::get('/', IndexImportLotController::class)->name('index')->middleware('permission:import-read');
             });
     });
