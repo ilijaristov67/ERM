@@ -2154,26 +2154,6 @@ return [
 	'projectExtensionFiles' => array (
 ),
 	'errorsCallback' => static function (): array { return array (
-  '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Method Modules\\Import\\Http\\Resources\\Import\\Lot\\Item\\ImportLotItemResource::toArray() return type has no value type specified in iterable type array.',
-       'file' => '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php',
-       'line' => 15,
-       'canBeIgnored' => true,
-       'filePath' => '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'See: https://phpstan.org/blog/solving-phpstan-no-value-type-specified-in-iterable-type',
-       'nodeLine' => 15,
-       'nodeType' => 'PHPStan\\Node\\InClassMethodNode',
-       'identifier' => 'missingType.iterableValue',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
 ); },
 	'locallyIgnoredErrorsCallback' => static function (): array { return array (
   '/app/Modules/Admin/app/Actions/Auth/Logout.php' => 
@@ -3816,7 +3796,7 @@ return [
   ),
   '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php' => 
   array (
-    'fileHash' => 'dc414e7837f2a8310367f8bcedfeb799c390b7cc',
+    'fileHash' => 'c478745b1f73b92e6478464f3e5822a926a532ad',
     'dependentFiles' => 
     array (
     ),
@@ -4238,12 +4218,13 @@ return [
     'fileHash' => '2b68dcc1076cc18c84559d662a6029c901479d30',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
-      1 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
-      2 => '/app/Modules/MasterData/app/Actions/Item/PatchItem.php',
-      3 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      4 => '/app/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
-      5 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+      0 => '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php',
+      1 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
+      2 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
+      3 => '/app/Modules/MasterData/app/Actions/Item/PatchItem.php',
+      4 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      5 => '/app/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
+      6 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
     ),
   ),
   '/app/Modules/MasterData/app/Http/Resources/Item/ItemResourceCollection.php' => 
@@ -4294,21 +4275,22 @@ return [
     'fileHash' => 'c75379c9943f2e5c8566e1a5dbb7a0f2e7dee528',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Import/app/Models/Import/Lot/Item/ImportLotItem.php',
-      1 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
-      2 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
-      3 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
-      4 => '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php',
-      5 => '/app/Modules/MasterData/app/Actions/Item/DeleteItem.php',
-      6 => '/app/Modules/MasterData/app/Actions/Item/IndexItem.php',
-      7 => '/app/Modules/MasterData/app/Actions/Item/PatchItem.php',
-      8 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
-      9 => '/app/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
-      10 => '/app/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
-      11 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
-      12 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
-      13 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
-      14 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
+      0 => '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php',
+      1 => '/app/Modules/Import/app/Models/Import/Lot/Item/ImportLotItem.php',
+      2 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
+      3 => '/app/Modules/Inventory/app/Http/Resources/InventoryQuantity/InventoryQuantityResource.php',
+      4 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
+      5 => '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php',
+      6 => '/app/Modules/MasterData/app/Actions/Item/DeleteItem.php',
+      7 => '/app/Modules/MasterData/app/Actions/Item/IndexItem.php',
+      8 => '/app/Modules/MasterData/app/Actions/Item/PatchItem.php',
+      9 => '/app/Modules/MasterData/app/Actions/Item/StoreItem.php',
+      10 => '/app/Modules/MasterData/app/Http/Controllers/Item/DeleteItemController.php',
+      11 => '/app/Modules/MasterData/app/Http/Controllers/Item/PatchItemController.php',
+      12 => '/app/Modules/MasterData/app/Http/Controllers/Item/StoreItemController.php',
+      13 => '/app/Modules/MasterData/app/Http/Resources/Item/ItemResource.php',
+      14 => '/app/Modules/MasterData/app/Observers/Item/ItemObserver.php',
+      15 => '/app/Modules/MasterData/app/Providers/MasterDataServiceProvider.php',
     ),
   ),
   '/app/Modules/MasterData/app/Models/Location/Location.php' => 
@@ -10196,6 +10178,8 @@ return [
           'request' => 'Illuminate\\Http\\Request',
           'importlotresource' => 'Modules\\Import\\Http\\Resources\\Import\\Lot\\ImportLotResource',
           'importlotitem' => 'Modules\\Import\\Models\\Import\\Lot\\Item\\ImportLotItem',
+          'itemresource' => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
+          'item' => 'Modules\\MasterData\\Models\\Item\\Item',
         ),
          'constUses' => 
         array (
@@ -10218,7 +10202,25 @@ return [
         0 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'toArray',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array<string, mixed>
+     */',
+             'namespace' => 'Modules\\Import\\Http\\Resources\\Import\\Lot\\Item',
+             'uses' => 
+            array (
+              'basejsonresource' => 'App\\Http\\Resources\\BaseJsonResource',
+              'request' => 'Illuminate\\Http\\Request',
+              'importlotresource' => 'Modules\\Import\\Http\\Resources\\Import\\Lot\\ImportLotResource',
+              'importlotitem' => 'Modules\\Import\\Models\\Import\\Lot\\Item\\ImportLotItem',
+              'itemresource' => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
+              'item' => 'Modules\\MasterData\\Models\\Item\\Item',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
