@@ -9,7 +9,6 @@ use Modules\Import\Models\Import\Lot\ImportLot;
 
 class StoreImportLot
 {
-
     use AsAction;
 
     public function handle(StoreImportLotRequest $request): ImportLotResource
