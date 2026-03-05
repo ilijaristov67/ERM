@@ -4,7 +4,6 @@ namespace Modules\Import\Actions\Import\Lot;
 
 use Lorisleiva\Actions\Concerns\AsAction;
 use Modules\Import\Http\Requests\Import\Lot\IndexImportLotRequest;
-use Modules\Import\Http\Resources\Import\Lot\ImportLotResource;
 use Modules\Import\Http\Resources\Import\Lot\ImportLotResourceCollection;
 use Modules\Import\Models\Import\Import;
 use Modules\Import\Models\Import\Lot\ImportLot;
