@@ -14,10 +14,9 @@ class UserFactory extends Factory
         return [
             'first_name' => $this->faker->word,
             'last_name' => $this->faker->word,
-            'username' => $this->faker->word,
+            'username' => $this->faker->unique()->word,
             'phone_number' => $this->faker->phoneNumber,
             'password' => $this->faker->password,
-
         ];
     }
 }

@@ -22,6 +22,6 @@ Route::prefix('/')
             ->group(function () {
                 Route::post('/', StoreImportLotController::class)->name('store')->middleware('permission:import-lots-create');
                 Route::patch('/{import_lot}', PatchImportLotController::class)->name('patch')->middleware('permission:import-lots-update');
-                Route::get('/', IndexImportLotController::class)->name('index')->middleware('permission:import-read');
+                Route::get('/', IndexImportLotController::class)->name('index')->middleware('permission:import-lots-read');
             });
     });

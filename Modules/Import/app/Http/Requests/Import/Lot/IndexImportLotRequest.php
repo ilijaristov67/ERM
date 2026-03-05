@@ -12,6 +12,8 @@ class IndexImportLotRequest extends BaseIndexRequest
         'location_id',
         'arrived_at',
         'import_id',
+        'created_at',
+        'updated_at',
     ];
 
     public function rules(): array
