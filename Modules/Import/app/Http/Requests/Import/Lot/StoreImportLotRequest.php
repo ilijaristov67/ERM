@@ -12,11 +12,6 @@ class StoreImportLotRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'import_id' => [
-                'required',
-                'integer',
-                'exists:imports,id',
-            ],
             'location_id' => [
                 'required',
                 'integer',

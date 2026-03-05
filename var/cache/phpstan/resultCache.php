@@ -3519,7 +3519,7 @@ return [
   ),
   '/app/Modules/Import/app/Actions/Import/Lot/StoreImportLot.php' => 
   array (
-    'fileHash' => '7d3cf70f63a7169d2dc32ac411e2990f4890a14b',
+    'fileHash' => '77789a22ea1ec52451a5960786bdbf5e75e18503',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/StoreImportLotController.php',
@@ -3557,7 +3557,7 @@ return [
   ),
   '/app/Modules/Import/app/Http/Controllers/Import/Lot/StoreImportLotController.php' => 
   array (
-    'fileHash' => '1448954b2419ce4311c6253488df23e82063ba43',
+    'fileHash' => 'b068f2ec1336902f77ea0c14e101485dca4376a7',
     'dependentFiles' => 
     array (
     ),
@@ -3587,7 +3587,7 @@ return [
   ),
   '/app/Modules/Import/app/Http/Requests/Import/Lot/StoreImportLotRequest.php' => 
   array (
-    'fileHash' => '2804905c83e8cc20c26626e543d01207c2e00abd',
+    'fileHash' => 'ddedff2e4e1e442452c6c049cef3b7510482db1a',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Actions/Import/Lot/StoreImportLot.php',
@@ -3651,21 +3651,23 @@ return [
   ),
   '/app/Modules/Import/app/Models/Import/Import.php' => 
   array (
-    'fileHash' => '08144dcabedb1cd3163005e6f1fe14e71d8a1b80',
+    'fileHash' => '58f10516c022564581074844ba4d6ba40cf43c65',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Actions/Import/DeleteImport.php',
       1 => '/app/Modules/Import/app/Actions/Import/IndexImport.php',
-      2 => '/app/Modules/Import/app/Actions/Import/PatchImport.php',
-      3 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
-      4 => '/app/Modules/Import/app/Http/Controllers/Import/DeleteImportController.php',
-      5 => '/app/Modules/Import/app/Http/Controllers/Import/PatchImportController.php',
-      6 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
-      7 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
-      8 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
-      9 => '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php',
-      10 => '/app/Modules/Import/app/Observers/Import/ImportObserver.php',
-      11 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+      2 => '/app/Modules/Import/app/Actions/Import/Lot/StoreImportLot.php',
+      3 => '/app/Modules/Import/app/Actions/Import/PatchImport.php',
+      4 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
+      5 => '/app/Modules/Import/app/Http/Controllers/Import/DeleteImportController.php',
+      6 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/StoreImportLotController.php',
+      7 => '/app/Modules/Import/app/Http/Controllers/Import/PatchImportController.php',
+      8 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
+      9 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+      10 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
+      11 => '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php',
+      12 => '/app/Modules/Import/app/Observers/Import/ImportObserver.php',
+      13 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
     ),
   ),
   '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php' => 
@@ -3676,8 +3678,9 @@ return [
       0 => '/app/Modules/Import/app/Actions/Import/Lot/StoreImportLot.php',
       1 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/StoreImportLotController.php',
       2 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
-      3 => '/app/Modules/Import/app/Observers/Import/Lot/ImportLotObserver.php',
-      4 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+      3 => '/app/Modules/Import/app/Models/Import/Import.php',
+      4 => '/app/Modules/Import/app/Observers/Import/Lot/ImportLotObserver.php',
+      5 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
     ),
   ),
   '/app/Modules/Import/app/Observers/Import/ImportObserver.php' => 
@@ -8446,6 +8449,17 @@ return [
               array (
               ),
             )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'import',
+               'type' => 'Modules\\Import\\Models\\Import\\Import',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
           ),
            'attributes' => 
           array (
@@ -8727,6 +8741,17 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'request',
                'type' => 'Modules\\Import\\Http\\Requests\\Import\\Lot\\StoreImportLotRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'import',
+               'type' => 'Modules\\Import\\Models\\Import\\Import',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
@@ -9444,8 +9469,10 @@ return [
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
           'user' => 'Modules\\Admin\\Models\\User\\User',
           'importfactory' => 'Modules\\Import\\Database\\Factories\\Import\\ImportFactory',
+          'importlot' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
           'invoice' => 'Modules\\MasterData\\Models\\Invoice\\Invoice',
           'supplier' => 'Modules\\Procurement\\Models\\Supplier\\Supplier',
         ),
@@ -9574,8 +9601,10 @@ return [
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
               'user' => 'Modules\\Admin\\Models\\User\\User',
               'importfactory' => 'Modules\\Import\\Database\\Factories\\Import\\ImportFactory',
+              'importlot' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
               'invoice' => 'Modules\\MasterData\\Models\\Invoice\\Invoice',
               'supplier' => 'Modules\\Procurement\\Models\\Supplier\\Supplier',
             ),
@@ -9610,8 +9639,10 @@ return [
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
               'user' => 'Modules\\Admin\\Models\\User\\User',
               'importfactory' => 'Modules\\Import\\Database\\Factories\\Import\\ImportFactory',
+              'importlot' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
               'invoice' => 'Modules\\MasterData\\Models\\Invoice\\Invoice',
               'supplier' => 'Modules\\Procurement\\Models\\Supplier\\Supplier',
             ),
@@ -9646,8 +9677,10 @@ return [
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
               'user' => 'Modules\\Admin\\Models\\User\\User',
               'importfactory' => 'Modules\\Import\\Database\\Factories\\Import\\ImportFactory',
+              'importlot' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
               'invoice' => 'Modules\\MasterData\\Models\\Invoice\\Invoice',
               'supplier' => 'Modules\\Procurement\\Models\\Supplier\\Supplier',
             ),
@@ -9662,6 +9695,44 @@ return [
            'final' => false,
            'static' => false,
            'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'importLots',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return HasMany<ImportLot, covariant Import> */',
+             'namespace' => 'Modules\\Import\\Models\\Import',
+             'uses' => 
+            array (
+              'carbon' => 'Carbon\\Carbon',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+              'user' => 'Modules\\Admin\\Models\\User\\User',
+              'importfactory' => 'Modules\\Import\\Database\\Factories\\Import\\ImportFactory',
+              'importlot' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
+              'invoice' => 'Modules\\MasterData\\Models\\Invoice\\Invoice',
+              'supplier' => 'Modules\\Procurement\\Models\\Supplier\\Supplier',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
            'parameters' => 
           array (
           ),

@@ -15,6 +15,12 @@ class StoreImportLot
     {
         $importLot = $import->importLots()->create($request->validated());
 
-        return ImportLotResource::make($importLot);
+        return ImportLotResource::make($importLot->loadMissing([
+            'import.user',
+            'import.supplier',
+            'import.invoice',
+            'location',
+            'user',
+        ]));
     }
 }
