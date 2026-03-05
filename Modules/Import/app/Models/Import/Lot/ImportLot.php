@@ -43,7 +43,7 @@ class ImportLot extends Model
         'arrived_at' => 'datetime',
     ];
 
-    public function newFactory(): ImportLotFactory
+    public static function newFactory(): ImportLotFactory
     {
         return ImportLotFactory::new();
     }
