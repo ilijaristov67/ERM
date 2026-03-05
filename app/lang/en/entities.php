@@ -7,4 +7,5 @@ return [
     'product' => 'Product',
     'item' => 'Item',
     'import' => 'Import',
+    'import_lot' => 'Import Lot',
 ];
