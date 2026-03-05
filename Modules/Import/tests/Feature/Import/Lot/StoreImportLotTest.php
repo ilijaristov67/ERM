@@ -1,12 +1,9 @@
 <?php
 
-use Carbon\Carbon;
 use Modules\Admin\Models\User\User;
 use Modules\Import\Database\Seeders\Permission\PermissionSeeder;
 use Modules\Import\Models\Import\Import;
-use Modules\MasterData\Models\Invoice\Invoice;
 use Modules\MasterData\Models\Location\Location;
-use Modules\Procurement\Models\Supplier\Supplier;
 
 beforeEach(function () {
     $this->seed(PermissionSeeder::class);
@@ -27,17 +24,17 @@ beforeEach(function () {
 });
 
 dataset('import lot data', [
-    fn() => [
+    fn () => [
         'import_id' => $this->import->id,
         'location_id' => Location::factory()->create()->id,
-        'user_id' => $this->user->id
-    ]
+        'user_id' => $this->user->id,
+    ],
 ]);
 
-it('successfully stores import lots', function (array $data){
-   $this->assertDatabaseCount('import_lots', 0);
+it('successfully stores import lots', function (array $data) {
+    $this->assertDatabaseCount('import_lots', 0);
 
-   $response = $this->postJson(route($this->route, $this->import), $data);
+    $response = $this->postJson(route($this->route, $this->import), $data);
 
-   dd($response->json());
+    dd($response->json());
 })->with('import lot data');
