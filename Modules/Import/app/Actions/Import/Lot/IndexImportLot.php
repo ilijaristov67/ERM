@@ -17,7 +17,7 @@ class IndexImportLot
     public function handle(IndexImportLotRequest $request, Import $import): ImportLotResourceCollection
     {
         $importLots = QueryBuilder::for(ImportLot::class)
-            ->where('import_id', $import->id)
+
             ->AllowedFilters([
                 AllowedFilter::exact('id'),
                 AllowedFilter::exact('user_id'),
@@ -41,6 +41,7 @@ class IndexImportLot
                 'location',
                 'user',
             ])
+            ->where('import_id', $import->id)
             ->paginate(
                 perPage: $request->input('limit'),
                 page: $request->input('page'),

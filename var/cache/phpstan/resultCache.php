@@ -2649,6 +2649,16 @@ return [
       ),
     ),
   ),
+  '/app/Modules/Import/app/Actions/Import/Lot/IndexImportLot.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+    ),
+  ),
   '/app/Modules/Import/app/Actions/Import/Lot/PatchImportLot.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -3460,22 +3470,23 @@ return [
       8 => '/app/Modules/Admin/app/Models/Company/Company.php',
       9 => '/app/Modules/Import/app/Http/Import.php',
       10 => '/app/Modules/Import/app/Http/Requests/Import/IndexImportRequest.php',
-      11 => '/app/Modules/Import/app/Http/Requests/Import/Lot/PatchImportLotRequest.php',
-      12 => '/app/Modules/Import/app/Http/Requests/Import/Lot/StoreImportLotRequest.php',
-      13 => '/app/Modules/Import/app/Http/Requests/Import/PatchImportRequest.php',
-      14 => '/app/Modules/Import/app/Http/Requests/Import/StoreImportRequest.php',
-      15 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
-      16 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
-      17 => '/app/Modules/Import/app/Models/Import/Import.php',
-      18 => '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php',
-      19 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
-      20 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
-      21 => '/app/Modules/MasterData/app/Http/Requests/Item/IndexItemRequest.php',
-      22 => '/app/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
-      23 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
-      24 => '/app/Modules/MasterData/app/Http/Requests/Location/IndexLocationRequest.php',
-      25 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
-      26 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
+      11 => '/app/Modules/Import/app/Http/Requests/Import/Lot/IndexImportLotRequest.php',
+      12 => '/app/Modules/Import/app/Http/Requests/Import/Lot/PatchImportLotRequest.php',
+      13 => '/app/Modules/Import/app/Http/Requests/Import/Lot/StoreImportLotRequest.php',
+      14 => '/app/Modules/Import/app/Http/Requests/Import/PatchImportRequest.php',
+      15 => '/app/Modules/Import/app/Http/Requests/Import/StoreImportRequest.php',
+      16 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+      17 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
+      18 => '/app/Modules/Import/app/Models/Import/Import.php',
+      19 => '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php',
+      20 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
+      21 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
+      22 => '/app/Modules/MasterData/app/Http/Requests/Item/IndexItemRequest.php',
+      23 => '/app/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
+      24 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
+      25 => '/app/Modules/MasterData/app/Http/Requests/Location/IndexLocationRequest.php',
+      26 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
+      27 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
     ),
   ),
   '/app/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
@@ -3540,6 +3551,14 @@ return [
       0 => '/app/Modules/Import/app/Http/Controllers/Import/IndexImportController.php',
     ),
   ),
+  '/app/Modules/Import/app/Actions/Import/Lot/IndexImportLot.php' => 
+  array (
+    'fileHash' => '1ef660653700c08b217747c644a67c4e5ad69c3e',
+    'dependentFiles' => 
+    array (
+      0 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/IndexImportLotController.php',
+    ),
+  ),
   '/app/Modules/Import/app/Actions/Import/Lot/PatchImportLot.php' => 
   array (
     'fileHash' => '6c5134c2dfbf04a2038d75e18e5f5d6f76253c60',
@@ -3586,6 +3605,13 @@ return [
     array (
     ),
   ),
+  '/app/Modules/Import/app/Http/Controllers/Import/Lot/IndexImportLotController.php' => 
+  array (
+    'fileHash' => '0dacffc9d5ceddcfd3d2d21b564acc8ad3c2f733',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   '/app/Modules/Import/app/Http/Controllers/Import/Lot/PatchImportLotController.php' => 
   array (
     'fileHash' => 'f4c28264503a34a2ea0e57a772d5220625b02b3f',
@@ -3621,6 +3647,15 @@ return [
     array (
       0 => '/app/Modules/Import/app/Actions/Import/IndexImport.php',
       1 => '/app/Modules/Import/app/Http/Controllers/Import/IndexImportController.php',
+    ),
+  ),
+  '/app/Modules/Import/app/Http/Requests/Import/Lot/IndexImportLotRequest.php' => 
+  array (
+    'fileHash' => 'eb25c788cf4a4d32db61678369b31ffa93003dab',
+    'dependentFiles' => 
+    array (
+      0 => '/app/Modules/Import/app/Actions/Import/Lot/IndexImportLot.php',
+      1 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/IndexImportLotController.php',
     ),
   ),
   '/app/Modules/Import/app/Http/Requests/Import/Lot/PatchImportLotRequest.php' => 
@@ -3696,6 +3731,8 @@ return [
     'fileHash' => '1a19e200ac95c03a815fee0a01be1c1a029a8ca8',
     'dependentFiles' => 
     array (
+      0 => '/app/Modules/Import/app/Actions/Import/Lot/IndexImportLot.php',
+      1 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/IndexImportLotController.php',
     ),
   ),
   '/app/Modules/Import/app/Models/Import/Import.php' => 
@@ -3705,19 +3742,21 @@ return [
     array (
       0 => '/app/Modules/Import/app/Actions/Import/DeleteImport.php',
       1 => '/app/Modules/Import/app/Actions/Import/IndexImport.php',
-      2 => '/app/Modules/Import/app/Actions/Import/Lot/StoreImportLot.php',
-      3 => '/app/Modules/Import/app/Actions/Import/PatchImport.php',
-      4 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
-      5 => '/app/Modules/Import/app/Http/Controllers/Import/DeleteImportController.php',
-      6 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/PatchImportLotController.php',
-      7 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/StoreImportLotController.php',
-      8 => '/app/Modules/Import/app/Http/Controllers/Import/PatchImportController.php',
-      9 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
-      10 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
-      11 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
-      12 => '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php',
-      13 => '/app/Modules/Import/app/Observers/Import/ImportObserver.php',
-      14 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+      2 => '/app/Modules/Import/app/Actions/Import/Lot/IndexImportLot.php',
+      3 => '/app/Modules/Import/app/Actions/Import/Lot/StoreImportLot.php',
+      4 => '/app/Modules/Import/app/Actions/Import/PatchImport.php',
+      5 => '/app/Modules/Import/app/Actions/Import/StoreImport.php',
+      6 => '/app/Modules/Import/app/Http/Controllers/Import/DeleteImportController.php',
+      7 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/IndexImportLotController.php',
+      8 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/PatchImportLotController.php',
+      9 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/StoreImportLotController.php',
+      10 => '/app/Modules/Import/app/Http/Controllers/Import/PatchImportController.php',
+      11 => '/app/Modules/Import/app/Http/Controllers/Import/StoreImportController.php',
+      12 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+      13 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
+      14 => '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php',
+      15 => '/app/Modules/Import/app/Observers/Import/ImportObserver.php',
+      16 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
     ),
   ),
   '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php' => 
@@ -3725,14 +3764,15 @@ return [
     'fileHash' => '3454082e17ca4ca5e1c4815715cf1556678371d7',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Import/app/Actions/Import/Lot/PatchImportLot.php',
-      1 => '/app/Modules/Import/app/Actions/Import/Lot/StoreImportLot.php',
-      2 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/PatchImportLotController.php',
-      3 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/StoreImportLotController.php',
-      4 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
-      5 => '/app/Modules/Import/app/Models/Import/Import.php',
-      6 => '/app/Modules/Import/app/Observers/Import/Lot/ImportLotObserver.php',
-      7 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+      0 => '/app/Modules/Import/app/Actions/Import/Lot/IndexImportLot.php',
+      1 => '/app/Modules/Import/app/Actions/Import/Lot/PatchImportLot.php',
+      2 => '/app/Modules/Import/app/Actions/Import/Lot/StoreImportLot.php',
+      3 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/PatchImportLotController.php',
+      4 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/StoreImportLotController.php',
+      5 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
+      6 => '/app/Modules/Import/app/Models/Import/Import.php',
+      7 => '/app/Modules/Import/app/Observers/Import/Lot/ImportLotObserver.php',
+      8 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
     ),
   ),
   '/app/Modules/Import/app/Observers/Import/ImportObserver.php' => 
@@ -8456,6 +8496,73 @@ return [
       ),
     )),
   ),
+  '/app/Modules/Import/app/Actions/Import/Lot/IndexImportLot.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Actions\\Import\\Lot\\IndexImportLot',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Lorisleiva\\Actions\\Concerns\\AsAction',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\Import\\Http\\Resources\\Import\\Lot\\ImportLotResourceCollection',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\Import\\Http\\Requests\\Import\\Lot\\IndexImportLotRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'import',
+               'type' => 'Modules\\Import\\Models\\Import\\Import',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/app/Modules/Import/app/Actions/Import/Lot/PatchImportLot.php' => 
   array (
     0 => 
@@ -8823,6 +8930,72 @@ return [
       ),
     )),
   ),
+  '/app/Modules/Import/app/Http/Controllers/Import/Lot/IndexImportLotController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Http\\Controllers\\Import\\Lot\\IndexImportLotController',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Modules\\Import\\Http\\Resources\\Import\\Lot\\ImportLotResourceCollection',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Modules\\Import\\Http\\Requests\\Import\\Lot\\IndexImportLotRequest',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'import',
+               'type' => 'Modules\\Import\\Models\\Import\\Import',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   '/app/Modules/Import/app/Http/Controllers/Import/Lot/PatchImportLotController.php' => 
   array (
     0 => 
@@ -9092,6 +9265,68 @@ return [
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
        'name' => 'Modules\\Import\\Http\\Requests\\Import\\IndexImportRequest',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Requests\\BaseIndexRequest',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'authorize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'bool',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Import/app/Http/Requests/Import/Lot/IndexImportLotRequest.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Http\\Requests\\Import\\Lot\\IndexImportLotRequest',
        'phpDoc' => NULL,
        'abstract' => false,
        'final' => false,
