@@ -4,7 +4,6 @@ namespace Modules\Import\Actions\Import\Lot;
 
 use App\Http\Resources\SuccessfulOperationMessageResource;
 use Lorisleiva\Actions\Concerns\AsAction;
-use Modules\Import\Models\Import\Import;
 use Modules\Import\Models\Import\Lot\ImportLot;
 use Symfony\Component\HttpFoundation\Response;
 
