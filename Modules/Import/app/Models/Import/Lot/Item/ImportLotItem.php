@@ -11,6 +11,8 @@ use Modules\Import\Models\Import\Lot\ImportLot;
 use Modules\MasterData\Models\Item\Item;
 
 /**
+ * Observed by ImportLotItemObserver
+ *
  * @property int $id
  * @property int $importLotId
  * @property int $item_id

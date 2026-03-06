@@ -5,8 +5,10 @@ namespace Modules\Import\Providers;
 use Illuminate\Support\ServiceProvider;
 use Modules\Import\Models\Import\Import;
 use Modules\Import\Models\Import\Lot\ImportLot;
+use Modules\Import\Models\Import\Lot\Item\ImportLotItem;
 use Modules\Import\Observers\Import\ImportObserver;
 use Modules\Import\Observers\Import\Lot\ImportLotObserver;
+use Modules\Import\Observers\Import\Lot\Item\ImportLotItemObserver;
 use Nwidart\Modules\Traits\PathNamespace;
 
 class ImportServiceProvider extends ServiceProvider
@@ -26,6 +28,7 @@ class ImportServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(module_path($this->moduleName, 'database/migrations'));
         Import::observe(ImportObserver::class);
         ImportLot::observe(ImportLotObserver::class);
+        ImportLotItem::observe(ImportLotItemObserver::class);
     }
 
     public function register(): void
