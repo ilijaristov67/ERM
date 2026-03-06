@@ -2,7 +2,9 @@
 
 namespace Modules\Inventory\Providers;
 
+use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
+use Modules\Import\Models\Import\Lot\Item\ImportLotItem;
 use Nwidart\Modules\Traits\PathNamespace;
 
 class InventoryServiceProvider extends ServiceProvider
@@ -20,6 +22,10 @@ class InventoryServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->registerConfig();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'database/migrations'));
+
+        Relation::morphMap([
+            'import_lot_item' => ImportLotItem::class,
+        ]);
     }
 
     public function register(): void

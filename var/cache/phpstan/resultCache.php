@@ -2804,6 +2804,10 @@ return [
       array (
         0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
+      1 => 
+      array (
+        0 => 'Modules\\Inventory\\Traits\\InventoryMovement\\SourceRelationshipTrait',
+      ),
     ),
   ),
   '/app/Modules/Import/app/Providers/ImportServiceProvider.php' => 
@@ -2813,7 +2817,7 @@ return [
       0 => 
       array (
         0 => 'config',
-        1 => 81,
+        1 => 84,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2880,7 +2884,16 @@ return [
       0 => 
       array (
         0 => 'config',
-        1 => 68,
+        1 => 74,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Relations\\Relation',
+        1 => 'morphMap',
+        2 => 26,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2888,6 +2901,17 @@ return [
       0 => 
       array (
         0 => 'Nwidart\\Modules\\Traits\\PathNamespace',
+      ),
+    ),
+  ),
+  '/app/Modules/Inventory/app/Traits/InventoryMovement/SourceRelationshipTrait.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitDeclarationCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Modules\\Inventory\\Traits\\InventoryMovement\\SourceRelationshipTrait',
+        1 => 8,
       ),
     ),
   ),
@@ -3796,7 +3820,7 @@ return [
   ),
   '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php' => 
   array (
-    'fileHash' => 'c478745b1f73b92e6478464f3e5822a926a532ad',
+    'fileHash' => '672b7179ad4a3da41831e9bbdbc2abb15d97f002',
     'dependentFiles' => 
     array (
     ),
@@ -3855,10 +3879,14 @@ return [
   ),
   '/app/Modules/Import/app/Models/Import/Lot/Item/ImportLotItem.php' => 
   array (
-    'fileHash' => '9845a732e98d28f70d34a5a8139d196a0069c03f',
+    'fileHash' => '9c81bd6c3acbb770a62863b64c239b941e147371',
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php',
+      1 => '/app/Modules/Import/app/Observers/Import/Lot/Item/ImportLotItemObserver.php',
+      2 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+      3 => '/app/Modules/Inventory/app/Enums/InventoryMovement/InventoryMovementSourceTypeEnum.php',
+      4 => '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php',
     ),
   ),
   '/app/Modules/Import/app/Observers/Import/ImportObserver.php' => 
@@ -3877,6 +3905,14 @@ return [
       0 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
     ),
   ),
+  '/app/Modules/Import/app/Observers/Import/Lot/Item/ImportLotItemObserver.php' => 
+  array (
+    'fileHash' => '126a0e3465c775d4fd63549635a94c7d92a606e7',
+    'dependentFiles' => 
+    array (
+      0 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+    ),
+  ),
   '/app/Modules/Import/app/Providers/EventServiceProvider.php' => 
   array (
     'fileHash' => '97a1e9fbd86802eaa8479d910e9b6f2ca2a91584',
@@ -3887,7 +3923,7 @@ return [
   ),
   '/app/Modules/Import/app/Providers/ImportServiceProvider.php' => 
   array (
-    'fileHash' => 'ce0d04e59e4a75e263d31179bc789ebf18b9373c',
+    'fileHash' => '2ca1ae6da9c6b1bf6c1d51d82d052e0f87bfeefb',
     'dependentFiles' => 
     array (
     ),
@@ -3902,11 +3938,13 @@ return [
   ),
   '/app/Modules/Inventory/app/Enums/InventoryMovement/InventoryMovementSourceTypeEnum.php' => 
   array (
-    'fileHash' => 'eb6afd5a6600471a6c20ac935809df500c787368',
+    'fileHash' => 'c31555150067dc052c8b9cde5ccb306a62a4c91e',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
-      1 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
+      0 => '/app/Modules/Import/app/Models/Import/Lot/Item/ImportLotItem.php',
+      1 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
+      2 => '/app/Modules/Inventory/app/Interfaces/SourceInterface.php',
+      3 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
     ),
   ),
   '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php' => 
@@ -3939,12 +3977,27 @@ return [
     array (
     ),
   ),
+  '/app/Modules/Inventory/app/Interfaces/SourceInterface.php' => 
+  array (
+    'fileHash' => 'bb9821b2632b120eb3648800947a816a91f4f2c7',
+    'dependentFiles' => 
+    array (
+      0 => '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php',
+      1 => '/app/Modules/Import/app/Models/Import/Lot/Item/ImportLotItem.php',
+      2 => '/app/Modules/Import/app/Observers/Import/Lot/Item/ImportLotItemObserver.php',
+      3 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+      4 => '/app/Modules/Inventory/app/Enums/InventoryMovement/InventoryMovementSourceTypeEnum.php',
+      5 => '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php',
+    ),
+  ),
   '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php' => 
   array (
     'fileHash' => 'c15d668a5173da3b08c7007019320fa29c67cc78',
     'dependentFiles' => 
     array (
-      0 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
+      0 => '/app/Modules/Import/app/Models/Import/Lot/Item/ImportLotItem.php',
+      1 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
+      2 => '/app/Modules/Inventory/app/Interfaces/SourceInterface.php',
     ),
   ),
   '/app/Modules/Inventory/app/Models/InventoryQuantity/InventoryQuantity.php' => 
@@ -3969,7 +4022,7 @@ return [
   ),
   '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php' => 
   array (
-    'fileHash' => '0ec1248d09dada6c08f375f00a87478ecbdb17d8',
+    'fileHash' => '52a39ee67aa07642c7d834d2acde1e267cb92bde',
     'dependentFiles' => 
     array (
     ),
@@ -3980,6 +4033,23 @@ return [
     'dependentFiles' => 
     array (
       0 => '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php',
+    ),
+  ),
+  '/app/Modules/Inventory/app/Traits/InventoryMovement/SourceRelationshipTrait.php' => 
+  array (
+    'fileHash' => '370120197b79553074456fe5d28a89af08842133',
+    'dependentFiles' => 
+    array (
+      0 => '/app/Modules/Import/app/Http/Resources/Import/Lot/Item/ImportLotItemResource.php',
+      1 => '/app/Modules/Import/app/Models/Import/Lot/Item/ImportLotItem.php',
+      2 => '/app/Modules/Import/app/Observers/Import/Lot/Item/ImportLotItemObserver.php',
+      3 => '/app/Modules/Import/app/Providers/ImportServiceProvider.php',
+      4 => '/app/Modules/Inventory/app/Enums/InventoryMovement/InventoryMovementSourceTypeEnum.php',
+      5 => '/app/Modules/Inventory/app/Providers/InventoryServiceProvider.php',
+    ),
+    'usedTraitDependentFiles' => 
+    array (
+      0 => '/app/Modules/Import/app/Models/Import/Lot/Item/ImportLotItem.php',
     ),
   ),
   '/app/Modules/MasterData/app/Actions/Item/DeleteItem.php' => 
@@ -10179,7 +10249,6 @@ return [
           'importlotresource' => 'Modules\\Import\\Http\\Resources\\Import\\Lot\\ImportLotResource',
           'importlotitem' => 'Modules\\Import\\Models\\Import\\Lot\\Item\\ImportLotItem',
           'itemresource' => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
-          'item' => 'Modules\\MasterData\\Models\\Item\\Item',
         ),
          'constUses' => 
         array (
@@ -10215,7 +10284,6 @@ return [
               'importlotresource' => 'Modules\\Import\\Http\\Resources\\Import\\Lot\\ImportLotResource',
               'importlotitem' => 'Modules\\Import\\Models\\Import\\Lot\\Item\\ImportLotItem',
               'itemresource' => 'Modules\\MasterData\\Http\\Resources\\Item\\ItemResource',
-              'item' => 'Modules\\MasterData\\Models\\Item\\Item',
             ),
              'constUses' => 
             array (
@@ -10850,6 +10918,8 @@ return [
        'phpDoc' => 
       \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
          'phpDocString' => '/**
+ * Observed by ImportLotItemObserver
+ *
  * @property int $id
  * @property int $importLotId
  * @property int $item_id
@@ -10866,6 +10936,8 @@ return [
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'importlotitemfactory' => 'Modules\\Import\\Database\\Factories\\Import\\Lot\\Item\\ImportLotItemFactory',
           'importlot' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
+          'sourceinterface' => 'Modules\\Inventory\\Interfaces\\SourceInterface',
+          'sourcerelationshiptrait' => 'Modules\\Inventory\\Traits\\InventoryMovement\\SourceRelationshipTrait',
           'item' => 'Modules\\MasterData\\Models\\Item\\Item',
         ),
          'constUses' => 
@@ -10877,10 +10949,12 @@ return [
        'extends' => 'Illuminate\\Database\\Eloquent\\Model',
        'implements' => 
       array (
+        0 => 'Modules\\Inventory\\Interfaces\\SourceInterface',
       ),
        'usedTraits' => 
       array (
         0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        1 => 'Modules\\Inventory\\Traits\\InventoryMovement\\SourceRelationshipTrait',
       ),
        'traitUseAdaptations' => 
       array (
@@ -10970,6 +11044,8 @@ return [
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'importlotitemfactory' => 'Modules\\Import\\Database\\Factories\\Import\\Lot\\Item\\ImportLotItemFactory',
               'importlot' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
+              'sourceinterface' => 'Modules\\Inventory\\Interfaces\\SourceInterface',
+              'sourcerelationshiptrait' => 'Modules\\Inventory\\Traits\\InventoryMovement\\SourceRelationshipTrait',
               'item' => 'Modules\\MasterData\\Models\\Item\\Item',
             ),
              'constUses' => 
@@ -11007,6 +11083,8 @@ return [
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'importlotitemfactory' => 'Modules\\Import\\Database\\Factories\\Import\\Lot\\Item\\ImportLotItemFactory',
               'importlot' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
+              'sourceinterface' => 'Modules\\Inventory\\Interfaces\\SourceInterface',
+              'sourcerelationshiptrait' => 'Modules\\Inventory\\Traits\\InventoryMovement\\SourceRelationshipTrait',
               'item' => 'Modules\\MasterData\\Models\\Item\\Item',
             ),
              'constUses' => 
@@ -11125,6 +11203,61 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'importLot',
                'type' => 'Modules\\Import\\Models\\Import\\Lot\\ImportLot',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Import/app/Observers/Import/Lot/Item/ImportLotItemObserver.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Observers\\Import\\Lot\\Item\\ImportLotItemObserver',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'created',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'importLotItem',
+               'type' => 'Modules\\Import\\Models\\Import\\Lot\\Item\\ImportLotItem',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
@@ -11624,6 +11757,12 @@ return [
        'statements' => 
       array (
         0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedEnumCaseNode::__set_state(array(
+           'name' => 'IMPORT_LOT_ITEM',
+           'value' => '\'import_lot_item\'',
+           'phpDoc' => NULL,
+        )),
+        1 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'modelClass',
            'phpDoc' => NULL,
@@ -11872,6 +12011,51 @@ return [
       ),
        'attributes' => 
       array (
+      ),
+    )),
+  ),
+  '/app/Modules/Inventory/app/Interfaces/SourceInterface.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedInterfaceNode::__set_state(array(
+       'name' => 'Modules\\Inventory\\Interfaces\\SourceInterface',
+       'phpDoc' => NULL,
+       'extends' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'inventoryMovements',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** @return MorphMany<InventoryMovement, covariant Model> */',
+             'namespace' => 'Modules\\Inventory\\Interfaces',
+             'uses' => 
+            array (
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'morphmany' => 'Illuminate\\Database\\Eloquent\\Relations\\MorphMany',
+              'inventorymovement' => 'Modules\\Inventory\\Models\\InventoryMovement\\InventoryMovement',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\MorphMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
       ),
     )),
   ),
@@ -12788,6 +12972,44 @@ return [
            'final' => false,
            'static' => false,
            'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Inventory/app/Traits/InventoryMovement/SourceRelationshipTrait.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedTraitNode::__set_state(array(
+       'name' => 'Modules\\Inventory\\Traits\\InventoryMovement\\SourceRelationshipTrait',
+       'phpDoc' => NULL,
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'inventoryMovements',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\MorphMany',
            'parameters' => 
           array (
           ),

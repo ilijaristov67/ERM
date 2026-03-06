@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Import\Database\Factories\Import\Lot\Item\ImportLotItemFactory;
 use Modules\Import\Models\Import\Lot\ImportLot;
+use Modules\Inventory\Interfaces\SourceInterface;
+use Modules\Inventory\Traits\InventoryMovement\SourceRelationshipTrait;
 use Modules\MasterData\Models\Item\Item;
 
 /**
@@ -20,10 +22,12 @@ use Modules\MasterData\Models\Item\Item;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  */
-class ImportLotItem extends Model
+class ImportLotItem extends Model implements SourceInterface
 {
     /** @use HasFactory<ImportLotItemFactory> */
     use HasFactory;
+
+    use SourceRelationshipTrait;
 
     protected $table = 'import_lot_item';
 
