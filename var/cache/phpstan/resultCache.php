@@ -2722,6 +2722,18 @@ return [
       ),
     ),
   ),
+  '/app/Modules/Import/app/Http/Requests/Import/Lot/Item/StoreImportLotItemRequest.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Modules\\Import\\Http\\Requests\\Import\\Lot\\Item\\StoreImportLotItemRequest',
+        1 => 'rules',
+        2 => 'Modules\\Import\\Http\\Requests\\Import\\Lot\\Item\\StoreImportLotItemRequest',
+      ),
+    ),
+  ),
   '/app/Modules/Import/app/Http/Requests/Import/Lot/PatchImportLotRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
@@ -3538,22 +3550,23 @@ return [
       9 => '/app/Modules/Import/app/Http/Import.php',
       10 => '/app/Modules/Import/app/Http/Requests/Import/IndexImportRequest.php',
       11 => '/app/Modules/Import/app/Http/Requests/Import/Lot/IndexImportLotRequest.php',
-      12 => '/app/Modules/Import/app/Http/Requests/Import/Lot/PatchImportLotRequest.php',
-      13 => '/app/Modules/Import/app/Http/Requests/Import/Lot/StoreImportLotRequest.php',
-      14 => '/app/Modules/Import/app/Http/Requests/Import/PatchImportRequest.php',
-      15 => '/app/Modules/Import/app/Http/Requests/Import/StoreImportRequest.php',
-      16 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
-      17 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
-      18 => '/app/Modules/Import/app/Models/Import/Import.php',
-      19 => '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php',
-      20 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
-      21 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
-      22 => '/app/Modules/MasterData/app/Http/Requests/Item/IndexItemRequest.php',
-      23 => '/app/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
-      24 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
-      25 => '/app/Modules/MasterData/app/Http/Requests/Location/IndexLocationRequest.php',
-      26 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
-      27 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
+      12 => '/app/Modules/Import/app/Http/Requests/Import/Lot/Item/StoreImportLotItemRequest.php',
+      13 => '/app/Modules/Import/app/Http/Requests/Import/Lot/PatchImportLotRequest.php',
+      14 => '/app/Modules/Import/app/Http/Requests/Import/Lot/StoreImportLotRequest.php',
+      15 => '/app/Modules/Import/app/Http/Requests/Import/PatchImportRequest.php',
+      16 => '/app/Modules/Import/app/Http/Requests/Import/StoreImportRequest.php',
+      17 => '/app/Modules/Import/app/Http/Resources/Import/ImportResource.php',
+      18 => '/app/Modules/Import/app/Http/Resources/Import/Lot/ImportLotResource.php',
+      19 => '/app/Modules/Import/app/Models/Import/Import.php',
+      20 => '/app/Modules/Import/app/Models/Import/Lot/ImportLot.php',
+      21 => '/app/Modules/Inventory/app/Http/Resources/InventoryMovement/InventoryMovementResource.php',
+      22 => '/app/Modules/Inventory/app/Models/InventoryMovement/InventoryMovement.php',
+      23 => '/app/Modules/MasterData/app/Http/Requests/Item/IndexItemRequest.php',
+      24 => '/app/Modules/MasterData/app/Http/Requests/Item/PatchItemRequest.php',
+      25 => '/app/Modules/MasterData/app/Http/Requests/Item/StoreItemRequest.php',
+      26 => '/app/Modules/MasterData/app/Http/Requests/Location/IndexLocationRequest.php',
+      27 => '/app/Modules/MasterData/app/Http/Requests/Location/PatchLocationRequest.php',
+      28 => '/app/Modules/MasterData/app/Http/Requests/Location/StoreLocationRequest.php',
     ),
   ),
   '/app/Modules/Admin/app/Providers/AdminServiceProvider.php' => 
@@ -3738,6 +3751,13 @@ return [
     array (
       0 => '/app/Modules/Import/app/Actions/Import/Lot/IndexImportLot.php',
       1 => '/app/Modules/Import/app/Http/Controllers/Import/Lot/IndexImportLotController.php',
+    ),
+  ),
+  '/app/Modules/Import/app/Http/Requests/Import/Lot/Item/StoreImportLotItemRequest.php' => 
+  array (
+    'fileHash' => 'd97b786eaa3272e419c6acfba29d75d41d3210d0',
+    'dependentFiles' => 
+    array (
     ),
   ),
   '/app/Modules/Import/app/Http/Requests/Import/Lot/PatchImportLotRequest.php' => 
@@ -9628,6 +9648,81 @@ return [
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'rules',
            'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'authorize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'bool',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  '/app/Modules/Import/app/Http/Requests/Import/Lot/Item/StoreImportLotItemRequest.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Modules\\Import\\Http\\Requests\\Import\\Lot\\Item\\StoreImportLotItemRequest',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Foundation\\Http\\FormRequest',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array<string, array<int, string>>
+     */',
+             'namespace' => 'Modules\\Import\\Http\\Requests\\Import\\Lot\\Item',
+             'uses' => 
+            array (
+              'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
