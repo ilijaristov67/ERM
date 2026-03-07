@@ -27,10 +27,10 @@ Route::prefix('/')
                 Route::get('/', IndexImportLotController::class)->name('index')->middleware('permission:import-lots-read');
                 Route::delete('/{import_lot}', DeleteImportLotController::class)->name('delete')->middleware('permission:import-lots-delete');
 
-            Route::prefix('/{import_lot}/items')
-                ->name('items.')
-                ->group(function () {
-                    Route::post('/', StoreImportLotItemController::class)->name('store')->middleware('permission:import-lot-items-create');
-                });
+                Route::prefix('/{import_lot}/items')
+                    ->name('items.')
+                    ->group(function () {
+                        Route::post('/', StoreImportLotItemController::class)->name('store')->middleware('permission:import-lot-items-create');
+                    });
             });
     });

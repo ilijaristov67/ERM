@@ -3,11 +3,12 @@
 namespace Modules\Import\Http\Requests\Import\Lot\Item;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class StoreImportLotItemRequest extends FormRequest
 {
     /**
-     * @return array<string, array<int, string>>
+     * @return array<string, array<int, string, Rule>>
      */
     public function rules(): array
     {
@@ -21,12 +22,20 @@ class StoreImportLotItemRequest extends FormRequest
                 'required',
                 'integer',
                 'exists:items,id',
+                Rule::unique('import_lot_item', 'item_id')->where('import_lot_id', $this->integer('import_lot_id')),
             ],
             'quantity' => [
                 'required',
-                'string',
-                'min:1',
+                'numeric',
+                'gt:0',
             ],
+        ];
+    }
+
+    public function messages(): array
+    {
+        return [
+            'item_id.unique' => 'Item already exists for this import lot.',
         ];
     }
 
