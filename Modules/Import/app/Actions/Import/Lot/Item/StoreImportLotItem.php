@@ -11,5 +11,9 @@ class StoreImportLotItem
 {
     use AsAction;
 
-    public function handle(StoreImportLotItemRequest $request, ImportLot $importLot): ImportLotItemResource {}
+    public function handle(StoreImportLotItemRequest $request, ImportLot $importLot): ImportLotItemResource
+    {
+        $importLotItem = $importLot->items()->create($request->validated());
+        dd($importLotItem);
+    }
 }
