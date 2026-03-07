@@ -7,6 +7,7 @@ use Modules\Import\Http\Controllers\Import\Lot\DeleteImportLotController;
 use Modules\Import\Http\Controllers\Import\Lot\IndexImportLotController;
 use Modules\Import\Http\Controllers\Import\Lot\PatchImportLotController;
 use Modules\Import\Http\Controllers\Import\Lot\StoreImportLotController;
+use Modules\Import\Http\Controllers\Import\Lot\StoreImportLotItemController;
 use Modules\Import\Http\Controllers\Import\PatchImportController;
 use Modules\Import\Http\Controllers\Import\StoreImportController;
 
@@ -18,12 +19,18 @@ Route::prefix('/')
         Route::get('/', IndexImportController::class)->name('index')->middleware('permission:import-read');
         Route::delete('/{import}', DeleteImportController::class)->name('delete')->middleware('permission:import-delete');
 
-        Route::prefix('/lots/{import}')
+        Route::prefix('/{import}/lots')
             ->name('lots.')
             ->group(function () {
                 Route::post('/', StoreImportLotController::class)->name('store')->middleware('permission:import-lots-create');
                 Route::patch('/{import_lot}', PatchImportLotController::class)->name('patch')->middleware('permission:import-lots-update');
                 Route::get('/', IndexImportLotController::class)->name('index')->middleware('permission:import-lots-read');
                 Route::delete('/{import_lot}', DeleteImportLotController::class)->name('delete')->middleware('permission:import-lots-delete');
+
+            Route::prefix('/{import_lot}/items')
+                ->name('items.')
+                ->group(function () {
+                    Route::post('/', StoreImportLotItemController::class)->name('store')->middleware('permission:import-lot-items-create');
+                });
             });
     });
