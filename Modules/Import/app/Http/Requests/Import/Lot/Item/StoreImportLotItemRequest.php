@@ -27,7 +27,7 @@ class StoreImportLotItemRequest extends FormRequest
             'quantity' => [
                 'required',
                 'numeric',
-                'gt:0',
+                'gte:1',
             ],
         ];
     }
