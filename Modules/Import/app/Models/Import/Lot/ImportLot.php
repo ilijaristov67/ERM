@@ -6,10 +6,12 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\Admin\Models\User\User;
 use Modules\Import\Database\Factories\Import\ImportFactory;
 use Modules\Import\Database\Factories\Import\Lot\ImportLotFactory;
 use Modules\Import\Models\Import\Import;
+use Modules\Import\Models\Import\Lot\Item\ImportLotItem;
 use Modules\MasterData\Models\Location\Location;
 
 /**
@@ -64,5 +66,11 @@ class ImportLot extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    /** @return HasMany<ImportLotItem, covariant ImportLot> */
+    public function items(): HasMany
+    {
+        return $this->hasMany(ImportLotItem::class);
     }
 }
