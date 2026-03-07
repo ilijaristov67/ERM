@@ -14,6 +14,12 @@ class StoreImportLotItem
     public function handle(StoreImportLotItemRequest $request, ImportLot $importLot): ImportLotItemResource
     {
         $importLotItem = $importLot->items()->create($request->validated());
-        dd($importLotItem);
+
+        return ImportLotItemResource::make($importLotItem->loadMissing([
+            'importLot.import',
+            'importLot.location',
+            'importLot.user',
+            'item.inventoryQuantities.location'
+        ]));
     }
 }

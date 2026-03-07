@@ -43,4 +43,11 @@ class StoreImportLotItemRequest extends FormRequest
     {
         return auth()->user()->can('import-lot-items-create');
     }
+
+    public function prepareForValidation(): void
+    {
+        $this->merge([
+            'import_lot_id' => $this->route('import_lot')?->id,
+        ]);
+    }
 }

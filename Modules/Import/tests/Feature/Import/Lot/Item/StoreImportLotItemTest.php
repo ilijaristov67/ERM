@@ -26,3 +26,15 @@ beforeEach(function () {
 
     $this->item = Item::factory()->create();
 });
+
+it('successfully store import lot item', function () {
+   $response = $this->postJson(route($this->route, [
+       $this->import,
+       $this->importLot,
+   ]), [
+       'item_id' => $this->item->id,
+       'quantity' => 1,
+   ]);
+
+   dd($response->json());
+});
